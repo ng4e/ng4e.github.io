@@ -1,0 +1,126 @@
+{
+  "basics": {
+    "name": "The Server side of me",
+    "label": "Shaping my worklife with meanings... and code",
+    "picture": "/assets/images/smo.jpeg",
+    "email": "sayhello@gambetech.com",
+    "website": "https://gambetech.com",
+    "summary": "I started my professionnal software engineering career in 2006. I worked, the first 9 years as system integrator and software engineer on enterprise grade applications for 3 IT contractors : [Sopra-Steria](https://www.sopra-steria.com), [Accenture Technology Solutions](https://www.sopra-steria.com) and [Devoteam Digital Factory](https://www.sopra-steria.com). I worked with the following server and client side technologies: Java EE, PHP, Database Management System, JavaScript, HTML, CSS. I worked on connectors for ERP's Integration Project like Oracle Application (Incentive Compensation) for Industries including retail banking, telecommunications and energy.",
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "sgmolu",
+        "url": "https://twitter.com/sgmolu"
+      },
+      {
+        "network": "github",
+        "username": "ng4e",
+        "url": "https://github.com/ng4e"
+      },
+      {
+        "network": "instagram",
+        "username": "sgmolu",
+        "url": "https://instagram.com/sgmolu"
+      }
+    ],
+    "location":{
+      "address":"",
+      "city":"EU",
+      "region":"Africa",
+      "postalCode":"",
+      "countryCode":""
+    }
+  },
+  "work": [
+  {
+    "company": "Thanks And Share",
+    "position": "Co-founder",
+    "website": "http://www.thanksandshare.eu",
+    "startDate": "2017-03-01",
+    "endDate": "",
+    "summary": "Resident in Square Innovation Lab (http://www.le-square.paris/partenaires-du-square/).<br> I designed, implemented the system with the following tools and methodology : ",
+    "highlights": [
+      "Strategyzer Business Model Canvas and Value Proposition Canva (https://strategyzer.com/books/value-proposition-design) to extract features and communicates strategy and business model",
+      "C4 Models (https://c4model.com/) to communicate the system design ",
+      "Behavior Driven Developpement and Domain Driven Developpement as conception pattern",
+      "Hexagonal Architecture with REST principle as system implementation pattern",
+      "Test Driven Design more Integration Testing to validate the behavior first",
+      "I used cloud solution with devops operabillity in mind to quickly dev, test and deploy: Github as code repository, Heroku as staging and production platform,  with mLab as MongoDB database provider, Auth0 as Authentification provider",
+      "Java as server side technology for resilience, ease of use for Domain Design (It's the one i know best. I am not an 'All in Java type of person' :-) )",
+      "I used Apache Maven, Spring Boot, Spring Framework as server side framework to cleanly design the domain as independant modules",
+      "ReactJS with React-dom and React-native to address browser and mobile target while keeping the model code base in Javascript the ES6 way"
+    ]
+  },
+    {
+      "company": "Devoteam D2F - Accenture Technology Solutions - Sopra Group",
+      "position": "Software Engineer",
+      "website": "",
+      "startDate": "2006-05-01",
+      "endDate": "2017-03-01",
+      "summary": "Developper, System Analyst, System Design",
+      "highlights": [
+        "_Sopra Group (4 years) worked for Bouyges Telecom, EDF and more as System Integrator, System Analyst, Developper, customer service level 1",
+        "Accenture Technology Solutions (4 years) worked for Societe General Retail Banking, Credit du Nord, La Banque Postale as Developper, System Design and Architecture",
+        "Devoteam Digital Factory (6 months) worked for BNP Cardiff as Developper, System Design and Architecture"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University of Paris Dauphine",
+      "area": "Information Technology",
+      "studyType": "Bachelor",
+      "startDate": "2003-06-01",
+      "endDate": "2006-01-01",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "I read the F&%$#in' Doc before I search on Google",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "Client side web Development",
+      "level": "Intermediate",
+      "keywords": ["HTML", "CSS", "Javascript ES6"]
+    },
+    {
+      "name": "Serve side Development",
+      "level": "Intermediate",
+      "keywords": ["Java SE, Java EE", "NodeJS", "PHP", "Python (Beginner)"]
+    },
+    {
+      "name": "System Design",
+      "level": "Intermediate",
+      "keywords": ["Architecture Pattern (Layered N-tiers, Event Driven, Microservices)", "Integration pattern"]
+    },
+    {
+      "name": "Getting Requirement",
+      "level": "Intermediate",
+      "keywords": ["Domain Driven Design", "Behavior Driven Development"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "French",
+      "fluency": "Native"
+    }
+  ],
+  "interests": [],
+  "references": [
+    {
+      "name": "Erlich Bachman",
+      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+    }
+  ]
+}

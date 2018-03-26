@@ -1,0 +1,18 @@
+{% if cv.skills %}
+  <div id="skills" class="entry">
+   
+    <div class="entry-content">
+      {% for s in cv.skills %}
+        <div class="taxonomy">
+          {% if s.name %}
+            <h4 class="title">{{ s.name }}</h4>
+            level: <em>{{ s.level }}</em>
+          {% endif %}
+          {% if s.keywords %}
+            <span class="keywords">{{ s.keywords | array_to_sentence_string }}</span>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
