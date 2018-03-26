@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Server Side Of Me"
+title:  "Why this is Server Side Of Me ?"
 date:   2018-03-23 18:47:14 +0100
-categories: gambetech 
+categories: gambetech why reflect
 ---
 
 By the end of 2016, after working for almost 10 years as Software Engineer for various IT contractors in Paris Area, France. 
