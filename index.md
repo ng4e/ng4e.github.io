@@ -11,7 +11,7 @@ sub_title: "Server side of me"
 
 # optional intro text below titles, Markdown allowed
 introduction: |
-    _G@mbeTech_ is a mix of __NGAMBEKET__ my birth name which means *The Truth* in my native tongue language and the contraction of the word __Technology__ which is my current focus that drive my worklife.  
+    _G@mbeTech_ is a mix of __NGAMBEKET__ my birth name which means *The Truth* in my native tongue language and the contraction of the word __Technology__ which is the current focus that drive my worklife.  
     __G@mbetech__ is basicly my attempt to create my ideal work/life balance. 
 
 # optional call to action links
