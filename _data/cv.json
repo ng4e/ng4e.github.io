@@ -1,11 +1,11 @@
 {
   "basics": {
-    "name": "The Server side of me",
-    "label": "Shaping my worklife with meanings... and code",
+    "name": "The server side of me",
+    "label": "Shaping my worklife with meanings... and code...",
     "picture": "/assets/images/smo.jpeg",
     "email": "sayhello@gambetech.com",
     "website": "https://gambetech.com",
-    "summary": "I started my professionnal software engineering career in 2006. I worked, the first 9 years as system integrator and software engineer on enterprise grade applications for 3 IT contractors : [Sopra-Steria](https://www.sopra-steria.com), [Accenture Technology Solutions](https://www.sopra-steria.com) and [Devoteam Digital Factory](https://www.sopra-steria.com). I worked with the following server and client side technologies: Java EE, PHP, Database Management System, JavaScript, HTML, CSS. I worked on connectors for ERP's Integration Project like Oracle Application (Incentive Compensation) for Industries including retail banking, telecommunications and energy.",
+    "summary": "Samuel live and work in Paris. He's from [Cameroon](https://fr.wikipedia.org/wiki/Cameroun). Samuel started is professionnal career as software developer in 2006 in France. He has since then worked as system integrator and software developer on enterprise grade applications for 3 IT contractors : [Sopra-Steria](https://www.sopra-steria.com), [Accenture](https://www.accenture.com/fr-fr/careers/work-we-do-technology) and [Devoteam Digital Factory](https://www.linkedin.com/company/devoteam-digital-factory/). He worked with the following server and client side technologies: Java EE, PHP, Database Management System, JavaScript, HTML, CSS. He worked on System Design with common Architecture Pattern and Integration Pattern and he worked on Getting and Implementing Systems Requirements with Domain Driven Design and Behavior Driven Design. He's always learning and move on",
     "profiles": [
       {
         "network": "Twitter",
@@ -32,32 +32,28 @@
     }
   },
   "work": [
-  {
-    "company": "Thanks And Share",
-    "position": "Co-founder",
-    "website": "http://www.thanksandshare.eu",
-    "startDate": "2017-03-01",
-    "endDate": "",
-    "summary": "Resident in Square Innovation Lab (http://www.le-square.paris/partenaires-du-square/).<br> I designed, implemented the system with the following tools and methodology : ",
-    "highlights": [
-      "Strategyzer Business Model Canvas and Value Proposition Canva (https://strategyzer.com/books/value-proposition-design) to extract features and communicates strategy and business model",
-      "C4 Models (https://c4model.com/) to communicate the system design ",
-      "Behavior Driven Developpement and Domain Driven Developpement as conception pattern",
-      "Hexagonal Architecture with REST principle as system implementation pattern",
-      "Test Driven Design more Integration Testing to validate the behavior first",
-      "I used cloud solution with devops operabillity in mind to quickly dev, test and deploy: Github as code repository, Heroku as staging and production platform,  with mLab as MongoDB database provider, Auth0 as Authentification provider",
-      "Java as server side technology for resilience, ease of use for Domain Design (It's the one i know best. I am not an 'All in Java type of person' :-) )",
-      "I used Apache Maven, Spring Boot, Spring Framework as server side framework to cleanly design the domain as independant modules",
-      "ReactJS with React-dom and React-native to address browser and mobile target while keeping the model code base in Javascript the ES6 way"
-    ]
-  },
+    {
+      "company": "GambeTech",
+      "position": "For now i do everything",
+      "website": "https://gambetech.com",
+      "startDate": "Since I was born",
+      "endDate": "",
+      "summary": "looking for having positive impact in Africa... with code",
+      "highlights": [
+        "Gambetech: The server side of me. Learning, Sharing, Creating stuff that matters with code",
+        "Thanks & Share : Flood the world with recognition to blow a wave of positivity around me",
+        "Garama : ",
+        "KATIKAledger: African informal collaborative economy leverage by technology",
+        "Freeds: Time Well Spent an African inspired Perspective"
+      ]
+    },
     {
       "company": "Devoteam D2F - Accenture Technology Solutions - Sopra Group",
-      "position": "Software Engineer",
+      "position": "Software Developer",
       "website": "",
       "startDate": "2006-05-01",
       "endDate": "2017-03-01",
-      "summary": "Developper, System Analyst, System Design",
+      "summary": "System Developer, System Designer, System Integrator",
       "highlights": [
         "_Sopra Group (4 years) worked for Bouyges Telecom, EDF and more as System Integrator, System Analyst, Developper, customer service level 1",
         "Accenture Technology Solutions (4 years) worked for Societe General Retail Banking, Credit du Nord, La Banque Postale as Developper, System Design and Architecture",
@@ -81,29 +77,34 @@
   "publications": [],
   "skills": [
     {
-      "name": "I read the F&%$#in' Doc before I search on Google",
-      "level": "Master",
-      "keywords": []
+      "name": "HARMONY",
+      "level": "Getting Better",
+      "keywords": ["People who are especially talented in the Harmony theme look for consensus. They don’t enjoy conflict; rather, they seek areas of agreement."]
     },
     {
-      "name": "Client side web Development",
-      "level": "Intermediate",
-      "keywords": ["HTML", "CSS", "Javascript ES6"]
+      "name": "FUTURISTIC",
+      "level": "Getting Better",
+      "keywords": ["People who are especially talented in the Futuristic theme are inspired by the future and what could be. They inspire others with their visions of the future."]
     },
     {
-      "name": "Serve side Development",
-      "level": "Intermediate",
-      "keywords": ["Java SE, Java EE", "NodeJS", "PHP", "Python (Beginner)"]
+      "name": "RELATOR",
+      "level": "Getting Better",
+      "keywords": ["People who are especially talented in the Relator theme enjoy close relationships with others. They find deep satisfaction in working hard with friends to achieve a goal."]
     },
     {
-      "name": "System Design",
-      "level": "Intermediate",
-      "keywords": ["Architecture Pattern (Layered N-tiers, Event Driven, Microservices)", "Integration pattern"]
+      "name": "RESTORATIVE",
+      "level": "Getting Better",
+      "keywords": ["People who are especially talented in the Restorative theme are adept at dealing with problems. They are good at figuring out what is wrong and resolving it."]
     },
     {
-      "name": "Getting Requirement",
-      "level": "Intermediate",
-      "keywords": ["Domain Driven Design", "Behavior Driven Development"]
+      "name": "ARRANGER",
+      "level": "Getting Better",
+      "keywords": ["People who are especially talented in the Arranger theme can organize, but they also have a flexibility that complements this ability. They like to figure out how all of the pieces and resources can be arranged for maximum productivity."]
+    },
+    {
+      "name": "MotherF$%#$^&*!",
+      "level": "Trying not to",
+      "keywords": ["If you love me I love you, if you trust me I trust you, if you disapoint me I disapoint you"]
     }
   ],
   "languages": [
@@ -117,10 +118,5 @@
     }
   ],
   "interests": [],
-  "references": [
-    {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
-  ]
+  "references": []
 }

@@ -1,18 +1,15 @@
 ---
 layout: post
-title:  "Why this is Server Side Of Me ?"
+title:  "GambeTech. why server side of me ?"
 date:   2018-03-23 18:47:14 +0100
-categories: gambetech why reflect
+categories: why
 ---
 
-By the end of 2016, after working for almost 10 years as Software Engineer for various IT contractors in Paris Area, France. 
-I started my journey as an Entrepreneur **i mean**  _I started to shape my environment in the way that is convenient for me_.
+G@mbeTech is a journey, it is my journey from a young kid trying to make his parents proud, to a young man searching his own purpose, to a growth man _starting to shape his environment in the way he want to feel comfortable leaving in_. 
 
-Since then, I co-founded :  
-* [Computation Hub](https://computationhub.com), sold back my share to my friend and founder,
-* [Thanks & Share](http://www.thanksandshare.eu), In Early and Prototyping Stage [by invitation only](https://app.thanksandshare.com),
-* [Garama](https://garama.ch) (in market validation stage).
+G@mbeTech is my point of view, my reflection, my opinions, my orientations and most important my actions.
 
-I started this website: 
-* [Gambetech](https://gambetech.com) as my personnal and reflection brand.
+_G@mbeTech_ is a mix of __NGAMBEKET__ my birth name which means *The Truth* in my [native](https://fr.wikipedia.org/wiki/Foumban) tongue language and the contraction of the word __Technology__ which is the current focus that drive my worklife.  
+    __G@mbetech__ is basicly my attempt to create my ideal work/life balance.
 
+G@mbetech is a letter to him.
