@@ -8,23 +8,22 @@ layout: home
 #alt_title: "Server side of me"
 
 # optional sub-title below the page title
-sub_title: "Server side of me"
+#sub_title: "Server side of me"
 
 # optional intro text below titles, Markdown allowed
-introduction: |
-    Thoughts... Opinions... Contents... Projects... R&D... Code... Life...
+#introduction: | Thoughts... Opinions... Contents... Projects... R&D... Code... Life...
 
 # optional call to action links
 #actions:
  # - label: "Learn more about me"
  #   url: "/about"
 # URL to a hero image associated with the post (e.g., /assets/page-pic.jpg)
-image: /assets/images/gambetech.cover.png
+image: /assets/images/gambetech_banner.v03.png
 
 # post specific author data if different from what is set in _config.yml 
 author:
   name: Samuel G. Molu
-  twitter: sgmolu
+  twitter: ngsmo
 
 comments: false  # disable comments on this post
 ---

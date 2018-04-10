@@ -14,19 +14,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: G@mbeTech. Server Side Of Me
-email: samuel.molu@gambetech.com
+title: GambeTech
+email: sayhello@gambetech.com
 description: >- # this means to ignore newlines until "baseurl:"
   Views, Reflections, Orientations and initiatives to help informal activities in Africa to face the digital age challenges. We believe those entrepreneurs will lead the growth of the continent.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 author:
   name: Samuel G. Molu
-  twitter: sgmolu
+  twitter: ngsmo
   picture: /assets/images/sa.png
-twitter_username: sgmolu
+twitter_username: ngsmo
 github_username:  ng4e
-#logo: /assets/icons/gambetech.svg
+#logo: /assets/images/gambetech_logo_v0.2.png
 #search: true
 #search_full_content: true
 #search_provider: algolia
@@ -78,4 +78,4 @@ defaults:
       layout: post
       read_time: true
 
-#google_analytics: UA-NNNNNNNN-N
+google_analytics: UA-79288947-2
