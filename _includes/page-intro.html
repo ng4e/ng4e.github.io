@@ -2,9 +2,11 @@
 
   {% if page.image %} {% assign intro_image = page.image.path | default: page.image %} {% unless intro_image contains '://'
   %} {% assign intro_image = intro_image | relative_url %} {% endunless %} {% assign intro_image = intro_image | escape %}
-  <div class="intro-image">
-    <img src="{{ intro_image }}" alt="{{ page.title }}">
-  </div>
+  <a href="{{ '/' | relative_url }}" itemprop="url">
+    <div class="intro-image">
+      <img src="{{ intro_image }}" alt="{{ page.title }}">
+    </div>
+  </a>
   {% endif %}
 
   <div class="inner">
