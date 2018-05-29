@@ -1,11 +1,11 @@
 {
   "basics": {
-    "name": "The server side of me",
-    "label": "meanings... and code...",
+    "name": "The server side",
+    "label": "",
     "picture": "/assets/images/smo.jpeg",
     "email": "sayhello@gambetech.com",
     "website": "https://gambetech.com",
-    "summary": "Samuel is born [here](https://fr.wikipedia.org/wiki/Cameroun). Samuel started is professionnal career as software developer in 2006 in France. He has since worked as system integrator and software developer on enterprise grade applications for IT Consulting firms check his [LinkedIn](https://www.linkedin.com/in/samuelmolu/) profile.",
+    "summary": "> Samuel G. Molu started is professionnal career as software developer in 2006. He has since worked as System integrator and Software developer on enterprise grade applications for IT Consulting firms in France. For a polish description of hard skills, check his [LinkedIn](https://www.linkedin.com/in/samuelmolu/) profile. Now he is trying [new things](/)",
     "profiles": [
       {
         "network": "Twitter",
@@ -33,16 +33,14 @@
   },
   "work": [
     {
-      "company": "Sopra Group - Accenture - Devoteam",
-      "position": "Software Developer",
+      "company": "Sopra Steria / Accenture / Devoteam Digital Factory",
+      "position": "System Developer, System Designer, System Integrator",
       "website": "https://en.wikipedia.org/wiki/List_of_IT_consulting_firms#Europe",
       "startDate": "2006-05-01",
       "endDate": "2017-03-01",
-      "summary": "System Developer, System Designer, System Integrator",
+      "summary": "",
       "highlights": [
-        "Sopra Group (4 years) worked for Bouyges Telecom, EDF and more as System Integrator, System Analyst",
-        "Accenture (4 years) worked for Societe General Retail Banking, Credit du Nord, La Banque Postale as Developer, System Integrator, System Design",
-        "Devoteam (6 months) worked for BNP Cardiff as Developer, System Design"
+        "Sopra Group (4 years), Accenture (4 years), Devoteam Digital Factory (1 year)"
       ]
     }
   ],

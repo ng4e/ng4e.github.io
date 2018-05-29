@@ -8,3 +8,7 @@
 @import "basically-basic/themes/{{ site.data.theme.skin | default: 'default' }}";
 
 @import "basically-basic";
+
+.intro-text {
+    text-align: justify;
+}

@@ -10,6 +10,8 @@
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}">
 
+    {% include skip-links.html %}
+
     <div class="sidebar-toggle-wrapper">
       {% if site.search %}
         <button class="search-toggle" type="button">
@@ -19,11 +21,24 @@
           </svg>
         </button>
       {% endif %}
+
+     <!--  <button class="toggle navicon-button larr" type="button">
+        <span class="toggle-inner">
+          <span class="sidebar-toggle-label visually-hidden">{{ site.data.theme.t.menu | default: 'Menu' }}</span>
+          <span class="navicon"></span>
+        </span>
+      </button> -->
     </div>
+
+    <!-- <div id="sidebar" class="sidebar">
+      <div class="inner">
+        {% include navigation.html %}
+        {% include contact-list.html %}
+      </div>
+    </div> -->
 
     <div class="canvas">
       <div class="wrapper">
-        
         {% include masthead.html %}
         
         <section class="initial-content">

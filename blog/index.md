@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: NS BRIDGE
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
@@ -18,7 +18,7 @@ layout: home
  # - label: "Learn more about me"
  #   url: "/about"
 # URL to a hero image associated with the post (e.g., /assets/page-pic.jpg)
-image: /assets/images/gambetech_banner.v03.png
+image: /assets/images/gambetech_banner.v04.png
 
 # post specific author data if different from what is set in _config.yml 
 author:
