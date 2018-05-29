@@ -21,9 +21,9 @@ layout: home
 image: /assets/images/gambetech_banner.v04.png
 
 # post specific author data if different from what is set in _config.yml 
-author:
-  name: Samuel G. Molu
-  twitter: ngsmo
+#author:
+#  name: Samuel G. Molu
+#  twitter: ngsmo
 
 comments: false  # disable comments on this post
 ---
