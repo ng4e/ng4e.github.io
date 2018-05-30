@@ -31,62 +31,10 @@
       "countryCode":""
     }
   },
-  "work": [
-    {
-      "company": "Sopra Steria / Accenture / Devoteam Digital Factory",
-      "position": "System Developer, System Designer, System Integrator",
-      "website": "https://en.wikipedia.org/wiki/List_of_IT_consulting_firms#Europe",
-      "startDate": "2006-05-01",
-      "endDate": "2017-03-01",
-      "summary": "",
-      "highlights": [
-        "Sopra Group (4 years), Accenture (4 years), Devoteam Digital Factory (1 year)"
-      ]
-    }
-  ],
+  "work": [],
   "volunteer": [],
   "awards": [],
   "publications": [],
-  "skills": [
-    {
-      "name": "HARMONY",
-      "level": "Getting Better",
-      "keywords": ["Samuel is always looking for consensus. He don’t enjoy conflict; rather, he seek areas of agreement."]
-    },
-    {
-      "name": "FUTURISTIC",
-      "level": "Getting Better",
-      "keywords": ["Samuel is inspired by the future and what could be. He sometimes inspire others with his visions of the future."]
-    },
-    {
-      "name": "RELATOR",
-      "level": "Getting Better",
-      "keywords": ["Samuel enjoy close relationships with others. He find deep satisfaction in working hard with friends to achieve a goal."]
-    },
-    {
-      "name": "RESTORATIVE",
-      "level": "Getting Better",
-      "keywords": ["Samuel is adept at dealing with problems. He's good at figuring out what is wrong and resolving it."]
-    },
-    {
-      "name": "ARRANGER",
-      "level": "Getting Better",
-      "keywords": ["Samuel organize, but also have a flexibility that complements this ability. He like to figure out how all of the pieces and resources can be arranged for maximum productivity."]
-    },
-    {
-      "name": "MotherF$%#$^&*!",
-      "level": "Trying not to",
-      "keywords": ["Samuel will love you, if you love him, He will trust you, if you trust him and will probably disapoint you, if you disapoint him"]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Fluent"
-    },
-    {
-      "language": "French",
-      "fluency": "Native"
-    }
-  ]
+  "skills": [],
+  "languages": []
 }
