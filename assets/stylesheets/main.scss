@@ -10,5 +10,28 @@
 @import "basically-basic";
 
 .intro-text {
-    text-align: justify;
+    text-align: center;
 }
+
+.intro {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+
+  .intro-image {
+    position: relative;
+    margin-top: -6rem; /* compensate for intro top margin */
+    margin-bottom: 0;
+  }
+
+  .inner {
+    max-width: $large;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-content{
+    padding-top: 2rem;
+    text-align: justify;
+  }

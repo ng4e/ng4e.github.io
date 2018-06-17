@@ -1,29 +1,41 @@
 ---
 layout: post
 title:  "Why GambeTech ?"
-date:   2018-03-23 18:47:14 +0100
+date:   2018-06-16 18:47:14 +0100
 # URL to a hero image associated with the post (e.g., /assets/page-pic.jpg)
 image: /assets/images/gambetech_banner.v04.png
 categories: why
 ---
 
-__Gambetech__ is a mix of __NGAMBEKET__ which means *The Truth* in [Bamoun](https://fr.wikipedia.org/wiki/Foumban) and the contraction of the word __Technology__ which is the current focus of our organization.
+__Gambetech__ is a mix of __NGAMBEKET__ which means *The Truth* in [Bamoun](https://fr.wikipedia.org/wiki/Foumban) and the contraction of the word __Technology__. 
+L’Afrique peut et doit pouvoir inventer des modèles alternatifs de développement économique et social. 
+    
+> Grâce à la technologie, __nous expérimentons des innovations sociales permettant d’offrir une alternative aux modèles que le continent connaît : aides financières occidentales ou milliardaires locaux philanthropes.__ 
 
-<!-- __Gambetech__ is the last part of a journey. The journey of modern first generation immigrant worker : from graduated, through a young worker looking for his own purpose, to a growth entrepreneur _trying to shape his environment in the way he want to feel comfortable leaving in_. 
- 
-__Gambetech__ isn't a regular software company. coding was not a vocation. coding helped us put a meal on our table and financially sustains our family in Africa but adaptability, creativity, empathy, care, integrity, humility and imagination are on our bone, so as we learned to code, we learned that _we can make computers do whatever we want, we can start a revolution, we can inform, we can disrupt, we can influence, we can growth, we can shape our own future._
+Les domaines sur lesquelles se portent notre contribution sont :
 
-__Gambetech__  is an innovation. The first company to ever adopt the innovative [__Wealth Sharing Model__](https://thanksandshare.com) from [__Thanks & Share__](https://thanksandshare.com) as governance mode.
+* __L’information__ : le recueil et le traitement d’information utiles, fiables, indépendants, viables contribuant à la prospérité.
 
-__Gambetech__ is building the following products and services with love
+* __Le partage de la richesse__ : privilégier l'équité à l'égalité.
 
-* Thanks & Share
-* Garama 
-* Katika Ledger
-* Freeds
-* Fonds KONE -->
+* __Le développement personnel__ : pour nous, un entrepreneur est un individu qui veut transformer son environnement de manière à être heureux d’y vivre. L'entrepreneuriat commence donc par la prise de conscience de soi, de son potentiel, puis de son impact et de la force du collectif.
 
+* __La Monnaie__ : réduire la dépendance aux institutions centralisées. 
 
 
+Notre approche : 
+
+#### La mise en œuvre de l'intelligence collaborative
+
+Nous explorons de nouvelles façons de travailler et la reconnaissance comme vecteur de développement personnel et économique pour le monde avec 
+[le Collectif THANKS & SHARE](https://thanksandshare.com/ "THANKS & SHARE")
+
+#### L'incubation de projet de start-up
+
+> > [__Garama__](https://unruffled-mestorf-9a810f.netlify.com/ "Coming Soon") : un Assistant Digital Expert en Économie de la Construction pour Estimer de manière Optimale les Coûts Globaux des Projets de Construction et de Rénovation immobiliers urbains en Suisse
+
+#### De nouvelles formes de collaboration avec le Nord et le Sud
+
+[Le service NS BRIDGE INC.](https://flamboyant-pike-dcb689.netlify.com/ "NS BRIDGE") accompagne les organismes publics, para-publics, les PME et les start-ups dans des démarches ambitieuses de changement culturel, d’innovation, de transformation, de réinvention de leur « business model » ou encore de formations des collaborateurs.
 
 

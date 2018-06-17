@@ -6,6 +6,7 @@
     https://github.com/mmistakes/jekyll-basically-theme/blob/master/LICENSE.md
 -->
 <html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no-js">
+  
   {% include head.html %}
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}">
@@ -22,6 +23,7 @@
     </div>
 
     <div class="canvas">
+
       <div class="wrapper">
         
         {% include masthead.html %}
@@ -30,9 +32,12 @@
           {{ content }}
         </section>
 
-        <section class="search-content">
+       <!--  <section class="search-content">
           {% include search-form.html %}
-        </section>
+        </section> -->
+
+        {% include footer.html %}
+
       </div>
     </div>
 
