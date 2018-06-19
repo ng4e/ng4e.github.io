@@ -7,7 +7,6 @@ image: /assets/images/gambetech_banner.v04.png
 categories: why
 ---
 
-__Gambetech__ is a mix of __NGAMBEKET__ which means *The Truth* in [Bamoun](https://fr.wikipedia.org/wiki/Foumban) and the contraction of the word __Technology__. 
 L’Afrique peut et doit pouvoir inventer des modèles alternatifs de développement économique et social. 
     
 > Grâce à la technologie, __nous expérimentons des innovations sociales permettant d’offrir une alternative aux modèles que le continent connaît : aides financières occidentales ou milliardaires locaux philanthropes.__ 
