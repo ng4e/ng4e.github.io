@@ -49,6 +49,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-admin
 feed:
   path: atom.xml
 
