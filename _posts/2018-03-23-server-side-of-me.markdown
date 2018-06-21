@@ -36,4 +36,6 @@ Nous incubons et prototypons des projets de startup qui seront développés en c
 
 > >  [__Intelligent Job board__](http://cameroon-job.net/ "Coming soon") Base de donnees en cours d'acquisition et d'integration pour reinventer le job board africain.
 
+> >  [__CoworkHER__](# "Coming soon") Espace de cowork et d'innovation collaborative pour les femmes africaines entrepreuneures en collaboration avec [LadiesAfterwork](https://www.facebook.com/LADIESAFTERWORK/)
+
 Ces startups sont financés en fond propre via une offre de prestations de service sur les deux continents utilisants la force du reseautage internationale pour ouvrir des services haut de gamme aux institutions, PME et startups (en prototypage).   [En savoir plus sur NS BRIDGE INC.](https://flamboyant-pike-dcb689.netlify.com/ "NS BRIDGE")
