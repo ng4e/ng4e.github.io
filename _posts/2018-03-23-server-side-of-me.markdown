@@ -30,10 +30,10 @@ entretenir et contribuer à un réseau inclusive d’entrepreneur indépendant a
 #### L'incubation de projet de start-up 
 Nous incubons et prototypons des projets de startup qui seront développés en collaboration avec Afrique.
 
-> > [__Garama__](https://unruffled-mestorf-9a810f.netlify.com/ "Coming Soon") : un Assistant Digital Expert en Économie de la Construction pour Estimer de manière Optimale les Coûts Globaux des Projets de Construction et de Rénovation immobiliers urbains en Suisse.
+> > [__Garama__](https://unruffled-mestorf-9a810f.netlify.com/ "Coming Soon") (prototype) : un Assistant Digital Expert en Économie de la Construction pour Estimer de manière Optimale les Coûts Globaux des Projets de Construction et de Rénovation immobiliers urbains en Suisse.
 
-> >  [__Waanka__](https://unruffled-mestorf-9a810f.netlify.com/ "Coming Soon") le Kompass du secteur prive et informel du continent
+> >  [__Waanka__](# "Coming Soon")(ideation) le Kompass du secteur prive et informel du continent
 
-> >  [__Intelligent Job board__](http://cameroon-job.net/ "Coming soon") En cours d'acquisition et d'integration pour reinventer le job board africain
+> >  [__Intelligent Job board__](http://cameroon-job.net/ "Coming soon") Base de donnees en cours d'acquisition et d'integration pour reinventer le job board africain.
 
-Ces startups sont financés en fond propre via une offre de prestations de service sur les deux continents utilisants la force du reseautage internatonale pour ouvrir des services haut de gamme aux institutions, PME et startups .   [En savoir plus sur NS BRIDGE INC.](https://flamboyant-pike-dcb689.netlify.com/ "NS BRIDGE")
+Ces startups sont financés en fond propre via une offre de prestations de service sur les deux continents utilisants la force du reseautage internationale pour ouvrir des services haut de gamme aux institutions, PME et startups (en prototypage).   [En savoir plus sur NS BRIDGE INC.](https://flamboyant-pike-dcb689.netlify.com/ "NS BRIDGE")
