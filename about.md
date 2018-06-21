@@ -11,9 +11,9 @@ layout: cv
 #introduction: | Lost & Founds
 
 # optional call to action links
-actions:
-  - label: "download Resume v.FR03.2018"
-    url: "MOLU_N_Samuel_CV_FR_v032018.2.doc.pdf"
+#actions:
+#  - label: "download Resume v.FR03.2018"
+#    url: "MOLU_N_Samuel_CV_FR_v032018.2.doc.pdf"
 # URL to a hero image associated with the post (e.g., /assets/page-pic.jpg)
 image: /assets/images/gambetech_banner.v04.png
 
