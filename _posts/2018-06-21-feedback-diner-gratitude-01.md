@@ -12,7 +12,7 @@ Et si on le refaisait comment cela se passerai : bien entendu on a des applicati
 
 Grâce aux réseaux sociaux et à l'avancée de la technologie les personnes qui développent ces services ont une idée plus ou moins exacte de comment, de quand et de pourquoi nous les consommons. 
 
-Ce qu’ils essayent de savoir et qu’il est important qu’ils sachent, et ce pourquoi ils s’adressent à des instituts de sondage,ou utilisent l’intelligence artificielle, c’est l’impact qu’ils ont sur nos vies. 
+Ce qu’ils essayent de savoir et qu’il est important qu’ils sachent, et ce pourquoi ils s’adressent à des instituts de sondage, ou utilisent l’intelligence artificielle, c’est l’impact qu’ils ont sur nos vies. 
 
 ils ont besoin de cet impact parce que depuis quelques années, les marketeurs ont commencé à comprendre que nous ne consommons pas des produits, mais des valeurs, des modes de vie. Nos habitudes d’achat sont guidés par nos sensibilités et nos instincts. 
 
@@ -37,7 +37,7 @@ L’homme se déplacera toujours pour travailler (puisqu’on ne chasse plus), p
 
 Notre position de départ avec [Thanks and Share](http://thanksandshare.eu) *c'était le travail : l'avenir du travail ?*
 
-Mais au cours de notre expérience sur la reconnaissance et la réciprocité comme base ideologique la repartition de la richesse, nous nous sommes rendu compte avec beaucoup de mal que repenser le travail inclut réfléchir à :
+Mais au cours de notre expérience sur la reconnaissance et la réciprocité comme base ideologique de la repartition de la richesse, nous nous sommes rendu compte avec beaucoup de mal que repenser le travail inclut réfléchir à :
 
 * Considérer l’individu
 > * la  conscience de soi, de son potentiel
