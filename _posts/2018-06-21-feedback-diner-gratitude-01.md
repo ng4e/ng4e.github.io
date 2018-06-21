@@ -6,7 +6,7 @@ date: '2018-06-21 14:56:00'
 image: "/assets/images/gambetech_banner.v04.png"
 ---
 
-Le premier **dîner de gratitude** était un super moment de partage avec vous tous, de très belles rencontres et surtout très motivant pour continuer à creuser et travailler les sujets : Gratitude =>  Feedback <= Reconnaissance. 
+Le premier **dîner de gratitude** était un super moment de partage, de très belles rencontres et surtout très motivant pour continuer à creuser et travailler les sujets : Gratitude =>  Feedback <= Reconnaissance. 
 
 Et si on le refaisait comment cela se passerai : bien entendu on a des applications qui servent à préparer le meeting (doodle), on a plein de produits qui servent à les animer (vin, fromage), des services qui servent à les mémoriser (téléphonie, photo, mail) et à les animer (spotify, deezer, etc.)
 
