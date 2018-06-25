@@ -8,34 +8,52 @@ categories: why
 
 ![af](/assets/images/africa-tech.jpg)
    
-> Grâce à la technologie, __nous expérimentons des innovations sociales permettant d’offrir une alternative aux modèles classiques de creation et partage de la richesse que le continent connaît : aides financières, milliardaires locaux philanthropes.__ 
+> __Nous expérimentons des innovations sociales, en utilisant les technologies digitales, pour créer un modèle collaboratif de création de la valeur et de partage équitable de la richesse à destination du continent Africain.__ 
 
-L’Afrique peut et doit pouvoir inventer des modèles alternatifs de développement économique et social.  Nous y contribuons dans les domaines suivants :
+**GambeTech** est un jeu de mot entre *NGAMBEKET* un mot en langue Bamoun (ethnie de l’ouest du Cameroun) *qui signifie la vérité* et le mot *technologie*.
 
-* __L’information__ : le recueil et le traitement d’information utiles, fiables, indépendants, viables contribuant à la prospérité.
+Le logo est temporaire.  Le trait le plus gros souligne le mot NGAMBEKET (vérité), le trait le plus mince au dessus de tech signifie que *si on ne croit en rien ou si on aime pas les autres, créer la meilleur technologie ne fait pas de nous des génies.*
 
-* __Le partage de la richesse__ : ouvrir des frontieres digitales et des modeles de collaboration  permettant le travail et la remuneration distante.
+Nous participons aux efforts en cours de développement économique et social du continent dans les domaines suivants  :
 
-* __Le développement personnel__ : pour transformer son environnement de manière à être heureux d’y vivre.  L'entrepreneuriat commence par la prise de conscience de soi, de son potentiel, puis de son impact et de la force du collectif.
+* __L’information__ : le recueil et le traitement d’information utiles, fiables, indépendants, viables pour les professionnel.
 
-* __La Monnaie__ : réduire la dépendance aux institutions centralisées. 
+* __Le partage de la richesse__ : créer des modèles de collaboration entre le Nord et le Sud permettant le travail et la rémunération distante.
 
+* __Le développement personnel__ :  L'entrepreneuriat commence par la prise de conscience de soi, de son potentiel, puis de son impact et de la force du collectif pour ensuite transformer son environnement de manière à être heureux d’y vivre.
 
 Notre approche : 
 
-#### La mise en œuvre d'une intelligence collaborative
+#### La mise en œuvre d'une intelligence collaborative entre le Nord et le Sud
 
-entretenir et contribuer à un réseau inclusive d’entrepreneur indépendant autour de valeurs communes pour explorer de nouvelles formes de collaboration sur des projets et des missions en Afrique au sein de [THANKS & SHARE](#)
+Entretenir un réseau inclusif d’entrepreneur indépendant autour de valeurs communes pour explorer de nouvelles formes de collaboration sur des projets et des missions en Afrique et dans le monde avec  [NS LINK INC.](https://flamboyant-pike-dcb689.netlify.com/ "NS BRIDGE")
 
-#### L'incubation de projet de start-up 
-Nous incubons et prototypons des projets de startup qui seront développés en collaboration avec Afrique.
+#### L'incubation et le developpement de solutions
 
-> > [__Garama__](https://unruffled-mestorf-9a810f.netlify.com/ "Coming Soon") (prototype) : un Assistant Digital Expert en Économie de la Construction pour Estimer de manière Optimale les Coûts Globaux des Projets de Construction et de Rénovation immobiliers urbains en Suisse.
+Nous incubons et prototypons des projets de startup qui seront développés en collaboration avec l'Afrique.
 
-> >  [__Waanka__](# "Coming Soon")(ideation) le Kompass du secteur prive et informel du continent
+> [__Garama__](https://unruffled-mestorf-9a810f.netlify.com/ "Coming Soon")  :  Assistant Digital expert en Économie de la Construction pour estimer de manière optimale les coûts globaux des projets de construction et de rénovation immobiliers urbains en Suisse.
 
-> >  [__Intelligent Job board__](http://cameroon-job.net/ "Coming soon") Base de donnees en cours d'acquisition et d'integration pour reinventer le job board africain.
+>  [__CoworkHER__](# "Coming soon") Espace de travail et d'innovation collaborative pour les femmes camerounaises entrepreuneures à Douala, au Cameroun.
 
-> >  [__CoworkHER__](# "Coming soon") Espace de cowork et d'innovation collaborative pour les femmes africaines entrepreuneures en collaboration avec [LadiesAfterwork](https://www.facebook.com/LADIESAFTERWORK/)
+Nos valeurs : 
 
-Ces startups sont financés en fond propre via une offre de prestations de service sur les deux continents utilisants la force du reseautage internationale pour ouvrir des services haut de gamme aux institutions, PME et startups (en prototypage).   [En savoir plus sur NS BRIDGE INC.](https://flamboyant-pike-dcb689.netlify.com/ "NS BRIDGE")
+1. Aimer son prochain comme soi même.
+> > Personne n'est roi : ni le client, ni le boss, ni le plus diplômé, ni le plus riche financièrement 
+
+2. Connecter
+> > Collaboration par centre d'intérêt , par valeur commune 
+
+3. Partager
+> > les objectifs, les connaissances, les valeurs, la richesse
+> > <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/john_doerr_why_the_secret_to_success_is_setting_the_right_goals" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+
+4. Révolutionner
+> > le statu quo
+
+5. Promouvoir
+> > l’empathie, l’autonomie, la responsabilité, la gratitude
+> > <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/fr/julian_treasure_how_to_speak_so_that_people_want_to_listen" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+
+6. [Apprendre](https://youtu.be/QXN35r2_20s)
+> > sans cesse, perpétuellement
