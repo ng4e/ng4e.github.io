@@ -8,11 +8,12 @@ categories: why
 
 ![af](/assets/images/africa-tech.jpg)
    
-> __Nous expérimentons des innovations sociales, en utilisant les technologies digitales, pour créer un modèle collaboratif de création de la valeur et de partage équitable de la richesse à destination du continent Africain.__ 
+> __Nous expérimentons des innovations. En utilisant le code, nous créeons un modèle collaboratif de création de la valeur et de partage équitable de la richesse à destination du continent Africain.__ 
 
-**GambeTech** est un jeu de mot entre *NGAMBEKET* un mot en langue Bamoun (ethnie de l’ouest du Cameroun) *qui signifie la vérité* et le mot *technologie*.
+**GambeTech** est un jeu de mot entre le mot *TECHnologie* et  *nGAMBEKET*  un mot en langue [Bamoun (ethnie de l’ouest du Cameroun)](http://www.lisapoyakama.org/la-civilisation-bamoun/) *qui signifie **la vérité***  .
 
-Le logo est temporaire.  Le trait le plus gros souligne le mot NGAMBEKET (vérité), le trait le plus mince au dessus de tech signifie que *si on ne croit en rien ou si on aime pas les autres, créer la meilleur technologie ne fait pas de nous des génies.*
+Le logo est temporaire.  Le trait le plus gros souligne le mot GAMBET (vérité), le trait le plus mince au dessus de Tech signifie que :
+> *si on ne croit en rien ou si on aime pas les autres, créer la meilleur technologie ne fait pas de nous des génies et que la technologie ne va pas resoudre les problèmes que les humains n'ont pas résolu*
 
 Nous participons aux efforts en cours de développement économique et social du continent dans les domaines suivants  :
 
@@ -26,11 +27,12 @@ Notre approche :
 
 #### La mise en œuvre d'une intelligence collaborative entre le Nord et le Sud
 
-Entretenir un réseau inclusif d’entrepreneur indépendant autour de valeurs communes pour explorer de nouvelles formes de collaboration sur des projets et des missions en Afrique et dans le monde avec  [NS LINK INC.](https://flamboyant-pike-dcb689.netlify.com/ "NS BRIDGE")
+Entretenir un réseau inclusif d’entrepreneur indépendant autour de valeurs communes pour explorer de nouvelles formes de collaboration sur des projets et des missions en Afrique et dans le monde au sein de  [NS LINKS INC.](https://flamboyant-pike-dcb689.netlify.com/ "North South LINKS")
 
-#### L'incubation et le developpement de solutions
+#### La fabrication de logiciel
 
-Nous incubons et prototypons des projets de startup qui seront développés en collaboration avec l'Afrique.
+Pour soutenir la mise en oeuvre de l'avenir du travail du point de vue des immigrants pour le travail et les futurs modes de co-creation et de repartition de la richesse. 
+Nous soutenons et prototypons des idées d'innovations adoptant notre modèle expérimental de répartition de la richesse avec la plateforme [THANKSFORWORK](http://)
 
 > [__Garama__](https://unruffled-mestorf-9a810f.netlify.com/ "Coming Soon")  :  Assistant Digital expert en Économie de la Construction pour estimer de manière optimale les coûts globaux des projets de construction et de rénovation immobiliers urbains en Suisse.
 
@@ -38,22 +40,24 @@ Nous incubons et prototypons des projets de startup qui seront développés en c
 
 Nos valeurs : 
 
-1. Aimer son prochain comme soi même.
-> > Personne n'est roi : ni le client, ni le boss, ni le plus diplômé, ni le plus riche financièrement 
+1. **Aimer son prochain comme soi même.**
+> > Personne n'est roi : ni le client, ni le boss, ni le plus diplômé, ni le plus riche financièrement. Voici ce que nous évoque les donneurs de leçons :-)
+> > <iframe width="560" height="315" src="https://www.youtube.com/embed/kt0g4dWxEBo?rel=0&amp;showinfo=0&amp;start=138" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-2. Connecter
-> > Collaboration par centre d'intérêt , par valeur commune 
+2. **Connecter**
+> > Individus par individus par centre d'intérêt, par valeur commune 
 
-3. Partager
+3. **Partager**
 > > les objectifs, les connaissances, les valeurs, la richesse
 > > <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/john_doerr_why_the_secret_to_success_is_setting_the_right_goals" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
 
-4. Révolutionner
+4. **Révolutionner**
 > > le statu quo
 
-5. Promouvoir
+5. **Promouvoir**
 > > l’empathie, l’autonomie, la responsabilité, la gratitude
 > > <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/fr/julian_treasure_how_to_speak_so_that_people_want_to_listen" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
 
-6. [Apprendre](https://youtu.be/QXN35r2_20s)
+6. **Apprendre**
 > > sans cesse, perpétuellement
+> > <iframe width="560" height="315" src="https://www.youtube.com/embed/QXN35r2_20s?rel=0&amp;start=113" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
