@@ -1,25 +1,14 @@
 ---
 title: About
-layout: cv
-# optional alternate title to replace page.title at the top of the page
-#alt_title: "Server side of me"
-
-# optional sub-title below the page title
-#sub_title: "Les secteurs privés et informels doivent jouer un rôle de premier plan dans l'économie du continent Africain. Nous y contribuons par la technologie."
-
-# optional intro text below titles, Markdown allowed
-#introduction: | Lost & Founds
-
-# optional call to action links
-#actions:
-#  - label: "download Resume v.FR03.2018"
-#    url: "MOLU_N_Samuel_CV_FR_v032018.2.doc.pdf"
-# URL to a hero image associated with the post (e.g., /assets/page-pic.jpg)
-image: /assets/images/gambetech_banner.v04.png
-
-# post specific author data if different from what is set in _config.yml 
-#author:
-#  name: Samuel G. Molu
-#  twitter: ngsmo
+layout: about
+image: "/assets/images/gambetech_banner.v04.png"
+author:
+  name: G@mbeTech
+  twitter: ngsmo
+  picture: /assets/images/220px-Bamun_Kingdom.gif
 ---
 
+**GambeTech** est un jeu de mot entre le mot *TECHnologie* et  *nGAMBEKET*  un mot en langue [Bamoun (ethnie de l’ouest du Cameroun)](http://www.lisapoyakama.org/la-civilisation-bamoun/) *qui signifie **la vérité***  .
+
+Le logo est temporaire.  Le trait le plus gros souligne le mot GAMBET (vérité), le trait le plus mince au dessus de Tech signifie que :
+> si on ne croit en rien ou si on ne prends pas en compte l'autre, créer la meilleur technologie ne fait pas de nous des génies.

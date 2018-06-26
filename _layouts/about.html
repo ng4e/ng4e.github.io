@@ -5,7 +5,10 @@ layout: default
 {% include page-intro.html %}
 
 <main id="main" class="page-content" aria-label="Content">
+  {% assign cv = site.data.cv %}
+  {% include cv/intro.html %}
   <div class="inner">
+    {% include cv/contact.html %}
     <div class="entry-wrap">
       <div class="entry-content">
         {{ content }}
@@ -17,6 +20,13 @@ layout: default
         {% endif %}
       </aside>
     </div>
+   
+    {% include cv/basics.html %}
+    {% include cv/skills.html %}
+    {% include cv/work.html %}
+    {% include cv/education.html %}
+    {% include cv/languages.html %}
+    {% include cv/references.html %}
 
     {% include footer.html %}
   </div>

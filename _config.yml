@@ -17,7 +17,7 @@ lang: en-US
 title: GambeTech
 email: sayhello@gambetech.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Initiatives to help informal activities in Africa to face the digital age challenges. We help those entrepreneurs to lead the growth of the continent.
+  Initiatives to help informal activities in Africa to face the digital age challenges.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 author:

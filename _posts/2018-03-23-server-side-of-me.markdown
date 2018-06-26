@@ -10,11 +10,6 @@ categories: why
    
 > __Nous expérimentons des innovations. En utilisant le code, nous créeons un modèle collaboratif de création de la valeur et de partage équitable de la richesse à destination du continent Africain.__ 
 
-**GambeTech** est un jeu de mot entre le mot *TECHnologie* et  *nGAMBEKET*  un mot en langue [Bamoun (ethnie de l’ouest du Cameroun)](http://www.lisapoyakama.org/la-civilisation-bamoun/) *qui signifie **la vérité***  .
-
-Le logo est temporaire.  Le trait le plus gros souligne le mot GAMBET (vérité), le trait le plus mince au dessus de Tech signifie que :
-> *si on ne croit en rien ou si on aime pas les autres, créer la meilleur technologie ne fait pas de nous des génies et que la technologie ne va pas resoudre les problèmes que les humains n'ont pas résolu*
-
 Nous participons aux efforts en cours de développement économique et social du continent dans les domaines suivants  :
 
 * __L’information__ : le recueil et le traitement d’information utiles, fiables, indépendants, viables pour les professionnel.
