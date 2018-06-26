@@ -1,28 +1,12 @@
 {
   "basics": {
-    "name": "The server side",
-    "label": "",
+    "name": "Mentions légales",
+    "label": "todo",
     "picture": "/assets/images/smo.jpeg",
     "email": "sayhello@gambetech.com",
     "website": "https://gambetech.com",
     "summary": "> Samuel G. Molu started is professionnal career as software developer in 2006. He has since worked as System integrator and Software developer on enterprise grade applications for IT Consulting firms in France. For a polish description of hard skills, check his [LinkedIn](https://www.linkedin.com/in/samuelmolu/) profile. Now he is trying [new things](/)",
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "ngsmo",
-        "url": "https://twitter.com/ngsmo"
-      },
-      {
-        "network": "github",
-        "username": "ng4e",
-        "url": "https://github.com/ng4e"
-      },
-      {
-        "network": "instagram",
-        "username": "gambetechoffice",
-        "url": "https://instagram.com/gambetechoffice"
-      }
-    ],
+    "profiles": [],
     "location":{
       "address":"",
       "city":"EU",

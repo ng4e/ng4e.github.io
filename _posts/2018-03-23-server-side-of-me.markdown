@@ -27,16 +27,12 @@ Notre approche :
 
 #### La mise en œuvre d'une intelligence collaborative entre le Nord et le Sud
 
-Entretenir un réseau inclusif d’entrepreneur indépendant autour de valeurs communes pour explorer de nouvelles formes de collaboration sur des projets et des missions en Afrique et dans le monde au sein de  [NS LINKS INC.](https://flamboyant-pike-dcb689.netlify.com/ "North South LINKS")
+Entretenir un réseau inclusif d’entrepreneur indépendant autour de valeurs communes pour explorer de nouvelles formes de collaboration sur des projets et des missions avec l' Afrique au sein de  [NS LINKS INC.](https://flamboyant-pike-dcb689.netlify.com/ "North South LINKS")
 
-#### La fabrication de logiciel
+#### Exporer de nouvelles façons de travailler
 
-Pour soutenir la mise en oeuvre de l'avenir du travail du point de vue des immigrants pour le travail et les futurs modes de co-creation et de repartition de la richesse. 
-Nous soutenons et prototypons des idées d'innovations adoptant notre modèle expérimental de répartition de la richesse avec la plateforme [THANKSFORWORK](http://)
-
-> [__Garama__](https://unruffled-mestorf-9a810f.netlify.com/ "Coming Soon")  :  Assistant Digital expert en Économie de la Construction pour estimer de manière optimale les coûts globaux des projets de construction et de rénovation immobiliers urbains en Suisse.
-
->  [__CoworkHER__](# "Coming soon") Espace de travail et d'innovation collaborative pour les femmes camerounaises entrepreuneures à Douala, au Cameroun.
+Explorer l'utilisation de la gratitude et de la reconnaissance comme outil de mesure de l'influence positive et de la creation de valeur dans les organisations.
+avec [THANKSFORWORK](#)
 
 Nos valeurs : 
 
@@ -53,6 +49,7 @@ Nos valeurs :
 
 4. **Révolutionner**
 > > le statu quo
+> > <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/brett_hennig_what_if_we_replaced_politicians_with_randomly_selected_people" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
 
 5. **Promouvoir**
 > > l’empathie, l’autonomie, la responsabilité, la gratitude
