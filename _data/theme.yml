@@ -24,7 +24,7 @@ t:
   min_read: "min read"
   present: "Present"
 
-# Google Fonts
+# Google Fonts Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en
 google_fonts:
   - name: "Fira Sans"
     weights: "400,400i,600,600i"

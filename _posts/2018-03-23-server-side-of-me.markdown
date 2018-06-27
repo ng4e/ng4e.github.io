@@ -8,13 +8,13 @@ categories: why
 
 ![af](/assets/images/africa-tech.jpg)
    
-> __Nous expérimentons des innovations. En utilisant le code, nous créeons un modèle collaboratif de création de la valeur et de partage équitable de la richesse à destination du continent Africain.__ 
+> __Nous expérimentons des innovations. En utilisant le code, nous créons un modèle collaboratif de création de la valeur et de partage équitable de la richesse à destination du continent Africain.__ 
 
 Nous participons aux efforts en cours de développement économique et social du continent dans les domaines suivants  :
 
-* __L’information__ : le recueil et le traitement d’information utiles, fiables, indépendants, viables pour les professionnel.
+* __L’information__ : le recueil et le traitement d’informations utiles, fiables, indépendants, viables pour les professionnels.
 
-* __Le partage de la richesse__ : créer des modèles de collaboration entre le Nord et le Sud permettant le travail et la rémunération distante.
+* __Le partage de la richesse__ : créer des modèles de collaboration entre le Nord et le Sud permettant le travail et la rémunération à distance.
 
 * __Le développement personnel__ :  L'entrepreneuriat commence par la prise de conscience de soi, de son potentiel, puis de son impact et de la force du collectif pour ensuite transformer son environnement de manière à être heureux d’y vivre.
 
@@ -22,21 +22,20 @@ Notre approche :
 
 #### La mise en œuvre d'une intelligence collaborative entre le Nord et le Sud
 
-Entretenir un réseau inclusif d’entrepreneur indépendant autour de valeurs communes pour explorer de nouvelles formes de collaboration sur des projets et des missions avec l' Afrique au sein de  [NS LINKS INC.](https://flamboyant-pike-dcb689.netlify.com/ "North South LINKS")
+Entretenir un réseau inclusif d’entrepreneurs indépendants autour de valeurs communes pour explorer de nouvelles formes de collaboration sur des projets et des missions avec l' Afrique au sein de  [NS LINKS INC.](https://flamboyant-pike-dcb689.netlify.com/ "North South LINKS")
 
-#### Exporer de nouvelles façons de travailler
+#### Explorer de nouvelles façons de travailler
 
-Explorer l'utilisation de la gratitude et de la reconnaissance comme outil de mesure de l'influence positive et de la creation de valeur dans les organisations.
-avec [THANKSFORWORK](#)
+Explorer l'utilisation de la gratitude et de la reconnaissance comme outil de mesure de l'influence positive et de la création de valeur dans les organisations.
+avec [THANKSforWork](#)
 
 Nos valeurs : 
 
-1. **Aimer son prochain comme soi même.**
-> > Personne n'est roi : ni le client, ni le boss, ni le plus diplômé, ni le plus riche financièrement. Voici ce que nous évoque les donneurs de leçons :-)
-> > <iframe width="560" height="315" src="https://www.youtube.com/embed/kt0g4dWxEBo?rel=0&amp;showinfo=0&amp;start=138" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+1. **Aimer l'autre**
+> > Personne n'est roi : ni le client, ni le boss, ni le plus diplômé, ni le plus riche.
 
 2. **Connecter**
-> > Individus par individus par centre d'intérêt, par valeur commune 
+> > Individu par individu par centre d'intérêt, par valeur commune 
 
 3. **Partager**
 > > les objectifs, les connaissances, les valeurs, la richesse

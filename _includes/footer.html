@@ -1,9 +1,12 @@
-<footer id="footer" class="site-footer inner">
-  <div class="copyright">
-    {% if site.copyright %}
-      {{ site.copyright | markdownify }}
-    {% else %}
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}.</p>
-    {% endif %}
+<footer class="demo-footer mdl-mini-footer">
+  <div class="mdl-mini-footer--left-section">
+    <ul class="mdl-mini-footer--link-list">
+      <li>
+        {% if site.copyright %} {{ site.copyright | markdownify }} {% else %} &copy; {{ site.time | date: '%Y' }} {{ site.title }}.{% endif %}
+      </li>
+      <li>
+        <a href="#">Privacy and Terms</a>
+      </li>
+    </ul>
   </div>
 </footer>

@@ -23,10 +23,10 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 author:
   name: G@mbeTech
   twitter: ngsmo
-  picture: /assets/images/sa.png
+  picture: /assets/images/smo.jpeg
 twitter_username: ngsmo
 github_username:  ng4e
-#logo: /assets/images/gambetech_logo_v0.2.png
+logo: /assets/images/logo.v04.png
 #search: true
 #search_full_content: true
 #search_provider: algolia
