@@ -23,4 +23,4 @@ Nous participons aux efforts de développement économique et social du continen
 
  [NS BRIDGE INC.](# "North South BRIDGE") est un réseau inclusif international de travailleurs indépendants qui collaborent sur des projets d'innovations sur le continent.
 
-[THANKS & SHARE](#) est un modèle de co-création entre individus inspiré de la solidarite africaine aboutissant au juste partage de la valeur financière et de la prosperité.
+[THANKS & SHARE](#) est un modèle de co-création entre individus inspiré de la solidarite africaine aboutissant au juste partage de la valeur financière et de la prospérité.
