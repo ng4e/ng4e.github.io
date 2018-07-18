@@ -6,12 +6,13 @@ actions:
   url: "/about"
   icon: more_horiz
 image: "/assets/images/africa-tech.jpg"
-introduction: __Nous imaginons l’avenir du travail et de la collaboration pour le
-  continent Africain.__ Notre modèle associe **sens et impact** avec **mode de gouvernance
-  et répartition de la richesse**.
+introduction: __Nous  éditons de solutions informatiques nouvelles générations ([dApps](https://en.wikipedia.org/wiki/Decentralized_application
+  "Decentralized_application"))  pour inventer des innovations sociales et économiques
+  dans le domaine du bien-être au travail et des nouvelles façons de travailler en
+  Afrique__
 ---
 
-Nous participons aux efforts de développement économique et social du continent par des innovations sociales et technologiques. Nos domaines d'interventions :
+Nous participons aux efforts de développement économique et social du continent par des innovations sociales et technologiques dans les  domaines suivants :
 
 * __L’information__ : le recueil et le traitement d’informations utiles, fiables, indépendants, viables pour les professionnels.
 
@@ -22,5 +23,3 @@ Nous participons aux efforts de développement économique et social du continen
 **Nos initiatives :** 
 
  [NS BRIDGE INC.](# "North South BRIDGE") est un réseau inclusif international de travailleurs indépendants qui collaborent sur des projets d'innovations sur le continent.
-
-[THANKS & SHARE](#) est un modèle de co-création entre individus inspiré de la solidarite africaine aboutissant au juste partage de la valeur financière et de la prospérité.
