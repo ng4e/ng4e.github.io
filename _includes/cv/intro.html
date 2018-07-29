@@ -1,24 +1,27 @@
-<!-- <div class="row">
-  <div class="col-xs-12">
-    <div id="photo-header" class="text-center">
-      PHOTO (AVATAR) -->
-      <!-- <div id="photo">
-        <img src="{{ cv.basics.picture }}" alt="avatar">
-      </div> -->
-     <!--  <div id="text-header">
-        <h6 class="intro-title">{{ cv.basics.name | default: page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h6>
-        {% if cv.basics.label %}
-          <p class="intro-subtitle">{{ cv.basics.label | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-        {% endif %} -->
-
-        <!-- {% if page.actions %}
-          <ul class="intro-actions">
-            {% for action in page.actions %}
-              <li><a href="{{ action.url }}" class="btn-link">{% if action.icon %}<span class="icon">{% include {{ action.icon | prepend: 'icon-' | append: '.svg' }} %}</span>{% endif %}{{ action.label }}</a></li>
-            {% endfor %}
-          </ul>
-        {% endif %} 
-      </div>
+<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+    <div class="mdl-card__media mdl-cell mdl-cell--12-col-tablet">
+        <img src="{{ cv.basics.picture }}" alt="avatar" border="0" style="width:100%;">
     </div>
-  </div>
-</div> -->
+    <div class="mdl-cell mdl-cell--8-col">
+        <h6>{{ cv.basics.name | default: page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h6>
+        {% if cv.basics.label %}
+          <div class="mdl-card__supporting-text padding-top">
+              <p class="intro-subtitle">{{ cv.basics.label | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+          </div>
+        {% endif %}
+        {% if cv.basics.summary %}
+          <div class="mdl-card__supporting-text padding-top">
+              {{ cv.basics.summary | markdownify }}
+          </div>
+        {% endif %}
+        <div class="mdl-card__actions mdl-card--border no-padding">
+            <a href="/cv-smo-v01.29.07.2018.pdf" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Télécharger un CV</a>
+        </div>
+        <div class="mdl-card__menu">
+            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+            <i class="material-icons">share</i>
+            </button>
+        </div>
+    </div>
+</div>
+

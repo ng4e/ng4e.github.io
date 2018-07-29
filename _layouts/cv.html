@@ -3,16 +3,21 @@ layout: default
 ---
 
 {% assign cv = site.data.cv %}
-<main id="main" class="page-content" aria-label="Content">
+
+<section class="mdl-grid gambetech-home-max-width">
+    {% include page-intro.html %}
     {% include cv/intro.html %}
-    {{ content }}
-    <div class="inner">
-        {% include cv/contact.html %}
-        {% include cv/basics.html %}
-        {% include cv/skills.html %}
-        {% include cv/work.html %}
-        {% include cv/education.html %}
-        {% include cv/languages.html %}
-        {% include cv/references.html %}
+    <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+        <div class="mdl-grid mdl-cell mdl-cell--12-col">
+            <div class="demo-card-wide mdl-card">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Mes valeurs</h2>
+                </div>
+                <div class="mdl-card__supporting-text no-padding">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
     </div>
-</main>
+    {% include cv/references.html %}
+</section>

@@ -26,6 +26,9 @@ layout: default
       <h3 class="mdl-card__title-text">{{ page.alt_title | default: page.title | default: site.title | markdownify | strip_html }}</h3>
   </div>
 {% endif %}
+{{ content | markdownify }}
+</div>
+
 <!-- <div class="mdl-card__supporting-text no-bottom-padding">
   
   {% if author_name %}
@@ -46,9 +49,6 @@ layout: default
     </span>
   {% endif %}
 </div> -->
-{{ content | markdownify }}
-</div>
-
 <!-- <div class="inner">
   <div class="intro-text">
     <h1 class="intro-title">{{ page.alt_title | default: page.title | default: site.title | markdownify | strip_html }}</h1>

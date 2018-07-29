@@ -1,29 +1,32 @@
-{% if post.id %}
-  {% assign title = post.title | markdownify | strip_html %}
-{% else %}
-  {% assign title = post.title %}
-{% endif %}
+{% if post.id %} 
+  {% assign title = post.title | markdownify | strip_html %} 
+{% else %} 
+  {% assign title = post.title %} {%
+endif %}
 
-<article class="entry">
-  <header class="entry-header">
-    <h3 class="entry-title">
-      <a href="{{ post.url | relative_url }}" rel="bookmark">{{ title }}</a>
-    </h3>
-  </header>
-  <footer class="entry-meta">
-    <ul>
-    {% if post.date %}
-      <li><span class="icon">{% include icon-calendar.svg %}</span><time class="entry-time" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></li>
-    {% endif %}
-    {% if post.read_time %}
-      <li><span class="icon">{% include icon-stopwatch.svg %}</span>{% capture read_time %}{% include read-time.html %}{% endcapture %}{{ read_time | strip }}</li>
-    {% endif %}
-    </ul>
-  </footer>
-  <div class="entry-excerpt">
+<article class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-card--border mdl-shadow--4dp">
+  <div class="mdl-card__media mdl-cell mdl-cell--12-col-tablet gambetech-post-image">
+    <img class="article-image" src="{{ post.image }}" border="0" alt="">
+  </div>
+  <div class="mdl-cell mdl-cell--8-col">
+    <h3 class="mdl-card__title-text">{{ title }}</h3>
+    <div class="mdl-card__supporting-text no-padding">
+      {% if post.date %}
+        <span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></span>
+      {% endif %}
+      {% if post.read_time %}
+        <span>{% capture read_time %}{% include read-time.html %}{% endcapture %}{{ read_time | strip }}</span>
+      {% endif %}
+    </div>
     {% if post.excerpt %}
-      {{ post.excerpt | markdownify }}
-      <p><a href="{{ post.url | relative_url }}" class="more-link">{{ site.data.theme.t.read_more | default: 'Read More' }} <span class="icon icon--arrow-right">{% include icon-arrow-right.svg %}</span></a></p>
-    {% endif %}
+    <div class="mdl-card__supporting-text no-left-padding">
+        {{ post.excerpt | markdownify }}
+    </div>
+    {% endif %} 
+    <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ post.url | relative_url }}">
+          {{ site.data.theme.t.read_more | default: 'Read More' }}
+        </a>
+    </div>
   </div>
 </article>

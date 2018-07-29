@@ -3,22 +3,14 @@ layout: default
 ---
 
 
-<main id="main" class="page-content" aria-label="Content">
-
-  <div class="inner">
-
-    <article class="entry-wrap">
-
-      <div class="entry-content">
-        {{ content }}
-      </div>
-
-      {% if site.disqus.shortname %}
-        {% include disqus_comments.html %}
-      {% endif %}
-
-    </article>
-
-  </div>
-  
-</main>
+<section class="mdl-grid gambetech-home-max-width">
+    {% include page-intro.html %}
+    <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+        <article class="mdl-card__supporting-text">
+            {{ content }}
+        </article>
+    </div>
+</section>
+{% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+{% endif %}
