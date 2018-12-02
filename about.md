@@ -1,6 +1,6 @@
 ---
 title: About
-layout: cv
+layout: page
 image: "/assets/images/logo.v04.png"
 actions:
 - label: home
@@ -13,16 +13,9 @@ introduction: "**GambeTech** est un jeu de mot entre le mot *TECHnologie* et  *n
   innovation peut-être Low Tech .*"
 ---
 
-* **Connecter** Individu par individu par centre d'intérêt, par valeur commune 
-* **Partager**
-* **Innover**
-* **Promouvoir** l’Empathie, l’Autonomie, la Responsabilité, la Gratitude, le Résultat
-* **Apprendre** sans cesse, perpétuellement
-* **Jouer**
+#### Nos sources d'inspirations
 
-Les ressources les plus inspirantes
-
-*  **H.A.I.L**
+*  **Honesty .Authenticity .Integrity .Love**
 <iframe width="854" height="480" src="https://embed.ted.com/talks/lang/fr/julian_treasure_how_to_speak_so_that_people_want_to_listen" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 *  **Get Better Mindset**
@@ -34,3 +27,4 @@ Les ressources les plus inspirantes
 *  **Build the world you want your kids to live in**
 <iframe width="854" height="480" src="https://embed.ted.com/talks/lang/en/brett_hennig_what_if_we_replaced_politicians_with_randomly_selected_people"  frameborder="0" scrolling="no" allowfullscreen></iframe>
 
+* * ** Have Fun**
