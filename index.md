@@ -5,27 +5,21 @@ actions:
 - label: Samuel G. Molu
   url: "/about"
   icon: more_horiz
-image: "/assets/images/africa-tech.jpg"
-introduction: _Nous  imaginons des [innovations industrielles, sociales et économiques](
-  http://nsbridgeinc.strikingly.com/  "North South Bridge Inc") pour l'Afrique._
+image: "/assets/images/logo.v04.png"
+introduction: _GambeTech imagine, conçoit, expérimente et implémente des innovations technologiques en Europe et en Afrique subsaharienne._
 ---
 
----
-Nous sommes convaincus que le développement personnel passe par l'autonomie, la responsabilisation et la reconnaissance.
-
-Nous sommes convaincus que le développement collectif passe par la collaboration entre individus autonomes, dans des initiatives privées. 
-
-Fort de nos convictions, nous contribuons aux efforts de développement économique et social de l'Afrique subsaharienne par des innovations sociales et technologiques dans les  domaines suivants :
+[Nous contribuons]( /about  "A propos") , par des innovations sociales et technologiques, à la transformation digital de secteurs de niches en Europe et en Afrique subsaharienne. Nos sujets de prédilection sont:
 
 * __L’information__ : le recueil et le traitement d’informations utiles, fiables, indépendants, viables pour les professionnels.
 
-* __Le partage de la richesse__ : créer des modèles de collaboration entre le Nord et le Sud permettant le travail et la rémunération à distance.
+* __Le partage de la richesse__ : créer des modèles de collaboration permettant le travail entre indépendant et le partage de la valeur crée.
 
-* __Le développement personnel__ :  L'entrepreneuriat commence par la prise de conscience de soi, de son potentiel, puis de son impact et de la force du collectif pour ensuite transformer son environnement de manière à être heureux d’y vivre.
+* __Le développement personnel__ :  transformer notre environnement de manière à être heureux d’y vivre.
 
-Ainsi, nous créons  [North South Bridge Inc]( http://nsbridgeinc.strikingly.com/  "North South Bridge Inc"). un collectif international et solidaire de travailleurs independants dans les métiers des technologies de l’Information. Notre collectif a pour objet de mettre en commun nos compétences et nos complementarités individuelles pour
-* Accéder aux opportunités de niche sur les marchés Européens et d'Afrique subsaharienne,
-* Développer des innovations digitales, 
-* Expérimenter de nouveaux modes d'organisation du travail.
+Nos domaines d'activité:
 
- [Gambetech]( /about  "A propos")
+* __La transformation digitale__ : [Garama](https://www.garama.ch "Garama")
+
+* __Les nouveaux modes d'organisation du travail__ : Nous expérimentons la gratitude et la reconnaissance comme méthodologie de feedback dans les organisations. [Thanks4TheDay]( #  "NS Bridge"), [Thanks4Work]( # "NS Bridge")
+
