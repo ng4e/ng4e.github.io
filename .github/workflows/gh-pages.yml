@@ -4,8 +4,7 @@ name: gambetech_cd
 on:
   push:
     branches: 
-      - master
-  page_build:
+      - develop
     
 jobs:
   deploy:
