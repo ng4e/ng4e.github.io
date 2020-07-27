@@ -3,9 +3,9 @@ name: gambetech_cd
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches: 
+      - master
+  page_build:
     
 jobs:
   deploy:
