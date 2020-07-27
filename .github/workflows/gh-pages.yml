@@ -1,12 +1,12 @@
 # This is a basic workflow to help you get started with Actions
-name: gambetech_ci
+name: gambetech_cd
 
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
+    
 jobs:
   deploy:
     runs-on: ubuntu-18.04
