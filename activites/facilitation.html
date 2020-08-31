@@ -85,50 +85,48 @@
         html.classList.add("sidebar-" + sidebar);
     </script>
 
-    <nav class="navbar fixed-top sticky-top flex-md-nowrap p-0 shadow">
+    <nav class="navbar sticky-top flex-md-nowrap p-0 shadow">
         <span class="navbar-brand col-md-3 col-lg-2 mr-0 px-3 menu-title">
-            <img src="../android-chrome-192x192.png" width="30" height="30"
-                class="d-inline-block align-top" alt="" loading="lazy">
+            <img src="../android-chrome-192x192.png" width="30" height="30" class="d-inline-block align-top" alt=""
+                loading="lazy">
             GambeTech
         </span>
+        <button id="sidebar-toggle" class="navbar-toggler position-absolute d-md-none collapsed" data-toggle="collapse"
+            type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar"
+            data-target="#sidebar">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+        </button>
         
-        <div id="menu-bar-hover-placeholder"></div>
-        <div id="menu-bar" class="menu-bar sticky bordered">
-            <div class="left-buttons">
-                <button id="sidebar-toggle" class="icon-button navbar-toggler position-absolute d-md-none collapsed"
-                    data-toggle="collapse" type="button" title="Toggle Table of Contents"
-                    aria-label="Toggle Table of Contents" aria-controls="sidebar" data-target="#sidebar">
-                    <i class="fa fa-bars"></i>
-                </button>
-
-                
-            </div>
-
-            <div class="right-buttons">
+        
+        
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
                 <a href="../print.html" title="Print this book" aria-label="Print this book">
                     <i id="print-button" class="fa fa-print"></i>
                 </a>
-                
-            </div>
-        </div>
-
-        
+            </li>
+            
+        </ul>
     </nav>
+
     <div id="page-wrapper" class="container-fluid page-wrapper">
         <div class="row content">
             <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse" aria-label="Table of contents">
                 <div class="sidebar-scrollbox sidebar-sticky">
-                    <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html">Gambetech</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../activites/startup.html">Edition de logiciels</a></li><li class="chapter-item expanded "><a href="../activites/facilitation.html" class="active">Accompagnement et Facilitation Technologique</a></li></ol></li><li class="chapter-item expanded "><a href="../tarifs/index.html">Tarifications</a></li><li class="chapter-item expanded "><a href="../projects/index.html">Produits</a></li><li class="chapter-item expanded affix "><a href="../mentions.html">Mentions Légales</a></li></ol>
+                    <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html">Gambetech</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../activites/startup.html">Edition de logiciels</a></li><li class="chapter-item expanded "><a href="../activites/facilitation.html" class="active">Accompagnement et Facilitation Technologique</a></li></ol></li><li class="chapter-item expanded "><a href="../tarifs/index.html">Tarifications</a></li><li class="chapter-item expanded "><a href="../projects/index.html">Projets</a></li><li class="chapter-item expanded "><a href="../feedbacks/index.html">Témoignages</a></li><li class="chapter-item expanded affix "><a href="../mentions.html">Mentions Légales</a></li></ol>
                 </div>
                 <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
             </nav>
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 iframe-container">
-                <h4><a class="header" href="#accompagnement-et-facilitation-technologique" id="accompagnement-et-facilitation-technologique">Accompagnement et Facilitation Technologique</a></h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h4><a class="header" href="#accompagnement-et-facilitation-technologique" id="accompagnement-et-facilitation-technologique">Accompagnement et Facilitation Technologique</a></h4>
 <hr />
 <p>GambeTech propose un accompagnement technologique aux entrepreneurs: </p>
 <ul>
-<li>sans background technologique ou technologique </li>
+<li>sans background technique ou technologique </li>
 <li>qui ont besoin d’une ressource technique expérimentée pour prendre des décisions préliminaires </li>
 </ul>
 <p>GambeTech apportant l’expertise technique et technologique nécessaire pour: </p>
@@ -138,31 +136,35 @@
 </ul>
 <p>Notre service est basé sur notre propre expérience: </p>
 <ul>
-<li>en tant <a href="../tarifs/index.html">qu’entrepreneur et freelance</a>,</li>
-<li>en tant <a href="../projects/index.html">qu’éditeur de logiciels</a>,</li>
-<li>en tant qu’ <a href="https://www.linkedin.com/in/samuelmolu/">ancien consultant</a></li>
+<li>en tant <a href="../projects/index.html">que créateur d’innovations</a></li>
+<li>en tant <a href="../tarifs/index.html">qu’entrepreneur et freelance</a></li>
+<li>en tant que <a href="https://www.linkedin.com/in/samuelmolu/">prestataire de conseil en entreprises</a></li>
 </ul>
-<p><em>Nous partageons les risques avec vous, jusqu’au succès!</em>.</p>
-<p><strong>Combien ça coûte ?</strong>  <a href="../tarifs/index.html">Voir nos tarifs</a></p>
+<p><em>Nous partageons les risques avec vous, jusqu’à votre définition du succès!</em>.</p>
+<p><strong>Combien ça coûte ?</strong>  Souvent rien, <a href="../tarifs/index.html">Voir notre tarification</a></p>
 
-                <nav class="nav-wrapper" aria-label="Page navigation">
-                    <!-- Mobile navigation buttons -->
-                    
-                    <a rel="prev" href="../activites/startup.html" class="mobile-nav-chapters previous"
-                        title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                    
+                        </div>
+                    </div>
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                        <a rel="prev" href="../activites/startup.html"
+                            class="btn btn-secondary btn-sm mobile-nav-chapters previous" title="Previous chapter"
+                            aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        
 
-                    
-                    <a rel="next" href="../tarifs/index.html" class="mobile-nav-chapters next"
-                        title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-                    
+                        
+                        <a rel="next" href="../tarifs/index.html"
+                            class="btn btn-primary btn-sm mobile-nav-chapters next" title="Next chapter"
+                            aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        
 
-                    <div style="clear: both"></div>
-                </nav>
+                        <div style="clear: both"></div>
+                    </nav>
             </main>
 
         </div>

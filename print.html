@@ -87,46 +87,44 @@
         html.classList.add("sidebar-" + sidebar);
     </script>
 
-    <nav class="navbar fixed-top sticky-top flex-md-nowrap p-0 shadow">
+    <nav class="navbar sticky-top flex-md-nowrap p-0 shadow">
         <span class="navbar-brand col-md-3 col-lg-2 mr-0 px-3 menu-title">
-            <img src="../android-chrome-192x192.png" width="30" height="30"
-                class="d-inline-block align-top" alt="" loading="lazy">
+            <img src="../android-chrome-192x192.png" width="30" height="30" class="d-inline-block align-top" alt=""
+                loading="lazy">
             GambeTech
         </span>
+        <button id="sidebar-toggle" class="navbar-toggler position-absolute d-md-none collapsed" data-toggle="collapse"
+            type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar"
+            data-target="#sidebar">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+        </button>
         
-        <div id="menu-bar-hover-placeholder"></div>
-        <div id="menu-bar" class="menu-bar sticky bordered">
-            <div class="left-buttons">
-                <button id="sidebar-toggle" class="icon-button navbar-toggler position-absolute d-md-none collapsed"
-                    data-toggle="collapse" type="button" title="Toggle Table of Contents"
-                    aria-label="Toggle Table of Contents" aria-controls="sidebar" data-target="#sidebar">
-                    <i class="fa fa-bars"></i>
-                </button>
-
-                
-            </div>
-
-            <div class="right-buttons">
+        
+        
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
                 <a href="print.html" title="Print this book" aria-label="Print this book">
                     <i id="print-button" class="fa fa-print"></i>
                 </a>
-                
-            </div>
-        </div>
-
-        
+            </li>
+            
+        </ul>
     </nav>
+
     <div id="page-wrapper" class="container-fluid page-wrapper">
         <div class="row content">
             <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse" aria-label="Table of contents">
                 <div class="sidebar-scrollbox sidebar-sticky">
-                    <ol class="chapter"><li class="chapter-item expanded "><a href="index.html">Gambetech</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="activites/startup.html">Edition de logiciels</a></li><li class="chapter-item expanded "><a href="activites/facilitation.html">Accompagnement et Facilitation Technologique</a></li></ol></li><li class="chapter-item expanded "><a href="tarifs/index.html">Tarifications</a></li><li class="chapter-item expanded "><a href="projects/index.html">Produits</a></li><li class="chapter-item expanded affix "><a href="mentions.html">Mentions Légales</a></li></ol>
+                    <ol class="chapter"><li class="chapter-item expanded "><a href="index.html">Gambetech</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="activites/startup.html">Edition de logiciels</a></li><li class="chapter-item expanded "><a href="activites/facilitation.html">Accompagnement et Facilitation Technologique</a></li></ol></li><li class="chapter-item expanded "><a href="tarifs/index.html">Tarifications</a></li><li class="chapter-item expanded "><a href="projects/index.html">Projets</a></li><li class="chapter-item expanded "><a href="feedbacks/index.html">Témoignages</a></li><li class="chapter-item expanded affix "><a href="mentions.html">Mentions Légales</a></li></ol>
                 </div>
                 <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
             </nav>
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 iframe-container">
-                <h4><a class="header" href="#cest-quoi-gambetech-" id="cest-quoi-gambetech-">C’est quoi GambeTech ?</a></h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h4><a class="header" href="#gambetech-" id="gambetech-">GambeTech ?</a></h4>
 <hr />
 <p>GambeTech est un <a href="./activites/startup.html">éditeur de logiciels</a> et un <a href="./activites/facilitation.html">facilitateur technologique</a>.</p>
 <p>Vous croyez en votre idée ? Vous êtes encore le seul à y croire ? Vous vivez la solitude de l’entrepreneur qui pose ses premières hypothèses ? </p>
@@ -173,20 +171,24 @@
 <p>Gambetech conçoit et développe des innovations dans les secteurs suivants:</p>
 <ul>
 <li>
-<p><strong>Traitement de données:</strong> le recueil et le traitement d’informations utiles, fiables, indépendants, viables pour les professionnels au Cameroun.</p>
+<p><strong>Bâtiments et Travaux Publics:</strong> </p>
+<p>Une solution de productivité dans la <a href="https://www.garama.ch" title="Garama">#constructiontech</a> pour les maîtrises d’ouvrage en Suisse Romande</p>
 </li>
 <li>
-<p><strong>Bâtiments et Travaux Publics:</strong> solution de productivité dans la <a href="https://www.garama.ch" title="Garama">#constructiontech</a> pour les maîtrises d’ouvrage en Suisse Romande</p>
+<p><strong>L’organisation du travail</strong> </p>
+<p>Un <a href="activites/startup.html#" title="NS Bridge">espace collaboratif</a> destiné à l’entrepreneuriat féminin au Cameroun. </p>
+<p>La <a href="activites/../projects/index.html">Gratitude</a> et la <a href="activites/../projects/index.html">Reconnaissance</a> comme processus de feedback au sein de nos organisations.</p>
 </li>
 <li>
-<p><strong>L’organisation du travail:</strong> un <a href="activites/startup.html#" title="NS Bridge">espace collaboratif</a> destiné à l’entrepreneuriat féminin au Cameroun. La <a href="activites/../projects/index.html">Gratitude</a> et la <a href="activites/../projects/index.html">Reconnaissance</a> comme processus de feedback au sein de nos organisations.</p>
+<p><strong>Traitement de l’information:</strong> </p>
+<p>A venir: Le recueil et le traitement de données statistiques à dstinations des entreprises au Cameroun.</p>
 </li>
 </ul>
 <h4><a class="header" href="#accompagnement-et-facilitation-technologique" id="accompagnement-et-facilitation-technologique">Accompagnement et Facilitation Technologique</a></h4>
 <hr />
 <p>GambeTech propose un accompagnement technologique aux entrepreneurs: </p>
 <ul>
-<li>sans background technologique ou technologique </li>
+<li>sans background technique ou technologique </li>
 <li>qui ont besoin d’une ressource technique expérimentée pour prendre des décisions préliminaires </li>
 </ul>
 <p>GambeTech apportant l’expertise technique et technologique nécessaire pour: </p>
@@ -196,29 +198,14 @@
 </ul>
 <p>Notre service est basé sur notre propre expérience: </p>
 <ul>
-<li>en tant <a href="activites/../tarifs/index.html">qu’entrepreneur et freelance</a>,</li>
-<li>en tant <a href="activites/../projects/index.html">qu’éditeur de logiciels</a>,</li>
-<li>en tant qu’ <a href="https://www.linkedin.com/in/samuelmolu/">ancien consultant</a></li>
+<li>en tant <a href="activites/../projects/index.html">que créateur d’innovations</a></li>
+<li>en tant <a href="activites/../tarifs/index.html">qu’entrepreneur et freelance</a></li>
+<li>en tant que <a href="https://www.linkedin.com/in/samuelmolu/">prestataire de conseil en entreprises</a></li>
 </ul>
-<p><em>Nous partageons les risques avec vous, jusqu’au succès!</em>.</p>
-<p><strong>Combien ça coûte ?</strong>  <a href="activites/../tarifs/index.html">Voir nos tarifs</a></p>
+<p><em>Nous partageons les risques avec vous, jusqu’à votre définition du succès!</em>.</p>
+<p><strong>Combien ça coûte ?</strong>  Souvent rien, <a href="activites/../tarifs/index.html">Voir notre tarification</a></p>
 <h4><a class="header" href="#tarifications" id="tarifications">Tarifications</a></h4>
 <hr />
-<p>Pas de vice caché:</p>
-<ul>
-<li>
-<p>Si nous co-créons avec vous, nous demanderons une participation ou une part des bénéfices.</p>
-</li>
-<li>
-<p>Si vous voulez un livrable ponctuellement, nous facturons un forfait en fonction du nombre d’itération nécessaire pour atteindre la qualité requise.</p>
-</li>
-<li>
-<p>Si vous voulez une prestation de développement spécifique, nous facturons au prix du marché en fonction de la technologie et de l’expertise requise.</p>
-</li>
-<li>
-<p>Si vous voulez juste discuter ou debriefer un projet autour d’un verre, c’est gratuit et le verre est offert !</p>
-</li>
-</ul>
 <p>Nous travaillons suivant les règles suivantes:</p>
 <ul>
 <li>
@@ -237,7 +224,13 @@
 <li><strong>Tarif:</strong>       Participation au capital ou pourcentage du premier bénéfice.</li>
 <li><strong>Contrat:</strong>     Contrat de co-création</li>
 <li><strong>Contenu:</strong>     De la definition de la solution à la mise sur le marché, nous nous engageons à vos côtés chaque jour.</li>
-<li><strong>Avantage:</strong>     Les ressources humaines sont la première raison pour laquelle vous allez vous endettez auprès d’investisseurs. Nous sommes des Ressources Humaines et on ne vous demande pas d’argent, on demande à être convaincu par votre projet, pouvoir vous faire confiance et être récompensé à hauteur de notre contribution.</li>
+<li><strong>Avantage:</strong>     Les ressources humaines sont la première raison pour laquelle vous allez vous endettez auprès d’investisseurs. Nous sommes des Ressources Humaines et on ne vous demande pas d’argent, on demande à:
+<ul>
+<li>être convaincu par votre projet, </li>
+<li>pouvoir vous faire confiance,</li>
+<li>être récompensé à hauteur de notre contribution.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -251,7 +244,7 @@
 </ul>
 </li>
 <li>
-<p><strong>Prestataire</strong></p>
+<p><strong>Prestatation</strong></p>
 <ul>
 <li><strong>Description:</strong> Vous voulez un développement spécifique par un freelance sur 1 à 12 mois pour renforcer vos équipes.</li>
 <li><strong>Tarif:</strong>       entre 300 et 700 euros/Jours en fonction de l’expertise nécessaire.</li>
@@ -261,7 +254,7 @@
 </ul>
 </li>
 </ul>
-<h4><a class="header" href="#produits" id="produits">Produits</a></h4>
+<h4><a class="header" href="#projets" id="projets">Projets</a></h4>
 <hr />
 <ul>
 <li>
@@ -280,34 +273,40 @@
 <p><a href="projects/index.html#">Thanks4Work</a></p>
 </li>
 </ul>
+<h4><a class="header" href="#ils-ont-travaillés-avec-nous" id="ils-ont-travaillés-avec-nous">Ils ont travaillés avec nous</a></h4>
+<hr />
+<blockquote>
+<p>Témoignages</p>
+</blockquote>
 <h4><a class="header" href="#mentions-légales" id="mentions-légales">Mentions Légales</a></h4>
 <pre><code>GambeTech est une société à associé unique au capital de 500 euros.
 Entreprise immatriculée au RCS de Paris sous le numéro d'identification 882 350 549
-Siège Social : OCP BUSINESS CENTER 6 - 5 avenue Ingres - 75016 Paris
-Représentant légal : Samuel G. Molu. 
-
-Ce site est open source et hébergé par les serveurs de github.com 
-Ce site est soumis à la loi française.
+Siège Social : OCP BUSINESS CENTER 6 - 5 avenue Ingres - 75016 Paris Représentant légal : Samuel G. Molu. 
+Ce site est open source et hébergé par les serveurs de github.com. Ce site est soumis à la loi française.
 </code></pre>
-<p><strong>Nous somme agile parce nous n’avons jamais eu le choix!</strong></p>
-<p>Nos sources d’inspiration sont:</p>
+<p><strong>Nous sommes agile parce nous n’avons jamais eu le choix!</strong></p>
+<p>Nos valeurs:</p>
 <ul>
-<li>
-<p><em>Honnêteté, Authenticité, Intégrité, Qualité et l’Amour de son prochain</em> ( <strong>H.A.I.L : Honesty .Authenticity .Integrity .Love</strong>) <a href="https://embed.ted.com/talks/lang/fr/julian_treasure_how_to_speak_so_that_people_want_to_listen">Vidéo sur le H.A.I.L</a></p>
-</li>
-<li>
-<p><em>L’amélioration continue</em> (<strong>Get better mindset</strong>). <a href="https://www.youtube.com/embed/QXN35r2_20s?rel=0&amp;start=113">Vidéo sur Get Better Mindset</a></p>
-</li>
+<li><em>Transparence</em>, </li>
+<li><em>Authenticité,</em> </li>
+<li><em>Intégrité,</em></li>
+<li><em>Qualité,</em></li>
+<li><em>Amour</em></li>
+<li><em>Amélioration Continue</em></li>
 </ul>
+<p><a href="https://embed.ted.com/talks/lang/fr/julian_treasure_how_to_speak_so_that_people_want_to_listen">Vidéo sur Honnêteté, Authenticité, Intégrité, Amour </a></p>
+<p><a href="https://www.youtube.com/embed/QXN35r2_20s?rel=0&amp;start=113">Vidéo sur l’Amélioration Continue</a></p>
 
-                <nav class="nav-wrapper" aria-label="Page navigation">
-                    <!-- Mobile navigation buttons -->
-                    
+                        </div>
+                    </div>
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
 
-                    
+                        
 
-                    <div style="clear: both"></div>
-                </nav>
+                        <div style="clear: both"></div>
+                    </nav>
             </main>
 
         </div>

@@ -587,7 +587,7 @@ function playpen_text(playpen) {
     });
 })();
 
-(function controllMenu() {
+/* (function controllMenu() {
     var menu = document.getElementById('menu-bar');
 
     (function controllPosition() {
@@ -644,3 +644,4 @@ function playpen_text(playpen) {
         }, { passive: true });
     })();
 })();
+ */

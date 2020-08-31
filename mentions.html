@@ -85,78 +85,78 @@
         html.classList.add("sidebar-" + sidebar);
     </script>
 
-    <nav class="navbar fixed-top sticky-top flex-md-nowrap p-0 shadow">
+    <nav class="navbar sticky-top flex-md-nowrap p-0 shadow">
         <span class="navbar-brand col-md-3 col-lg-2 mr-0 px-3 menu-title">
-            <img src="../android-chrome-192x192.png" width="30" height="30"
-                class="d-inline-block align-top" alt="" loading="lazy">
+            <img src="../android-chrome-192x192.png" width="30" height="30" class="d-inline-block align-top" alt=""
+                loading="lazy">
             GambeTech
         </span>
+        <button id="sidebar-toggle" class="navbar-toggler position-absolute d-md-none collapsed" data-toggle="collapse"
+            type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar"
+            data-target="#sidebar">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+        </button>
         
-        <div id="menu-bar-hover-placeholder"></div>
-        <div id="menu-bar" class="menu-bar sticky bordered">
-            <div class="left-buttons">
-                <button id="sidebar-toggle" class="icon-button navbar-toggler position-absolute d-md-none collapsed"
-                    data-toggle="collapse" type="button" title="Toggle Table of Contents"
-                    aria-label="Toggle Table of Contents" aria-controls="sidebar" data-target="#sidebar">
-                    <i class="fa fa-bars"></i>
-                </button>
-
-                
-            </div>
-
-            <div class="right-buttons">
+        
+        
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
                 <a href="print.html" title="Print this book" aria-label="Print this book">
                     <i id="print-button" class="fa fa-print"></i>
                 </a>
-                
-            </div>
-        </div>
-
-        
+            </li>
+            
+        </ul>
     </nav>
+
     <div id="page-wrapper" class="container-fluid page-wrapper">
         <div class="row content">
             <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse" aria-label="Table of contents">
                 <div class="sidebar-scrollbox sidebar-sticky">
-                    <ol class="chapter"><li class="chapter-item expanded "><a href="index.html">Gambetech</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="activites/startup.html">Edition de logiciels</a></li><li class="chapter-item expanded "><a href="activites/facilitation.html">Accompagnement et Facilitation Technologique</a></li></ol></li><li class="chapter-item expanded "><a href="tarifs/index.html">Tarifications</a></li><li class="chapter-item expanded "><a href="projects/index.html">Produits</a></li><li class="chapter-item expanded affix "><a href="mentions.html" class="active">Mentions Légales</a></li></ol>
+                    <ol class="chapter"><li class="chapter-item expanded "><a href="index.html">Gambetech</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="activites/startup.html">Edition de logiciels</a></li><li class="chapter-item expanded "><a href="activites/facilitation.html">Accompagnement et Facilitation Technologique</a></li></ol></li><li class="chapter-item expanded "><a href="tarifs/index.html">Tarifications</a></li><li class="chapter-item expanded "><a href="projects/index.html">Projets</a></li><li class="chapter-item expanded "><a href="feedbacks/index.html">Témoignages</a></li><li class="chapter-item expanded affix "><a href="mentions.html" class="active">Mentions Légales</a></li></ol>
                 </div>
                 <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
             </nav>
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 iframe-container">
-                <h4><a class="header" href="#mentions-légales" id="mentions-légales">Mentions Légales</a></h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h4><a class="header" href="#mentions-légales" id="mentions-légales">Mentions Légales</a></h4>
 <pre><code>GambeTech est une société à associé unique au capital de 500 euros.
 Entreprise immatriculée au RCS de Paris sous le numéro d'identification 882 350 549
-Siège Social : OCP BUSINESS CENTER 6 - 5 avenue Ingres - 75016 Paris
-Représentant légal : Samuel G. Molu. 
-
-Ce site est open source et hébergé par les serveurs de github.com 
-Ce site est soumis à la loi française.
+Siège Social : OCP BUSINESS CENTER 6 - 5 avenue Ingres - 75016 Paris Représentant légal : Samuel G. Molu. 
+Ce site est open source et hébergé par les serveurs de github.com. Ce site est soumis à la loi française.
 </code></pre>
-<p><strong>Nous somme agile parce nous n’avons jamais eu le choix!</strong></p>
-<p>Nos sources d’inspiration sont:</p>
+<p><strong>Nous sommes agile parce nous n’avons jamais eu le choix!</strong></p>
+<p>Nos valeurs:</p>
 <ul>
-<li>
-<p><em>Honnêteté, Authenticité, Intégrité, Qualité et l’Amour de son prochain</em> ( <strong>H.A.I.L : Honesty .Authenticity .Integrity .Love</strong>) <a href="https://embed.ted.com/talks/lang/fr/julian_treasure_how_to_speak_so_that_people_want_to_listen">Vidéo sur le H.A.I.L</a></p>
-</li>
-<li>
-<p><em>L’amélioration continue</em> (<strong>Get better mindset</strong>). <a href="https://www.youtube.com/embed/QXN35r2_20s?rel=0&amp;start=113">Vidéo sur Get Better Mindset</a></p>
-</li>
+<li><em>Transparence</em>, </li>
+<li><em>Authenticité,</em> </li>
+<li><em>Intégrité,</em></li>
+<li><em>Qualité,</em></li>
+<li><em>Amour</em></li>
+<li><em>Amélioration Continue</em></li>
 </ul>
+<p><a href="https://embed.ted.com/talks/lang/fr/julian_treasure_how_to_speak_so_that_people_want_to_listen">Vidéo sur Honnêteté, Authenticité, Intégrité, Amour </a></p>
+<p><a href="https://www.youtube.com/embed/QXN35r2_20s?rel=0&amp;start=113">Vidéo sur l’Amélioration Continue</a></p>
 
-                <nav class="nav-wrapper" aria-label="Page navigation">
-                    <!-- Mobile navigation buttons -->
-                    
-                    <a rel="prev" href="projects/index.html" class="mobile-nav-chapters previous"
-                        title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                    
+                        </div>
+                    </div>
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                        <a rel="prev" href="feedbacks/index.html"
+                            class="btn btn-secondary btn-sm mobile-nav-chapters previous" title="Previous chapter"
+                            aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        
 
-                    
+                        
 
-                    <div style="clear: both"></div>
-                </nav>
+                        <div style="clear: both"></div>
+                    </nav>
             </main>
 
         </div>

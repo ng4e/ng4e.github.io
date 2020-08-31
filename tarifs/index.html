@@ -85,62 +85,45 @@
         html.classList.add("sidebar-" + sidebar);
     </script>
 
-    <nav class="navbar fixed-top sticky-top flex-md-nowrap p-0 shadow">
+    <nav class="navbar sticky-top flex-md-nowrap p-0 shadow">
         <span class="navbar-brand col-md-3 col-lg-2 mr-0 px-3 menu-title">
-            <img src="../android-chrome-192x192.png" width="30" height="30"
-                class="d-inline-block align-top" alt="" loading="lazy">
+            <img src="../android-chrome-192x192.png" width="30" height="30" class="d-inline-block align-top" alt=""
+                loading="lazy">
             GambeTech
         </span>
+        <button id="sidebar-toggle" class="navbar-toggler position-absolute d-md-none collapsed" data-toggle="collapse"
+            type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar"
+            data-target="#sidebar">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+        </button>
         
-        <div id="menu-bar-hover-placeholder"></div>
-        <div id="menu-bar" class="menu-bar sticky bordered">
-            <div class="left-buttons">
-                <button id="sidebar-toggle" class="icon-button navbar-toggler position-absolute d-md-none collapsed"
-                    data-toggle="collapse" type="button" title="Toggle Table of Contents"
-                    aria-label="Toggle Table of Contents" aria-controls="sidebar" data-target="#sidebar">
-                    <i class="fa fa-bars"></i>
-                </button>
-
-                
-            </div>
-
-            <div class="right-buttons">
+        
+        
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
                 <a href="../print.html" title="Print this book" aria-label="Print this book">
                     <i id="print-button" class="fa fa-print"></i>
                 </a>
-                
-            </div>
-        </div>
-
-        
+            </li>
+            
+        </ul>
     </nav>
+
     <div id="page-wrapper" class="container-fluid page-wrapper">
         <div class="row content">
             <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse" aria-label="Table of contents">
                 <div class="sidebar-scrollbox sidebar-sticky">
-                    <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html">Gambetech</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../activites/startup.html">Edition de logiciels</a></li><li class="chapter-item expanded "><a href="../activites/facilitation.html">Accompagnement et Facilitation Technologique</a></li></ol></li><li class="chapter-item expanded "><a href="../tarifs/index.html" class="active">Tarifications</a></li><li class="chapter-item expanded "><a href="../projects/index.html">Produits</a></li><li class="chapter-item expanded affix "><a href="../mentions.html">Mentions Légales</a></li></ol>
+                    <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html">Gambetech</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../activites/startup.html">Edition de logiciels</a></li><li class="chapter-item expanded "><a href="../activites/facilitation.html">Accompagnement et Facilitation Technologique</a></li></ol></li><li class="chapter-item expanded "><a href="../tarifs/index.html" class="active">Tarifications</a></li><li class="chapter-item expanded "><a href="../projects/index.html">Projets</a></li><li class="chapter-item expanded "><a href="../feedbacks/index.html">Témoignages</a></li><li class="chapter-item expanded affix "><a href="../mentions.html">Mentions Légales</a></li></ol>
                 </div>
                 <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
             </nav>
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 iframe-container">
-                <h4><a class="header" href="#tarifications" id="tarifications">Tarifications</a></h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h4><a class="header" href="#tarifications" id="tarifications">Tarifications</a></h4>
 <hr />
-<p>Pas de vice caché:</p>
-<ul>
-<li>
-<p>Si nous co-créons avec vous, nous demanderons une participation ou une part des bénéfices.</p>
-</li>
-<li>
-<p>Si vous voulez un livrable ponctuellement, nous facturons un forfait en fonction du nombre d’itération nécessaire pour atteindre la qualité requise.</p>
-</li>
-<li>
-<p>Si vous voulez une prestation de développement spécifique, nous facturons au prix du marché en fonction de la technologie et de l’expertise requise.</p>
-</li>
-<li>
-<p>Si vous voulez juste discuter ou debriefer un projet autour d’un verre, c’est gratuit et le verre est offert !</p>
-</li>
-</ul>
 <p>Nous travaillons suivant les règles suivantes:</p>
 <ul>
 <li>
@@ -159,7 +142,13 @@
 <li><strong>Tarif:</strong>       Participation au capital ou pourcentage du premier bénéfice.</li>
 <li><strong>Contrat:</strong>     Contrat de co-création</li>
 <li><strong>Contenu:</strong>     De la definition de la solution à la mise sur le marché, nous nous engageons à vos côtés chaque jour.</li>
-<li><strong>Avantage:</strong>     Les ressources humaines sont la première raison pour laquelle vous allez vous endettez auprès d’investisseurs. Nous sommes des Ressources Humaines et on ne vous demande pas d’argent, on demande à être convaincu par votre projet, pouvoir vous faire confiance et être récompensé à hauteur de notre contribution.</li>
+<li><strong>Avantage:</strong>     Les ressources humaines sont la première raison pour laquelle vous allez vous endettez auprès d’investisseurs. Nous sommes des Ressources Humaines et on ne vous demande pas d’argent, on demande à:
+<ul>
+<li>être convaincu par votre projet, </li>
+<li>pouvoir vous faire confiance,</li>
+<li>être récompensé à hauteur de notre contribution.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -173,7 +162,7 @@
 </ul>
 </li>
 <li>
-<p><strong>Prestataire</strong></p>
+<p><strong>Prestatation</strong></p>
 <ul>
 <li><strong>Description:</strong> Vous voulez un développement spécifique par un freelance sur 1 à 12 mois pour renforcer vos équipes.</li>
 <li><strong>Tarif:</strong>       entre 300 et 700 euros/Jours en fonction de l’expertise nécessaire.</li>
@@ -184,24 +173,28 @@
 </li>
 </ul>
 
-                <nav class="nav-wrapper" aria-label="Page navigation">
-                    <!-- Mobile navigation buttons -->
-                    
-                    <a rel="prev" href="../activites/facilitation.html" class="mobile-nav-chapters previous"
-                        title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                    
+                        </div>
+                    </div>
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                        <a rel="prev" href="../activites/facilitation.html"
+                            class="btn btn-secondary btn-sm mobile-nav-chapters previous" title="Previous chapter"
+                            aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        
 
-                    
-                    <a rel="next" href="../projects/index.html" class="mobile-nav-chapters next"
-                        title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-                    
+                        
+                        <a rel="next" href="../projects/index.html"
+                            class="btn btn-primary btn-sm mobile-nav-chapters next" title="Next chapter"
+                            aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        
 
-                    <div style="clear: both"></div>
-                </nav>
+                        <div style="clear: both"></div>
+                    </nav>
             </main>
 
         </div>

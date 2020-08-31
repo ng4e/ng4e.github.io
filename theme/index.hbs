@@ -89,42 +89,24 @@
         html.classList.add("sidebar-" + sidebar);
     </script>
 
-    <nav class="navbar fixed-top sticky-top flex-md-nowrap p-0 shadow">
+    <nav class="navbar sticky-top flex-md-nowrap p-0 shadow">
         <span class="navbar-brand col-md-3 col-lg-2 mr-0 px-3 menu-title">
-            <img src="../android-chrome-192x192.png" width="30" height="30"
-                class="d-inline-block align-top" alt="" loading="lazy">
+            <img src="../android-chrome-192x192.png" width="30" height="30" class="d-inline-block align-top" alt=""
+                loading="lazy">
             {{ book_title }}
         </span>
+        <button id="sidebar-toggle" class="navbar-toggler position-absolute d-md-none collapsed" data-toggle="collapse"
+            type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar"
+            data-target="#sidebar">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+        </button>
         {{> header}}
-        <div id="menu-bar-hover-placeholder"></div>
-        <div id="menu-bar" class="menu-bar sticky bordered">
-            <div class="left-buttons">
-                <button id="sidebar-toggle" class="icon-button navbar-toggler position-absolute d-md-none collapsed"
-                    data-toggle="collapse" type="button" title="Toggle Table of Contents"
-                    aria-label="Toggle Table of Contents" aria-controls="sidebar" data-target="#sidebar">
-                    <i class="fa fa-bars"></i>
-                </button>
-
-                {{#if search_enabled}}
-                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)"
-                    aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
-                    <i class="fa fa-search"></i>
-                </button>
-                {{/if}}
-            </div>
-
-            <div class="right-buttons">
-                <a href="{{ path_to_root }}print.html" title="Print this book" aria-label="Print this book">
-                    <i id="print-button" class="fa fa-print"></i>
-                </a>
-                {{#if git_repository_url}}
-                <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
-                    <i id="git-repository-button" class="fa {{git_repository_icon}}"></i>
-                </a>
-                {{/if}}
-            </div>
-        </div>
-
+        {{#if search_enabled}}
+        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)"
+            aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+            <i class="fa fa-search"></i>
+        </button>
+        {{/if}}
         {{#if search_enabled}}
         <div id="search-wrapper" class="hidden">
             <form id="searchbar-outer" class="searchbar-outer">
@@ -134,12 +116,26 @@
             </form>
             <div id="searchresults-outer" class="searchresults-outer hidden">
                 <div id="searchresults-header" class="searchresults-header"></div>
-                <ul id="searchresults">
-                </ul>
+                <ul id="searchresults"></ul>
             </div>
         </div>
         {{/if}}
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a href="{{ path_to_root }}print.html" title="Print this book" aria-label="Print this book">
+                    <i id="print-button" class="fa fa-print"></i>
+                </a>
+            </li>
+            {{#if git_repository_url}}
+            <li class="nav-item text-nowrap">
+                <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
+                    <i id="git-repository-button" class="fa {{git_repository_icon}}"></i>
+                </a>
+            </li>
+            {{/if}}
+        </ul>
     </nav>
+
     <div id="page-wrapper" class="container-fluid page-wrapper">
         <div class="row content">
             <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse" aria-label="Table of contents">
@@ -150,25 +146,32 @@
             </nav>
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 iframe-container">
-                {{{ content }}}
-                <nav class="nav-wrapper" aria-label="Page navigation">
-                    <!-- Mobile navigation buttons -->
-                    {{#previous}}
-                    <a rel="prev" href="{{ path_to_root }}{{link}}" class="mobile-nav-chapters previous"
-                        title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                    {{/previous}}
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            {{{ content }}}
+                        </div>
+                    </div>
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        {{#previous}}
+                        <a rel="prev" href="{{ path_to_root }}{{link}}"
+                            class="btn btn-secondary btn-sm mobile-nav-chapters previous" title="Previous chapter"
+                            aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        {{/previous}}
 
-                    {{#next}}
-                    <a rel="next" href="{{ path_to_root }}{{link}}" class="mobile-nav-chapters next"
-                        title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-                    {{/next}}
+                        {{#next}}
+                        <a rel="next" href="{{ path_to_root }}{{link}}"
+                            class="btn btn-primary btn-sm mobile-nav-chapters next" title="Next chapter"
+                            aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        {{/next}}
 
-                    <div style="clear: both"></div>
-                </nav>
+                        <div style="clear: both"></div>
+                    </nav>
             </main>
 
         </div>
