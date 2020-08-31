@@ -1,4 +1,4 @@
-#### C'est quoi GambeTech ?
+#### GambeTech ?
 ---
 
 GambeTech est un [éditeur de logiciels](./activites/startup.html) et un [facilitateur technologique](./activites/facilitation.html).

@@ -5,25 +5,155 @@
 
 
 code {
-    font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace !important;
-    font-size: 0.875em; /* please adjust the ace font size accordingly in editor.js */
+  font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace !important;
+  font-size  : 0.875em;
+  /* please adjust the ace font size accordingly in editor.js */
 }
 
 /* Don't change font size in headers. */
-h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
-    font-size: unset;
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+  font-size: unset;
 }
 
 
 .page {
-    outline: 0;
-    padding: 0 var(--page-padding);
-    margin-top: calc(0px - var(--menu-bar-height)); /* Compensate for the #menu-bar-hover-placeholder */
+  outline   : 0;
+  padding   : 0 var(--page-padding);
+  margin-top: calc(0px - var(--menu-bar-height));
+  /* Compensate for the #menu-bar-hover-placeholder */
 }
+
 .page-wrapper {
-    box-sizing: border-box;
-    padding-top: 1rem;
+  box-sizing : border-box;
+  padding-top: 1rem;
 }
+
 .js:not(.sidebar-resizing) .page-wrapper {
-    transition: margin-left 0.3s ease, transform 0.3s ease; /* Animation: slide away */
+  transition  : margin-left 0.3s ease, transform 0.3s ease;
+  /* Animation: slide away */
+}
+
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position  : fixed;
+  top       : 0;
+  bottom    : 0;
+  left      : 0;
+  z-index   : 100;
+  /* Behind the navbar */
+  /*padding : 48px 0 0;  Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+.sidebar-sticky {
+  position   : relative;
+  top        : 0;
+  height     : calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x : hidden;
+  overflow-y : auto;
+  /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color      : #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color       : #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size     : .75rem;
+  text-transform: uppercase;
+}
+
+/*
+   * Navbar
+   */
+
+.navbar-brand {
+  padding-top       : .75rem;
+  padding-bottom    : .75rem;
+  font-size         : 1rem;
+  /*background-color: rgba(0, 0, 0, .25);*/
+  box-shadow        : inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top  : .25rem;
+  right: 1rem;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar .form-control {
+  padding      : .75rem 1rem;
+  border-width : 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color           : #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color    : rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow  : 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
 }
