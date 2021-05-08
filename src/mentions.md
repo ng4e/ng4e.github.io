@@ -9,7 +9,7 @@ Ce site est open source et hébergé par les serveurs de github.com. Ce site est
 
 **Nous sommes agile parce nous n'avons jamais eu le choix!**
 
-Nos valeurs:
+Nous travaillons animés des principes suivants:
 
 - *Transparence*, 
 - *Authenticité,* 

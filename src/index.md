@@ -1,37 +1,13 @@
 #### GambeTech ?
 ---
 
-GambeTech est un [éditeur de logiciels](./activites/startup.html) et un [facilitateur technologique](./activites/facilitation.html).
+GambeTech est une [usine à projets](./activites/studio.html) dans les domaines suivants:
 
-Vous croyez en votre idée ? Vous êtes encore le seul à y croire ? Vous vivez la solitude de l'entrepreneur qui pose ses premières hypothèses ? 
+- Les nouvelles façon de travailler et de collaborer,
 
-Vous êtes perdu dans la jungle des conseils et des success stories ? Vous hésitez à quitter votre travail pour vous lancer ?
+- La transformation digital des entreprises dans des secteurs de niche en Europe et en Afrique Subsaharienne,
 
-__Vous êtes:__
+- Le traitement des données.
 
-- Un expert dans son domaine métier qui à une idée innovante
-
-- Un particulier en phase d'idéation sur une innovation dans votre environnement quotidien
-
-- Un particulier en phase de prototypage ou de développement d'un produit minimal
-
-- En Europe ou en Afrique Sub-saharienne.
-
-__Après avoir collaborer avec nous, vous aurez__:
-
-- La validation de l'adéquation problème/solution auprès de votre cible,
-
-- La validation de la faisabilité technique de votre idée,
-
-- Un prototype *Low Code / No Code* de la future solution
-
-- La conception technique de votre solution
-
-- Une équipe technique résiliente qui va vous accompagner jusqu'au bout de votre initiative
-
-- Un produit fonctionnel
-
-__Connaissez-vous un entrepreneur dans votre environnement qui a besoin de ce type d'accompagnement ?__
-
-
+Nous nous impliquons de façon opérationnelle dans la mise en oeuvre de [nos projets](./activites/studio.html) de l'idéation à la mise en service.
 

@@ -1,7 +1,7 @@
 [book]
 title = "GambeTech"
 authors = ["Samuel Molu"]
-description = "The example book covers examples."
+description = "Gambetech Book"
 language = "en"
 src = "src"
 build-dir="book"
@@ -23,7 +23,7 @@ google-analytics = "UA-79288947-2"
 additional-css = ["src/theme/vendor/bootstrap/css/bootstrap.min.css", "src/theme/vendor/simple-line-icons/css/simple-line-icons.css"]
 additional-js = ["src/theme/vendor/jquery/jquery.min.js", "src/theme/vendor/bootstrap/js/bootstrap.bundle.min.js"]
 no-section-label = true
-git-repository-url = ""
+git-repository-url = "https://github.com/ng4e/ng4e.github.io"
 git-repository-icon = "fa-github"
 site-url = "/"
 input-404 = "notfound.md"
