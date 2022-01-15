@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gambetech</title>
+  <link rel="icon" type="image/x-icon" href="/favicon-16x16.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body class="container">
+  <!-- -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="gambetech-logo-192x192.png" alt="Gambetech">
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="gtidnavbar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <!--   <div id="gtidnavbar" class="navbar-menu">
+
+        <div class="navbar-end">
+          <a class="navbar-item" href="#">Garama</a>
+          <a class="navbar-item" href="#">Pirien</a>
+          <a class="navbar-item" href="#">Gratitude Journal</a>
+        </div>
+      </div> -->
+    
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero is-medium has-text-centered">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div data-aos="zoom-in-up" class="column is-8">
+            <h1 class="title is-1 mb-6">
+                Gambetech <span id="typewriter"></span>des logiciels 
+            </h1>
+            <h2 class="subtitle">
+                Pour la prospérité et le bien-être des individus et des organisations
+            </h2>
+            <article>
+              <p>
+                <ul>
+                  <li>Transparence</li>
+                  <li>Authenticité</li>
+                  <li> <a class="" href="https://embed.ted.com/talks/lang/fr/julian_treasure_how_to_speak_so_that_people_want_to_listen" target="blank">Intégrité</a> </li>
+                  <li>Qualité</li>
+                  <li><a class="" href="https://www.youtube.com/embed/QXN35r2_20s?rel=0&amp;start=113" target="_blank">Amélioration Continue</a></li>
+                </ul>
+                    
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Hero del producto  
+  <section id="colored-dna-back" class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns  is-vcentered">
+          <div class="column" data-aos="fade-down">
+            <h1 class="subtitle is-1 mb-6">Nos Projets</h1>
+            <div class="buttons">
+              <a class="button" href="https://why.pirien.com" target="_blank">Pirien</a>
+              <a class="button" href="#" target="_blank">Journal de Gratitude</a>
+              <a class="button" href="https://www.garama.ch" target="_blank">Garama</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+  
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        GambeTech est une société à associé unique au capital de 500 euros.<br/>
+        Entreprise immatriculée au RCS de Paris sous le numéro d'identification 882 350 549<br/>
+        Siège Social : OCP BUSINESS CENTER 6 - 5 avenue Ingres - 75016 Paris<br/> Représentant légal : Samuel G. Molu.<br/>
+        Ce site est open source et hébergé par les serveurs de github.com. Ce site est soumis à la loi française.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
+  <script>
+    new Typewriter('#typewriter', {
+      strings: ['imagine','conçoit', 'expérimente', 'implémente'],
+      autoStart: true,
+      loop: true,
+    });
+  </script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init({
+       once: true
+     });
+   </script>
+  <script>
+      document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+  </script>
+</body>
+
+</html>
