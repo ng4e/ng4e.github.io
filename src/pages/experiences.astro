@@ -1,0 +1,107 @@
+---
+import Layout from "../layouts/MainLayout.astro";
+import CompanyLogoSlider from "../components/CompanyLogoSlider.astro";
+import { getCollection } from "astro:content";
+import { companies } from "../consts";
+import ProjectCard from "../components/ProjectCard.astro";
+// Get all projects from the collection
+const projects = (await getCollection("projects")).sort(
+    (a, b) => a.data.key - b.data.key,
+);
+---
+
+<Layout title="Références" description="15+ Années d'expériences">
+    <CompanyLogoSlider companies={companies} />
+    <div class="content">
+        <article>
+            <div class="timeline">
+                {
+                    projects.map((project) => (
+                        <div class="timeline-item">
+                            <div
+                                id={`${project.data.id}-case-study`}
+                                class="timeline-content"
+                            >
+                                <ProjectCard project={project.data} />
+                            </div>
+                        </div>
+                    ))
+                }
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h5>2006 Université de Paris-Dauphine</h5>
+                        <p>
+                            Master Méthodes Informatiques Appliquées à la
+                            Gestion des Entreprises.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</Layout>
+<style>
+    .timeline {
+        position: relative;
+        margin: 0 auto;
+    }
+    .timeline::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background-color: #3273dc;
+        left: 50%;
+        margin-left: -2px;
+    }
+    .timeline-item {
+        padding: 20px 40px;
+        position: relative;
+        width: 50%;
+    }
+    .timeline-item:nth-child(odd) {
+        left: 0;
+    }
+    .timeline-item:nth-child(even) {
+        left: 50%;
+    }
+    .timeline-item::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #3273dc;
+        top: 20px;
+        right: -10px;
+        z-index: 1;
+    }
+    .timeline-item:nth-child(even)::before {
+        left: -10px;
+    }
+    .timeline-content {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 6px;
+    }
+    .timeline-content h4 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    .timeline-content ul {
+        margin-left: 1.5rem;
+    }
+    .timeline-content ul li {
+        list-style-type: disc;
+        margin-bottom: 0.5rem;
+    }
+    .timeline-content strong {
+        color: #363636;
+    }
+    .timeline-content a {
+        color: #3273dc;
+        text-decoration: underline;
+    }
+</style>

@@ -1,0 +1,125 @@
+---
+import type { CompanyData } from "../consts";
+const { companies } = Astro.props; // Expecting an array of CompanyData objects passed as props
+---
+
+<div class="content">
+    <h5 class="title has-text-centered">Ils nous on fait confiance</h5>
+    <span>(cliquez sur l'image pour voir la mission)</span>
+    <div class="logo-slider">
+        <button class="nav-button left" id="prevButton">&#10094;</button>
+        <div class="logo-container">
+            {
+                companies.map((company: CompanyData, index: Number) => (
+                    <div class="logo-slide" id={company.id} data-index={index}>
+                        <a
+                            href={`#${company.id}-case-study`}
+                            class="company-link"
+                        >
+                            <figure class="image is-256x256 mx-auto">
+                                <img
+                                    src={company.logo}
+                                    alt={`${company.name} logo`}
+                                    class="has-ratio"
+                                    loading="eager"
+                                />
+                            </figure>
+                            <p class="has-text-centered company-name">
+                                {company.name}
+                            </p>
+                        </a>
+                    </div>
+                ))
+            }
+        </div>
+        <button class="nav-button right" id="nextButton">&#10095;</button>
+    </div>
+</div>
+
+<style>
+    .content {
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center children horizontally */
+        justify-content: center; /* Center children vertically */
+        text-align: center; /* Center text within the children */
+        padding: 1%; /* Add some padding for spacing */
+    }
+
+    .logo-slider {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .logo-container {
+        display: flex;
+        overflow: hidden;
+        justify-content: center; /* Center logos within the container */
+    }
+
+    .logo-slide {
+        flex: 0 0 auto; /* Prevent shrinking */
+        padding: 0 2rem;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-button {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #3273dc; /* Bulma primary color */
+        padding: 0 1rem;
+    }
+
+    .nav-button:hover {
+        color: #0056b3; /* Darker shade on hover */
+    }
+
+    .company-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.2s ease;
+    }
+
+    .company-link:hover {
+        transform: translateY(-5px);
+    }
+
+    .company-name {
+        font-weight: 500;
+        margin-top: 1rem;
+    }
+
+    .case-study-section {
+        scroll-margin-top: 2rem; /* Space for fixed headers if needed */
+    }
+</style>
+
+<script>
+    const slides = document.querySelectorAll<HTMLElement>(".logo-slide");
+    const prevButton = document.getElementById("prevButton");
+    const nextButton = document.getElementById("nextButton");
+    let currentIndex = 0;
+
+    function updateSlides() {
+        slides.forEach((slide, index) => {
+            slide.style.display = index === currentIndex ? "block" : "none"; // Show only the current slide
+        });
+    }
+
+    prevButton?.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Loop back to the last slide
+        updateSlides();
+    });
+
+    nextButton?.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % slides.length; // Loop back to the first slide
+        updateSlides();
+    });
+
+    // Initialize the slider
+    updateSlides();
+</script>

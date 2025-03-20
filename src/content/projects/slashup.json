@@ -1,0 +1,43 @@
+{
+  "id": "slashup",
+  "key": 1,
+  "duration": "Mai 2022 - Mars 2025",
+  "company": "Chez Slashup Studio",
+  "client": "MAIF International",
+  "mission": "Conception et implémentation d’un Système d'Information de brooker d’assurance Européen",
+  "context": " MAIF France lance une nouvelle marque MAIF International pour se positionner au niveau européen. Le projet consiste à accompagner le développement commercial avec une Plateforme de courtage et de gestion de sinistres pour les acteurs de la nouvelle mobilité.",
+  "role": "Référent technique responsable des décisions architecturales et de la coordination de l'équipe technique",
+  "tasks": [
+    "Conception et Implémentation du catalogue et du portail d’API Assuranciels suivant la convention REST",
+    "Conception, Implémentation, Configuration du socle d’architecture fonctionnelle et technique de la plateforme.",
+    "Implementation des Systèmes d'authentication et d'authorization avec Auth0 et Spring Security",
+    "Optimized application performance and loading times",
+    "Contribution à la mise en oeuvre de la livraison continue",
+    "Conducted code reviews and mentored junior developers"
+  ],
+  "technologies": [
+    "OpenApi 3.x",
+    "Oauth2, Auth0, JWT",
+    "Ports & Adapters",
+    "Modular Monolith",
+    "Event Driven",
+    "Change Data Capture",
+    "Embedded Debezium",
+    "Micro services",
+    "Java 17",
+    "Spring boot 3.x",
+    "Spring framework 6.x",
+    "Spring Security",
+    "Postgres 12+",
+    "Node JS",
+    "Docker",
+    "Gitlab",
+    "CleverCloud",
+    "Jira",
+    "Confluence"
+  ],
+  "results": [
+    "Successfully integrated with 5 existing european business systems",
+    "Mise en production en Juillet 2022."
+  ]
+}

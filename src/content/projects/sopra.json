@@ -1,0 +1,25 @@
+{
+  "id": "sopra-group",
+  "key": 6,
+  "duration": " Mai 2007 – Juillet 2011",
+  "company": "SOPRA Group - Division Télécoms et Médias",
+  "client": "Ditto Bank et Services",
+  "mission": "Conception, implémentation, Intégration d’applications métiers",
+  "context": "Diverses missions",
+  "role": "Ingénieur d'études et développements",
+  "tasks": [
+    "Bouygues Telecom (2 ans) pour l'intégration d'Oracle Application et le module Oracle Incentive Compensation pour la gestion des rémunérations des fournisseurs de l'opérateur mobile",
+    "EDF (9 mois) pour l'implémentation d'une application web de collecte, la validation, et l'injection des données destinées au plan comptable géré dans SAP.",
+    "Maintenance applicative pour Cegetel(devenu SFR)"
+  ],
+  "technologies": [
+    "Équipe de 1 à 50",
+    "Oracle E-business suite",
+    "Oracle OIC",
+    "Callidus TrueComp (Incentive Software)",
+    "Talend Studio",
+    "Architecture Orientée Services",
+    "PL/SQL"
+  ],
+  "results": ["Première expérience professionelle"]
+}

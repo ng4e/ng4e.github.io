@@ -1,0 +1,77 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+
+const today = new Date();
+---
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-3 is-offset-2">
+                <h2><strong>Gambetech</strong></h2>
+                <ul>
+                    <li>
+                        <HeaderLink
+                            href="/experiences"
+                            aria-label="View our experiences"
+                            >Expériences</HeaderLink
+                        >
+                    </li>
+                    <li>
+                        <HeaderLink
+                            href="/expertises"
+                            aria-label="Learn about our expertises"
+                            >Expertises</HeaderLink
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="column is-3">
+                <h2><strong>Initiatives</strong></h2>
+                <ul>
+                    <li>
+                        <HeaderLink
+                            href="/products"
+                            aria-label="Explore our products"
+                            >Produits</HeaderLink
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="column is-4">
+                <h2><strong>Ressources</strong></h2>
+                <ul>
+                    <li>
+                        <HeaderLink href="/blog" aria-label="Read our blog"
+                            >Idées & Opinions</HeaderLink
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content has-text-centered">
+            <p>
+                <a
+                    class="icon"
+                    href="https://github.com/ng4e"
+                    aria-label="GitHub Repository"
+                >
+                    <i class="fa fa-github"></i>
+                </a>
+            </p>
+            <div class="control level-item">
+                <a
+                    href="/"
+                    aria-label="Gambetech - Copyright {today.getFullYear()}"
+                >
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">Gambetech</span>
+                        <span class="tag is-info">
+                            &copy; {today.getFullYear()} All rights reserved.
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>

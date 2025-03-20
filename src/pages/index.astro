@@ -1,0 +1,108 @@
+---
+import Layout from "../layouts/MainLayout.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+    <article class="mt-1 columns">
+        <div class="column is-one-third">
+            <p>
+                L'harmonie est la valeur directrice de notre approche, guidant
+                chaque démarche pour réduire au maximum les frictions. Face à
+                une situation complexe, impliquant de nombreux facteurs, ce qui
+                nous motive, c'est d'analyser chaque variables, de les réaligner
+                et de rechercher la configuration la plus optimale possible.
+            </p>
+
+            <p>
+                <a href="/expertises"
+                    >Avec 15+ ans d'expérience en ingénierie logicielle</a
+                >, nous avons eu l’opportunité de <a href="/experiences"
+                    >collaborer, pour de grands comptes, dans des missions
+                    variées:</a
+                >
+                <em
+                    >intégration de solutions, conception, implémentation et
+                    déploiement d’applications d’entreprise,</em
+                > avec des périmètres fonctionnels couvrant <em
+                    >la banque de détail, l'assurance, les télécommunications et
+                    l'énergie.</em
+                >
+            </p>
+            <div class="hidden-content">
+                <p>
+                    À partir de 2016, j'ai commencé à accompagner des
+                    entrepreneurs et intrapreneurs de mon entourage, avec
+                    l'objectif de les aider
+                    <em
+                        >à formaliser, conceptualiser ou modéliser <a
+                            href="/products">leurs idées.</a
+                        ></em
+                    > intégré au sein de tiers-lieux d’innovation et d’écosystèmes
+                    entrepreneuriaux, j’ai pu observer un besoin récurrent : celui
+                    d’un accompagnement technique solide dès les premières étapes
+                    des projets.
+                </p>
+
+                <p>
+                    C’est ainsi qu’en mars 2020, j’ai créé <strong
+                        ><em>GambeTech</em></strong
+                    >, avec l’ambition
+                    <em
+                        >d’accompagner des porteurs de projets de l'idéation à
+                        la preuve de concept</em
+                    >. L’approche, apporter l'expertise technique nécessaire
+                    pour valider l’adéquation problèmes/solutions.
+                </p>
+                <p>
+                    <strong><em>GambeTech</em></strong> se positionne autant que
+                    possible en amont de la chaîne de création de valeur, pour trouver
+                    du sens, tout en perfectionnant ses compétences clés :
+                    <em
+                        >la modélisation, la priorisation, la mise en oeuvre et
+                        l'implémentation de domaines fonctionnels.</em
+                    >
+                </p>
+                <p class="signature is-size-6">Samuel Molu</p>
+            </div>
+
+            <button id="toggleButton" class="button is-text is-small"
+                >Continuer à lire...
+            </button>
+        </div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </article>
+    <style>
+        body {
+            font-size: 1rem;
+            font-family: var(--font-body), Arial, Helvetica, sans-serif;
+        }
+        .hidden-content {
+            display: none;
+        }
+        .signature {
+            font-family: "Dancing Script", cursive; /* Use a script-like font */
+            font-size: 2rem; /* Make it larger */
+            font-style: italic; /* Add a bit of slant */
+            color: #4a4a4a; /* Soft color for elegance */
+        }
+    </style>
+    <script>
+        const toggleButton = document.getElementById("toggleButton");
+        const hiddenContent = document.querySelector<HTMLElement>(".hidden-content");
+
+        toggleButton?.addEventListener("click", () => {
+            if (
+                hiddenContent?.style.display === "none" ||
+                !hiddenContent?.style.display
+            ) {
+                hiddenContent!.style.display = "inline";
+                toggleButton!.textContent = "Voir Moins";
+            } else {
+                hiddenContent.style.display = "none";
+                toggleButton!.textContent = "Continuer à lire...";
+            }
+        });
+    </script>
+</Layout>
