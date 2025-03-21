@@ -2,7 +2,7 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 export const SITE_TITLE = "Gambetech";
-export const SITE_DESCRIPTION = "Constructeur de Système d'information";
+export const SITE_DESCRIPTION = "Transforme les idées en solutions innovantes";
 
 export interface CompanyData {
   id: string;
