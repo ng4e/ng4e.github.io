@@ -4,31 +4,10 @@
   "duration": "Octobre 2018 - Mars 2020",
   "company": "Accenture",
   "client": "Société Générale",
-  "mission": "Conception, implémentation, Intégration d’applications métiers",
-  "context": "Ditto Bank filiale de Travelex fait sa transition de néo-banque à éditeur d’un Core Banking System et prépare la mise en œuvre de la directive DSP2.",
-  "role": "Intégré en tant Team Leader de l’équipe responsable du Référentiel des clients",
-  "tasks": [
-    "Definition des fonctionnalités sous forme de User Story",
-    "Modélisation des acteurs et des événements échangés avec les autres équipes",
-    "Animation d'équipe, Scrum Master.",
-    "Mise en œuvre du pattern Hexagonal Architecture sur le module Référentiels"
-  ],
-  "technologies": [
-    "Architecture événementielle",
-    "6 Devs + 1 PO en Squad",
-    "Micro services",
-    "Micro Frontend ",
-    "Atlassian Jira",
-    "Spring boot 2.x",
-    "Apache Kafka",
-    "MS Azure Cloud",
-    "Docker",
-    "Kubernetes.",
-    "Gitlab"
-  ],
-  "results": [
-    "Ditto Services est en cessation d’activité pour des raisons stratégiques.",
-    "Les composants du système auxquels j’ai contribué ont été implémentés et déployés en pré-production.",
-    " La production a été figée et ma prestation s’est terminée."
-  ]
+  "mission": "",
+  "context": "",
+  "role": "",
+  "tasks": [],
+  "technologies": [],
+  "results": []
 }

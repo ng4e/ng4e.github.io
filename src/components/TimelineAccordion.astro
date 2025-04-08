@@ -1,0 +1,84 @@
+---
+// TimelineAccordion.astro
+
+const { project, position = 'left' } = Astro.props;
+---
+
+<div class="timeline-item">
+  <div class="timeline-marker is-primary">
+    <div class="timeline-marker-inner"></div>
+  </div>
+  <div class="timeline-content">
+    <div class="card timeline-card">
+      <header class="card-header" data-id={project.id}>
+        <div class="card-header-content">
+          <p class="card-header-title">
+            {project.company}
+            {project.client && <span class="client-name"> - {project.client}</span>}
+          </p>
+          <p class="card-header-subtitle">{project.duration}</p>
+        </div>
+        <button class="card-header-icon" aria-label="expand">
+          <span class="icon">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content is-hidden">
+        <div class="content">
+          <p class="mission"><strong>Mission:</strong> {project.mission}</p>
+          <p><strong>Contexte:</strong> {project.context}</p>
+          <p><strong>Rôle:</strong> {project.role}</p>
+
+          <div class="mt-4">
+            <p class="has-text-weight-bold">Tâches:</p>
+            <ul>
+              {project.tasks && project.tasks.map((task:string) => (
+                <li>{task}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="mt-4">
+            <p class="has-text-weight-bold">Technologies:</p>
+            <div class="tags">
+              {project.technologies && project.technologies.map((tech:string) => (
+                <span class="tag is-info is-light">{tech}</span>
+              ))}
+            </div>
+          </div>
+
+          {project.results && project.results.length > 0 && (
+            <div class="mt-4">
+              <p class="has-text-weight-bold">Résultats:</p>
+              <ul>
+                {project.results && project.results.map((result:string) => (
+                  <li>{result}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script define:vars={{ projectId: project.id }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector(`[data-id="${projectId}"]`);
+    if (header) {
+      const card = header.closest('.card');
+      const content = card.querySelector('.card-content');
+      const icon = card.querySelector('.card-header-icon i');
+
+      header.addEventListener('click', () => {
+        content.classList.toggle('is-hidden');
+        icon.classList.toggle('fa-angle-down');
+        icon.classList.toggle('fa-angle-up');
+      });
+    }
+  });
+</script>

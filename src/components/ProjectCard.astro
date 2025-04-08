@@ -18,7 +18,7 @@ const { project } = Astro.props;
             {project.duration}
         </p>
         <p class="card-header-title is-justify-content-flex-end">
-            {project.company}
+             {project.company}
         </p>
     </div>
 
@@ -28,31 +28,31 @@ const { project } = Astro.props;
             <!-- Section 1: Client and Mission -->
             <div class="columns">
                 <div class="column is-4">
-                    <h4 class="title is-5 has-text-weight-bold">Client</h4>
+                    <h6 class="title is-5 has-text-weight-bold">Client</h6>
                     <p class="subtitle is-6">{project.client}</p>
                 </div>
                 <div class="column is-8">
-                    <h4 class="title is-5 has-text-weight-bold">Mission</h4>
+                    <h6 class="title is-5 has-text-weight-bold">Mission</h6>
                     <p class="subtitle is-6">{project.mission}</p>
                 </div>
             </div>
 
             <!-- Section 2: Context -->
             <div class="mb-3">
-                <h4 class="title is-5 has-text-weight-bold">Contexte</h4>
+                <h7 class="title is-5 has-text-weight-bold">Contexte</h7>
                 <p class="has-text-justified">{project.context}</p>
             </div>
 
             <!-- Section 3: Role and Tasks -->
             <div class="mb-3">
                 <div class="mb-3">
-                    <h4 class="title is-5 has-text-weight-bold">Rôle</h4>
+                    <h7 class="title is-5 has-text-weight-bold">Rôle</h7>
                     <p class="has-text-justified">{project.role}</p>
                 </div>
                 <div>
-                    <h4 class="title is-5 has-text-weight-bold">
+                    <h7 class="title is-5 has-text-weight-bold">
                         Tâches Accomplies
-                    </h4>
+                    </h7>
                     <ul class="ml-5">
                         {project.tasks.map((task) => <li>{task}</li>)}
                     </ul>
@@ -61,19 +61,19 @@ const { project } = Astro.props;
 
             <!-- Section 4: Technologies -->
             <div class="mb-3">
-                <h4 class="title is-5 has-text-weight-bold">Technologies</h4>
-                <div class="tags">
+                <h7 class="title is-5 has-text-weight-bold">Technologies</h7>
+                <ul class="">
                     {
                         project.technologies.map((tech) => (
-                            <span class="tag is-small is-primary">{tech}</span>
+                            <li class="">{tech}</li>
                         ))
                     }
-                </div>
+                </ul>
             </div>
 
             <!-- Section 5: Results -->
             <div>
-                <h4 class="title is-5 has-text-weight-bold">Resultats</h4>
+                <h7 class="title is-5 has-text-weight-bold">Resultats</h7>
                 <ul class="ml-5">
                     {project.results.map((result) => <li>{result}</li>)}
                 </ul>

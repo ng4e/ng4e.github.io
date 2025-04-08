@@ -4,104 +4,93 @@ import CompanyLogoSlider from "../components/CompanyLogoSlider.astro";
 import { getCollection } from "astro:content";
 import { companies } from "../consts";
 import ProjectCard from "../components/ProjectCard.astro";
+
 // Get all projects from the collection
 const projects = (await getCollection("projects")).sort(
     (a, b) => a.data.key - b.data.key,
 );
+
+// Assumes your PDF file is in the `public/` directory.
+const pdfPath = "/assets/MOLU_N_Samuel_CV_FR_v042025.2-2.pdf"; // Relative path from 'public' folder
+const pdfFileName = "MOLU_N_Samuel_CV_FR_v042025.2-2.pdf";  // The file name when the user downloads it
 ---
 
 <Layout title="Références" description="15+ Années d'expériences">
-    <CompanyLogoSlider companies={companies} />
-    <div class="content">
-        <article>
-            <div class="timeline">
-                {
-                    projects.map((project) => (
-                        <div class="timeline-item">
-                            <div
-                                id={`${project.data.id}-case-study`}
-                                class="timeline-content"
-                            >
-                                <ProjectCard project={project.data} />
-                            </div>
-                        </div>
-                    ))
-                }
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h5>2006 Université de Paris-Dauphine</h5>
-                        <p>
-                            Master Méthodes Informatiques Appliquées à la
-                            Gestion des Entreprises.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </div>
+    <a href={pdfPath} download={pdfFileName} class="button is-link is-outlined">
+      <span class="icon">
+        <i class="fa fa-file-pdf"></i>
+      </span>
+      <span>Télécharger mon cv en pdf</span>
+    </a>
+    {projects.map((project) => (
+      <section id={`${project.data.id}`} class="section">
+        <ProjectCard project={project.data} />
+      </section>
+    ))}
 </Layout>
+
 <style>
-    .timeline {
-        position: relative;
-        margin: 0 auto;
-    }
-    .timeline::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 4px;
-        background-color: #3273dc;
-        left: 50%;
-        margin-left: -2px;
-    }
-    .timeline-item {
-        padding: 20px 40px;
-        position: relative;
-        width: 50%;
-    }
-    .timeline-item:nth-child(odd) {
-        left: 0;
-    }
-    .timeline-item:nth-child(even) {
-        left: 50%;
-    }
-    .timeline-item::before {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: #3273dc;
-        top: 20px;
-        right: -10px;
-        z-index: 1;
-    }
-    .timeline-item:nth-child(even)::before {
-        left: -10px;
-    }
-    .timeline-content {
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 6px;
-    }
-    .timeline-content h4 {
-        font-size: 1.25rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-    }
-    .timeline-content ul {
-        margin-left: 1.5rem;
-    }
-    .timeline-content ul li {
-        list-style-type: disc;
-        margin-bottom: 0.5rem;
-    }
-    .timeline-content strong {
-        color: #363636;
-    }
-    .timeline-content a {
-        color: #3273dc;
-        text-decoration: underline;
-    }
+  /* Smooth Scrolling (CSS - Modern Browsers) */
+  html {
+    scroll-behavior: smooth;
+  }
+  #scrollToTopButton {
+             position: fixed;
+             bottom: 20px;
+             right: 20px;
+             z-index: 99;
+             display: none; /* Hidden by default */
+         }
 </style>
+<script>
+// Function to add a "Scroll to Top" button
+function addScrollToTopButton() {
+  // Create the button element
+  const scrollToTopButton = document.createElement("button");
+  scrollToTopButton.id = "scrollToTopButton";
+  scrollToTopButton.innerHTML = "&#8679;"; // Up arrow character (↑) or you can use an image
+  scrollToTopButton.style.display = "none"; // Hide it initially
+  scrollToTopButton.style.position = "fixed";
+  scrollToTopButton.style.bottom = "20px"; // Adjust position as needed
+  scrollToTopButton.style.right = "20px";   // Adjust position as needed
+  scrollToTopButton.style.zIndex = "99";  // Ensure it's on top of other elements
+  scrollToTopButton.style.border = "none";
+  scrollToTopButton.style.outline = "none";
+  scrollToTopButton.style.backgroundColor = "rgba(0, 0, 0, 0.7)"; // Adjust color and transparency
+  scrollToTopButton.style.color = "white";
+  scrollToTopButton.style.cursor = "pointer";
+  scrollToTopButton.style.padding = "15px";
+  scrollToTopButton.style.borderRadius = "50%"; // Make it round
+  scrollToTopButton.style.fontSize = "20px";
+  scrollToTopButton.style.transition = "opacity 0.3s ease"; // Optional smooth transition
+
+  // Add the button to the document body
+  document.body.appendChild(scrollToTopButton);
+
+  // Add an event listener to the button to scroll to the top when clicked
+  scrollToTopButton.addEventListener("click", function() {
+    // For smooth scrolling (modern browsers)
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+    // For older browsers (fallback - instant scroll)
+    // window.scrollTo(0, 0);
+  });
+
+  // Add an event listener to the window to show/hide the button based on scroll position
+  window.addEventListener("scroll", function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {  // Adjust threshold as needed
+      scrollToTopButton.style.display = "block";
+      scrollToTopButton.style.opacity = "1"; // Fade in if using transition
+    } else {
+      scrollToTopButton.style.display = "none";
+      scrollToTopButton.style.opacity = "0"; // Fade out if using transition
+    }
+  });
+}
+
+// Call the function to add the button when the page loads
+window.addEventListener("load", addScrollToTopButton);
+</script>

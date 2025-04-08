@@ -4,24 +4,23 @@
   "duration": "Mars 2021 - Mai 2022",
   "company": "S2I Méditerranée",
   "client": "Monext",
-  "mission": "Conception, implémentation, Intégration d’applications métiers",
+  "mission": "Conception, implémentation, Intégration d'un module de traitement de paiement",
   "context": "Monext devient opérateur d’émission de carte et de paiement pour la banque Oney au Portugal. Le projet consiste à créer une interface simplifiée pour Oney avec le réseau portugais de carte bancaire SIBS.",
-  "role": "Intégré en tant que Concepteur et Développeur de la solution",
+  "role": "Concepteur et Développeur de la solution",
   "tasks": [
     "Définition et conception des API (contract first) pour Oney.",
     "Modélisation des données, des traitements et des événements échangés avec SIBS.",
-    "Implémentation du protocole d'échange avec SIBS en Java 8 avec Spring Framework et Spring Boot"
+    "Implémentation du protocole d'échange avec SIBS"
   ],
   "technologies": [
-    "Architecture orientée Message",
-    "Micro services",
-    "Atlassian Jira",
-    "Spring boot 2.x",
-    "Spring framework 4.x",
-    "Gitlab"
+    "protocols & Standards: REST, OAuth2, JSON, OpenAPI, Microservices, Architecture Orientée Messages",
+    "stacks: Postgres, Message Oriented Middleware Interne, Java 8, Spring boot 2.x, Spring framework 4.x",
+    "Continous Delivery: Git, Gitlab CI, Jenkins, Sonatype Nexus",
+    "cloud provider: On premises",
+    "collaboration: Atlassian: Jira - Confluence, Teams"
   ],
   "results": [
-    "Intégration de 100% des protocoles d'échange avec SIBS",
-    "Achieved 99.9% uptime since launch"
+    "Intégration de 100% des protocoles d'échange de SIBS",
+    "En production"
   ]
 }

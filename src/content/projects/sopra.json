@@ -3,7 +3,7 @@
   "key": 6,
   "duration": " Mai 2007 – Juillet 2011",
   "company": "SOPRA Group - Division Télécoms et Médias",
-  "client": "Ditto Bank et Services",
+  "client": "Bouygues Telecom",
   "mission": "Conception, implémentation, Intégration d’applications métiers",
   "context": "Diverses missions",
   "role": "Ingénieur d'études et développements",
@@ -13,13 +13,11 @@
     "Maintenance applicative pour Cegetel(devenu SFR)"
   ],
   "technologies": [
-    "Équipe de 1 à 50",
-    "Oracle E-business suite",
-    "Oracle OIC",
-    "Callidus TrueComp (Incentive Software)",
-    "Talend Studio",
-    "Architecture Orientée Services",
-    "PL/SQL"
+    "protocols & Standards: Architecture Orientée Services, Web Services, XML/SOAP",
+    "stacks: PL/SQL, Oracle E-business suite, Oracle OIC, Callidus TrueComp (Incentive Software),Talend Studio",
+    "Continous Delivery: Git, Svn",
+    "cloud provider: On Premises",
+    "collaboration: Atlassian: Jira"
   ],
   "results": ["Première expérience professionelle"]
 }

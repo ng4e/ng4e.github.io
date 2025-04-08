@@ -2,42 +2,31 @@
   "id": "slashup",
   "key": 1,
   "duration": "Mai 2022 - Mars 2025",
-  "company": "Chez Slashup Studio",
+  "company": "Slashup Studio",
   "client": "MAIF International",
   "mission": "Conception et implémentation d’un Système d'Information de brooker d’assurance Européen",
-  "context": " MAIF France lance une nouvelle marque MAIF International pour se positionner au niveau européen. Le projet consiste à accompagner le développement commercial avec une Plateforme de courtage et de gestion de sinistres pour les acteurs de la nouvelle mobilité.",
+  "context": "le Groupe MAIF s’est donné pour mission d’accélérer la transition vers une mobilité plus durable en créant une plateforme de courtage pan-européenne à destination des plateformes de mobilités.",
   "role": "Référent technique responsable des décisions architecturales et de la coordination de l'équipe technique",
   "tasks": [
-    "Conception et Implémentation du catalogue et du portail d’API Assuranciels suivant la convention REST",
+    "Conception et Implémentation du catalogue et du portail d’API Assuranciels.",
     "Conception, Implémentation, Configuration du socle d’architecture fonctionnelle et technique de la plateforme.",
-    "Implementation des Systèmes d'authentication et d'authorization avec Auth0 et Spring Security",
-    "Optimized application performance and loading times",
-    "Contribution à la mise en oeuvre de la livraison continue",
-    "Conducted code reviews and mentored junior developers"
+    "Conception, Implementation des Systèmes d'authentication et d'authorization avec Auth0 et Spring Security",
+    "Optimisation de la performance de l'application et des temps de chargement",
+    "Mise en oeuvre de l'expérience développeur et de la livraison continue",
+    "Coordination des développeurs"
   ],
   "technologies": [
-    "OpenApi 3.x",
-    "Oauth2, Auth0, JWT",
-    "Ports & Adapters",
-    "Modular Monolith",
-    "Event Driven",
-    "Change Data Capture",
-    "Embedded Debezium",
-    "Micro services",
-    "Java 17",
-    "Spring boot 3.x",
-    "Spring framework 6.x",
-    "Spring Security",
-    "Postgres 12+",
-    "Node JS",
-    "Docker",
-    "Gitlab",
-    "CleverCloud",
-    "Jira",
-    "Confluence"
+    "protocols & Standards: REST, OAuth2, JSON, OpenAPI, Modular Monolith, Microservices, Change Data Capture",
+    "stacks: Postgres, Redis, Java 17, Spring boot 3.x, Spring framework 6.x, Spring Security, NextJS",
+    "Continous Delivery: Git, Gitlab CI, SonarCloud, Docker, NodeJS",
+    "cloud provider: CleverCloud, Auth0",
+    "RemoteTeam collaboration: Atlassian: Jira - Confluence, Slack, Teams"
   ],
   "results": [
-    "Successfully integrated with 5 existing european business systems",
-    "Mise en production en Juillet 2022."
+    "Plateforme de courtage pan-européenne mise en production en Juillet 2022.",
+    "9M de polices d'assurance souscrites",
+    "15 partenaires européens intégrés (gestionnaire de sinistres,assisteurs,assureurs)",
+    "5 produits d'assurance pour les nouvelles formes de mobilité intégrés",
+    "Full remote"
   ]
 }
