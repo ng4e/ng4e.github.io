@@ -1,11 +1,24 @@
 ---
 import Layout from "../layouts/MainLayout.astro";
+import CompanyLogoSlider from "../components/CompanyLogoSlider.astro";
+import { companies } from "../consts";
 ---
 
 <Layout
     title="Expertises"
     description="Architecture et planification - Intégration de systèmes – Conception et développement de logiciels"
 >
+
+    <p class="tag is-success is-light mb-4">Ouvert au marché. Mobile. Freelance, basé à Aix-en-Provence</p>
+    <h5 class="title is-4 mb-4">15+ années d'expérience, dans des secteurs stratégiques</h5>
+    <div class="tags">
+        <span class="tag is-info is-light is-medium sector-tag">Banque de détail</span>
+        <span class="tag is-info is-light is-medium sector-tag">Assurance</span>
+        <span class="tag is-info is-light is-medium sector-tag">Monétique</span>
+        <span class="tag is-info is-light is-medium sector-tag">Télécom</span>
+        <span class="tag is-info is-light is-medium sector-tag">Énergie</span>
+    </div>
+
     <div class="mt-2 columns is-multiline">
         <!-- Méthodologie -->
         <div class="column is-half">
@@ -135,5 +148,7 @@ import Layout from "../layouts/MainLayout.astro";
                 }
             </style>
         </div>
-    </div></Layout
->
+    </div>
+
+    <CompanyLogoSlider companies={companies} />
+</Layout>

@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/MainLayout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import HeaderLink from "../components/HeaderLink.astro";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
@@ -9,14 +10,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
             <div class="column is-7">
                 <div class="buttons">
                     <a href="https://www.linkedin.com/in/samuelmolu/" target="_blank" class="button is-primary is-medium">
-                    <strong>Porteur de projet ?</strong>
-                    </a>
-                    <a href="https://www.linkedin.com/in/samuelmolu/" target="_blank" class="button is-light is-medium">
                     <strong>Recruteur ?</strong>
                     </a>
                 </div>
             </div>
-            <div class="column is-5"></div>
+            <div class="column is-5">
+            </div>
         </div>
     </div>
     <article class="mt-1 columns">
@@ -26,16 +25,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                 nous analysons méthodiquement chaque variable pour créer des solutions fluides et optimales,
                 éliminant toute friction inutile.
             </p>
-
-            <h5 class="title is-7 mb-4">15+ années d'expérience, dans des secteurs stratégiques</h5>
-            <div class="tags">
-                <span class="tag is-info is-light is-small sector-tag">Banque de détail</span>
-                <span class="tag is-info is-light is-small sector-tag">Assurance</span>
-                <span class="tag is-info is-light is-small sector-tag">Monétique</span>
-                <span class="tag is-info is-light is-small sector-tag">Télécom</span>
-                <span class="tag is-info is-light is-small sector-tag">Énergie</span>
-            </div>
-
+            <hr/>
+            <p>
+                GambeTech est un éditeur de solutions, spécialisés dans <a href="#">des produits de niches.</a>
+            </p>
+            <hr/>
             Nos compétences clés :
 
             <div class="content">
@@ -85,6 +79,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                 </li>
               </ul>
             </div>
+            <!--
             <div class="hidden-content">
                 <p>
                 Depuis 2016, nous accompagnons entrepreneurs et intrapreneurs dans la formalisation et conceptualisation de leurs idées.<br/> Cette immersion dans des tiers-lieux d'innovation nous a permis d'identifier un besoin critique : un accompagnement technique solide dès les premières étapes de projet.
@@ -98,7 +93,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
             <button id="toggleButton" class="button is-text is-small"
                 >Continuer à lire...
-            </button>
+            </button> -->
         </div>
         <div class="column"></div>
         <div class="column">

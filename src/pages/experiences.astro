@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/MainLayout.astro";
-import CompanyLogoSlider from "../components/CompanyLogoSlider.astro";
 import { getCollection } from "astro:content";
 import { companies } from "../consts";
 import ProjectCard from "../components/ProjectCard.astro";
@@ -16,12 +15,13 @@ const pdfFileName = "MOLU_N_Samuel_CV_FR_v042025.2-2.pdf";  // The file name whe
 ---
 
 <Layout title="Références" description="15+ Années d'expériences">
+    <!--
     <a href={pdfPath} download={pdfFileName} class="button is-link is-outlined">
       <span class="icon">
         <i class="fa fa-file-pdf"></i>
       </span>
       <span>Télécharger mon cv en pdf</span>
-    </a>
+    </a> -->
     {projects.map((project) => (
       <section id={`${project.data.id}`} class="section">
         <ProjectCard project={project.data} />
