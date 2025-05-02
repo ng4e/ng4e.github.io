@@ -3,7 +3,6 @@
 [gambetech.com](https://gambetech.com)]
 
 Features:
-- ✅ Experiences
 - ✅ Products
 - ✅ Expertises
 - ✅ Blog
