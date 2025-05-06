@@ -3,93 +3,78 @@ import Layout from "../layouts/MainLayout.astro";
 
 const products = [
     {
-        title: "Sportifs Prometteurs",
+        title: "Association Sportifs Prometteurs",
         description:
-            "Un concept store et blogue dédié à la préparation physique, la nutrition et la santé des sportifs. Notre approche est holistique: préparons autant l'athlète que l'humain.",
-        requirements: "Design UI/UX, Marketing de contenu, Développement Web",
-        architecture: "CMS, NodeJS, React, Cloudflare",
-        website: "#", // Replace with the actual website link
+            "L'association accompagne de joueurs de tennis de niveau national vers la carrière professionnelle.",
+        requirements: "Développe une solution de programmation de tournois à partir des performances envisagées et du budget",
+        architecture: "node, express, ts, ejs, appwrite, bitbucket, SonarQube, Oracle cloud",
+        website: "https://getsp.sportifs-prometteurs.org/"
+    },
+    {
+        title: "Association Pirien",
+        description:
+            "Pour la préservation, la valorisation, et la transmission de l’héritage culturel matériel et immatériel de mon ethnie au Cameroun : Les Bamouns",
+        requirements: "Boutique associative en ligne",
+        architecture: "strikingly, square",
+        website: "https://why.pirien.com"
     },
     {
         title: "NMT",
         description:
-            "Une plate-forme de gestion de l'éducation basée sur le modèle Compétences. Répondez aux besoins de vos professeurs, de vos étudiants et de vos conseillers avec un outil facile et intuitif.",
-        requirements: "Plateforme de gestion éducative, Modèle de compétence",
-        architecture: "CMS, NodeJS, React, Cloudflare",
+            "NG. Moving Together est un réseau social familliale avec arbre généalogique, journal de gratitude partagé à destination des familles éloignées par l'immigration",
+        requirements: "Créer un Backend Sécurisé pour une application mobile en Frontend",
+        architecture: "Spring boot, Neo4j, Postgres, Appwrite, Bitbucket, Docker SonarQube, Oracle Cloud, HugginFace, Mistra AI",
         website: "#", // Replace with the actual website link
-    },
-    {
-        title: "Journal de Gratitude",
-        description:
-            "Un journal où tu peux inscrire tes pensées les plus reconnaissantes, tes souvenirs les plus précieux et tes moments de pur bonheur. Ce journal t’aidera à développer un état d’esprit positif et ainsi rayonner dans le monde.",
-        requirements: "Application Mobile, Design UI/UX",
-        architecture: "Native IOS, Android, NodeJS, React",
-        website: "#", // Replace with the actual website link
-    },
-    {
-        title: "Garama",
-        description:
-            "Des produits en vrac, des créations d’artisans locaux et un marché paysan, en ligne. Livraison en vélo cargo à Montréal.",
-        requirements: "Marketplace en ligne, livraison en vélo cargo",
-        architecture: "CMS, NodeJS, React, Cloudflare",
-        website: "#", // Replace with the actual website link
-    },
-    {
-        title: "Freeds",
-        description:
-            "Une gamme de produits capillaires, conçus et testés par des professionnels. Des formules véganes et sans cruauté animale, des ingrédients de première qualité et des emballages durables.",
-        requirements:
-            "Une gamme de produits capillaires, conçus et testés par des professionnels.",
-        architecture: "CMS, NodeJS, React, Cloudflare",
-        website: "#", // Replace with the actual website link
-    },
+    }
 ];
 ---
 
 <Layout
     title="Nos Produits"
-    description="En intelligence collective avec des porteurs d'idées"
+    description="Créer de la valeur sur des problèmes de niches"
 >
     <section class="section">
-        <div class="container">
-            <div class="columns is-multiline">
-                {
-                    products.map((product) => (
-                        <div class="column is-6">
-                            <div class="card">
-                                <div class="card-content">
-                                    <p class="title is-4">{product.title}</p>
-                                    <p class="subtitle is-6">
-                                        {product.description}
-                                    </p>
-                                    <hr />
-                                    <p>
-                                        <strong>Requirements:</strong>{" "}
-                                        {product.requirements}
-                                    </p>
-                                    <p>
-                                        <strong>Architecture:</strong>{" "}
-                                        {product.architecture}
-                                    </p>
-                                    {product.website && (
-                                        <p>
-                                            <a
-                                                href={product.website}
-                                                class="button is-text"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                aria-label={`Visit the website for ${product.title}`}
-                                            >
-                                                Visit Website
-                                            </a>
-                                        </p>
-                                    )}
+            <div class="container">
+                <div class="columns is-multiline">
+                    {
+                        products.map((product) => (
+                            <div class="column is-6-desktop is-12-tablet">
+                                <div class="card" style="border-radius: 0.75rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <div class="card-content">
+                                        <p class="title is-4 has-text-weight-semibold">{product.title}</p>
+                                        <p class="subtitle is-6 has-text-grey">{product.description}</p>
+                                        <hr />
+                                        <div class="content">
+                                            <p>
+                                                <strong>Requirements:</strong>
+                                                <br />
+                                                {product.requirements}
+                                            </p>
+                                            <p>
+                                                <strong>Architecture:</strong>
+                                                <br />
+                                                {product.architecture}
+                                            </p>
+                                        </div>
+                                        {product.website && (
+                                            <div class="buttons">
+                                                <a
+                                                    href={product.website}
+                                                    class="button is-primary is-outlined is-small"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    aria-label={`Visit the website for ${product.title}`}
+                                                >
+                                                    Site Web
+                                                </a>
+                                            </div>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))
-                }
+                        ))
+                    }
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 </Layout>

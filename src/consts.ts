@@ -33,13 +33,13 @@ export const companies: CompanyData[] = [
     id: "slashup",
     logo: "/logo-slashup.png",
     name: "Slashup Studio",
-    caseStudy: "#slashup",
+    caseStudy: "https://www.slashup.studio/use-cases/maif-international",
   },
   {
     id: "slashup",
     logo: "/logo-mi.png",
     name: "MAIF International",
-    caseStudy: "#maif-international",
+    caseStudy: "https://www.slashup.studio/use-cases/maif-international",
   },
   {
     id: "sii-mediterranee",

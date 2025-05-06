@@ -9,9 +9,9 @@ const { companies } = Astro.props; // Expecting an array of CompanyData objects 
         <div class="columns is-multiline is-centered">
             {
                 companies.map((company: CompanyData, index: Number) => (
-                    <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile" key={company.id}>
+                    <div class="column block is-one-quarter-desktop is-one-third-tablet is-half-mobile" key={company.id}>
                         <a
-                            href={`#${company.id}-case-study`}
+                            href={`${company.caseStudy}`}
                             class="company-link"
                         >
                             <figure class="image is-128x128 mx-auto">
