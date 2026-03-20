@@ -8,7 +8,7 @@
 ### Foundation
 
 - [x] **FOUN-01**: Site uses Tailwind CSS v4 (via @tailwindcss/vite) with custom design tokens (marine/teal palette, Inter font)
-- [ ] **FOUN-02**: Bulma CSS is fully removed -- no residual classes or dependencies
+- [x] **FOUN-02**: Bulma CSS is fully removed -- no residual classes or dependencies
 - [x] **FOUN-03**: React integration installed for interactive islands (HeroBackground, Counter, MobileMenu)
 - [ ] **FOUN-04**: Base layout (BaseLayout.astro) implements design system with head management (meta, fonts, analytics)
 - [x] **FOUN-05**: Lucide icons available in both Astro (@lucide/astro) and React (lucide-react) components
@@ -133,7 +133,7 @@
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | FOUN-01 | Phase 1 | Complete |
-| FOUN-02 | Phase 1 | Pending |
+| FOUN-02 | Phase 1 | Complete |
 | FOUN-03 | Phase 1 | Complete |
 | FOUN-04 | Phase 2 | Pending |
 | FOUN-05 | Phase 1 | Complete |

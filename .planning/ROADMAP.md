@@ -39,7 +39,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md — Install Tailwind v4, React, Lucide, Inter font; configure astro.config.mjs and design tokens
-- [ ] 01-02-PLAN.md — Remove Bulma/FA, rename and strip components to shells, update all import paths
+- [x] 01-02-PLAN.md — Remove Bulma/FA, rename and strip components to shells, update all import paths
 
 ### Phase 2: Layout Shell
 **Goal**: Every page has a consistent frame -- base layout with head management, sticky navbar with scroll transition, footer with social links, and reusable UI atoms (buttons, cards, badges)
