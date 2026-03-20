@@ -1,1 +1,33 @@
-@import 'bulma/css/bulma.min.css';
+/* src/styles/global.css */
+
+/* Font import BEFORE Tailwind (import order matters for @theme resolution) */
+@import "@fontsource-variable/inter";
+
+/* Tailwind v4 entry point */
+@import "tailwindcss";
+
+/* Plugins */
+@plugin "@tailwindcss/typography";
+
+/* Design tokens from refonte.md CHARTE GRAPHIQUE (per DSGN-01) */
+@theme {
+  /* Colors */
+  --color-primary: #1B2A4A;
+  --color-accent: #3A7CA5;
+  --color-bg: #F8F9FA;
+  --color-surface: #F0F4F8;
+  --color-text: #1A1A2E;
+  --color-text-secondary: #6B7280;
+  --color-success: #10B981;
+
+  /* Typography */
+  --font-sans: "Inter Variable", sans-serif;
+
+  /* Border radius */
+  --radius-xl: 0.75rem;
+}
+
+/* Smooth scroll for anchor navigation */
+html {
+  scroll-behavior: smooth;
+}
