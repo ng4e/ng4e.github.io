@@ -1,19 +1,19 @@
 ---
-import Layout from "../layouts/MainLayout.astro";
+import Layout from "../layouts/BaseLayout.astro";
 
 const products = [
     {
         title: "Association Sportifs Prometteurs",
         description:
-            "L'association accompagne de joueurs de tennis de niveau national vers la carrière professionnelle.",
-        requirements: "Développe une solution de programmation de tournois à partir des performances envisagées et du budget",
+            "L'association accompagne de joueurs de tennis de niveau national vers la carriere professionnelle.",
+        requirements: "Developpe une solution de programmation de tournois a partir des performances envisagees et du budget",
         architecture: "node, express, ts, ejs, appwrite, bitbucket, SonarQube, Oracle cloud",
         website: "https://getsp.sportifs-prometteurs.org/"
     },
     {
         title: "Association Pirien",
         description:
-            "Pour la préservation, la valorisation, et la transmission de l’héritage culturel matériel et immatériel de mon ethnie au Cameroun : Les Bamouns",
+            "Pour la preservation, la valorisation, et la transmission de l'heritage culturel materiel et immateriel de mon ethnie au Cameroun : Les Bamouns",
         requirements: "Boutique associative en ligne",
         architecture: "strikingly, square",
         website: "https://why.pirien.com"
@@ -21,60 +21,59 @@ const products = [
     {
         title: "NMT",
         description:
-            "NG. Moving Together est un réseau social familliale avec arbre généalogique, journal de gratitude partagé à destination des familles éloignées par l'immigration",
-        requirements: "Créer un Backend Sécurisé pour une application mobile en Frontend",
+            "NG. Moving Together est un reseau social familliale avec arbre genealogique, journal de gratitude partage a destination des familles eloignees par l'immigration",
+        requirements: "Creer un Backend Securise pour une application mobile en Frontend",
         architecture: "Spring boot, Neo4j, Postgres, Appwrite, Bitbucket, Docker SonarQube, Oracle Cloud, HugginFace, Mistra AI",
-        website: "#", // Replace with the actual website link
+        website: "#",
     }
 ];
 ---
 
 <Layout
     title="Nos Produits"
-    description="Créer de la valeur sur des problèmes de niches"
+    description="Creer de la valeur sur des problemes de niches"
 >
-    <section class="section">
-            <div class="container">
-                <div class="columns is-multiline">
-                    {
-                        products.map((product) => (
-                            <div class="column is-6-desktop is-12-tablet">
-                                <div class="card" style="border-radius: 0.75rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                    <div class="card-content">
-                                        <p class="title is-4 has-text-weight-semibold">{product.title}</p>
-                                        <p class="subtitle is-6 has-text-grey">{product.description}</p>
-                                        <hr />
-                                        <div class="content">
-                                            <p>
-                                                <strong>Requirements:</strong>
-                                                <br />
-                                                {product.requirements}
-                                            </p>
-                                            <p>
-                                                <strong>Architecture:</strong>
-                                                <br />
-                                                {product.architecture}
-                                            </p>
-                                        </div>
-                                        {product.website && (
-                                            <div class="buttons">
-                                                <a
-                                                    href={product.website}
-                                                    class="button is-primary is-outlined is-small"
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    aria-label={`Visit the website for ${product.title}`}
-                                                >
-                                                    Site Web
-                                                </a>
-                                            </div>
-                                        )}
+    <section>
+        <div>
+            <div>
+                {
+                    products.map((product) => (
+                        <div>
+                            <div>
+                                <div>
+                                    <p><strong>{product.title}</strong></p>
+                                    <p>{product.description}</p>
+                                    <hr />
+                                    <div>
+                                        <p>
+                                            <strong>Requirements:</strong>
+                                            <br />
+                                            {product.requirements}
+                                        </p>
+                                        <p>
+                                            <strong>Architecture:</strong>
+                                            <br />
+                                            {product.architecture}
+                                        </p>
                                     </div>
+                                    {product.website && (
+                                        <div>
+                                            <a
+                                                href={product.website}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label={`Visit the website for ${product.title}`}
+                                            >
+                                                Site Web
+                                            </a>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
-                        ))
-                    }
-                </div>
+                        </div>
+                    ))
+                }
             </div>
-        </section>
+        </div>
+    </section>
 </Layout>

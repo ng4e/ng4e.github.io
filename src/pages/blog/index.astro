@@ -1,5 +1,5 @@
 ---
-import Layout from "../../layouts/MainLayout.astro";
+import Layout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 
@@ -9,16 +9,16 @@ const posts = (await getCollection("blog")).sort(
 ---
 
 <Layout
-    title="Idées et Opinions"
+    title="Idees et Opinions"
     description="...et autres questions existentielles sur la technologie, la science et la vie de tous les jours"
 >
-    <section class="section">
+    <section>
         {
             posts.map((post) => (
-                <div class="blog-post-item">
-                    <article class="media">
-                        <div class="media-content">
-                            <div class="content">
+                <div>
+                    <article>
+                        <div>
+                            <div>
                                 <p>
                                     <strong>
                                         <a
@@ -36,7 +36,6 @@ const posts = (await getCollection("blog")).sort(
                                     </small>
                                     <br />
                                     {post.data.description}{" "}
-                                    {/* Added description instead of image */}
                                     <br />
                                     <a
                                         href={`/blog/${post.id}/`}
@@ -52,25 +51,4 @@ const posts = (await getCollection("blog")).sort(
             ))
         }
     </section>
-    <style>
-        .blog-post-item {
-            border-bottom: 1px solid #ddd; /* Subtle bottom border */
-            margin-bottom: 2rem; /* Space between items */
-            padding-bottom: 1rem; /* Adds space for the border */
-            font-family: serif; /* Journal-like font */
-        }
-
-        .content {
-            font-size: 1.1rem; /* Adjust font size for readability */
-            line-height: 1.6; /* Improves readability */
-        }
-
-        strong a {
-            color: inherit; /* Inherit the text color for the link */
-            text-decoration: none; /* Remove underline from the link */
-        }
-        strong a:hover {
-            text-decoration: underline; /* Add underline on hover */
-        }
-    </style>
 </Layout>

@@ -1,125 +1,70 @@
 ---
-import Layout from "../layouts/MainLayout.astro";
+import Layout from "../layouts/BaseLayout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import HeaderLink from "../components/HeaderLink.astro";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-    <article class="mt-1 columns">
-        <div class="column is-one-third">
+    <article>
+        <div>
             <p>
-                L'<strong>harmonie</strong> est au cœur de notre démarche. Face aux défis complexes,
-                nous analysons méthodiquement chaque variable pour créer des solutions fluides et optimales,
-                éliminant toute friction inutile.
+                L'<strong>harmonie</strong> est au coeur de notre demarche. Face aux defis complexes,
+                nous analysons methodiquement chaque variable pour creer des solutions fluides et optimales,
+                eliminant toute friction inutile.
             </p>
             <hr/>
             <p>
-                GambeTech est un éditeur de solutions, spécialisés dans <a href="/products">des produits de niches.</a>
+                GambeTech est un editeur de solutions, specialises dans <a href="/products">des produits de niches.</a>
             </p>
             <hr/>
-            Nos compétences clés :
+            Nos competences cles :
 
-            <div class="content">
-              <ul class="">
-                <li class="">
-                  <div class="">
-                    <div class="media">
-                      <div class="media-content">
-                        <h7 class="title is-6">Modélisation</h7>
+            <div>
+              <ul>
+                <li>
+                  <div>
+                    <div>
+                      <div>
+                        <h6>Modelisation</h6>
                         <p>Structuration de domaines fonctionnels complexes</p>
                       </div>
                     </div>
                   </div>
                 </li>
 
-                <li class="">
-                  <div class="">
-                    <div class="media">
-                      <div class="media-content">
-                        <h7 class="title is-6">Priorisation</h7>
-                        <p>Identification des éléments à forte valeur ajoutée</p>
+                <li>
+                  <div>
+                    <div>
+                      <div>
+                        <h6>Priorisation</h6>
+                        <p>Identification des elements a forte valeur ajoutee</p>
                       </div>
                     </div>
                   </div>
                 </li>
 
-                <li class="">
-                  <div class="">
-                    <div class="media">
-                      <div class="media-content">
-                        <h7 class="title is-6">Implémentation</h7>
-                        <p>Développement technique précis et performant</p>
+                <li>
+                  <div>
+                    <div>
+                      <div>
+                        <h6>Implementation</h6>
+                        <p>Developpement technique precis et performant</p>
                       </div>
                     </div>
                   </div>
                 </li>
 
-                <li class="">
-                  <div class="">
-                    <div class="media">
-                      <div class="media-content">
-                        <h7 class="title is-6">Intégration</h7>
-                        <p>Solutions harmonieuses et adaptées aux systèmes existants</p>
+                <li>
+                  <div>
+                    <div>
+                      <div>
+                        <h6>Integration</h6>
+                        <p>Solutions harmonieuses et adaptees aux systemes existants</p>
                       </div>
                     </div>
                   </div>
                 </li>
               </ul>
             </div>
-            <!--
-            <div class="hidden-content">
-                <p>
-                Depuis 2016, nous accompagnons entrepreneurs et intrapreneurs dans la formalisation et conceptualisation de leurs idées.<br/> Cette immersion dans des tiers-lieux d'innovation nous a permis d'identifier un besoin critique : un accompagnement technique solide dès les premières étapes de projet.
-
-                C'est ainsi que GambeTech est né en mars 2020, avec l'ambition d'accompagner les porteurs de projets de l'idéation à la preuve de concept.<br/>
-
-                GambeTech intervient en amont de la chaîne de valeur, là où le sens se crée et où l'expertise technique fait la différence entre une idée prometteuse et une solution viable.
-                </p>
-                <p class="signature is-size-6">Samuel Molu</p>
-            </div>
-
-            <button id="toggleButton" class="button is-text is-small"
-                >Continuer à lire...
-            </button> -->
         </div>
-        <div class="column"></div>
-        <div class="column">
     </article>
-
-    <style>
-        body {
-            font-size: 1rem;
-            font-family: var(--font-body), Arial, Helvetica, sans-serif;
-        }
-        .hidden-content {
-            display: none;
-        }
-        .signature {
-            font-family: "Dancing Script", cursive; /* Use a script-like font */
-            font-size: 3rem; /* Make it larger */
-            font-style: italic; /* Add a bit of slant */
-            color: #4a4a4a; /* Soft color for elegance */
-        }
-        .sector-tag {
-             margin-right: 0.5rem;
-             margin-bottom: 0.5rem;
-           }
-    </style>
-    <script>
-        const toggleButton = document.getElementById("toggleButton");
-        const hiddenContent = document.querySelector<HTMLElement>(".hidden-content");
-
-        toggleButton?.addEventListener("click", () => {
-            if (
-                hiddenContent?.style.display === "none" ||
-                !hiddenContent?.style.display
-            ) {
-                hiddenContent!.style.display = "inline";
-                toggleButton!.textContent = "Voir Moins";
-            } else {
-                hiddenContent.style.display = "none";
-                toggleButton!.textContent = "Continuer à lire...";
-            }
-        });
-    </script>
 </Layout>

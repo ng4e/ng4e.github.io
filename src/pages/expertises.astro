@@ -1,86 +1,62 @@
 ---
-import Layout from "../layouts/MainLayout.astro";
+import Layout from "../layouts/BaseLayout.astro";
 import CompanyLogoSlider from "../components/CompanyLogoSlider.astro";
 import { companies } from "../consts";
 ---
 
 <Layout
     title="Expertises"
-    description="Architecture et planification - Intégration de systèmes – Conception et développement de logiciels"
+    description="Architecture et planification - Integration de systemes - Conception et developpement de logiciels"
 >
 
-    <p class="tag is-success is-light mb-4">Ouvert au marché. Freelance/CDI. basé à Aix-en-Provence</p>
-    <h5 class="title is-4 mb-4">15+ années d'expérience, dans des secteurs stratégiques</h5>
-    <div class="tags">
-        <span class="tag is-info is-light is-medium sector-tag">Banque de détail</span>
-        <span class="tag is-info is-light is-medium sector-tag">Assurance</span>
-        <span class="tag is-info is-light is-medium sector-tag">Monétique</span>
-        <span class="tag is-info is-light is-medium sector-tag">Télécom</span>
-        <span class="tag is-info is-light is-medium sector-tag">Énergie</span>
+    <p>Ouvert au marche. Freelance/CDI. base a Aix-en-Provence</p>
+    <h5>15+ annees d'experience, dans des secteurs strategiques</h5>
+    <div>
+        <span>Banque de detail</span>
+        <span>Assurance</span>
+        <span>Monetique</span>
+        <span>Telecom</span>
+        <span>Energie</span>
     </div>
 
-    <div class="mt-2 columns is-multiline">
-        <!-- Méthodologie -->
-        <div class="column is-half">
-            <div class="card expertise-card">
-                <header class="card-header">
-                    <div class="icon-box">
-                        <span class="icon">
-                            <i class="fa fa-cogs"></i>
-                        </span>
-                    </div>
-                    <p class="card-header-title">
-                        Vision Produit (Expérimenté)
-                    </p>
+    <div>
+        <div>
+            <div>
+                <header>
+                    <p>Vision Produit (Experimente)</p>
                 </header>
-                <div class="card-content">
+                <div>
                     <p>
-                        Définition et mise en oeuvre de la stratégie produit
-                        côté backend avec un fort focus sur le modèle,
+                        Definition et mise en oeuvre de la strategie produit
+                        cote backend avec un fort focus sur le modele,
                         l'ergonomie et la performance
                     </p>
                 </div>
             </div>
         </div>
 
-        <!-- Conception Système -->
-        <div class="column is-half">
-            <div class="card expertise-card">
-                <header class="card-header">
-                    <div class="icon-box">
-                        <span class="icon">
-                            <i class="fa fa-pencil"></i>
-                        </span>
-                    </div>
-                    <p class="card-header-title">
-                        Gestion de projet technique (Expérimenté)
-                    </p>
+        <div>
+            <div>
+                <header>
+                    <p>Gestion de projet technique (Experimente)</p>
                 </header>
-                <div class="card-content">
+                <div>
                     <p>
-                        Pilotage et Implémentation de projets techniques de la
-                        conception au déploiement
+                        Pilotage et Implementation de projets techniques de la
+                        conception au deploiement
                     </p>
                 </div>
             </div>
         </div>
 
-        <!-- Bases de données -->
-        <div class="column is-half">
-            <div class="card expertise-card">
-                <header class="card-header">
-                    <div class="icon-box">
-                        <span class="icon">
-                            <i class="fa fa-database"></i>
-                        </span>
-                    </div>
-                    <p class="card-header-title">
-                        Développement full-stack (Expérimenté)
-                    </p>
+        <div>
+            <div>
+                <header>
+                    <p>Developpement full-stack (Experimente)</p>
                 </header>
-                <div class="card-content">
+                <div>
                     <p>
-                        Sensibilité à une approche de développement cloud natif.
+                        Sensibilite a une approche de developpement cloud natif.
                         Langages de programmation: Java 8+, JavaScript (ES6+),
                         TypeScript, Python SQL.
                     </p>
@@ -88,43 +64,27 @@ import { companies } from "../consts";
             </div>
         </div>
 
-        <!-- Systèmes d’exploitation -->
-        <div class="column is-half">
-            <div class="card expertise-card">
-                <header class="card-header">
-                    <div class="icon-box">
-                        <span class="icon">
-                            <i class="fa fa-desktop"></i>
-                        </span>
-                    </div>
-                    <p class="card-header-title">
-                        Environnement agile et apprenant (Expérimenté)
-                    </p>
+        <div>
+            <div>
+                <header>
+                    <p>Environnement agile et apprenant (Experimente)</p>
                 </header>
-                <div class="card-content">
+                <div>
                     <p>
-                        Capacité à évoluer dans un cadre collaboratif et orienté
-                        vers le client, avec une capacité d'apprentissage
+                        Capacite a evoluer dans un cadre collaboratif et oriente
+                        vers le client, avec une capacite d'apprentissage
                         continue.
                     </p>
                 </div>
             </div>
         </div>
 
-        <!-- PaaS et SaaS -->
-        <div class="column is-full">
-            <div class="card expertise-card">
-                <header class="card-header">
-                    <div class="icon-box">
-                        <span class="icon">
-                            <i class="fa fa-cloud"></i>
-                        </span>
-                    </div>
-                    <p class="card-header-title">
-                        Compétences Techniques Complémentaires
-                    </p>
+        <div>
+            <div>
+                <header>
+                    <p>Competences Techniques Complementaires</p>
                 </header>
-                <div class="card-content">
+                <div>
                     <p>
                         Atlassian (Confluence, Jira,Trello), Spring Boot, Spring
                         framework, Quarkus, Maven, Github, Gitlab, Bitbucket,
@@ -132,21 +92,6 @@ import { companies } from "../consts";
                     </p>
                 </div>
             </div>
-            <style>
-                .icon-box {
-                    background-color: #f5f5f5;
-                    padding: 1rem;
-                    border-radius: 8px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 1.5rem;
-                    color: #4a4a4a;
-                }
-                .expertise-card {
-                    margin-bottom: 1.5rem;
-                }
-            </style>
         </div>
     </div>
 
