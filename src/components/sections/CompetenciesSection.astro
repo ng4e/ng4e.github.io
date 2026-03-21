@@ -1,0 +1,26 @@
+---
+import Card from "../ui/Card.astro";
+import { Network, Target, Code, Puzzle } from "@lucide/astro";
+
+const competencies = [
+  { icon: Network, title: "Modelisation", body: "Structuration de domaines fonctionnels complexes" },
+  { icon: Target, title: "Priorisation", body: "Identification des elements a forte valeur ajoutee" },
+  { icon: Code, title: "Implementation", body: "Developpement technique precis et performant" },
+  { icon: Puzzle, title: "Integration", body: "Solutions harmonieuses et adaptees aux systemes existants" },
+];
+---
+
+<section id="competences" class="bg-white py-20 scroll-mt-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-semibold text-primary text-center mb-12">Nos competences cles</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {competencies.map(({ icon: Icon, title, body }) => (
+        <Card>
+          <Icon class="w-12 h-12 text-accent mb-4" stroke-width={2} />
+          <h3 class="text-xl font-semibold text-primary mb-2">{title}</h3>
+          <p class="text-base text-text-secondary">{body}</p>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+---
+import Badge from "../ui/Badge.astro";
+import CompanyLogoSlider from "../CompanyLogoSlider.astro";
+
+const sectors = ["Banque de detail", "Assurance", "Monetique", "Telecom", "Energie"];
+---
+
+<section id="secteurs" class="bg-surface py-20 scroll-mt-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-semibold text-primary text-center mb-4">Secteurs d'intervention</h2>
+    <p class="text-base text-text-secondary text-center mb-12 max-w-2xl mx-auto">Une expertise developpee au sein de secteurs exigeants ou performance et fiabilite sont essentielles.</p>
+    <div class="flex flex-wrap justify-center gap-3 mb-16">
+      {sectors.map((sector) => (
+        <Badge>{sector}</Badge>
+      ))}
+    </div>
+    <CompanyLogoSlider />
+  </div>
+</section>
