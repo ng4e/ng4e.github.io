@@ -85,11 +85,11 @@ Plans:
   2. The metrics section displays 4 count-up counters (15+ years, 5 sectors, 2020, 4 products) that animate when scrolled into view
   3. On viewports under 768px, the navbar shows a hamburger icon that toggles a mobile menu overlay; on desktop, the hamburger never loads (no JS shipped)
   4. The Motion library uses LazyMotion + m component pattern (bundle under 5KB per island)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
+- [ ] 04-01-PLAN.md — HeroBackground canvas animation + Counter count-up island, wired into hero and metrics sections
+- [ ] 04-02-PLAN.md — MobileMenu hamburger overlay with focus trap, wired into Navbar
 
 ### Phase 5: Animations and Interactions
 **Goal**: All landing page sections have polished entrance animations and hover effects, with full respect for motion preferences
