@@ -1,77 +1,21 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import HeroSection from "../components/sections/HeroSection.astro";
+import PhilosophySection from "../components/sections/PhilosophySection.astro";
+import CompetenciesSection from "../components/sections/CompetenciesSection.astro";
+import SectorsSection from "../components/sections/SectorsSection.astro";
+import MetricsSection from "../components/sections/MetricsSection.astro";
+import ProductsSection from "../components/sections/ProductsSection.astro";
+import BlogPreviewSection from "../components/sections/BlogPreviewSection.astro";
 ---
 
-<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-    <!-- Temporary hero placeholder until Phase 3 builds the real hero -->
-    <section class="bg-primary pt-24 pb-16 -mt-0">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-white text-5xl md:text-7xl font-semibold uppercase tracking-widest">GAMBETECH</h1>
-            <p class="text-white/90 text-xl md:text-2xl mt-6">Transforme les idées en solutions innovantes</p>
-        </div>
-    </section>
-    <article>
-        <div>
-            <p>
-                L'<strong>harmonie</strong> est au coeur de notre demarche. Face aux defis complexes,
-                nous analysons methodiquement chaque variable pour creer des solutions fluides et optimales,
-                eliminant toute friction inutile.
-            </p>
-            <hr/>
-            <p>
-                GambeTech est un editeur de solutions, specialises dans <a href="/products">des produits de niches.</a>
-            </p>
-            <hr/>
-            Nos competences cles :
-
-            <div>
-              <ul>
-                <li>
-                  <div>
-                    <div>
-                      <div>
-                        <h6>Modelisation</h6>
-                        <p>Structuration de domaines fonctionnels complexes</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div>
-                    <div>
-                      <div>
-                        <h6>Priorisation</h6>
-                        <p>Identification des elements a forte valeur ajoutee</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div>
-                    <div>
-                      <div>
-                        <h6>Implementation</h6>
-                        <p>Developpement technique precis et performant</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div>
-                    <div>
-                      <div>
-                        <h6>Integration</h6>
-                        <p>Solutions harmonieuses et adaptees aux systemes existants</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-        </div>
-    </article>
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION} sentinelInHero={true}>
+  <HeroSection />
+  <PhilosophySection />
+  <CompetenciesSection />
+  <SectorsSection />
+  <MetricsSection />
+  <ProductsSection />
+  <BlogPreviewSection />
 </Layout>
