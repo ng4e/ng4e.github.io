@@ -89,7 +89,7 @@ Plans:
 
 Plans:
 - [ ] 04-01-PLAN.md — HeroBackground canvas animation + Counter count-up island, wired into hero and metrics sections
-- [ ] 04-02-PLAN.md — MobileMenu hamburger overlay with focus trap, wired into Navbar
+- [x] 04-02-PLAN.md — MobileMenu hamburger overlay with focus trap, wired into Navbar
 
 ### Phase 5: Animations and Interactions
 **Goal**: All landing page sections have polished entrance animations and hover effects, with full respect for motion preferences
@@ -198,7 +198,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 1. Foundation | 2/2 | Complete    | 2026-03-20 |
 | 2. Layout Shell | 1/2 | In Progress|  |
 | 3. Landing Page Sections | 0/3 | Not started | - |
-| 4. React Islands | 0/2 | Not started | - |
+| 4. React Islands | 1/2 | In Progress|  |
 | 5. Animations and Interactions | 0/1 | Not started | - |
 | 6. Content Migration | 0/2 | Not started | - |
 | 7. Sub-Pages | 0/2 | Not started | - |

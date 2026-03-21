@@ -18,7 +18,7 @@
 - [x] **NAV-01**: Sticky navbar with transparent-to-solid background transition on scroll (IntersectionObserver)
 - [x] **NAV-02**: Navigation links: Expertises | Produits | Experiences | Idees & Opinions
 - [x] **NAV-03**: Smooth scroll to anchor sections with scroll-margin-top offset
-- [ ] **NAV-04**: Mobile hamburger menu as React island (client:media="(max-width: 768px)")
+- [x] **NAV-04**: Mobile hamburger menu as React island (client:media="(max-width: 768px)")
 - [x] **NAV-05**: Logo "Gt" monogram at left, bold, white on hero -> colored on scroll
 
 ### Landing Page Sections
@@ -66,7 +66,7 @@
 
 - [x] **RESP-01**: Mobile-first responsive -- 1 col mobile, 2 cols tablet, 3-4 cols desktop
 - [ ] **RESP-02**: All tap targets minimum 44x44px on mobile
-- [ ] **RESP-03**: Navigation collapses to hamburger menu on mobile (<768px)
+- [x] **RESP-03**: Navigation collapses to hamburger menu on mobile (<768px)
 
 ### SEO & Performance
 
@@ -140,7 +140,7 @@
 | NAV-01 | Phase 2 | Complete |
 | NAV-02 | Phase 2 | Complete |
 | NAV-03 | Phase 3 | Complete |
-| NAV-04 | Phase 4 | Pending |
+| NAV-04 | Phase 4 | Complete |
 | NAV-05 | Phase 2 | Complete |
 | LAND-01 | Phase 3 | Complete |
 | LAND-02 | Phase 4 | Pending |
@@ -170,7 +170,7 @@
 | DSGN-05 | Phase 2 | Complete |
 | RESP-01 | Phase 3 | Complete |
 | RESP-02 | Phase 9 | Pending |
-| RESP-03 | Phase 4 | Pending |
+| RESP-03 | Phase 4 | Complete |
 | SEO-01 | Phase 10 | Pending |
 | SEO-02 | Phase 10 | Pending |
 | SEO-03 | Phase 10 | Pending |
