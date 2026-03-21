@@ -1,6 +1,67 @@
 ---
-// Navbar.astro (renamed from Header.astro, per D-05)
-// Phase 1: Shell only
+const pathname = Astro.url.pathname;
+const navLinks = [
+    { label: "Expertises", href: "/expertises" },
+    { label: "Produits", href: "/products" },
+    { label: "Expériences", href: "/experiences" },
+    { label: "Idées & Opinions", href: "/blog" },
+];
 ---
 
-<nav><slot /></nav>
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+        <a href="/" class="text-2xl font-semibold">
+            <span class="nav-logo text-white transition-colors duration-300">Gt</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+            {navLinks.map(link => (
+                <a
+                    href={link.href}
+                    class:list={[
+                        "nav-link relative text-base font-semibold transition-colors duration-200",
+                        pathname.startsWith(link.href) && "active"
+                    ]}
+                >
+                    {link.label}
+                </a>
+            ))}
+        </div>
+    </div>
+</nav>
+
+<style>
+    /* Default state: transparent over dark background */
+    .nav-link { color: white; }
+    .nav-link:hover { color: rgba(255, 255, 255, 0.8); }
+
+    /* Active link indicator: 2px accent underline per D-03 */
+    .nav-link.active::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: var(--color-accent);
+    }
+
+    /* Scrolled state: solid background, different hover/logo colors */
+    :global(#navbar.scrolled) { background-color: rgba(27, 42, 74, 0.95); backdrop-filter: blur(4px); }
+    :global(#navbar.scrolled) .nav-link:hover { color: var(--color-accent); }
+    :global(#navbar.scrolled) .nav-logo { color: var(--color-accent); }
+</style>
+
+<script is:inline>
+    (() => {
+        const nav = document.getElementById('navbar');
+        const sentinel = document.getElementById('nav-sentinel');
+        if (!nav || !sentinel) return;
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                nav.classList.toggle('scrolled', !entry.isIntersecting);
+            },
+            { threshold: 0 }
+        );
+        observer.observe(sentinel);
+    })();
+</script>
