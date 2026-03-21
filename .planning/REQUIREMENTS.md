@@ -23,11 +23,11 @@
 
 ### Landing Page Sections
 
-- [ ] **LAND-01**: Hero section with "GAMBETECH" title, tagline, description, and dual CTA buttons
+- [x] **LAND-01**: Hero section with "GAMBETECH" title, tagline, description, and dual CTA buttons
 - [ ] **LAND-02**: Animated hero background -- circuit board / tech mesh pattern (canvas or SVG, React island client:load)
-- [ ] **LAND-03**: Philosophy section with styled blockquote (left border accent), positioning statement
-- [ ] **LAND-04**: Competencies section -- 4-column card grid with Lucide icons (Modelisation, Priorisation, Implementation, Integration)
-- [ ] **LAND-05**: Sectors section -- 5 badge tags (Banque, Assurance, Monetique, Telecom, Energie) + client logos in grayscale with color hover
+- [x] **LAND-03**: Philosophy section with styled blockquote (left border accent), positioning statement
+- [x] **LAND-04**: Competencies section -- 4-column card grid with Lucide icons (Modelisation, Priorisation, Implementation, Integration)
+- [x] **LAND-05**: Sectors section -- 5 badge tags (Banque, Assurance, Monetique, Telecom, Energie) + client logos in grayscale with color hover
 - [ ] **LAND-06**: Metrics section on dark background -- 4 count-up counters (15+ years, 5 sectors, 2020, 4 products) with React island animation (client:visible)
 - [ ] **LAND-07**: Products section on dark background -- 3 white cards (NMT, Sportifs Prometteurs, Association Pirien) with name, tagline, description, CTA link
 - [ ] **LAND-08**: Blog preview section -- 2-3 latest posts from content collection with title, date, excerpt, "Lire la suite" CTA
@@ -142,11 +142,11 @@
 | NAV-03 | Phase 3 | Complete |
 | NAV-04 | Phase 4 | Pending |
 | NAV-05 | Phase 2 | Complete |
-| LAND-01 | Phase 3 | Pending |
+| LAND-01 | Phase 3 | Complete |
 | LAND-02 | Phase 4 | Pending |
-| LAND-03 | Phase 3 | Pending |
-| LAND-04 | Phase 3 | Pending |
-| LAND-05 | Phase 3 | Pending |
+| LAND-03 | Phase 3 | Complete |
+| LAND-04 | Phase 3 | Complete |
+| LAND-05 | Phase 3 | Complete |
 | LAND-06 | Phase 4 | Pending |
 | LAND-07 | Phase 3 | Pending |
 | LAND-08 | Phase 3 | Pending |
