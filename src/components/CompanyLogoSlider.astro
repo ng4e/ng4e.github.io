@@ -1,5 +1,33 @@
 ---
-// Shell only, Phase 2+ rebuilds
+import { companies } from "../consts";
 ---
 
-<div><slot /></div>
+<div class="overflow-hidden">
+    <div class="flex logo-scroll">
+        {companies.map(c => (
+            <img src={c.logo} alt={c.name} class="h-10 w-auto mx-8 shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+        ))}
+        {companies.map(c => (
+            <img src={c.logo} alt={c.name} aria-hidden="true" class="h-10 w-auto mx-8 shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+        ))}
+    </div>
+</div>
+
+<style>
+@keyframes logo-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.logo-scroll {
+    animation: logo-scroll 30s linear infinite;
+    will-change: transform;
+}
+.logo-scroll:hover {
+    animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+    .logo-scroll {
+        animation: none;
+    }
+}
+</style>
