@@ -10,16 +10,16 @@
 - [x] **FOUN-01**: Site uses Tailwind CSS v4 (via @tailwindcss/vite) with custom design tokens (marine/teal palette, Inter font)
 - [x] **FOUN-02**: Bulma CSS is fully removed -- no residual classes or dependencies
 - [x] **FOUN-03**: React integration installed for interactive islands (HeroBackground, Counter, MobileMenu)
-- [ ] **FOUN-04**: Base layout (BaseLayout.astro) implements design system with head management (meta, fonts, analytics)
+- [x] **FOUN-04**: Base layout (BaseLayout.astro) implements design system with head management (meta, fonts, analytics)
 - [x] **FOUN-05**: Lucide icons available in both Astro (@lucide/astro) and React (lucide-react) components
 
 ### Navigation
 
-- [ ] **NAV-01**: Sticky navbar with transparent-to-solid background transition on scroll (IntersectionObserver)
-- [ ] **NAV-02**: Navigation links: Expertises | Produits | Experiences | Idees & Opinions
+- [x] **NAV-01**: Sticky navbar with transparent-to-solid background transition on scroll (IntersectionObserver)
+- [x] **NAV-02**: Navigation links: Expertises | Produits | Experiences | Idees & Opinions
 - [ ] **NAV-03**: Smooth scroll to anchor sections with scroll-margin-top offset
 - [ ] **NAV-04**: Mobile hamburger menu as React island (client:media="(max-width: 768px)")
-- [ ] **NAV-05**: Logo "Gt" monogram at left, bold, white on hero -> colored on scroll
+- [x] **NAV-05**: Logo "Gt" monogram at left, bold, white on hero -> colored on scroll
 
 ### Landing Page Sections
 
@@ -31,7 +31,7 @@
 - [ ] **LAND-06**: Metrics section on dark background -- 4 count-up counters (15+ years, 5 sectors, 2020, 4 products) with React island animation (client:visible)
 - [ ] **LAND-07**: Products section on dark background -- 3 white cards (NMT, Sportifs Prometteurs, Association Pirien) with name, tagline, description, CTA link
 - [ ] **LAND-08**: Blog preview section -- 2-3 latest posts from content collection with title, date, excerpt, "Lire la suite" CTA
-- [ ] **LAND-09**: Footer -- 3-column layout (Gambetech, Initiative, Ressources), GitHub + LinkedIn icons, legal mentions, copyright
+- [x] **LAND-09**: Footer -- 3-column layout (Gambetech, Initiative, Ressources), GitHub + LinkedIn icons, legal mentions, copyright
 
 ### Animations
 
@@ -57,10 +57,10 @@
 ### Design System
 
 - [x] **DSGN-01**: Color palette implemented as Tailwind v4 @theme tokens (primary, accent, bg, surface, text, etc.)
-- [ ] **DSGN-02**: Typography scale using Inter -- hero display (56-72px bold) down to caption (13-14px)
+- [x] **DSGN-02**: Typography scale using Inter -- hero display (56-72px bold) down to caption (13-14px)
 - [ ] **DSGN-03**: Card component with white bg, rounded-xl, shadow-sm, hover:shadow-lg, p-6
 - [ ] **DSGN-04**: Primary button (bg accent, white text, rounded-lg, h-12) and ghost button (transparent, accent border)
-- [ ] **DSGN-05**: Section alternation rhythm: white -> surface -> white -> primary -> white -> primary -> white -> primary
+- [x] **DSGN-05**: Section alternation rhythm: white -> surface -> white -> primary -> white -> primary -> white -> primary
 
 ### Responsive
 
@@ -135,13 +135,13 @@
 | FOUN-01 | Phase 1 | Complete |
 | FOUN-02 | Phase 1 | Complete |
 | FOUN-03 | Phase 1 | Complete |
-| FOUN-04 | Phase 2 | Pending |
+| FOUN-04 | Phase 2 | Complete |
 | FOUN-05 | Phase 1 | Complete |
-| NAV-01 | Phase 2 | Pending |
-| NAV-02 | Phase 2 | Pending |
+| NAV-01 | Phase 2 | Complete |
+| NAV-02 | Phase 2 | Complete |
 | NAV-03 | Phase 3 | Pending |
 | NAV-04 | Phase 4 | Pending |
-| NAV-05 | Phase 2 | Pending |
+| NAV-05 | Phase 2 | Complete |
 | LAND-01 | Phase 3 | Pending |
 | LAND-02 | Phase 4 | Pending |
 | LAND-03 | Phase 3 | Pending |
@@ -150,7 +150,7 @@
 | LAND-06 | Phase 4 | Pending |
 | LAND-07 | Phase 3 | Pending |
 | LAND-08 | Phase 3 | Pending |
-| LAND-09 | Phase 2 | Pending |
+| LAND-09 | Phase 2 | Complete |
 | ANIM-01 | Phase 5 | Pending |
 | ANIM-02 | Phase 5 | Pending |
 | ANIM-03 | Phase 4 | Pending |
@@ -164,10 +164,10 @@
 | PAGE-02 | Phase 7 | Pending |
 | PAGE-03 | Phase 7 | Pending |
 | DSGN-01 | Phase 1 | Complete |
-| DSGN-02 | Phase 2 | Pending |
+| DSGN-02 | Phase 2 | Complete |
 | DSGN-03 | Phase 2 | Pending |
 | DSGN-04 | Phase 2 | Pending |
-| DSGN-05 | Phase 2 | Pending |
+| DSGN-05 | Phase 2 | Complete |
 | RESP-01 | Phase 3 | Pending |
 | RESP-02 | Phase 9 | Pending |
 | RESP-03 | Phase 4 | Pending |

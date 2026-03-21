@@ -54,7 +54,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — BaseLayout with props/header strip, sticky Navbar with scroll transition, 3-column Footer
+- [x] 02-01-PLAN.md — BaseLayout with props/header strip, sticky Navbar with scroll transition, 3-column Footer
 - [ ] 02-02-PLAN.md — Button/Card/Badge UI atoms, BlogPost refactor to wrap BaseLayout, mentions-legales page
 
 ### Phase 3: Landing Page Sections
@@ -196,7 +196,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-03-20 |
-| 2. Layout Shell | 0/2 | Planned | - |
+| 2. Layout Shell | 1/2 | In Progress|  |
 | 3. Landing Page Sections | 0/3 | Not started | - |
 | 4. React Islands | 0/2 | Not started | - |
 | 5. Animations and Interactions | 0/1 | Not started | - |
