@@ -55,7 +55,7 @@ Plans:
 
 Plans:
 - [x] 02-01-PLAN.md — BaseLayout with props/header strip, sticky Navbar with scroll transition, 3-column Footer
-- [ ] 02-02-PLAN.md — Button/Card/Badge UI atoms, BlogPost refactor to wrap BaseLayout, mentions-legales page
+- [x] 02-02-PLAN.md — Button/Card/Badge UI atoms, BlogPost refactor to wrap BaseLayout, mentions-legales page
 
 ### Phase 3: Landing Page Sections
 **Goal**: The landing page is visually complete as a static one-pager with all content sections laid out, communicating the software publisher identity

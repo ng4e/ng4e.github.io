@@ -58,8 +58,8 @@
 
 - [x] **DSGN-01**: Color palette implemented as Tailwind v4 @theme tokens (primary, accent, bg, surface, text, etc.)
 - [x] **DSGN-02**: Typography scale using Inter -- hero display (56-72px bold) down to caption (13-14px)
-- [ ] **DSGN-03**: Card component with white bg, rounded-xl, shadow-sm, hover:shadow-lg, p-6
-- [ ] **DSGN-04**: Primary button (bg accent, white text, rounded-lg, h-12) and ghost button (transparent, accent border)
+- [x] **DSGN-03**: Card component with white bg, rounded-xl, shadow-sm, hover:shadow-lg, p-6
+- [x] **DSGN-04**: Primary button (bg accent, white text, rounded-lg, h-12) and ghost button (transparent, accent border)
 - [x] **DSGN-05**: Section alternation rhythm: white -> surface -> white -> primary -> white -> primary -> white -> primary
 
 ### Responsive
@@ -165,8 +165,8 @@
 | PAGE-03 | Phase 7 | Pending |
 | DSGN-01 | Phase 1 | Complete |
 | DSGN-02 | Phase 2 | Complete |
-| DSGN-03 | Phase 2 | Pending |
-| DSGN-04 | Phase 2 | Pending |
+| DSGN-03 | Phase 2 | Complete |
+| DSGN-04 | Phase 2 | Complete |
 | DSGN-05 | Phase 2 | Complete |
 | RESP-01 | Phase 3 | Pending |
 | RESP-02 | Phase 9 | Pending |

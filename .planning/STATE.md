@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 02-01-PLAN.md
-last_updated: "2026-03-21T14:12:44.534Z"
+stopped_at: Completed 02-02-PLAN.md
+last_updated: "2026-03-21T14:16:15.626Z"
 progress:
   total_phases: 10
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 4
-  completed_plans: 3
+  completed_plans: 4
 ---
 
 # Project State
@@ -49,6 +49,7 @@ Plan: 2 of 2
 | Phase 01 P01 | 3min | 2 tasks | 4 files |
 | Phase 01 P02 | 3min | 2 tasks | 18 files |
 | Phase 02 P01 | 2min | 3 tasks | 3 files |
+| Phase 02 P02 | 2min | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -63,6 +64,8 @@ Recent decisions affecting current work:
 - [Phase 01]: Tailwind v4 via @tailwindcss/vite plugin, CSS-first @theme tokens, FA CDN removed for Lucide
 - [Phase 01]: Umami analytics added to BlogPost.astro for consistent tracking across both layouts
 - [Phase 02]: Nav-sentinel placed after dark header strip for consistent scroll trigger; Navbar uses is:inline script to prevent FOUC
+- [Phase 02]: BlogPost delegates entirely to BaseLayout with headerTitle prop for dark strip
+- [Phase 02]: UI atom pattern: interface Props with variant/class, class:list composition with variant maps
 
 ### Pending Todos
 
@@ -76,6 +79,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T14:12:44.528Z
-Stopped at: Completed 02-01-PLAN.md
+Last session: 2026-03-21T14:16:15.619Z
+Stopped at: Completed 02-02-PLAN.md
 Resume file: None
