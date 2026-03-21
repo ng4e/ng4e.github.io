@@ -2,6 +2,7 @@
 import Layout from "../layouts/BaseLayout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import HeroSection from "../components/sections/HeroSection.astro";
+import HeroBackground from "../components/ui/HeroBackground.tsx";
 import PhilosophySection from "../components/sections/PhilosophySection.astro";
 import CompetenciesSection from "../components/sections/CompetenciesSection.astro";
 import SectorsSection from "../components/sections/SectorsSection.astro";
@@ -11,7 +12,9 @@ import BlogPreviewSection from "../components/sections/BlogPreviewSection.astro"
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION} sentinelInHero={true}>
-  <HeroSection />
+  <HeroSection>
+    <HeroBackground client:load slot="background" />
+  </HeroSection>
   <PhilosophySection />
   <CompetenciesSection />
   <SectorsSection />
