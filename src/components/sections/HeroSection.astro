@@ -1,0 +1,19 @@
+---
+import Button from "../ui/Button.astro";
+---
+
+<section id="hero" class="relative min-h-screen flex items-center justify-center">
+  <div class="absolute inset-0 bg-primary">
+    <slot name="background" />
+  </div>
+  <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+    <h1 class="text-4xl md:text-8xl font-bold uppercase tracking-widest mb-6">GAMBETECH</h1>
+    <p class="text-xl md:text-2xl font-semibold mb-6">Transforme les idees en solutions innovantes</p>
+    <p class="text-base md:text-lg text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed">L'harmonie est au coeur de notre demarche. Face aux defis complexes, nous analysons methodiquement chaque variable pour creer des solutions fluides et optimales, eliminant toute friction inutile.</p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <Button variant="primary" href="#produits">Decouvrir nos produits</Button>
+      <Button variant="ghost" href="#competences" class="border-white text-white hover:bg-white/10">Voir nos expertises</Button>
+    </div>
+  </div>
+  <div id="nav-sentinel" class="absolute bottom-0 h-0" aria-hidden="true"></div>
+</section>
