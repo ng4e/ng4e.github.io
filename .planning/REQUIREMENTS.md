@@ -29,8 +29,8 @@
 - [x] **LAND-04**: Competencies section -- 4-column card grid with Lucide icons (Modelisation, Priorisation, Implementation, Integration)
 - [x] **LAND-05**: Sectors section -- 5 badge tags (Banque, Assurance, Monetique, Telecom, Energie) + client logos in grayscale with color hover
 - [ ] **LAND-06**: Metrics section on dark background -- 4 count-up counters (15+ years, 5 sectors, 2020, 4 products) with React island animation (client:visible)
-- [ ] **LAND-07**: Products section on dark background -- 3 white cards (NMT, Sportifs Prometteurs, Association Pirien) with name, tagline, description, CTA link
-- [ ] **LAND-08**: Blog preview section -- 2-3 latest posts from content collection with title, date, excerpt, "Lire la suite" CTA
+- [x] **LAND-07**: Products section on dark background -- 3 white cards (NMT, Sportifs Prometteurs, Association Pirien) with name, tagline, description, CTA link
+- [x] **LAND-08**: Blog preview section -- 2-3 latest posts from content collection with title, date, excerpt, "Lire la suite" CTA
 - [x] **LAND-09**: Footer -- 3-column layout (Gambetech, Initiative, Ressources), GitHub + LinkedIn icons, legal mentions, copyright
 
 ### Animations
@@ -148,8 +148,8 @@
 | LAND-04 | Phase 3 | Complete |
 | LAND-05 | Phase 3 | Complete |
 | LAND-06 | Phase 4 | Pending |
-| LAND-07 | Phase 3 | Pending |
-| LAND-08 | Phase 3 | Pending |
+| LAND-07 | Phase 3 | Complete |
+| LAND-08 | Phase 3 | Complete |
 | LAND-09 | Phase 2 | Complete |
 | ANIM-01 | Phase 5 | Pending |
 | ANIM-02 | Phase 5 | Pending |

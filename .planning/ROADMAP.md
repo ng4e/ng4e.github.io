@@ -74,7 +74,7 @@ Plans:
 Plans:
 - [x] 03-01-PLAN.md — Infrastructure: BaseLayout sentinel prop, Navbar dual-mode links, blog schema lang field, CompanyLogoSlider rebuild
 - [x] 03-02-PLAN.md — Hero, Philosophy, Competencies, and Sectors section components
-- [ ] 03-03-PLAN.md — Metrics, Products, BlogPreview section components + index.astro composition
+- [x] 03-03-PLAN.md — Metrics, Products, BlogPreview section components + index.astro composition
 
 ### Phase 4: React Islands
 **Goal**: Three interactive React components enhance the static landing page -- animated hero background, count-up metrics, and mobile hamburger menu
