@@ -1,0 +1,22 @@
+---
+const metrics = [
+  { value: "15+", label: "Annees d'expertise cumulee" },
+  { value: "5", label: "Secteurs strategiques" },
+  { value: "2020", label: "Annee de creation" },
+  { value: "4", label: "Produits" },
+];
+---
+
+<section id="chiffres" class="bg-primary py-20 scroll-mt-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-semibold text-white text-center mb-12 uppercase tracking-wide">Experiences</h2>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+      {metrics.map((metric) => (
+        <div>
+          <p class="text-4xl md:text-5xl font-semibold text-white mb-2">{metric.value}</p>
+          <p class="text-sm text-white/70">{metric.label}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
