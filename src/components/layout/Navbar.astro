@@ -1,4 +1,6 @@
 ---
+import MobileMenu from "../ui/MobileMenu.tsx";
+
 const pathname = Astro.url.pathname;
 const isLanding = Astro.url.pathname === "/";
 const navLinks = [
@@ -27,6 +29,7 @@ const navLinks = [
                 </a>
             ))}
         </div>
+        <MobileMenu client:media="(max-width: 768px)" links={navLinks} />
     </div>
 </nav>
 
