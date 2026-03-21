@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 02-02-PLAN.md
-last_updated: "2026-03-21T14:16:15.626Z"
+stopped_at: Completed 03-01-PLAN.md
+last_updated: "2026-03-21T16:10:02.399Z"
 progress:
   total_phases: 10
   completed_phases: 2
-  total_plans: 4
-  completed_plans: 4
+  total_plans: 7
+  completed_plans: 5
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** Clearly communicate that GambeTech is a software publisher / startup studio -- not a consulting firm
-**Current focus:** Phase 02 — layout-shell
+**Current focus:** Phase 03 — landing-page-sections
 
 ## Current Position
 
-Phase: 02 (layout-shell) — EXECUTING
-Plan: 2 of 2
+Phase: 03 (landing-page-sections) — EXECUTING
+Plan: 2 of 3
 
 ## Performance Metrics
 
@@ -50,6 +50,7 @@ Plan: 2 of 2
 | Phase 01 P02 | 3min | 2 tasks | 18 files |
 | Phase 02 P01 | 2min | 3 tasks | 3 files |
 | Phase 02 P02 | 2min | 2 tasks | 5 files |
+| Phase 03 P01 | 2min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -66,6 +67,8 @@ Recent decisions affecting current work:
 - [Phase 02]: Nav-sentinel placed after dark header strip for consistent scroll trigger; Navbar uses is:inline script to prevent FOUC
 - [Phase 02]: BlogPost delegates entirely to BaseLayout with headerTitle prop for dark strip
 - [Phase 02]: UI atom pattern: interface Props with variant/class, class:list composition with variant maps
+- [Phase 03]: Sentinel rendering delegated to hero via sentinelInHero prop
+- [Phase 03]: Navbar active state disabled on landing page since anchor links all resolve to /
 
 ### Pending Todos
 
@@ -79,6 +82,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T14:16:15.619Z
-Stopped at: Completed 02-02-PLAN.md
+Last session: 2026-03-21T16:10:02.395Z
+Stopped at: Completed 03-01-PLAN.md
 Resume file: None
