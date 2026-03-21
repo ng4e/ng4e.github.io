@@ -1,10 +1,11 @@
 ---
 const pathname = Astro.url.pathname;
+const isLanding = Astro.url.pathname === "/";
 const navLinks = [
-    { label: "Expertises", href: "/expertises" },
-    { label: "Produits", href: "/products" },
-    { label: "Expériences", href: "/experiences" },
-    { label: "Idées & Opinions", href: "/blog" },
+    { label: "Expertises", href: isLanding ? "/#competences" : "/expertises" },
+    { label: "Produits", href: isLanding ? "/#produits" : "/products" },
+    { label: "Expériences", href: isLanding ? "/#chiffres" : "/experiences" },
+    { label: "Idées & Opinions", href: isLanding ? "/#blog" : "/blog" },
 ];
 ---
 
@@ -19,7 +20,7 @@ const navLinks = [
                     href={link.href}
                     class:list={[
                         "nav-link relative text-base font-semibold transition-colors duration-200",
-                        pathname.startsWith(link.href) && "active"
+                        !isLanding && pathname.startsWith(link.href) && "active"
                     ]}
                 >
                     {link.label}

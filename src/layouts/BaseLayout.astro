@@ -8,9 +8,10 @@ interface Props {
     description: string;
     headerTitle?: string;
     headerSubtitle?: string;
+    sentinelInHero?: boolean;
 }
 
-const { title, description, headerTitle, headerSubtitle } = Astro.props;
+const { title, description, headerTitle, headerSubtitle, sentinelInHero } = Astro.props;
 ---
 
 <html lang="fr">
@@ -35,7 +36,7 @@ const { title, description, headerTitle, headerSubtitle } = Astro.props;
                 </div>
             </header>
         )}
-        <div id="nav-sentinel" class="h-0" aria-hidden="true"></div>
+        {!sentinelInHero && <div id="nav-sentinel" class="h-0" aria-hidden="true"></div>}
         <main><slot /></main>
         <Footer />
     </body>

@@ -69,12 +69,12 @@ Plans:
   5. Products section shows 3 cards (NMT, Sportifs Prometteurs, Association Pirien) with name, tagline, description, and CTA links
   6. Blog preview section shows the 2-3 latest blog post excerpts
   7. Clicking navbar anchor links smooth-scrolls to the corresponding section with correct offset
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
-- [ ] 03-03: TBD
+- [ ] 03-01-PLAN.md — Infrastructure: BaseLayout sentinel prop, Navbar dual-mode links, blog schema lang field, CompanyLogoSlider rebuild
+- [ ] 03-02-PLAN.md — Hero, Philosophy, Competencies, and Sectors section components
+- [ ] 03-03-PLAN.md — Metrics, Products, BlogPreview section components + index.astro composition
 
 ### Phase 4: React Islands
 **Goal**: Three interactive React components enhance the static landing page -- animated hero background, count-up metrics, and mobile hamburger menu
