@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation** - Tailwind v4, React integration, Bulma removal, design tokens (completed 2026-03-20)
 - [ ] **Phase 2: Layout Shell** - BaseLayout, sticky navbar, footer, typography, reusable UI components
 - [ ] **Phase 3: Landing Page Sections** - Static hero, philosophy, competencies, sectors, products, blog preview
-- [ ] **Phase 4: React Islands** - Animated hero background, metrics counter, mobile menu
+- [x] **Phase 4: React Islands** - Animated hero background, metrics counter, mobile menu (completed 2026-03-21)
 - [ ] **Phase 5: Animations and Interactions** - Scroll entrance animations, card hover effects, reduced-motion support
 - [ ] **Phase 6: Content Migration** - Blog posts, project JSON, blog listing, RSS feed
 - [ ] **Phase 7: Sub-Pages** - Expertises, products, and experiences detail pages
@@ -88,7 +88,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — HeroBackground canvas animation + Counter count-up island, wired into hero and metrics sections
+- [x] 04-01-PLAN.md — HeroBackground canvas animation + Counter count-up island, wired into hero and metrics sections
 - [x] 04-02-PLAN.md — MobileMenu hamburger overlay with focus trap, wired into Navbar
 
 ### Phase 5: Animations and Interactions
@@ -198,7 +198,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 1. Foundation | 2/2 | Complete    | 2026-03-20 |
 | 2. Layout Shell | 1/2 | In Progress|  |
 | 3. Landing Page Sections | 0/3 | Not started | - |
-| 4. React Islands | 1/2 | In Progress|  |
+| 4. React Islands | 2/2 | Complete   | 2026-03-21 |
 | 5. Animations and Interactions | 0/1 | Not started | - |
 | 6. Content Migration | 0/2 | Not started | - |
 | 7. Sub-Pages | 0/2 | Not started | - |

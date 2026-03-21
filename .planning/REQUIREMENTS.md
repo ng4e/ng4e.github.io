@@ -24,11 +24,11 @@
 ### Landing Page Sections
 
 - [x] **LAND-01**: Hero section with "GAMBETECH" title, tagline, description, and dual CTA buttons
-- [ ] **LAND-02**: Animated hero background -- circuit board / tech mesh pattern (canvas or SVG, React island client:load)
+- [x] **LAND-02**: Animated hero background -- circuit board / tech mesh pattern (canvas or SVG, React island client:load)
 - [x] **LAND-03**: Philosophy section with styled blockquote (left border accent), positioning statement
 - [x] **LAND-04**: Competencies section -- 4-column card grid with Lucide icons (Modelisation, Priorisation, Implementation, Integration)
 - [x] **LAND-05**: Sectors section -- 5 badge tags (Banque, Assurance, Monetique, Telecom, Energie) + client logos in grayscale with color hover
-- [ ] **LAND-06**: Metrics section on dark background -- 4 count-up counters (15+ years, 5 sectors, 2020, 4 products) with React island animation (client:visible)
+- [x] **LAND-06**: Metrics section on dark background -- 4 count-up counters (15+ years, 5 sectors, 2020, 4 products) with React island animation (client:visible)
 - [x] **LAND-07**: Products section on dark background -- 3 white cards (NMT, Sportifs Prometteurs, Association Pirien) with name, tagline, description, CTA link
 - [x] **LAND-08**: Blog preview section -- 2-3 latest posts from content collection with title, date, excerpt, "Lire la suite" CTA
 - [x] **LAND-09**: Footer -- 3-column layout (Gambetech, Initiative, Ressources), GitHub + LinkedIn icons, legal mentions, copyright
@@ -37,7 +37,7 @@
 
 - [ ] **ANIM-01**: Scroll-driven fadeInUp + stagger animations on all landing sections via IntersectionObserver (inline script, not React)
 - [ ] **ANIM-02**: Card hover effects -- translateY(-4px) + shadow-lg with 200ms transition
-- [ ] **ANIM-03**: Count-up animation triggers on scroll into viewport (Motion library with LazyMotion for bundle size)
+- [x] **ANIM-03**: Count-up animation triggers on scroll into viewport (Motion library with LazyMotion for bundle size)
 - [ ] **ANIM-04**: CSS animations respect prefers-reduced-motion media query
 
 ### Content Migration
@@ -143,17 +143,17 @@
 | NAV-04 | Phase 4 | Complete |
 | NAV-05 | Phase 2 | Complete |
 | LAND-01 | Phase 3 | Complete |
-| LAND-02 | Phase 4 | Pending |
+| LAND-02 | Phase 4 | Complete |
 | LAND-03 | Phase 3 | Complete |
 | LAND-04 | Phase 3 | Complete |
 | LAND-05 | Phase 3 | Complete |
-| LAND-06 | Phase 4 | Pending |
+| LAND-06 | Phase 4 | Complete |
 | LAND-07 | Phase 3 | Complete |
 | LAND-08 | Phase 3 | Complete |
 | LAND-09 | Phase 2 | Complete |
 | ANIM-01 | Phase 5 | Pending |
 | ANIM-02 | Phase 5 | Pending |
-| ANIM-03 | Phase 4 | Pending |
+| ANIM-03 | Phase 4 | Complete |
 | ANIM-04 | Phase 5 | Pending |
 | CONT-01 | Phase 6 | Pending |
 | CONT-02 | Phase 6 | Pending |
