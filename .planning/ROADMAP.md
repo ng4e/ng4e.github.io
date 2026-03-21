@@ -12,7 +12,7 @@ This roadmap transforms gambetech.com from a Bulma-based consulting profile into
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Tailwind v4, React integration, Bulma removal, design tokens
+- [x] **Phase 1: Foundation** - Tailwind v4, React integration, Bulma removal, design tokens (completed 2026-03-20)
 - [ ] **Phase 2: Layout Shell** - BaseLayout, sticky navbar, footer, typography, reusable UI components
 - [ ] **Phase 3: Landing Page Sections** - Static hero, philosophy, competencies, sectors, products, blog preview
 - [ ] **Phase 4: React Islands** - Animated hero background, metrics counter, mobile menu
@@ -51,11 +51,11 @@ Plans:
   3. Every page ends with a 3-column footer containing Gambetech/Initiative/Ressources columns, GitHub + LinkedIn icons, and legal mentions
   4. Typography uses Inter font at the correct scale (hero 56-72px down to caption 13-14px)
   5. Reusable Card, Button (primary + ghost), and Badge components render correctly with design system styles
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01-PLAN.md — BaseLayout with props/header strip, sticky Navbar with scroll transition, 3-column Footer
+- [ ] 02-02-PLAN.md — Button/Card/Badge UI atoms, BlogPost refactor to wrap BaseLayout, mentions-legales page
 
 ### Phase 3: Landing Page Sections
 **Goal**: The landing page is visually complete as a static one-pager with all content sections laid out, communicating the software publisher identity
@@ -195,8 +195,8 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/2 | Not started | - |
-| 2. Layout Shell | 0/2 | Not started | - |
+| 1. Foundation | 2/2 | Complete    | 2026-03-20 |
+| 2. Layout Shell | 0/2 | Planned | - |
 | 3. Landing Page Sections | 0/3 | Not started | - |
 | 4. React Islands | 0/2 | Not started | - |
 | 5. Animations and Interactions | 0/1 | Not started | - |
