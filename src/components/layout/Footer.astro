@@ -1,7 +1,46 @@
 ---
-// Footer.astro (moved to layout/)
-// Phase 1: Shell only
-const today = new Date();
+import { Github, Linkedin } from "@lucide/astro";
 ---
 
-<footer><slot /></footer>
+<footer class="bg-primary text-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4">
+        <p class="text-white/60 text-sm mb-8">Éditeur de logiciels de niche</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-base font-semibold uppercase tracking-wider mb-4">Gambetech</h3>
+                <ul class="space-y-2">
+                    <li><a href="/expertises" class="text-white/80 text-sm hover:text-accent transition-colors">Expertises</a></li>
+                    <li><a href="/experiences" class="text-white/80 text-sm hover:text-accent transition-colors">Expériences</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-base font-semibold uppercase tracking-wider mb-4">Initiative</h3>
+                <ul class="space-y-2">
+                    <li><a href="/products" class="text-white/80 text-sm hover:text-accent transition-colors">Produits</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-base font-semibold uppercase tracking-wider mb-4">Ressources</h3>
+                <ul class="space-y-2">
+                    <li><a href="/blog" class="text-white/80 text-sm hover:text-accent transition-colors">Idées & Opinions</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-white/10 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/nicogambe" aria-label="GitHub" class="text-white hover:text-accent transition-colors">
+                    <Github size={20} />
+                </a>
+                <a href="https://linkedin.com/in/nicolasgamberini" aria-label="LinkedIn" class="text-white hover:text-accent transition-colors">
+                    <Linkedin size={20} />
+                </a>
+            </div>
+            <div class="flex items-center gap-4 text-white/50 text-xs">
+                <a href="/mentions-legales" class="hover:text-white/80 transition-colors">Mentions légales</a>
+                <span>Gambetech &copy; 2026 All rights reserved.</span>
+            </div>
+        </div>
+    </div>
+</footer>
