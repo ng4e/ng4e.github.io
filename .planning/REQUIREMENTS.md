@@ -35,10 +35,10 @@
 
 ### Animations
 
-- [ ] **ANIM-01**: Scroll-driven fadeInUp + stagger animations on all landing sections via IntersectionObserver (inline script, not React)
-- [ ] **ANIM-02**: Card hover effects -- translateY(-4px) + shadow-lg with 200ms transition
+- [x] **ANIM-01**: Scroll-driven fadeInUp + stagger animations on all landing sections via IntersectionObserver (inline script, not React)
+- [x] **ANIM-02**: Card hover effects -- translateY(-4px) + shadow-lg with 200ms transition
 - [x] **ANIM-03**: Count-up animation triggers on scroll into viewport (Motion library with LazyMotion for bundle size)
-- [ ] **ANIM-04**: CSS animations respect prefers-reduced-motion media query
+- [x] **ANIM-04**: CSS animations respect prefers-reduced-motion media query
 
 ### Content Migration
 
@@ -151,10 +151,10 @@
 | LAND-07 | Phase 3 | Complete |
 | LAND-08 | Phase 3 | Complete |
 | LAND-09 | Phase 2 | Complete |
-| ANIM-01 | Phase 5 | Pending |
-| ANIM-02 | Phase 5 | Pending |
+| ANIM-01 | Phase 5 | Complete |
+| ANIM-02 | Phase 5 | Complete |
 | ANIM-03 | Phase 4 | Complete |
-| ANIM-04 | Phase 5 | Pending |
+| ANIM-04 | Phase 5 | Complete |
 | CONT-01 | Phase 6 | Pending |
 | CONT-02 | Phase 6 | Pending |
 | CONT-03 | Phase 6 | Pending |

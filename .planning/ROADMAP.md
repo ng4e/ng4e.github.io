@@ -99,10 +99,10 @@ Plans:
   1. Each landing page section fades in and slides up as the user scrolls it into view (IntersectionObserver, not React)
   2. Cards across the site lift (-4px translateY) and gain a larger shadow on hover with a 200ms transition
   3. All animations (CSS and JS) are disabled or reduced when the user has prefers-reduced-motion enabled
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 05-01: TBD
+- [x] 05-01-PLAN.md — Scroll entrance animations, card hover consistency, and reduced-motion compliance� Scroll entrance animations, card hover consistency, and reduced-motion compliance
 
 ### Phase 6: Content Migration
 **Goal**: All existing blog posts and project references are migrated to the new design without content loss, and the blog is fully functional
@@ -114,7 +114,7 @@ Plans:
   3. The /blog page lists all posts with title, date, and excerpt
   4. Individual blog post pages (/blog/[slug]) display full content with prose typography styling
   5. The RSS feed at /rss.xml is functional and includes all blog posts
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
 - [ ] 06-01: TBD
@@ -128,7 +128,7 @@ Plans:
   1. The /expertises page displays detailed expertise information using the new design system
   2. The /products page shows an expanded product catalog beyond the landing page preview cards
   3. The /experiences page renders professional references from the project JSON collection with company, mission, role, technologies, and results
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
 - [ ] 07-01: TBD
@@ -145,7 +145,7 @@ Plans:
   4. All static text (navigation labels, section titles, CTAs, footer text) is translated in both languages
   5. Blog posts display in their original language on both locale routes, with a language field in frontmatter
   6. The default locale is French (root / serves or redirects to French content)
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
 - [ ] 08-01: TBD
@@ -163,7 +163,7 @@ Plans:
   4. All images and logos have descriptive alt text
   5. A skip-to-content link is the first focusable element on every page
   6. All tap targets on mobile are at least 44x44px
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
 - [ ] 09-01: TBD
@@ -182,7 +182,7 @@ Plans:
   6. The site builds and deploys successfully to GitHub Pages via the develop branch workflow
   7. The custom domain gambetech.com resolves correctly with CNAME preserved
   8. Umami analytics script loads on every page
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
 - [ ] 10-01: TBD
