@@ -1,80 +1,75 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
+import Card from "../components/ui/Card.astro";
+import Button from "../components/ui/Button.astro";
 
 const products = [
-    {
-        title: "Association Sportifs Prometteurs",
-        description:
-            "L'association accompagne de joueurs de tennis de niveau national vers la carriere professionnelle.",
-        requirements: "Developpe une solution de programmation de tournois a partir des performances envisagees et du budget",
-        architecture: "node, express, ts, ejs, appwrite, bitbucket, SonarQube, Oracle cloud",
-        website: "https://getsp.sportifs-prometteurs.org/"
-    },
-    {
-        title: "Association Pirien",
-        description:
-            "Pour la preservation, la valorisation, et la transmission de l'heritage culturel materiel et immateriel de mon ethnie au Cameroun : Les Bamouns",
-        requirements: "Boutique associative en ligne",
-        architecture: "strikingly, square",
-        website: "https://why.pirien.com"
-    },
-    {
-        title: "NMT",
-        description:
-            "NG. Moving Together est un reseau social familliale avec arbre genealogique, journal de gratitude partage a destination des familles eloignees par l'immigration",
-        requirements: "Creer un Backend Securise pour une application mobile en Frontend",
-        architecture: "Spring boot, Neo4j, Postgres, Appwrite, Bitbucket, Docker SonarQube, Oracle Cloud, HugginFace, Mistra AI",
-        website: "#",
-    }
+  {
+    name: "NMT -- NG. Moving Together",
+    tagline: "Reseau social familial",
+    description: "NG. Moving Together est un reseau social familliale avec arbre genealogique, journal de gratitude partage a destination des familles eloignees par l'immigration",
+    requirements: "Creer un Backend Securise pour une application mobile en Frontend",
+    architecture: "Spring boot, Neo4j, Postgres, Appwrite, Bitbucket, Docker SonarQube, Oracle Cloud, HugginFace, Mistra AI",
+    website: "#",
+  },
+  {
+    name: "Sportifs Prometteurs",
+    tagline: "Gestion de tournois tennis",
+    description: "L'association accompagne de joueurs de tennis de niveau national vers la carriere professionnelle.",
+    requirements: "Developpe une solution de programmation de tournois a partir des performances envisagees et du budget",
+    architecture: "node, express, ts, ejs, appwrite, bitbucket, SonarQube, Oracle cloud",
+    website: "https://getsp.sportifs-prometteurs.org/",
+  },
+  {
+    name: "Association Pirien",
+    tagline: "Heritage culturel Bamoun",
+    description: "Pour la preservation, la valorisation, et la transmission de l'heritage culturel materiel et immateriel de mon ethnie au Cameroun : Les Bamouns",
+    requirements: "Boutique associative en ligne",
+    architecture: "strikingly, square",
+    website: "https://why.pirien.com",
+  },
 ];
 ---
 
 <Layout
-    title="Nos Produits"
-    description="Creer de la valeur sur des problemes de niches"
-    headerTitle="Nos Produits"
+  title="Nos Produits"
+  description="Creer de la valeur sur des problemes de niches"
+  headerTitle="Nos Produits"
 >
-    <section>
-        <div>
-            <div>
-                {
-                    products.map((product) => (
-                        <div>
-                            <div>
-                                <div>
-                                    <p><strong>{product.title}</strong></p>
-                                    <p>{product.description}</p>
-                                    <hr />
-                                    <div>
-                                        <p>
-                                            <strong>Requirements:</strong>
-                                            <br />
-                                            {product.requirements}
-                                        </p>
-                                        <p>
-                                            <strong>Architecture:</strong>
-                                            <br />
-                                            {product.architecture}
-                                        </p>
-                                    </div>
-                                    {product.website && (
-                                        <div>
-                                            <a
-                                                href={product.website}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                aria-label={`Visit the website for ${product.title}`}
-                                            >
-                                                Site Web
-                                            </a>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-                        </div>
-                    ))
-                }
-            </div>
-        </div>
-    </section>
+  <section class="bg-white py-20 animate-on-scroll" data-animate>
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-semibold text-primary text-center mb-4">Nos Produits</h2>
+      <p class="text-base text-text-secondary text-center mb-12 max-w-2xl mx-auto">
+        Creer de la valeur sur des problemes de niches
+      </p>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {products.map((product, i) => (
+          <div class="stagger-item" style={`--stagger-delay: ${i}`}>
+            <Card>
+              <h3 class="text-xl font-semibold text-primary mb-1">{product.name}</h3>
+              <p class="text-sm text-accent font-semibold mb-3">{product.tagline}</p>
+              <p class="text-base text-text-secondary mb-4">{product.description}</p>
+              <div class="border-t border-surface pt-4 mt-4 space-y-3">
+                <div>
+                  <h4 class="text-sm font-semibold text-primary">Requirements</h4>
+                  <p class="text-sm text-text-secondary">{product.requirements}</p>
+                </div>
+                <div>
+                  <h4 class="text-sm font-semibold text-primary">Architecture</h4>
+                  <p class="text-sm text-text-secondary">{product.architecture}</p>
+                </div>
+              </div>
+              {product.website !== "#" && (
+                <div class="mt-6">
+                  <Button variant="primary" size="small" href={product.website}>
+                    Site Web
+                  </Button>
+                </div>
+              )}
+            </Card>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
 </Layout>
