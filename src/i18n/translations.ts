@@ -168,6 +168,9 @@ const translations: Record<Locale, Record<string, string>> = {
     "legal.hosting": "Hebergement",
     "legal.privacy": "Donnees personnelles",
     "legal.frenchNotice": "",
+
+    // Accessibility (1 key)
+    "a11y.skipToContent": "Aller au contenu principal",
   },
 
   en: {
@@ -337,6 +340,9 @@ const translations: Record<Locale, Record<string, string>> = {
     "legal.hosting": "Hosting",
     "legal.privacy": "Privacy",
     "legal.frenchNotice": "Detailed legal information for this website is available in French.",
+
+    // Accessibility (1 key)
+    "a11y.skipToContent": "Skip to main content",
   },
 };
 
