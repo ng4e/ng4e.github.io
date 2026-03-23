@@ -26,15 +26,16 @@ const enUrl = getRelativeLocaleUrl("en", pagePath);
 
 <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-        <a href={prefix || "/"} class="text-2xl font-semibold">
+        <a href={prefix || "/"} class="text-2xl font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded">
             <span class="nav-logo text-white transition-colors duration-300">Gt</span>
         </a>
         <div class="hidden md:flex items-center gap-8">
             {navLinks.map(link => (
                 <a
                     href={link.href}
+                    aria-current={!isLanding && pathname.startsWith(link.href) ? "page" : undefined}
                     class:list={[
-                        "nav-link relative text-base font-semibold transition-colors duration-200",
+                        "nav-link relative text-base font-semibold transition-colors duration-200 py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded",
                         !isLanding && pathname.startsWith(link.href) && "active"
                     ]}
                 >
@@ -43,9 +44,9 @@ const enUrl = getRelativeLocaleUrl("en", pagePath);
             ))}
         </div>
         <div class="hidden md:flex items-center gap-1 ml-4 text-sm font-semibold">
-            <a href={frUrl} class:list={["transition-colors duration-200", locale === "fr" ? "text-white" : "text-white/50 hover:text-white"]}>FR</a>
+            <a href={frUrl} aria-label={locale === "fr" ? "Francais (langue actuelle)" : "Francais"} class:list={["transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded", locale === "fr" ? "text-white" : "text-white/50 hover:text-white"]}>FR</a>
             <span class="text-white/30">|</span>
-            <a href={enUrl} class:list={["transition-colors duration-200", locale === "en" ? "text-white" : "text-white/50 hover:text-white"]}>EN</a>
+            <a href={enUrl} aria-label={locale === "en" ? "English (current language)" : "English"} class:list={["transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded", locale === "en" ? "text-white" : "text-white/50 hover:text-white"]}>EN</a>
         </div>
         <MobileMenu client:media="(max-width: 768px)" links={navLinks} currentLocale={locale} frUrl={frUrl} enUrl={enUrl} />
     </div>
