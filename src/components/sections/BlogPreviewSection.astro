@@ -4,6 +4,14 @@ import Card from "../ui/Card.astro";
 import Button from "../ui/Button.astro";
 import Badge from "../ui/Badge.astro";
 import FormattedDate from "../FormattedDate.astro";
+import { t, type Locale } from "../../i18n/translations";
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = "fr" } = Astro.props;
+const prefix = locale === "en" ? "/en" : "";
 
 const allPosts = await getCollection("blog");
 const latestPosts = allPosts
@@ -13,8 +21,8 @@ const latestPosts = allPosts
 
 <section id="blog" class="bg-white py-20 scroll-mt-20 animate-on-scroll" data-animate>
   <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-3xl md:text-4xl font-semibold text-primary text-center mb-4">Idees et Opinions</h2>
-    <p class="text-base text-text-secondary text-center mb-12 max-w-2xl mx-auto">...et autres questions existentielles sur la technologie, la science et la vie de tous les jours</p>
+    <h2 class="text-3xl md:text-4xl font-semibold text-primary text-center mb-4">{t("blog.title", locale)}</h2>
+    <p class="text-base text-text-secondary text-center mb-12 max-w-2xl mx-auto">{t("blog.subtitle", locale)}</p>
     {latestPosts.length > 0 ? (
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         {latestPosts.map((post, i) => (
@@ -22,19 +30,19 @@ const latestPosts = allPosts
             <Card>
               <div class="flex items-center gap-3 mb-3">
                 <Badge variant="surface" class="text-xs px-2 py-1">{post.data.lang === "fr" ? "FR" : "EN"}</Badge>
-                <span class="text-sm text-text-secondary"><FormattedDate date={post.data.pubDate} /></span>
+                <span class="text-sm text-text-secondary"><FormattedDate date={post.data.pubDate} locale={locale} /></span>
               </div>
               <h3 class="text-xl font-semibold text-primary mb-2">
-                <a href={"/blog/" + post.id} class="hover:text-accent transition-colors">{post.data.title}</a>
+                <a href={`${prefix}/blog/${post.id}`} class="hover:text-accent transition-colors">{post.data.title}</a>
               </h3>
               <p class="text-base text-text-secondary line-clamp-3 mb-4">{post.data.description}</p>
-              <Button variant="ghost" size="small" href={"/blog/" + post.id}>Lire la suite</Button>
+              <Button variant="ghost" size="small" href={`${prefix}/blog/${post.id}`}>{t("blog.readMore", locale)}</Button>
             </Card>
           </div>
         ))}
       </div>
     ) : (
-      <p class="text-center text-text-secondary">Aucun article pour le moment. Revenez bientot !</p>
+      <p class="text-center text-text-secondary">{t("blog.emptyState", locale)}</p>
     )}
   </div>
 </section>

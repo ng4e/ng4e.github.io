@@ -1,6 +1,7 @@
 ---
 import Card from "./ui/Card.astro";
 import Badge from "./ui/Badge.astro";
+import { t, type Locale } from "../i18n/translations";
 
 interface Props {
   project: {
@@ -16,9 +17,10 @@ interface Props {
     technologies: string[];
     results: string[];
   };
+  locale?: Locale;
 }
 
-const { project } = Astro.props;
+const { project, locale = "fr" } = Astro.props;
 ---
 
 <Card>
@@ -34,21 +36,21 @@ const { project } = Astro.props;
   <p class="text-sm text-text-secondary mb-4">{project.context}</p>
 
   <p class="text-sm mb-4">
-    <span class="font-semibold text-primary">Role :</span>
+    <span class="font-semibold text-primary">{t("projectCard.role", locale)}</span>
     <span class="text-text-secondary"> {project.role}</span>
   </p>
 
-  <h4 class="text-sm font-semibold text-primary mb-2">Taches</h4>
+  <h4 class="text-sm font-semibold text-primary mb-2">{t("projectCard.tasks", locale)}</h4>
   <ul class="list-disc list-inside text-sm text-text-secondary mb-4 space-y-1">
     {project.tasks.map(task => <li>{task}</li>)}
   </ul>
 
-  <h4 class="text-sm font-semibold text-primary mb-2">Technologies</h4>
+  <h4 class="text-sm font-semibold text-primary mb-2">{t("projectCard.technologies", locale)}</h4>
   <div class="flex flex-wrap gap-2 mb-4">
     {project.technologies.map(tech => <Badge variant="accent">{tech}</Badge>)}
   </div>
 
-  <h4 class="text-sm font-semibold text-primary mb-2">Resultats</h4>
+  <h4 class="text-sm font-semibold text-primary mb-2">{t("projectCard.results", locale)}</h4>
   <ul class="list-disc list-inside text-sm text-text-secondary space-y-1">
     {project.results.map(result => <li>{result}</li>)}
   </ul>
