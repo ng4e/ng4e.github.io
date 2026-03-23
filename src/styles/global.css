@@ -13,7 +13,7 @@
 @theme {
   /* Colors */
   --color-primary: #1B2A4A;
-  --color-accent: #3A7CA5;
+  --color-accent: #336D93;
   --color-bg: #F8F9FA;
   --color-surface: #F0F4F8;
   --color-text: #1A1A2E;
@@ -56,5 +56,15 @@ html {
   .animate-on-scroll.visible .stagger-item {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Global focus ring base styles (WCAG 2.1 AA focus-visible) */
+@layer base {
+  a:focus-visible,
+  button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-bg), 0 0 0 4px var(--color-accent);
+    border-radius: 0.25rem;
   }
 }
