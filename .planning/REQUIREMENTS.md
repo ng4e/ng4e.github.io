@@ -65,7 +65,7 @@
 ### Responsive
 
 - [x] **RESP-01**: Mobile-first responsive -- 1 col mobile, 2 cols tablet, 3-4 cols desktop
-- [ ] **RESP-02**: All tap targets minimum 44x44px on mobile
+- [x] **RESP-02**: All tap targets minimum 44x44px on mobile
 - [x] **RESP-03**: Navigation collapses to hamburger menu on mobile (<768px)
 
 ### SEO & Performance
@@ -79,9 +79,9 @@
 ### Accessibility
 
 - [x] **A11Y-01**: Color contrast minimum 4.5:1 ratio (WCAG AA)
-- [ ] **A11Y-02**: All interactive elements have visible focus states
+- [x] **A11Y-02**: All interactive elements have visible focus states
 - [x] **A11Y-03**: Semantic HTML throughout (nav, main, section, article, footer)
-- [ ] **A11Y-04**: Alt text on all images and logos
+- [x] **A11Y-04**: Alt text on all images and logos
 - [x] **A11Y-05**: Skip-to-content link for keyboard navigation
 
 ### Internationalization
@@ -169,7 +169,7 @@
 | DSGN-04 | Phase 2 | Complete |
 | DSGN-05 | Phase 2 | Complete |
 | RESP-01 | Phase 3 | Complete |
-| RESP-02 | Phase 9 | Pending |
+| RESP-02 | Phase 9 | Complete |
 | RESP-03 | Phase 4 | Complete |
 | SEO-01 | Phase 10 | Pending |
 | SEO-02 | Phase 10 | Pending |
@@ -177,9 +177,9 @@
 | SEO-04 | Phase 10 | Pending |
 | SEO-05 | Phase 10 | Pending |
 | A11Y-01 | Phase 9 | Complete |
-| A11Y-02 | Phase 9 | Pending |
+| A11Y-02 | Phase 9 | Complete |
 | A11Y-03 | Phase 9 | Complete |
-| A11Y-04 | Phase 9 | Pending |
+| A11Y-04 | Phase 9 | Complete |
 | A11Y-05 | Phase 9 | Complete |
 | I18N-01 | Phase 8 | Complete |
 | I18N-02 | Phase 8 | Complete |
