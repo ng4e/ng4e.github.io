@@ -114,11 +114,14 @@ Plans:
   3. The /blog page lists all posts with title, date, and excerpt
   4. Individual blog post pages (/blog/[slug]) display full content with prose typography styling
   5. The RSS feed at /rss.xml is functional and includes all blog posts
-**Plans**: 1 plan
+**Plans**: 2 plans
 
 Plans:
-- [ ] 06-01: TBD
-- [ ] 06-02: TBD
+- [ ] 06-01-PLAN.md — Content preparation: schema update, blog post cleanup, project JSON placeholders
+- [ ] 06-02-PLAN.md — Blog listing restyle, prose typography enhancement, RSS feed verification
+
+
+
 
 ### Phase 7: Sub-Pages
 **Goal**: Dedicated sub-pages provide detailed information about expertises, products, and professional experiences
