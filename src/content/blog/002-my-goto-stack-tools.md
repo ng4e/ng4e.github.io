@@ -3,9 +3,8 @@ title: "My Go-To Stack and Free Tools That Power It"
 description: "How I go from zero to production-ready apps using a lean tech stack, generous free tiers, and AI-powered IDEs—while staying focused on building actual solutions."
 pubDate: 2025-05-06
 updatedDate: 2025-05-06
-heroImage: "/images/stack-blog-hero.jpg"
 tags: ["tooling", "stack", "freelance", "devops", "shipping", "ai assistant"]
-author: "Your Name"
+author: "Samuel Molu-N"
 ---
 
 As someone who balances freelance work, community projects, and niche product building with very tight budgets, I’ve found a setup that helps me go from code to production quickly—with stability, structure, and just the right level of complexity.
