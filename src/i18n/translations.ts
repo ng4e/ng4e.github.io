@@ -158,6 +158,16 @@ const translations: Record<Locale, Record<string, string>> = {
     "blogPage.pageDesc":
       "...et autres questions existentielles sur la technologie, la science et la vie de tous les jours",
     "blogPage.readMore": "Lire la suite",
+
+    // Blog post layout (2 keys)
+    "blogPost.updatedOn": "Mis a jour le",
+
+    // Legal page (5 keys)
+    "legal.title": "Mentions legales",
+    "legal.publisher": "Editeur du site",
+    "legal.hosting": "Hebergement",
+    "legal.privacy": "Donnees personnelles",
+    "legal.frenchNotice": "",
   },
 
   en: {
@@ -317,6 +327,16 @@ const translations: Record<Locale, Record<string, string>> = {
     "blogPage.pageDesc":
       "...and other existential questions about technology, science, and everyday life",
     "blogPage.readMore": "Read more",
+
+    // Blog post layout (2 keys)
+    "blogPost.updatedOn": "Updated on",
+
+    // Legal page (5 keys)
+    "legal.title": "Legal Notice",
+    "legal.publisher": "Site Publisher",
+    "legal.hosting": "Hosting",
+    "legal.privacy": "Privacy",
+    "legal.frenchNotice": "Detailed legal information for this website is available in French.",
   },
 };
 

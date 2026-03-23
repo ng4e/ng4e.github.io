@@ -1,13 +1,13 @@
 ---
-import Layout from "../layouts/BaseLayout.astro";
-import Card from "../components/ui/Card.astro";
-import Badge from "../components/ui/Badge.astro";
-import CompanyLogoSlider from "../components/CompanyLogoSlider.astro";
-import { companies } from "../consts";
+import Layout from "../../layouts/BaseLayout.astro";
+import Card from "../../components/ui/Card.astro";
+import Badge from "../../components/ui/Badge.astro";
+import CompanyLogoSlider from "../../components/CompanyLogoSlider.astro";
+import { companies } from "../../consts";
 import { Eye, FolderKanban, Code, Users, Wrench } from "@lucide/astro";
-import { t, type Locale } from "../i18n/translations";
+import { t, type Locale } from "../../i18n/translations";
 
-const locale = (Astro.currentLocale ?? "fr") as Locale;
+const locale = (Astro.currentLocale ?? "en") as Locale;
 
 const expertises = [
   {

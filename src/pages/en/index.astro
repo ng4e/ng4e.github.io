@@ -1,16 +1,16 @@
 ---
-import Layout from "../layouts/BaseLayout.astro";
-import { t, type Locale } from "../i18n/translations";
-import HeroSection from "../components/sections/HeroSection.astro";
-import HeroBackground from "../components/ui/HeroBackground.tsx";
-import PhilosophySection from "../components/sections/PhilosophySection.astro";
-import CompetenciesSection from "../components/sections/CompetenciesSection.astro";
-import SectorsSection from "../components/sections/SectorsSection.astro";
-import MetricsSection from "../components/sections/MetricsSection.astro";
-import ProductsSection from "../components/sections/ProductsSection.astro";
-import BlogPreviewSection from "../components/sections/BlogPreviewSection.astro";
+import Layout from "../../layouts/BaseLayout.astro";
+import { t, type Locale } from "../../i18n/translations";
+import HeroSection from "../../components/sections/HeroSection.astro";
+import HeroBackground from "../../components/ui/HeroBackground.tsx";
+import PhilosophySection from "../../components/sections/PhilosophySection.astro";
+import CompetenciesSection from "../../components/sections/CompetenciesSection.astro";
+import SectorsSection from "../../components/sections/SectorsSection.astro";
+import MetricsSection from "../../components/sections/MetricsSection.astro";
+import ProductsSection from "../../components/sections/ProductsSection.astro";
+import BlogPreviewSection from "../../components/sections/BlogPreviewSection.astro";
 
-const locale = (Astro.currentLocale ?? "fr") as Locale;
+const locale = (Astro.currentLocale ?? "en") as Locale;
 ---
 
 <Layout title={t("site.title", locale)} description={t("site.description", locale)} sentinelInHero={true} locale={locale}>

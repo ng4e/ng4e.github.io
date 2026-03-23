@@ -1,8 +1,11 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
+import type { Locale } from "../i18n/translations";
+
+const locale = (Astro.currentLocale ?? "fr") as Locale;
 ---
 
-<Layout title="Mentions légales - Gambetech" description="Mentions légales de Gambetech" headerTitle="Mentions légales">
+<Layout title="Mentions légales - Gambetech" description="Mentions légales de Gambetech" headerTitle="Mentions légales" locale={locale}>
   <section class="py-12 md:py-20">
     <div class="max-w-3xl mx-auto px-4 space-y-8">
       <div>
