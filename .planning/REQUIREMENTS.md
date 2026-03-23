@@ -44,9 +44,9 @@
 
 - [x] **CONT-01**: Existing blog MDX posts migrated to new structure with preserved content and frontmatter
 - [x] **CONT-02**: Existing project JSON files migrated to new structure with preserved data
-- [ ] **CONT-03**: Blog listing page (/blog) with post cards showing title, date, excerpt
-- [ ] **CONT-04**: Individual blog post pages (/blog/[slug]) with prose styling
-- [ ] **CONT-05**: RSS feed preserved and functional
+- [x] **CONT-03**: Blog listing page (/blog) with post cards showing title, date, excerpt
+- [x] **CONT-04**: Individual blog post pages (/blog/[slug]) with prose styling
+- [x] **CONT-05**: RSS feed preserved and functional
 
 ### Sub-Pages
 
@@ -157,9 +157,9 @@
 | ANIM-04 | Phase 5 | Complete |
 | CONT-01 | Phase 6 | Complete |
 | CONT-02 | Phase 6 | Complete |
-| CONT-03 | Phase 6 | Pending |
-| CONT-04 | Phase 6 | Pending |
-| CONT-05 | Phase 6 | Pending |
+| CONT-03 | Phase 6 | Complete |
+| CONT-04 | Phase 6 | Complete |
+| CONT-05 | Phase 6 | Complete |
 | PAGE-01 | Phase 7 | Pending |
 | PAGE-02 | Phase 7 | Pending |
 | PAGE-03 | Phase 7 | Pending |
