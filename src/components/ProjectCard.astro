@@ -1,5 +1,55 @@
 ---
-// Shell only, Phase 2+ rebuilds
+import Card from "./ui/Card.astro";
+import Badge from "./ui/Badge.astro";
+
+interface Props {
+  project: {
+    id: string;
+    key: number;
+    duration: string;
+    company: string;
+    client: string;
+    mission: string;
+    context: string;
+    role: string;
+    tasks: string[];
+    technologies: string[];
+    results: string[];
+  };
+}
+
+const { project } = Astro.props;
 ---
 
-<div><slot /></div>
+<Card>
+  <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+    <div>
+      <h3 class="text-xl font-semibold text-primary">{project.company}</h3>
+      <p class="text-sm text-accent font-semibold">{project.client}</p>
+    </div>
+    <span class="text-sm text-text-secondary mt-1 md:mt-0 md:text-right shrink-0">{project.duration}</span>
+  </div>
+
+  <p class="text-base font-medium text-primary mb-2">{project.mission}</p>
+  <p class="text-sm text-text-secondary mb-4">{project.context}</p>
+
+  <p class="text-sm mb-4">
+    <span class="font-semibold text-primary">Role :</span>
+    <span class="text-text-secondary"> {project.role}</span>
+  </p>
+
+  <h4 class="text-sm font-semibold text-primary mb-2">Taches</h4>
+  <ul class="list-disc list-inside text-sm text-text-secondary mb-4 space-y-1">
+    {project.tasks.map(task => <li>{task}</li>)}
+  </ul>
+
+  <h4 class="text-sm font-semibold text-primary mb-2">Technologies</h4>
+  <div class="flex flex-wrap gap-2 mb-4">
+    {project.technologies.map(tech => <Badge variant="accent">{tech}</Badge>)}
+  </div>
+
+  <h4 class="text-sm font-semibold text-primary mb-2">Resultats</h4>
+  <ul class="list-disc list-inside text-sm text-text-secondary space-y-1">
+    {project.results.map(result => <li>{result}</li>)}
+  </ul>
+</Card>
