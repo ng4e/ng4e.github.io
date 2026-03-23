@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 07-01-PLAN.md
-last_updated: "2026-03-23T22:25:01.926Z"
+stopped_at: Completed 08-01-PLAN.md
+last_updated: "2026-03-23T22:59:52.856Z"
 progress:
   total_phases: 10
   completed_phases: 7
-  total_plans: 14
-  completed_plans: 14
+  total_plans: 17
+  completed_plans: 15
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** Clearly communicate that GambeTech is a software publisher / startup studio -- not a consulting firm
-**Current focus:** Phase 07 — sub-pages
+**Current focus:** Phase 08 — internationalization
 
 ## Current Position
 
-Phase: 07 (sub-pages) — EXECUTING
-Plan: 2 of 2
+Phase: 08 (internationalization) — EXECUTING
+Plan: 2 of 3
 
 ## Performance Metrics
 
@@ -60,6 +60,7 @@ Plan: 2 of 2
 | Phase 06 P02 | 2min | 2 tasks | 2 files |
 | Phase 07 P02 | 2min | 2 tasks | 2 files |
 | Phase 07 P01 | 3min | 2 tasks | 2 files |
+| Phase 08 P01 | 3min | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -86,6 +87,7 @@ Recent decisions affecting current work:
 - [Phase 06]: Blog listing reuses exact card pattern from BlogPreviewSection for visual consistency
 - [Phase 07]: max-w-4xl for project cards to prevent overly long text lines in single-column layout
 - [Phase 07]: lg:grid-cols-3 for expertise cards due to longer descriptions; NMT CTA hidden when website is '#'
+- [Phase 08]: Translation keys organized by component prefix (nav., hero., footer.); locale resolved via props->currentLocale->fr fallback
 
 ### Pending Todos
 
@@ -99,6 +101,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T22:25:01.923Z
-Stopped at: Completed 07-01-PLAN.md
+Last session: 2026-03-23T22:59:52.852Z
+Stopped at: Completed 08-01-PLAN.md
 Resume file: None

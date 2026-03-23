@@ -151,7 +151,7 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 08-01-PLAN.md — Astro i18n config, translation dictionary with t() helper, locale threading through BaseLayout/BaseHead/FormattedDate
+- [x] 08-01-PLAN.md — Astro i18n config, translation dictionary with t() helper, locale threading through BaseLayout/BaseHead/FormattedDate
 - [ ] 08-02-PLAN.md — Language switcher in Navbar, locale-aware Footer, t() integration in all section components
 - [ ] 08-03-PLAN.md — EN page variants under src/pages/en/, blog locale handling, hreflang verification
 

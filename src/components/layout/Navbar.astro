@@ -1,19 +1,32 @@
 ---
 import MobileMenu from "../ui/MobileMenu.tsx";
+import { t, getPagePath, type Locale } from "../../i18n/translations";
+import { getRelativeLocaleUrl } from "astro:i18n";
 
+interface Props {
+    locale?: Locale;
+}
+
+const { locale = "fr" } = Astro.props;
 const pathname = Astro.url.pathname;
-const isLanding = Astro.url.pathname === "/";
+const isLanding = pathname === "/" || pathname === "/en" || pathname === "/en/";
+const prefix = locale === "en" ? "/en" : "";
+
 const navLinks = [
-    { label: "Expertises", href: isLanding ? "/#competences" : "/expertises" },
-    { label: "Produits", href: isLanding ? "/#produits" : "/products" },
-    { label: "Expériences", href: isLanding ? "/#chiffres" : "/experiences" },
-    { label: "Idées & Opinions", href: isLanding ? "/#blog" : "/blog" },
+    { label: t("nav.expertises", locale), href: isLanding ? `${prefix}/#competences` : `${prefix}/expertises` },
+    { label: t("nav.products", locale), href: isLanding ? `${prefix}/#produits` : `${prefix}/products` },
+    { label: t("nav.experiences", locale), href: isLanding ? `${prefix}/#chiffres` : `${prefix}/experiences` },
+    { label: t("nav.blog", locale), href: isLanding ? `${prefix}/#blog` : `${prefix}/blog` },
 ];
+
+const pagePath = getPagePath(pathname);
+const frUrl = getRelativeLocaleUrl("fr", pagePath);
+const enUrl = getRelativeLocaleUrl("en", pagePath);
 ---
 
 <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="/" class="text-2xl font-semibold">
+        <a href={prefix || "/"} class="text-2xl font-semibold">
             <span class="nav-logo text-white transition-colors duration-300">Gt</span>
         </a>
         <div class="hidden md:flex items-center gap-8">
@@ -29,7 +42,12 @@ const navLinks = [
                 </a>
             ))}
         </div>
-        <MobileMenu client:media="(max-width: 768px)" links={navLinks} />
+        <div class="hidden md:flex items-center gap-1 ml-4 text-sm font-semibold">
+            <a href={frUrl} class:list={["transition-colors duration-200", locale === "fr" ? "text-white" : "text-white/50 hover:text-white"]}>FR</a>
+            <span class="text-white/30">|</span>
+            <a href={enUrl} class:list={["transition-colors duration-200", locale === "en" ? "text-white" : "text-white/50 hover:text-white"]}>EN</a>
+        </div>
+        <MobileMenu client:media="(max-width: 768px)" links={navLinks} currentLocale={locale} frUrl={frUrl} enUrl={enUrl} />
     </div>
 </nav>
 

@@ -14,6 +14,9 @@ interface NavLink {
 
 interface MobileMenuProps {
   links: NavLink[];
+  currentLocale?: "fr" | "en";
+  frUrl?: string;
+  enUrl?: string;
 }
 
 function useFocusTrap(
@@ -47,7 +50,7 @@ function useFocusTrap(
   }, [isOpen, containerRef]);
 }
 
-export default function MobileMenu({ links }: MobileMenuProps) {
+export default function MobileMenu({ links, currentLocale = "fr", frUrl = "/", enUrl = "/en" }: MobileMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const overlayRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -143,6 +146,23 @@ export default function MobileMenu({ links }: MobileMenuProps) {
                 ))}
               </ul>
             </nav>
+            <div className="flex items-center gap-2 mt-8 text-sm font-semibold">
+              <a
+                href={frUrl}
+                className={`transition-colors duration-200 ${currentLocale === "fr" ? "text-white" : "text-white/50 hover:text-white"}`}
+                onClick={handleLinkClick}
+              >
+                FR
+              </a>
+              <span className="text-white/30">|</span>
+              <a
+                href={enUrl}
+                className={`transition-colors duration-200 ${currentLocale === "en" ? "text-white" : "text-white/50 hover:text-white"}`}
+                onClick={handleLinkClick}
+              >
+                EN
+              </a>
+            </div>
           </m.div>
         )}
       </AnimatePresence>

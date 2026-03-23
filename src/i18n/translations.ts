@@ -84,6 +84,7 @@ const translations: Record<Locale, Record<string, string>> = {
       "...et autres questions existentielles sur la technologie, la science et la vie de tous les jours",
     "blog.readMore": "Lire la suite",
     "blog.emptyState": "Aucun article pour le moment. Revenez bientot !",
+    "blog.viewAll": "Voir tous les articles",
 
     // Footer (10 keys)
     "footer.tagline": "Editeur de logiciels de niche",
@@ -242,6 +243,7 @@ const translations: Record<Locale, Record<string, string>> = {
       "...and other existential questions about technology, science, and everyday life",
     "blog.readMore": "Read more",
     "blog.emptyState": "No articles yet. Come back soon!",
+    "blog.viewAll": "View all articles",
 
     // Footer (10 keys)
     "footer.tagline": "Niche software publisher",
