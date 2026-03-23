@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { LazyMotion, domAnimation, AnimatePresence } from "motion/react";
 import * as m from "motion/react-m";
+import { t } from "../../i18n/translations";
 
 // ANIM-04 audit: Motion v12 (motion/react) respects prefers-reduced-motion
 // by default. The overlay animation (200ms opacity + translateY) is functional
@@ -97,9 +98,9 @@ export default function MobileMenu({ links, currentLocale = "fr", frUrl = "/", e
       <button
         ref={buttonRef}
         type="button"
-        className="md:hidden w-11 h-11 flex flex-col justify-center items-center gap-[6px] relative z-50"
+        className="md:hidden w-11 h-11 flex flex-col justify-center items-center gap-[6px] relative z-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#1B2A4A] rounded"
         onClick={handleToggle}
-        aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
+        aria-label={isOpen ? t("a11y.mobileMenu.close", currentLocale) : t("a11y.mobileMenu.open", currentLocale)}
         aria-expanded={isOpen}
       >
         <span
@@ -131,13 +132,13 @@ export default function MobileMenu({ links, currentLocale = "fr", frUrl = "/", e
             className="fixed inset-0 z-40 flex flex-col items-center justify-center"
             style={{ backgroundColor: "#1B2A4A" }}
           >
-            <nav aria-label="Menu de navigation principal">
+            <nav aria-label={t("a11y.mobileMenu.nav", currentLocale)}>
               <ul className="flex flex-col items-center gap-6">
                 {links.map((link) => (
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      className="text-xl font-semibold text-white hover:text-white/80 transition-colors duration-200"
+                      className="text-xl font-semibold text-white hover:text-white/80 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#1B2A4A] rounded"
                       onClick={handleLinkClick}
                     >
                       {link.label}
@@ -149,16 +150,18 @@ export default function MobileMenu({ links, currentLocale = "fr", frUrl = "/", e
             <div className="flex items-center gap-2 mt-8 text-sm font-semibold">
               <a
                 href={frUrl}
-                className={`transition-colors duration-200 ${currentLocale === "fr" ? "text-white" : "text-white/50 hover:text-white"}`}
+                className={`transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#1B2A4A] rounded ${currentLocale === "fr" ? "text-white" : "text-white/50 hover:text-white"}`}
                 onClick={handleLinkClick}
+                aria-label={currentLocale === "fr" ? "Francais (langue actuelle)" : "Francais"}
               >
                 FR
               </a>
               <span className="text-white/30">|</span>
               <a
                 href={enUrl}
-                className={`transition-colors duration-200 ${currentLocale === "en" ? "text-white" : "text-white/50 hover:text-white"}`}
+                className={`transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#1B2A4A] rounded ${currentLocale === "en" ? "text-white" : "text-white/50 hover:text-white"}`}
                 onClick={handleLinkClick}
+                aria-label={currentLocale === "en" ? "English (current language)" : "English"}
               >
                 EN
               </a>
