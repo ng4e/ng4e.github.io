@@ -2,19 +2,21 @@
 import type { CollectionEntry } from "astro:content";
 import BaseLayout from "./BaseLayout.astro";
 import FormattedDate from "../components/FormattedDate.astro";
+import { t, type Locale } from "../i18n/translations";
 
-type Props = CollectionEntry<"blog">["data"];
+type Props = CollectionEntry<"blog">["data"] & { locale?: Locale };
 
-const { title, description, pubDate, updatedDate } = Astro.props;
+const { title, description, pubDate, updatedDate, locale } = Astro.props;
+const resolvedLocale = locale ?? (Astro.currentLocale as Locale) ?? "fr";
 ---
 
-<BaseLayout title={title} description={description} headerTitle={title}>
+<BaseLayout title={title} description={description} headerTitle={title} locale={resolvedLocale}>
   <article class="prose prose-lg mx-auto max-w-3xl px-4 py-12 prose-headings:text-primary prose-a:text-accent prose-a:no-underline hover:prose-a:underline prose-blockquote:border-accent prose-strong:text-primary">
     <div class="mb-8 text-text-secondary text-sm">
-      <FormattedDate date={pubDate} />
+      <FormattedDate date={pubDate} locale={resolvedLocale} />
       {updatedDate && (
         <span class="ml-2">
-          — Mis à jour le <FormattedDate date={updatedDate} />
+          — {t("blogPost.updatedOn", resolvedLocale)} <FormattedDate date={updatedDate} locale={resolvedLocale} />
         </span>
       )}
     </div>
