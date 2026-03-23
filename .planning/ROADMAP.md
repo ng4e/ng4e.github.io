@@ -131,11 +131,11 @@ Plans:
   1. The /expertises page displays detailed expertise information using the new design system
   2. The /products page shows an expanded product catalog beyond the landing page preview cards
   3. The /experiences page renders professional references from the project JSON collection with company, mission, role, technologies, and results
-**Plans**: 1 plan
+**Plans**: 2 plans
 
 Plans:
-- [ ] 07-01: TBD
-- [ ] 07-02: TBD
+- [ ] 07-01-PLAN.md — Restyle /expertises and /products pages with Card, Badge, Button design system
+- [x] 07-02-PLAN.md — Implement ProjectCard and restyle /experiences page with CV download
 
 ### Phase 8: Internationalization
 **Goal**: The entire site is available in both French and English, with locale-based routing and a language switcher
@@ -204,7 +204,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 4. React Islands | 2/2 | Complete   | 2026-03-21 |
 | 5. Animations and Interactions | 0/1 | Not started | - |
 | 6. Content Migration | 0/2 | Not started | - |
-| 7. Sub-Pages | 0/2 | Not started | - |
+| 7. Sub-Pages | 1/2 | In Progress|  |
 | 8. Internationalization | 0/3 | Not started | - |
 | 9. Accessibility | 0/2 | Not started | - |
 | 10. SEO, Performance, and Deployment | 0/2 | Not started | - |

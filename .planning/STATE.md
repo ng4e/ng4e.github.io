@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 06-02-PLAN.md
-last_updated: "2026-03-23T21:59:20.710Z"
+stopped_at: Completed 07-02-PLAN.md
+last_updated: "2026-03-23T22:24:10.549Z"
 progress:
   total_phases: 10
   completed_phases: 6
-  total_plans: 12
-  completed_plans: 12
+  total_plans: 14
+  completed_plans: 13
 ---
 
 # Project State
@@ -19,11 +19,11 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** Clearly communicate that GambeTech is a software publisher / startup studio -- not a consulting firm
-**Current focus:** Phase 06 — content-migration
+**Current focus:** Phase 07 — sub-pages
 
 ## Current Position
 
-Phase: 06 (content-migration) — EXECUTING
+Phase: 07 (sub-pages) — EXECUTING
 Plan: 2 of 2
 
 ## Performance Metrics
@@ -58,6 +58,7 @@ Plan: 2 of 2
 | Phase 05 P01 | 2min | 2 tasks | 9 files |
 | Phase 06 P01 | 2min | 2 tasks | 5 files |
 | Phase 06 P02 | 2min | 2 tasks | 2 files |
+| Phase 07 P02 | 2min | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -82,6 +83,7 @@ Recent decisions affecting current work:
 - [Phase 05]: CSS entrance animations gated behind prefers-reduced-motion: no-preference; stagger-item wrappers around Card to avoid transition conflicts
 - [Phase 06]: Blog inline images use not-prose text-center wrapper for Tailwind typography compatibility
 - [Phase 06]: Blog listing reuses exact card pattern from BlogPreviewSection for visual consistency
+- [Phase 07]: max-w-4xl for project cards to prevent overly long text lines in single-column layout
 
 ### Pending Todos
 
@@ -95,6 +97,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T21:59:20.707Z
-Stopped at: Completed 06-02-PLAN.md
+Last session: 2026-03-23T22:24:10.545Z
+Stopped at: Completed 07-02-PLAN.md
 Resume file: None
