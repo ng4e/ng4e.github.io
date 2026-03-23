@@ -102,7 +102,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [x] 05-01-PLAN.md — Scroll entrance animations, card hover consistency, and reduced-motion compliance� Scroll entrance animations, card hover consistency, and reduced-motion compliance
+- [x] 05-01-PLAN.md — Scroll entrance animations, card hover consistency, and reduced-motion compliance
 
 ### Phase 6: Content Migration
 **Goal**: All existing blog posts and project references are migrated to the new design without content loss, and the blog is fully functional
@@ -148,12 +148,12 @@ Plans:
   4. All static text (navigation labels, section titles, CTAs, footer text) is translated in both languages
   5. Blog posts display in their original language on both locale routes, with a language field in frontmatter
   6. The default locale is French (root / serves or redirects to French content)
-**Plans**: 1 plan
+**Plans**: 3 plans
 
 Plans:
-- [ ] 08-01: TBD
-- [ ] 08-02: TBD
-- [ ] 08-03: TBD
+- [ ] 08-01-PLAN.md — Astro i18n config, translation dictionary with t() helper, locale threading through BaseLayout/BaseHead/FormattedDate
+- [ ] 08-02-PLAN.md — Language switcher in Navbar, locale-aware Footer, t() integration in all section components
+- [ ] 08-03-PLAN.md — EN page variants under src/pages/en/, blog locale handling, hreflang verification
 
 ### Phase 9: Accessibility
 **Goal**: The site meets WCAG 2.1 AA compliance standards, ensuring usability for all visitors
