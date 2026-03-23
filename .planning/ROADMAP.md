@@ -152,8 +152,8 @@ Plans:
 
 Plans:
 - [x] 08-01-PLAN.md — Astro i18n config, translation dictionary with t() helper, locale threading through BaseLayout/BaseHead/FormattedDate
-- [ ] 08-02-PLAN.md — Language switcher in Navbar, locale-aware Footer, t() integration in all section components
-- [ ] 08-03-PLAN.md — EN page variants under src/pages/en/, blog locale handling, hreflang verification
+- [x] 08-02-PLAN.md — Language switcher in Navbar, locale-aware Footer, t() integration in all section components
+- [x] 08-03-PLAN.md — EN page variants under src/pages/en/, blog locale handling, hreflang verification
 
 ### Phase 9: Accessibility
 **Goal**: The site meets WCAG 2.1 AA compliance standards, ensuring usability for all visitors

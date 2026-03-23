@@ -86,12 +86,12 @@
 
 ### Internationalization
 
-- [ ] **I18N-01**: Site fully bilingual -- French and English versions of all pages
-- [ ] **I18N-02**: Language switcher in navbar (FR/EN toggle)
+- [x] **I18N-01**: Site fully bilingual -- French and English versions of all pages
+- [x] **I18N-02**: Language switcher in navbar (FR/EN toggle)
 - [x] **I18N-03**: URL routing by locale (e.g., /fr/expertises, /en/expertises or similar pattern)
 - [x] **I18N-04**: All static text (navigation, section titles, CTAs, footer) translated in both languages
-- [ ] **I18N-05**: Blog posts have a language field -- displayed in their original language on both locale routes
-- [ ] **I18N-06**: SEO: hreflang tags linking FR and EN versions of each page
+- [x] **I18N-05**: Blog posts have a language field -- displayed in their original language on both locale routes
+- [x] **I18N-06**: SEO: hreflang tags linking FR and EN versions of each page
 - [x] **I18N-07**: Default locale is French (/ redirects to /fr or serves FR content)
 
 ### Deployment
@@ -181,12 +181,12 @@
 | A11Y-03 | Phase 9 | Pending |
 | A11Y-04 | Phase 9 | Pending |
 | A11Y-05 | Phase 9 | Pending |
-| I18N-01 | Phase 8 | Pending |
-| I18N-02 | Phase 8 | Pending |
+| I18N-01 | Phase 8 | Complete |
+| I18N-02 | Phase 8 | Complete |
 | I18N-03 | Phase 8 | Complete |
 | I18N-04 | Phase 8 | Complete |
-| I18N-05 | Phase 8 | Pending |
-| I18N-06 | Phase 8 | Pending |
+| I18N-05 | Phase 8 | Complete |
+| I18N-06 | Phase 8 | Complete |
 | I18N-07 | Phase 8 | Complete |
 | DEPL-01 | Phase 10 | Pending |
 | DEPL-02 | Phase 10 | Pending |

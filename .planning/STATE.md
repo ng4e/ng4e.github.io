@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 08-01-PLAN.md
-last_updated: "2026-03-23T22:59:52.856Z"
+stopped_at: Completed 08-03-PLAN.md
+last_updated: "2026-03-23T23:15:06.635Z"
 progress:
   total_phases: 10
-  completed_phases: 7
+  completed_phases: 8
   total_plans: 17
-  completed_plans: 15
+  completed_plans: 17
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-20)
 ## Current Position
 
 Phase: 08 (internationalization) — EXECUTING
-Plan: 2 of 3
+Plan: 3 of 3
 
 ## Performance Metrics
 
@@ -61,6 +61,8 @@ Plan: 2 of 3
 | Phase 07 P02 | 2min | 2 tasks | 2 files |
 | Phase 07 P01 | 3min | 2 tasks | 2 files |
 | Phase 08 P01 | 3min | 2 tasks | 5 files |
+| Phase 08 P02 | 4min | 2 tasks | 12 files |
+| Phase 08 P03 | 6min | 2 tasks | 16 files |
 
 ## Accumulated Context
 
@@ -88,6 +90,8 @@ Recent decisions affecting current work:
 - [Phase 07]: max-w-4xl for project cards to prevent overly long text lines in single-column layout
 - [Phase 07]: lg:grid-cols-3 for expertise cards due to longer descriptions; NMT CTA hidden when website is '#'
 - [Phase 08]: Translation keys organized by component prefix (nav., hero., footer.); locale resolved via props->currentLocale->fr fallback
+- [Phase 08]: Translation keys stored in data arrays for competencies/products/sectors; product names hardcoded as brand names
+- [Phase 08]: EN pages mirror FR structure with adjusted import paths; blog posts shared across locales in original language
 
 ### Pending Todos
 
@@ -101,6 +105,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T22:59:52.852Z
-Stopped at: Completed 08-01-PLAN.md
+Last session: 2026-03-23T23:15:06.631Z
+Stopped at: Completed 08-03-PLAN.md
 Resume file: None
