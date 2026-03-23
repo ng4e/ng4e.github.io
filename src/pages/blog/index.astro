@@ -1,55 +1,48 @@
 ---
-import Layout from "../../layouts/BaseLayout.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
+import Card from "../../components/ui/Card.astro";
+import Badge from "../../components/ui/Badge.astro";
+import Button from "../../components/ui/Button.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 
 const posts = (await getCollection("blog")).sort(
-    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
-<Layout
-    title="Idees et Opinions"
-    description="...et autres questions existentielles sur la technologie, la science et la vie de tous les jours"
-    headerTitle="Idées et Opinions"
+<BaseLayout
+  title="Idees et Opinions"
+  description="...et autres questions existentielles sur la technologie, la science et la vie de tous les jours"
+  headerTitle="Idées et Opinions"
 >
-    <section>
-        {
-            posts.map((post) => (
-                <div>
-                    <article>
-                        <div>
-                            <div>
-                                <p>
-                                    <strong>
-                                        <a
-                                            href={`/blog/${post.id}/`}
-                                            aria-label={`Read ${post.data.title}`}
-                                        >
-                                            {post.data.title}
-                                        </a>
-                                    </strong>
-                                    <br />
-                                    <small>
-                                        <FormattedDate
-                                            date={post.data.pubDate}
-                                        />
-                                    </small>
-                                    <br />
-                                    {post.data.description}{" "}
-                                    <br />
-                                    <a
-                                        href={`/blog/${post.id}/`}
-                                        aria-label={`Read more about ${post.data.title}`}
-                                    >
-                                        Read more
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            ))
-        }
-    </section>
-</Layout>
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {posts.map((post) => (
+          <Card>
+            <div class="flex items-center gap-3 mb-3">
+              <Badge variant="surface" class="text-xs px-2 py-1">
+                {post.data.lang === "fr" ? "FR" : "EN"}
+              </Badge>
+              <span class="text-sm text-text-secondary">
+                <FormattedDate date={post.data.pubDate} />
+              </span>
+            </div>
+            <h3 class="text-xl font-semibold text-primary mb-2">
+              <a href={`/blog/${post.id}/`} class="hover:text-accent transition-colors">
+                {post.data.title}
+              </a>
+            </h3>
+            <p class="text-base text-text-secondary line-clamp-3 mb-4">
+              {post.data.description}
+            </p>
+            <Button variant="ghost" size="small" href={`/blog/${post.id}/`}>
+              Lire la suite
+            </Button>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
