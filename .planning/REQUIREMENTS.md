@@ -78,11 +78,11 @@
 
 ### Accessibility
 
-- [ ] **A11Y-01**: Color contrast minimum 4.5:1 ratio (WCAG AA)
+- [x] **A11Y-01**: Color contrast minimum 4.5:1 ratio (WCAG AA)
 - [ ] **A11Y-02**: All interactive elements have visible focus states
-- [ ] **A11Y-03**: Semantic HTML throughout (nav, main, section, article, footer)
+- [x] **A11Y-03**: Semantic HTML throughout (nav, main, section, article, footer)
 - [ ] **A11Y-04**: Alt text on all images and logos
-- [ ] **A11Y-05**: Skip-to-content link for keyboard navigation
+- [x] **A11Y-05**: Skip-to-content link for keyboard navigation
 
 ### Internationalization
 
@@ -176,11 +176,11 @@
 | SEO-03 | Phase 10 | Pending |
 | SEO-04 | Phase 10 | Pending |
 | SEO-05 | Phase 10 | Pending |
-| A11Y-01 | Phase 9 | Pending |
+| A11Y-01 | Phase 9 | Complete |
 | A11Y-02 | Phase 9 | Pending |
-| A11Y-03 | Phase 9 | Pending |
+| A11Y-03 | Phase 9 | Complete |
 | A11Y-04 | Phase 9 | Pending |
-| A11Y-05 | Phase 9 | Pending |
+| A11Y-05 | Phase 9 | Complete |
 | I18N-01 | Phase 8 | Complete |
 | I18N-02 | Phase 8 | Complete |
 | I18N-03 | Phase 8 | Complete |

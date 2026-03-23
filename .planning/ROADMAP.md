@@ -169,7 +169,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 09-01-PLAN.md — Color contrast fix, global focus ring base styles, skip-to-content link, semantic header wrapper
+- [x] 09-01-PLAN.md — Color contrast fix, global focus ring base styles, skip-to-content link, semantic header wrapper
 - [ ] 09-02-PLAN.md — Focus indicators on Navbar/Footer/Button, ARIA attributes, tap target sizing
 
 ### Phase 10: SEO, Performance, and Deployment
