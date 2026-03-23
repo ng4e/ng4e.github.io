@@ -117,7 +117,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 06-01-PLAN.md — Content preparation: schema update, blog post cleanup, project JSON placeholders
+- [x] 06-01-PLAN.md — Content preparation: schema update, blog post cleanup, project JSON placeholders
 - [ ] 06-02-PLAN.md — Blog listing restyle, prose typography enhancement, RSS feed verification
 
 

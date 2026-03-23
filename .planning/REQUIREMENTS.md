@@ -42,8 +42,8 @@
 
 ### Content Migration
 
-- [ ] **CONT-01**: Existing blog MDX posts migrated to new structure with preserved content and frontmatter
-- [ ] **CONT-02**: Existing project JSON files migrated to new structure with preserved data
+- [x] **CONT-01**: Existing blog MDX posts migrated to new structure with preserved content and frontmatter
+- [x] **CONT-02**: Existing project JSON files migrated to new structure with preserved data
 - [ ] **CONT-03**: Blog listing page (/blog) with post cards showing title, date, excerpt
 - [ ] **CONT-04**: Individual blog post pages (/blog/[slug]) with prose styling
 - [ ] **CONT-05**: RSS feed preserved and functional
@@ -155,8 +155,8 @@
 | ANIM-02 | Phase 5 | Complete |
 | ANIM-03 | Phase 4 | Complete |
 | ANIM-04 | Phase 5 | Complete |
-| CONT-01 | Phase 6 | Pending |
-| CONT-02 | Phase 6 | Pending |
+| CONT-01 | Phase 6 | Complete |
+| CONT-02 | Phase 6 | Complete |
 | CONT-03 | Phase 6 | Pending |
 | CONT-04 | Phase 6 | Pending |
 | CONT-05 | Phase 6 | Pending |
