@@ -166,11 +166,11 @@ Plans:
   4. All images and logos have descriptive alt text
   5. A skip-to-content link is the first focusable element on every page
   6. All tap targets on mobile are at least 44x44px
-**Plans**: 1 plan
+**Plans**: 2 plans
 
 Plans:
-- [ ] 09-01: TBD
-- [ ] 09-02: TBD
+- [ ] 09-01-PLAN.md — Color contrast fix, global focus ring base styles, skip-to-content link, semantic header wrapper
+- [ ] 09-02-PLAN.md — Focus indicators on Navbar/Footer/Button, ARIA attributes, tap target sizing
 
 ### Phase 10: SEO, Performance, and Deployment
 **Goal**: The site is optimized for search engines, achieves top Lighthouse scores, and deploys correctly to GitHub Pages with analytics preserved
