@@ -18,7 +18,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 4: React Islands** - Animated hero background, metrics counter, mobile menu (completed 2026-03-21)
 - [ ] **Phase 5: Animations and Interactions** - Scroll entrance animations, card hover effects, reduced-motion support
 - [ ] **Phase 6: Content Migration** - Blog posts, project JSON, blog listing, RSS feed
-- [ ] **Phase 7: Sub-Pages** - Expertises, products, and experiences detail pages
+- [x] **Phase 7: Sub-Pages** - Expertises, products, and experiences detail pages (completed 2026-03-23)
 - [ ] **Phase 8: Internationalization** - Bilingual FR/EN site with locale routing and language switcher
 - [ ] **Phase 9: Accessibility** - WCAG 2.1 AA compliance, focus states, semantic HTML, skip links
 - [ ] **Phase 10: SEO, Performance, and Deployment** - Meta tags, structured data, Lighthouse 95+, CI/CD verification
@@ -134,7 +134,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 07-01-PLAN.md — Restyle /expertises and /products pages with Card, Badge, Button design system
+- [x] 07-01-PLAN.md — Restyle /expertises and /products pages with Card, Badge, Button design system
 - [x] 07-02-PLAN.md — Implement ProjectCard and restyle /experiences page with CV download
 
 ### Phase 8: Internationalization
@@ -204,7 +204,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 4. React Islands | 2/2 | Complete   | 2026-03-21 |
 | 5. Animations and Interactions | 0/1 | Not started | - |
 | 6. Content Migration | 0/2 | Not started | - |
-| 7. Sub-Pages | 1/2 | In Progress|  |
+| 7. Sub-Pages | 2/2 | Complete   | 2026-03-23 |
 | 8. Internationalization | 0/3 | Not started | - |
 | 9. Accessibility | 0/2 | Not started | - |
 | 10. SEO, Performance, and Deployment | 0/2 | Not started | - |
