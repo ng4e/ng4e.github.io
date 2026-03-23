@@ -1,100 +1,86 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
+import Card from "../components/ui/Card.astro";
+import Badge from "../components/ui/Badge.astro";
 import CompanyLogoSlider from "../components/CompanyLogoSlider.astro";
 import { companies } from "../consts";
+import { Eye, FolderKanban, Code, Users, Wrench } from "@lucide/astro";
+
+const expertises = [
+  {
+    icon: Eye,
+    title: "Vision Produit",
+    level: "Experimente",
+    body: "Definition et mise en oeuvre de la strategie produit cote backend avec un fort focus sur le modele, l'ergonomie et la performance",
+  },
+  {
+    icon: FolderKanban,
+    title: "Gestion de projet technique",
+    level: "Experimente",
+    body: "Pilotage et Implementation de projets techniques de la conception au deploiement",
+  },
+  {
+    icon: Code,
+    title: "Developpement full-stack",
+    level: "Experimente",
+    body: "Sensibilite a une approche de developpement cloud natif. Langages de programmation: Java 8+, JavaScript (ES6+), TypeScript, Python SQL.",
+  },
+  {
+    icon: Users,
+    title: "Environnement agile et apprenant",
+    level: "Experimente",
+    body: "Capacite a evoluer dans un cadre collaboratif et oriente vers le client, avec une capacite d'apprentissage continue.",
+  },
+  {
+    icon: Wrench,
+    title: "Competences Techniques Complementaires",
+    level: "",
+    body: "Atlassian (Confluence, Jira, Trello), Spring Boot, Spring framework, Quarkus, Maven, Github, Gitlab, Bitbucket, Vercel, Google Cloud, AWS, Oracle Cloud.",
+  },
+];
+
+const sectors = ["Banque de detail", "Assurance", "Monetique", "Telecom", "Energie"];
 ---
 
 <Layout
-    title="Expertises"
-    description="Architecture et planification - Integration de systemes - Conception et developpement de logiciels"
-    headerTitle="Expertises"
+  title="Expertises"
+  description="Architecture et planification - Integration de systemes - Conception et developpement de logiciels"
+  headerTitle="Expertises"
 >
+  <section class="bg-white py-20 animate-on-scroll" data-animate>
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-semibold text-primary text-center mb-4">
+        15+ annees d'experience
+      </h2>
+      <p class="text-base text-text-secondary text-center mb-8 max-w-2xl mx-auto">
+        Ouvert au marche. Freelance/CDI. Base a Aix-en-Provence
+      </p>
 
-    <p>Ouvert au marche. Freelance/CDI. base a Aix-en-Provence</p>
-    <h5>15+ annees d'experience, dans des secteurs strategiques</h5>
-    <div>
-        <span>Banque de detail</span>
-        <span>Assurance</span>
-        <span>Monetique</span>
-        <span>Telecom</span>
-        <span>Energie</span>
+      <div class="flex flex-wrap justify-center gap-3 mb-12">
+        {sectors.map((sector) => (
+          <Badge>{sector}</Badge>
+        ))}
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {expertises.map(({ icon: Icon, title, level, body }, i) => (
+          <div class="stagger-item" style={`--stagger-delay: ${i}`}>
+            <Card>
+              <Icon class="w-12 h-12 text-accent mb-4" stroke-width={2} />
+              <h3 class="text-xl font-semibold text-primary mb-1">{title}</h3>
+              {level && <p class="text-xs font-semibold text-accent uppercase tracking-wide mb-2">{level}</p>}
+              <p class="text-base text-text-secondary">{body}</p>
+            </Card>
+          </div>
+        ))}
+      </div>
     </div>
+  </section>
 
-    <div>
-        <div>
-            <div>
-                <header>
-                    <p>Vision Produit (Experimente)</p>
-                </header>
-                <div>
-                    <p>
-                        Definition et mise en oeuvre de la strategie produit
-                        cote backend avec un fort focus sur le modele,
-                        l'ergonomie et la performance
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div>
-                <header>
-                    <p>Gestion de projet technique (Experimente)</p>
-                </header>
-                <div>
-                    <p>
-                        Pilotage et Implementation de projets techniques de la
-                        conception au deploiement
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div>
-                <header>
-                    <p>Developpement full-stack (Experimente)</p>
-                </header>
-                <div>
-                    <p>
-                        Sensibilite a une approche de developpement cloud natif.
-                        Langages de programmation: Java 8+, JavaScript (ES6+),
-                        TypeScript, Python SQL.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div>
-                <header>
-                    <p>Environnement agile et apprenant (Experimente)</p>
-                </header>
-                <div>
-                    <p>
-                        Capacite a evoluer dans un cadre collaboratif et oriente
-                        vers le client, avec une capacite d'apprentissage
-                        continue.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div>
-                <header>
-                    <p>Competences Techniques Complementaires</p>
-                </header>
-                <div>
-                    <p>
-                        Atlassian (Confluence, Jira,Trello), Spring Boot, Spring
-                        framework, Quarkus, Maven, Github, Gitlab, Bitbucket,
-                        Vercel, Google Cloud, AWS, Oracle Cloud.
-                    </p>
-                </div>
-            </div>
-        </div>
+  <section class="bg-surface py-16 animate-on-scroll" data-animate>
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold text-primary text-center mb-8">Clients et partenaires</h2>
+      <CompanyLogoSlider companies={companies} />
     </div>
-
-    <CompanyLogoSlider companies={companies} />
+  </section>
 </Layout>
