@@ -22,3 +22,25 @@ import BlogPreviewSection from "../components/sections/BlogPreviewSection.astro"
   <ProductsSection />
   <BlogPreviewSection />
 </Layout>
+
+<script is:inline>
+(() => {
+  const targets = document.querySelectorAll('[data-animate]');
+  if (!targets.length) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  targets.forEach((el) => observer.observe(el));
+})();
+</script>

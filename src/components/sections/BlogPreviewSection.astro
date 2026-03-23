@@ -11,24 +11,26 @@ const latestPosts = allPosts
   .slice(0, 3);
 ---
 
-<section id="blog" class="bg-white py-20 scroll-mt-20">
+<section id="blog" class="bg-white py-20 scroll-mt-20 animate-on-scroll" data-animate>
   <div class="max-w-7xl mx-auto px-4">
     <h2 class="text-3xl md:text-4xl font-semibold text-primary text-center mb-4">Idees et Opinions</h2>
     <p class="text-base text-text-secondary text-center mb-12 max-w-2xl mx-auto">...et autres questions existentielles sur la technologie, la science et la vie de tous les jours</p>
     {latestPosts.length > 0 ? (
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {latestPosts.map((post) => (
-          <Card>
-            <div class="flex items-center gap-3 mb-3">
-              <Badge variant="surface" class="text-xs px-2 py-1">{post.data.lang === "fr" ? "FR" : "EN"}</Badge>
-              <span class="text-sm text-text-secondary"><FormattedDate date={post.data.pubDate} /></span>
-            </div>
-            <h3 class="text-xl font-semibold text-primary mb-2">
-              <a href={"/blog/" + post.id} class="hover:text-accent transition-colors">{post.data.title}</a>
-            </h3>
-            <p class="text-base text-text-secondary line-clamp-3 mb-4">{post.data.description}</p>
-            <Button variant="ghost" size="small" href={"/blog/" + post.id}>Lire la suite</Button>
-          </Card>
+        {latestPosts.map((post, i) => (
+          <div class="stagger-item" style={`--stagger-delay: ${i}`}>
+            <Card>
+              <div class="flex items-center gap-3 mb-3">
+                <Badge variant="surface" class="text-xs px-2 py-1">{post.data.lang === "fr" ? "FR" : "EN"}</Badge>
+                <span class="text-sm text-text-secondary"><FormattedDate date={post.data.pubDate} /></span>
+              </div>
+              <h3 class="text-xl font-semibold text-primary mb-2">
+                <a href={"/blog/" + post.id} class="hover:text-accent transition-colors">{post.data.title}</a>
+              </h3>
+              <p class="text-base text-text-secondary line-clamp-3 mb-4">{post.data.description}</p>
+              <Button variant="ghost" size="small" href={"/blog/" + post.id}>Lire la suite</Button>
+            </Card>
+          </div>
         ))}
       </div>
     ) : (

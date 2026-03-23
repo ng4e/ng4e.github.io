@@ -31,3 +31,30 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Scroll entrance animations (per ANIM-01, ANIM-04) */
+@media (prefers-reduced-motion: no-preference) {
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 600ms ease-out, transform 600ms ease-out;
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Staggered children within animated sections */
+  .animate-on-scroll .stagger-item {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 600ms ease-out, transform 600ms ease-out;
+    transition-delay: calc(var(--stagger-delay, 0) * 100ms);
+  }
+
+  .animate-on-scroll.visible .stagger-item {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
