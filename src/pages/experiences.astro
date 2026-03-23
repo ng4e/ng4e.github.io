@@ -1,23 +1,38 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-import { companies } from "../consts";
 import ProjectCard from "../components/ProjectCard.astro";
+import Button from "../components/ui/Button.astro";
+import { Download } from "@lucide/astro";
 
-// Get all projects from the collection
 const projects = (await getCollection("projects")).sort(
     (a, b) => a.data.key - b.data.key,
 );
 
-// Assumes your PDF file is in the `public/` directory.
 const pdfPath = "/assets/MOLU_N_Samuel_CV_FR_v042025.2-2.pdf";
-const pdfFileName = "MOLU_N_Samuel_CV_FR_v042025.2-2.pdf";
 ---
 
 <Layout title="References" description="15+ Annees d'experiences" headerTitle="Expériences">
-    {projects.map((project) => (
-      <section id={`${project.data.id}`}>
-        <ProjectCard project={project.data} />
-      </section>
-    ))}
+  <section class="bg-white py-12 animate-on-scroll" data-animate>
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-semibold text-primary mb-2">References professionnelles</h2>
+        <p class="text-base text-text-secondary">15+ annees d'experience dans des secteurs strategiques</p>
+      </div>
+      <Button variant="ghost" href={pdfPath} class="mt-4 sm:mt-0">
+        <Fragment slot="icon"><Download class="w-5 h-5" /></Fragment>
+        Telecharger le CV
+      </Button>
+    </div>
+  </section>
+
+  <section class="bg-surface py-20 animate-on-scroll" data-animate>
+    <div class="max-w-4xl mx-auto px-4 space-y-8">
+      {projects.map((project, i) => (
+        <div class="stagger-item" style={`--stagger-delay: ${i}`} id={project.data.id}>
+          <ProjectCard project={project.data} />
+        </div>
+      ))}
+    </div>
+  </section>
 </Layout>
