@@ -2,6 +2,11 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { LazyMotion, domAnimation, AnimatePresence } from "motion/react";
 import * as m from "motion/react-m";
 
+// ANIM-04 audit: Motion v12 (motion/react) respects prefers-reduced-motion
+// by default. The overlay animation (200ms opacity + translateY) is functional
+// UI feedback, not decorative -- it provides spatial context for menu state.
+// The hamburger CSS morph (transition-all duration-300) is also functional.
+// Both are retained in reduced-motion mode per D-13 reasoning.
 interface NavLink {
   label: string;
   href: string;
