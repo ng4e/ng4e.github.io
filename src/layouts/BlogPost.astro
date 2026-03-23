@@ -9,7 +9,7 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description} headerTitle={title}>
-  <article class="prose prose-lg mx-auto max-w-3xl px-4 py-12">
+  <article class="prose prose-lg mx-auto max-w-3xl px-4 py-12 prose-headings:text-primary prose-a:text-accent prose-a:no-underline hover:prose-a:underline prose-blockquote:border-accent prose-strong:text-primary">
     <div class="mb-8 text-text-secondary text-sm">
       <FormattedDate date={pubDate} />
       {updatedDate && (
