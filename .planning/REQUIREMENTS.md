@@ -70,11 +70,11 @@
 
 ### SEO & Performance
 
-- [ ] **SEO-01**: Meta title + description + OG tags per page via layout props
-- [ ] **SEO-02**: JSON-LD Organisation schema on landing page
+- [x] **SEO-01**: Meta title + description + OG tags per page via layout props
+- [x] **SEO-02**: JSON-LD Organisation schema on landing page
 - [ ] **SEO-03**: Sitemap via @astrojs/sitemap
 - [ ] **SEO-04**: Lighthouse performance score 95+
-- [ ] **SEO-05**: Images lazy-loaded and optimized via astro:assets
+- [x] **SEO-05**: Images lazy-loaded and optimized via astro:assets
 
 ### Accessibility
 
@@ -171,11 +171,11 @@
 | RESP-01 | Phase 3 | Complete |
 | RESP-02 | Phase 9 | Complete |
 | RESP-03 | Phase 4 | Complete |
-| SEO-01 | Phase 10 | Pending |
-| SEO-02 | Phase 10 | Pending |
+| SEO-01 | Phase 10 | Complete |
+| SEO-02 | Phase 10 | Complete |
 | SEO-03 | Phase 10 | Pending |
 | SEO-04 | Phase 10 | Pending |
-| SEO-05 | Phase 10 | Pending |
+| SEO-05 | Phase 10 | Complete |
 | A11Y-01 | Phase 9 | Complete |
 | A11Y-02 | Phase 9 | Complete |
 | A11Y-03 | Phase 9 | Complete |

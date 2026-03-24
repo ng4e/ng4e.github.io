@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 09-03-PLAN.md
-last_updated: "2026-03-23T23:53:25.717Z"
+stopped_at: Completed 10-01-PLAN.md
+last_updated: "2026-03-24T00:11:45.270Z"
 progress:
   total_phases: 10
   completed_phases: 9
-  total_plans: 20
-  completed_plans: 20
+  total_plans: 22
+  completed_plans: 21
 ---
 
 # Project State
@@ -19,11 +19,11 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** Clearly communicate that GambeTech is a software publisher / startup studio -- not a consulting firm
-**Current focus:** Phase 09 — accessibility
+**Current focus:** Phase 10 — seo-performance-deployment
 
 ## Current Position
 
-Phase: 09 (accessibility) — EXECUTING
+Phase: 10 (seo-performance-deployment) — EXECUTING
 Plan: 2 of 2
 
 ## Performance Metrics
@@ -66,6 +66,7 @@ Plan: 2 of 2
 | Phase 09 P01 | 2min | 2 tasks | 3 files |
 | Phase 09-accessibility P02 | 2min | 2 tasks | 4 files |
 | Phase 09 P03 | 2min | 2 tasks | 2 files |
+| Phase 10 P01 | 2min | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -98,6 +99,7 @@ Recent decisions affecting current work:
 - [Phase 09]: Accent color darkened from #3A7CA5 to #336D93 for WCAG AA 4.5:1+ contrast compliance
 - [Phase 09-accessibility]: White focus ring on dark bg, accent ring on light bg; h-11 md:h-9 for responsive tap targets
 - [Phase 09]: ring-offset-[#1B2A4A] arbitrary value for MobileMenu focus ring offset on dark overlay background
+- [Phase 10]: JSON-LD inline in page files (not via BaseHead prop) since only landing pages need structured data
 
 ### Pending Todos
 
@@ -111,6 +113,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T23:53:25.713Z
-Stopped at: Completed 09-03-PLAN.md
+Last session: 2026-03-24T00:11:45.263Z
+Stopped at: Completed 10-01-PLAN.md
 Resume file: None

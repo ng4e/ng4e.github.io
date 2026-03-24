@@ -186,11 +186,11 @@ Plans:
   6. The site builds and deploys successfully to GitHub Pages via the develop branch workflow
   7. The custom domain gambetech.com resolves correctly with CNAME preserved
   8. Umami analytics script loads on every page
-**Plans**: 1 plan
+**Plans**: 2 plans
 
 Plans:
-- [ ] 10-01: TBD
-- [ ] 10-02: TBD
+- [x] 10-01-PLAN.md — SEO artifacts: JSON-LD Organisation schema, robots.txt, image lazy loading, BaseHead cleanup
+- [ ] 10-02-PLAN.md — Full build verification: meta/OG/sitemap/CNAME/analytics/performance checks
 
 ## Progress
 
@@ -208,4 +208,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 7. Sub-Pages | 2/2 | Complete   | 2026-03-23 |
 | 8. Internationalization | 0/3 | Not started | - |
 | 9. Accessibility | 2/3 | In Progress | - |
-| 10. SEO, Performance, and Deployment | 0/2 | Not started | - |
+| 10. SEO, Performance, and Deployment | 1/2 | In Progress|  |
