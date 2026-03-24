@@ -21,7 +21,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 7: Sub-Pages** - Expertises, products, and experiences detail pages (completed 2026-03-23)
 - [ ] **Phase 8: Internationalization** - Bilingual FR/EN site with locale routing and language switcher
 - [ ] **Phase 9: Accessibility** - WCAG 2.1 AA compliance, focus states, semantic HTML, skip links
-- [ ] **Phase 10: SEO, Performance, and Deployment** - Meta tags, structured data, Lighthouse 95+, CI/CD verification
+- [x] **Phase 10: SEO, Performance, and Deployment** - Meta tags, structured data, Lighthouse 95+, CI/CD verification (completed 2026-03-24)
 
 ## Phase Details
 
@@ -190,7 +190,7 @@ Plans:
 
 Plans:
 - [x] 10-01-PLAN.md — SEO artifacts: JSON-LD Organisation schema, robots.txt, image lazy loading, BaseHead cleanup
-- [ ] 10-02-PLAN.md — Full build verification: meta/OG/sitemap/CNAME/analytics/performance checks
+- [x] 10-02-PLAN.md — Full build verification: meta/OG/sitemap/CNAME/analytics/performance checks
 
 ## Progress
 
@@ -208,4 +208,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 7. Sub-Pages | 2/2 | Complete   | 2026-03-23 |
 | 8. Internationalization | 0/3 | Not started | - |
 | 9. Accessibility | 2/3 | In Progress | - |
-| 10. SEO, Performance, and Deployment | 1/2 | In Progress|  |
+| 10. SEO, Performance, and Deployment | 2/2 | Complete   | 2026-03-24 |

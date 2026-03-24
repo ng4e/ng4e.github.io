@@ -50,5 +50,26 @@ const locale = Astro.props.locale ?? (Astro.currentLocale as Locale) ?? "fr";
         {!sentinelInHero && <div id="nav-sentinel" class="h-0" aria-hidden="true"></div>}
         <main id="main-content"><slot /></main>
         <Footer locale={locale} />
+        <script is:inline>
+        (() => {
+            const targets = document.querySelectorAll('[data-animate]');
+            if (!targets.length) return;
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.15 }
+            );
+
+            targets.forEach((el) => observer.observe(el));
+        })();
+        </script>
     </body>
 </html>
