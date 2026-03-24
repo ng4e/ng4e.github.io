@@ -25,6 +25,22 @@ const locale = (Astro.currentLocale ?? "fr") as Locale;
   <BlogPreviewSection locale={locale} />
 </Layout>
 
+<script is:inline type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GambeTech",
+  "url": "https://gambetech.com",
+  "logo": "https://gambetech.com/gambetech-logo-192x192.png",
+  "description": "Editeur de logiciels specialise dans les produits de niche",
+  "foundingDate": "2020",
+  "sameAs": [
+    "https://github.com/nicogambe",
+    "https://linkedin.com/in/nicolasgamberini"
+  ]
+}
+</script>
+
 <script is:inline>
 (() => {
   const targets = document.querySelectorAll('[data-animate]');
