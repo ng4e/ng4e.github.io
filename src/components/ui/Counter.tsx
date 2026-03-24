@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from "react";
-import { LazyMotion, domAnimation, useInView, animate } from "motion/react";
+import { LazyMotion, domAnimation, animate } from "motion/react";
 import * as m from "motion/react-m";
 
 interface CounterProps {
@@ -16,7 +16,6 @@ export default function Counter({
   isYear,
 }: CounterProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, amount: 0.5 });
   const [displayValue, setDisplayValue] = useState(0);
 
   const reducedMotion =
@@ -24,7 +23,6 @@ export default function Counter({
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   useEffect(() => {
-    if (!isInView) return;
     if (isYear || reducedMotion) {
       setDisplayValue(value);
       return;
@@ -37,7 +35,7 @@ export default function Counter({
     });
 
     return () => controls.stop();
-  }, [isInView, value, isYear, reducedMotion]);
+  }, [value, isYear, reducedMotion]);
 
   return (
     <LazyMotion features={domAnimation}>
@@ -46,16 +44,14 @@ export default function Counter({
           <m.p
             className="text-4xl md:text-5xl font-semibold text-white mb-2"
             initial={{ opacity: reducedMotion ? 1 : 0 }}
-            animate={
-              isInView ? { opacity: 1 } : { opacity: reducedMotion ? 1 : 0 }
-            }
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
             {value}
           </m.p>
         ) : (
           <p className="text-4xl md:text-5xl font-semibold text-white mb-2">
-            {isInView || reducedMotion ? displayValue : 0}
+            {displayValue}
             {suffix}
           </p>
         )}
