@@ -1,8 +1,8 @@
 ---
 import { type CollectionEntry, getCollection } from 'astro:content';
-import BlogPost from '../../layouts/BlogPost.astro';
+import BlogPost from '../../../layouts/BlogPost.astro';
 import { render } from 'astro:content';
-import { type Locale } from '../../i18n/translations';
+import { type Locale } from '../../../i18n/translations';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
-const locale = (Astro.currentLocale ?? "fr") as Locale;
+const locale = (Astro.currentLocale ?? "en") as Locale;
 const { Content } = await render(post);
 ---
 

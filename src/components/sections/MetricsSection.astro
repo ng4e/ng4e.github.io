@@ -1,0 +1,22 @@
+---
+import Counter from "../ui/Counter.tsx";
+import { t, type Locale } from "../../i18n/translations";
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = "fr" } = Astro.props;
+---
+
+<section id="chiffres" class="bg-primary py-20 scroll-mt-20 animate-on-scroll" data-animate>
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-semibold text-white text-center mb-12 uppercase tracking-wide">{t("metrics.title", locale)}</h2>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+      <Counter client:visible value={15} suffix="+" label={t("metrics.years", locale)} />
+      <Counter client:visible value={5} suffix="" label={t("metrics.sectors", locale)} />
+      <Counter client:visible value={2020} label={t("metrics.founded", locale)} isYear />
+      <Counter client:visible value={4} suffix="" label={t("metrics.products", locale)} />
+    </div>
+  </div>
+</section>

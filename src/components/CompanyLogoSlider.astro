@@ -1,65 +1,33 @@
 ---
-import type { CompanyData } from "../consts";
-const { companies } = Astro.props; // Expecting an array of CompanyData objects passed as props
+import { companies } from "../consts";
 ---
 
-<div class="section">
-    <div class="container">
-        <h5 class="title is-4">Ils nous on fait confiance</h5>
-        <div class="columns is-multiline is-centered">
-            {
-                companies.map((company: CompanyData, index: Number) => (
-                    <div class="column block is-one-quarter-desktop is-one-third-tablet is-half-mobile" key={company.id}>
-                        <a
-                            href={`${company.caseStudy}`}
-                            class="company-link"
-                        >
-                            <figure class="image is-128x128 mx-auto">
-                                <img
-                                    src={company.logo}
-                                    alt={`${company.name} logo`}
-                                    class="has-ratio"
-                                    loading="eager"
-                                />
-                            </figure>
-                            <p class="has-text-centered company-name">
-                                {company.name}
-                            </p>
-
-                        </a>
-                    </div>
-                ))
-            }
-        </div>
+<div class="overflow-hidden">
+    <div class="flex logo-scroll">
+        {companies.map(c => (
+            <img src={c.logo} alt={c.name} loading="lazy" class="h-10 w-auto mx-8 shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+        ))}
+        {companies.map(c => (
+            <img src={c.logo} alt={c.name} aria-hidden="true" loading="lazy" class="h-10 w-auto mx-8 shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+        ))}
     </div>
 </div>
 
 <style>
-    /* Custom styles for enhanced appearance */
-    .company-link {
-        display: block;
-        text-decoration: none;
-        color: inherit;
-        transition: transform 0.2s ease;
+@keyframes logo-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.logo-scroll {
+    animation: logo-scroll 30s linear infinite;
+    will-change: transform;
+}
+.logo-scroll:hover {
+    animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+    .logo-scroll {
+        animation: none;
     }
-
-    .company-link:hover {
-        transform: translateY(-5px);
-    }
-
-    .company-name {
-        font-weight: 500;
-        margin-top: 1rem;
-    }
-
-    /* Ensure the images are square */
-    .image.is-128x128 img {
-        object-fit: contain; /* or cover, depending on your preference */
-        width: 100%;
-        height: 100%;
-    }
-
-    .section{
-        padding: 3rem 1.5rem;
-    }
+}
 </style>

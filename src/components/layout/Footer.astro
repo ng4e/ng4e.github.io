@@ -1,0 +1,54 @@
+---
+import { Github, Linkedin } from "@lucide/astro";
+import { t, type Locale } from "../../i18n/translations";
+
+interface Props {
+    locale?: Locale;
+}
+
+const { locale = "fr" } = Astro.props;
+const prefix = locale === "en" ? "/en" : "";
+---
+
+<footer class="bg-primary text-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4">
+        <p class="text-white/60 text-sm mb-8">{t("footer.tagline", locale)}</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-base font-semibold uppercase tracking-wider mb-4">{t("footer.col1.title", locale)}</h3>
+                <ul class="space-y-2">
+                    <li><a href={`${prefix}/expertises`} class="text-white/80 text-sm hover:text-accent transition-colors py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded">{t("footer.col1.expertises", locale)}</a></li>
+                    <li><a href={`${prefix}/experiences`} class="text-white/80 text-sm hover:text-accent transition-colors py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded">{t("footer.col1.experiences", locale)}</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-base font-semibold uppercase tracking-wider mb-4">{t("footer.col2.title", locale)}</h3>
+                <ul class="space-y-2">
+                    <li><a href={`${prefix}/products`} class="text-white/80 text-sm hover:text-accent transition-colors py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded">{t("footer.col2.products", locale)}</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-base font-semibold uppercase tracking-wider mb-4">{t("footer.col3.title", locale)}</h3>
+                <ul class="space-y-2">
+                    <li><a href={`${prefix}/blog`} class="text-white/80 text-sm hover:text-accent transition-colors py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded">{t("footer.col3.blog", locale)}</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-white/10 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/nicogambe" aria-label="GitHub" class="text-white hover:text-accent transition-colors p-2 min-w-[44px] min-h-[44px] inline-flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded">
+                    <Github size={20} />
+                </a>
+                <a href="https://linkedin.com/in/nicolasgamberini" aria-label="LinkedIn" class="text-white hover:text-accent transition-colors p-2 min-w-[44px] min-h-[44px] inline-flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded">
+                    <Linkedin size={20} />
+                </a>
+            </div>
+            <div class="flex items-center gap-4 text-white/50 text-xs">
+                <a href={locale === "en" ? "/en/legal-notice" : "/mentions-legales"} class="hover:text-white/80 transition-colors py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded">{t("footer.legal", locale)}</a>
+                <span>{t("footer.copyright", locale)}</span>
+            </div>
+        </div>
+    </div>
+</footer>

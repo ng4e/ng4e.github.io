@@ -1,118 +1,57 @@
 ---
-// Import the Project interface
-import type { Project } from "../consts";
+import Card from "./ui/Card.astro";
+import Badge from "./ui/Badge.astro";
+import { t, type Locale } from "../i18n/translations";
 
-// Define the component props
 interface Props {
-    project: Project;
+  project: {
+    id: string;
+    key: number;
+    duration: string;
+    company: string;
+    client: string;
+    mission: string;
+    context: string;
+    role: string;
+    tasks: string[];
+    technologies: string[];
+    results: string[];
+  };
+  locale?: Locale;
 }
 
-// Destructure the project from props
-const { project } = Astro.props;
+const { project, locale = "fr" } = Astro.props;
 ---
 
-<div class="card">
-    <!-- Card Header -->
-    <div class="card-header has-background-light">
-        <p class="card-header-title is-justify-content-flex-start">
-            {project.duration}
-        </p>
-        <p class="card-header-title is-justify-content-flex-end">
-             {project.company}
-        </p>
+<Card>
+  <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+    <div>
+      <h3 class="text-xl font-semibold text-primary">{project.company}</h3>
+      <p class="text-sm text-accent font-semibold">{project.client}</p>
     </div>
+    <span class="text-sm text-text-secondary mt-1 md:mt-0 md:text-right shrink-0">{project.duration}</span>
+  </div>
 
-    <!-- Card Content -->
-    <div class="card-content">
-        <div class="content">
-            <!-- Section 1: Client and Mission -->
-            <div class="columns">
-                <div class="column is-4">
-                    <h6 class="title is-5 has-text-weight-bold">Client</h6>
-                    <p class="subtitle is-6">{project.client}</p>
-                </div>
-                <div class="column is-8">
-                    <h6 class="title is-5 has-text-weight-bold">Mission</h6>
-                    <p class="subtitle is-6">{project.mission}</p>
-                </div>
-            </div>
+  <p class="text-base font-medium text-primary mb-2">{project.mission}</p>
+  <p class="text-sm text-text-secondary mb-4">{project.context}</p>
 
-            <!-- Section 2: Context -->
-            <div class="mb-3">
-                <h7 class="title is-5 has-text-weight-bold">Contexte</h7>
-                <p class="has-text-justified">{project.context}</p>
-            </div>
+  <p class="text-sm mb-4">
+    <span class="font-semibold text-primary">{t("projectCard.role", locale)}</span>
+    <span class="text-text-secondary"> {project.role}</span>
+  </p>
 
-            <!-- Section 3: Role and Tasks -->
-            <div class="mb-3">
-                <div class="mb-3">
-                    <h7 class="title is-5 has-text-weight-bold">Rôle</h7>
-                    <p class="has-text-justified">{project.role}</p>
-                </div>
-                <div>
-                    <h7 class="title is-5 has-text-weight-bold">
-                        Tâches Accomplies
-                    </h7>
-                    <ul class="ml-5">
-                        {project.tasks.map((task) => <li>{task}</li>)}
-                    </ul>
-                </div>
-            </div>
+  <h4 class="text-sm font-semibold text-primary mb-2">{t("projectCard.tasks", locale)}</h4>
+  <ul class="list-disc list-inside text-sm text-text-secondary mb-4 space-y-1">
+    {project.tasks.map(task => <li>{task}</li>)}
+  </ul>
 
-            <!-- Section 4: Technologies -->
-            <div class="mb-3">
-                <h7 class="title is-5 has-text-weight-bold">Technologies</h7>
-                <ul class="">
-                    {
-                        project.technologies.map((tech) => (
-                            <li class="">{tech}</li>
-                        ))
-                    }
-                </ul>
-            </div>
+  <h4 class="text-sm font-semibold text-primary mb-2">{t("projectCard.technologies", locale)}</h4>
+  <div class="flex flex-wrap gap-2 mb-4">
+    {project.technologies.map(tech => <Badge variant="accent">{tech}</Badge>)}
+  </div>
 
-            <!-- Section 5: Results -->
-            <div>
-                <h7 class="title is-5 has-text-weight-bold">Resultats</h7>
-                <ul class="ml-5">
-                    {project.results.map((result) => <li>{result}</li>)}
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<style>
-    .card {
-        box-shadow: 0 2px 15px rgba(10, 10, 10, 0.1);
-        transition: box-shadow 0.3s ease-in-out;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-
-    .card:hover {
-        box-shadow: 0 5px 25px rgba(10, 10, 10, 0.2);
-    }
-
-    .title {
-        color: #363636;
-        border-bottom: 1px solid #f5f5f5;
-        padding-bottom: 0.5rem;
-    }
-
-    .has-text-justified {
-        text-align: justify;
-        line-height: 1.6;
-    }
-
-    ul li {
-        margin-bottom: 0.5rem;
-        line-height: 1.5;
-    }
-
-    .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-</style>
+  <h4 class="text-sm font-semibold text-primary mb-2">{t("projectCard.results", locale)}</h4>
+  <ul class="list-disc list-inside text-sm text-text-secondary space-y-1">
+    {project.results.map(result => <li>{result}</li>)}
+  </ul>
+</Card>

@@ -1,13 +1,13 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-import Card from "../../components/ui/Card.astro";
-import Badge from "../../components/ui/Badge.astro";
-import Button from "../../components/ui/Button.astro";
-import FormattedDate from "../../components/FormattedDate.astro";
-import { t, type Locale } from "../../i18n/translations";
+import Card from "../../../components/ui/Card.astro";
+import Badge from "../../../components/ui/Badge.astro";
+import Button from "../../../components/ui/Button.astro";
+import FormattedDate from "../../../components/FormattedDate.astro";
+import { t, type Locale } from "../../../i18n/translations";
 
-const locale = (Astro.currentLocale ?? "fr") as Locale;
+const locale = (Astro.currentLocale ?? "en") as Locale;
 const prefix = locale === "en" ? "/en" : "";
 
 const posts = (await getCollection("blog")).sort(

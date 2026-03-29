@@ -1,0 +1,54 @@
+---
+import Card from "../ui/Card.astro";
+import Button from "../ui/Button.astro";
+import { t, type Locale } from "../../i18n/translations";
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = "fr" } = Astro.props;
+
+const products = [
+  {
+    name: "NMT -- NG. Moving Together",
+    taglineKey: "products.nmt.tagline",
+    bodyKey: "products.nmt.body",
+    ctaKey: "products.nmt.cta",
+    href: "#",
+  },
+  {
+    name: "Sportifs Prometteurs",
+    taglineKey: "products.sp.tagline",
+    bodyKey: "products.sp.body",
+    ctaKey: "products.sp.cta",
+    href: "https://getsp.sportifs-prometteurs.org",
+  },
+  {
+    name: "Association Pirien",
+    taglineKey: "products.pirien.tagline",
+    bodyKey: "products.pirien.body",
+    ctaKey: "products.pirien.cta",
+    href: "https://why.pirien.com/",
+  },
+];
+---
+
+<section id="produits" class="bg-primary py-20 scroll-mt-20 animate-on-scroll" data-animate>
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-semibold text-white text-center mb-4">{t("products.title", locale)}</h2>
+    <p class="text-base text-white/70 text-center mb-12 max-w-2xl mx-auto">{t("products.subtitle", locale)}</p>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      {products.map((product, i) => (
+        <div class="stagger-item" style={`--stagger-delay: ${i}`}>
+          <Card variant="on-dark">
+            <h3 class="text-xl font-semibold text-primary mb-1">{product.name}</h3>
+            <p class="text-sm text-accent font-semibold mb-3">{t(product.taglineKey, locale)}</p>
+            <p class="text-base text-text-secondary mb-6">{t(product.bodyKey, locale)}</p>
+            <Button variant="primary" size="small" href={product.href}>{t(product.ctaKey, locale)}</Button>
+          </Card>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

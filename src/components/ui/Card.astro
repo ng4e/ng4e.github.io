@@ -1,0 +1,21 @@
+---
+interface Props {
+  variant?: "default" | "on-dark";
+  class?: string;
+}
+
+const { variant = "default", class: className = "" } = Astro.props;
+
+const baseClasses = "bg-white rounded-xl p-6 transition-all duration-200 ease-out hover:-translate-y-1";
+
+const variantClasses = {
+  default: "shadow-sm hover:shadow-lg",
+  "on-dark": "shadow-none hover:shadow-lg",
+};
+
+const classes = [baseClasses, variantClasses[variant], className];
+---
+
+<div class:list={classes}>
+  <slot />
+</div>

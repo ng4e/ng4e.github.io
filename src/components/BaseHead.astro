@@ -2,7 +2,8 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import "../styles/global.css";
-//import { SITE_TITLE } from "../consts";
+import { getAbsoluteLocaleUrl } from "astro:i18n";
+import { getPagePath, type Locale } from "../i18n/translations";
 
 interface Props {
     title: string;
@@ -11,6 +12,9 @@ interface Props {
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const pagePath = getPagePath(Astro.url.pathname);
+const frUrl = getAbsoluteLocaleUrl("fr", pagePath);
+const enUrl = getAbsoluteLocaleUrl("en", pagePath);
 
 const {
     title,
@@ -24,30 +28,16 @@ const {
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/x-icon" href="/favicon-16x16.png" />
 <link rel="sitemap" href="/sitemap-index.xml" />
-<link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-<meta name="generator" content={Astro.generator} />
 
-<!-- Font preloads
-<link
-    rel="preload"
-    href="/fonts/atkinson-regular.woff"
-    as="font"
-    type="font/woff"
-    crossorigin
-/>
-<link
-    rel="preload"
-    href="/fonts/atkinson-bold.woff"
-    as="font"
-    type="font/woff"
-    crossorigin
-/> -->
+<meta name="generator" content={Astro.generator} />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
+
+<!-- Hreflang alternate tags -->
+<link rel="alternate" hreflang="fr" href={frUrl} />
+<link rel="alternate" hreflang="en" href={enUrl} />
+<link rel="alternate" hreflang="x-default" href={frUrl} />
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>

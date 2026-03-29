@@ -1,0 +1,96 @@
+---
+import MobileMenu from "../ui/MobileMenu.tsx";
+import { t, getPagePath, type Locale } from "../../i18n/translations";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+interface Props {
+    locale?: Locale;
+}
+
+const { locale = "fr" } = Astro.props;
+const pathname = Astro.url.pathname;
+const isLanding = pathname === "/" || pathname === "/en" || pathname === "/en/";
+const prefix = locale === "en" ? "/en" : "";
+
+const navLinks = [
+    { label: t("nav.expertises", locale), href: isLanding ? `${prefix}/#competences` : `${prefix}/expertises` },
+    { label: t("nav.products", locale), href: isLanding ? `${prefix}/#produits` : `${prefix}/products` },
+    { label: t("nav.experiences", locale), href: isLanding ? `${prefix}/#chiffres` : `${prefix}/experiences` },
+    { label: t("nav.blog", locale), href: isLanding ? `${prefix}/#blog` : `${prefix}/blog` },
+];
+
+const pagePath = getPagePath(pathname);
+const frUrl = getRelativeLocaleUrl("fr", pagePath);
+const enUrl = getRelativeLocaleUrl("en", pagePath);
+---
+
+<nav id="navbar" class:list={["fixed top-0 w-full z-50 transition-all duration-300", !isLanding && "scrolled"]}>
+    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+        <a href={prefix || "/"} class="text-2xl font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded">
+            <span class="nav-logo text-white transition-colors duration-300">Gt</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+            {navLinks.map(link => (
+                <a
+                    href={link.href}
+                    aria-current={!isLanding && pathname.startsWith(link.href) ? "page" : undefined}
+                    class:list={[
+                        "nav-link relative text-base font-semibold transition-colors duration-200 py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded",
+                        !isLanding && pathname.startsWith(link.href) && "active"
+                    ]}
+                >
+                    {link.label}
+                </a>
+            ))}
+        </div>
+        <div class="hidden md:flex items-center gap-1 ml-4 text-sm font-semibold">
+            <a href={frUrl} aria-label={locale === "fr" ? "Francais (langue actuelle)" : "Francais"} class:list={["transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded", locale === "fr" ? "text-white" : "text-white/50 hover:text-white"]}>FR</a>
+            <span class="text-white/30">|</span>
+            <a href={enUrl} aria-label={locale === "en" ? "English (current language)" : "English"} class:list={["transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded", locale === "en" ? "text-white" : "text-white/50 hover:text-white"]}>EN</a>
+        </div>
+        <MobileMenu client:media="(max-width: 768px)" links={navLinks} currentLocale={locale} frUrl={frUrl} enUrl={enUrl} />
+    </div>
+</nav>
+
+<style>
+    /* Default state: transparent over dark background */
+    .nav-link { color: white; }
+    .nav-link:hover { color: rgba(255, 255, 255, 0.8); }
+
+    /* Active link indicator: 2px accent underline per D-03 */
+    .nav-link.active::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: var(--color-accent);
+    }
+
+    /* Scrolled state: solid background, different hover/logo colors */
+    :global(#navbar.scrolled) { background-color: rgba(27, 42, 74, 0.95); backdrop-filter: blur(4px); }
+    :global(#navbar.scrolled) .nav-link:hover { color: var(--color-accent); }
+    :global(#navbar.scrolled) .nav-logo { color: var(--color-accent); }
+</style>
+
+<script is:inline>
+    // Deferred to DOMContentLoaded so #hero exists when this runs
+    // (Navbar renders before HeroSection in the DOM)
+    document.addEventListener('DOMContentLoaded', () => {
+        const nav = document.getElementById('navbar');
+        const hero = document.getElementById('hero');
+        if (!nav) return;
+
+        // On sub-pages (no hero), navbar is always scrolled via server class
+        if (!hero) return;
+
+        // Simple scroll listener — toggle dark navbar once scrolled past hero
+        const update = () => {
+            const threshold = hero.offsetHeight - 64;
+            nav.classList.toggle('scrolled', window.scrollY > threshold);
+        };
+        window.addEventListener('scroll', update, { passive: true });
+        update();
+    });
+</script>

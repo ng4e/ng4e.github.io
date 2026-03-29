@@ -3,9 +3,8 @@ title: "Side Projects Helped Me Grow While Giving Back"
 description: "Some of the most promising things I’ve worked on lately didn’t start as business ideas. They started as community projects—things I built on the side, for causes I care about, using the same tools and mindset I apply to commercial products."
 pubDate: 2025-05-06
 updatedDate: 2025-05-06
-heroImage: "/images/community-impact-hero.jpg"
 tags: ["community", "side projects", "software", "tech leadership", "impact"]
-author: "Your Name"
+author: "Samuel Molu-N"
 ---
 
 I started a small company focused on building niche solutions—products that don’t need millions of users, but solve specific, painful problems well enough that people are willing to pay for them. I also freelance under that same structure, mostly as a senior software engineer and tech lead.
@@ -27,11 +26,9 @@ As started a [local association](https://why.pirien.com), I worked with friends 
 Each family represents an aspect of Bamoun history—kings, symbols, traditional dishes, crafts, and more. I helped build and finance the project, and seeing kids play it today—laughing, learning, asking questions—makes every late-night work session worth it.
 
 
-<div class="has-text-centered">
-  <a href="https://why.pirien.com/store/products/jeux-des-7-familles-edition-royaume-bamoun" target="_blank">  <!-- Replace with your actual link -->
-      <figure class="image is-128x128">
-        <img src="/blog_img_sagam.jpg" alt="Jeux Bamoun">
-      </figure>
+<div class="not-prose text-center my-6">
+  <a href="https://why.pirien.com/store/products/jeux-des-7-familles-edition-royaume-bamoun" target="_blank">
+    <img src="/blog_img_sagam.jpg" alt="Jeux Bamoun" class="inline-block w-32 h-32 object-cover rounded" />
   </a>
 </div>
 ---
@@ -47,11 +44,9 @@ Two of the young players we support were recently featured in [**Talent Unearthe
 
 Seeing their progress is honestly one of my proudest moments—not because of the tech, but because it made a real difference in someone's life.
 
-<div class="has-text-centered">
-  <a href="https://www.youtube.com/watch?v=3AFgEyw1fbE&t=86s" target="_blank">  <!-- Replace with your actual link -->
-      <figure class="image is-128x128">
-        <img src="/blog_img_raguin.png" alt="Talent Unearthed Series">
-      </figure>
+<div class="not-prose text-center my-6">
+  <a href="https://www.youtube.com/watch?v=3AFgEyw1fbE&t=86s" target="_blank">
+    <img src="/blog_img_raguin.png" alt="Talent Unearthed Series" class="inline-block w-32 h-32 object-cover rounded" />
   </a>
 </div>
 ---
