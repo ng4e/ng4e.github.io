@@ -4,124 +4,124 @@ const translations: Record<Locale, Record<string, string>> = {
   fr: {
     // Site
     "site.title": "Gambetech",
-    "site.description": "Transforme les idees en solutions innovantes",
+    "site.description": "Transforme les idées en solutions innovantes",
 
     // Nav (4 keys)
     "nav.expertises": "Expertises",
     "nav.products": "Produits",
-    "nav.experiences": "Experiences",
-    "nav.blog": "Idees & Opinions",
+    "nav.experiences": "Expériences",
+    "nav.blog": "Idées & Opinions",
 
     // Hero (5 keys)
     "hero.title": "GAMBETECH",
-    "hero.tagline": "Transforme les idees en solutions innovantes",
+    "hero.tagline": "Transforme les idées en solutions innovantes",
     "hero.description":
-      "L'harmonie est au coeur de notre demarche. Face aux defis complexes, nous analysons methodiquement chaque variable pour creer des solutions fluides et optimales, eliminant toute friction inutile.",
-    "hero.cta.products": "Decouvrir nos produits",
+      "L'harmonie est au cœur de notre démarche. Face aux défis complexes, nous analysons méthodiquement chaque variable pour créer des solutions fluides et optimales, éliminant toute friction inutile.",
+    "hero.cta.products": "Découvrir nos produits",
     "hero.cta.expertises": "Voir nos expertises",
 
     // Philosophy (3 keys)
     "philosophy.paragraph1":
-      "L'harmonie est au coeur de notre demarche.",
+      "L'harmonie est au cœur de notre démarche.",
     "philosophy.paragraph2":
-      "Face aux defis complexes, nous analysons methodiquement chaque variable pour creer des solutions fluides et optimales, eliminant toute friction inutile.",
+      "Face aux défis complexes, nous analysons méthodiquement chaque variable pour créer des solutions fluides et optimales, éliminant toute friction inutile.",
     "philosophy.paragraph3":
-      "GambeTech est un editeur de solutions, specialise dans des produits de niche.",
+      "GambeTech est un éditeur de solutions, spécialisé dans des produits de niche.",
 
     // Competencies (9 keys)
-    "competencies.title": "Nos competences cles",
-    "competencies.modeling.title": "Modelisation",
+    "competencies.title": "Nos compétences clés",
+    "competencies.modeling.title": "Modélisation",
     "competencies.modeling.body":
       "Structuration de domaines fonctionnels complexes",
     "competencies.prioritization.title": "Priorisation",
     "competencies.prioritization.body":
-      "Identification des elements a forte valeur ajoutee",
-    "competencies.implementation.title": "Implementation",
+      "Identification des éléments à forte valeur ajoutée",
+    "competencies.implementation.title": "Implémentation",
     "competencies.implementation.body":
-      "Developpement technique precis et performant",
-    "competencies.integration.title": "Integration",
+      "Développement technique précis et performant",
+    "competencies.integration.title": "Intégration",
     "competencies.integration.body":
-      "Solutions harmonieuses et adaptees aux systemes existants",
+      "Solutions harmonieuses et adaptées aux systèmes existants",
 
     // Sectors (8 keys)
     "sectors.title": "Secteurs d'intervention",
     "sectors.subtitle":
-      "Une expertise developpee au sein de secteurs exigeants ou performance et fiabilite sont essentielles.",
-    "sectors.retail_banking": "Banque de detail",
+      "Une expertise développée au sein de secteurs exigeants où performance et fiabilité sont essentielles.",
+    "sectors.retail_banking": "Banque de détail",
     "sectors.insurance": "Assurance",
-    "sectors.payment": "Monetique",
-    "sectors.telecom": "Telecom",
-    "sectors.energy": "Energie",
+    "sectors.payment": "Monétique",
+    "sectors.telecom": "Télécom",
+    "sectors.energy": "Énergie",
     "sectors.logos.title": "Clients et partenaires",
 
     // Metrics (5 keys)
-    "metrics.title": "Experiences",
-    "metrics.years": "Annees d'expertise cumulee",
-    "metrics.sectors": "Secteurs strategiques",
-    "metrics.founded": "Annee de creation",
+    "metrics.title": "Expériences",
+    "metrics.years": "Années d'expertise cumulée",
+    "metrics.sectors": "Secteurs stratégiques",
+    "metrics.founded": "Année de création",
     "metrics.products": "Produits",
 
     // Products (12 keys)
     "products.title": "Nos Produits",
-    "products.subtitle": "Creer de la valeur sur des problemes de niche",
-    "products.nmt.tagline": "Reseau social familial",
+    "products.subtitle": "Créer de la valeur sur des problèmes de niche",
+    "products.nmt.tagline": "Réseau social familial",
     "products.nmt.body":
-      "Un reseau social familial avec arbre genealogique et journal de gratitude partage, a destination des familles eloignees par l'immigration.",
-    "products.nmt.cta": "Decouvrir le projet",
+      "Un réseau social familial avec arbre généalogique et journal de gratitude partagé, à destination des familles éloignées par l'immigration.",
+    "products.nmt.cta": "Découvrir le projet",
     "products.sp.tagline": "Gestion de tournois tennis",
     "products.sp.body":
-      "Solution de programmation de tournois ITF a partir des performances et du budget. Aide les familles de jeunes joueurs a optimiser leur parcours vers la carriere professionnelle.",
-    "products.sp.cta": "Decouvrir le projet",
-    "products.pirien.tagline": "Heritage culturel Bamoun",
+      "Solution de programmation de tournois ITF à partir des performances et du budget. Aide les familles de jeunes joueurs à optimiser leur parcours vers la carrière professionnelle.",
+    "products.sp.cta": "Découvrir le projet",
+    "products.pirien.tagline": "Héritage culturel Bamoun",
     "products.pirien.body":
-      "Plateforme de preservation, valorisation et transmission de l'heritage culturel Bamoun au Cameroun. Inclut une boutique associative en ligne.",
-    "products.pirien.cta": "Decouvrir le projet",
-    "products.discover": "Decouvrir le projet",
+      "Plateforme de préservation, valorisation et transmission de l'héritage culturel Bamoun au Cameroun. Inclut une boutique associative en ligne.",
+    "products.pirien.cta": "Découvrir le projet",
+    "products.discover": "Découvrir le projet",
 
     // Blog preview (4 keys)
-    "blog.title": "Idees et Opinions",
+    "blog.title": "Idées et Opinions",
     "blog.subtitle":
       "...et autres questions existentielles sur la technologie, la science et la vie de tous les jours",
     "blog.readMore": "Lire la suite",
-    "blog.emptyState": "Aucun article pour le moment. Revenez bientot !",
+    "blog.emptyState": "Aucun article pour le moment. Revenez bientôt !",
     "blog.viewAll": "Voir tous les articles",
 
     // Footer (10 keys)
-    "footer.tagline": "Editeur de logiciels de niche",
+    "footer.tagline": "Éditeur de logiciels de niche",
     "footer.col1.title": "Gambetech",
     "footer.col1.expertises": "Expertises",
-    "footer.col1.experiences": "Experiences",
+    "footer.col1.experiences": "Expériences",
     "footer.col2.title": "Initiative",
     "footer.col2.products": "Produits",
     "footer.col3.title": "Ressources",
-    "footer.col3.blog": "Idees & Opinions",
-    "footer.legal": "Mentions legales",
+    "footer.col3.blog": "Idées & Opinions",
+    "footer.legal": "Mentions légales",
     "footer.copyright": "Gambetech \u00A9 2026 All rights reserved.",
 
     // Expertises page (12 keys)
     "expertises.pageTitle": "Expertises",
     "expertises.pageDesc":
-      "Architecture et planification - Integration de systemes - Conception et developpement de logiciels",
-    "expertises.header": "15+ annees d'experience",
+      "Architecture et planification - Intégration de systèmes - Conception et développement de logiciels",
+    "expertises.header": "15+ années d'expérience",
     "expertises.subtitle":
-      "Ouvert au marche. Freelance/CDI. Base a Aix-en-Provence",
+      "Ouvert au marché. Freelance/CDI. Basé à Aix-en-Provence",
     "expertises.vision.title": "Vision Produit",
-    "expertises.vision.level": "Experimente",
+    "expertises.vision.level": "Expérimenté",
     "expertises.vision.body":
-      "Definition et mise en oeuvre de la strategie produit cote backend avec un fort focus sur le modele, l'ergonomie et la performance",
+      "Définition et mise en œuvre de la stratégie produit côté backend avec un fort focus sur le modèle, l'ergonomie et la performance",
     "expertises.project.title": "Gestion de projet technique",
-    "expertises.project.level": "Experimente",
+    "expertises.project.level": "Expérimenté",
     "expertises.project.body":
-      "Pilotage et Implementation de projets techniques de la conception au deploiement",
-    "expertises.fullstack.title": "Developpement full-stack",
-    "expertises.fullstack.level": "Experimente",
+      "Pilotage et implémentation de projets techniques de la conception au déploiement",
+    "expertises.fullstack.title": "Développement full-stack",
+    "expertises.fullstack.level": "Expérimenté",
     "expertises.fullstack.body":
-      "Sensibilite a une approche de developpement cloud natif. Langages de programmation: Java 8+, JavaScript (ES6+), TypeScript, Python SQL.",
+      "Sensibilité à une approche de développement cloud natif. Langages de programmation : Java 8+, JavaScript (ES6+), TypeScript, Python, SQL.",
     "expertises.agile.title": "Environnement agile et apprenant",
-    "expertises.agile.level": "Experimente",
+    "expertises.agile.level": "Expérimenté",
     "expertises.agile.body":
-      "Capacite a evoluer dans un cadre collaboratif et oriente vers le client, avec une capacite d'apprentissage continue.",
-    "expertises.tech.title": "Competences Techniques Complementaires",
+      "Capacité à évoluer dans un cadre collaboratif et orienté vers le client, avec une capacité d'apprentissage continue.",
+    "expertises.tech.title": "Compétences Techniques Complémentaires",
     "expertises.tech.body":
       "Atlassian (Confluence, Jira, Trello), Spring Boot, Spring framework, Quarkus, Maven, Github, Gitlab, Bitbucket, Vercel, Google Cloud, AWS, Oracle Cloud.",
     "expertises.clients.title": "Clients et partenaires",
@@ -129,44 +129,44 @@ const translations: Record<Locale, Record<string, string>> = {
     // Products page (10 keys)
     "productsPage.pageTitle": "Nos Produits",
     "productsPage.pageDesc":
-      "Creer de la valeur sur des problemes de niches",
+      "Créer de la valeur sur des problèmes de niche",
     "productsPage.header": "Nos Produits",
     "productsPage.subtitle":
-      "Creer de la valeur sur des problemes de niches",
-    "productsPage.requirements": "Requirements",
+      "Créer de la valeur sur des problèmes de niche",
+    "productsPage.requirements": "Prérequis",
     "productsPage.architecture": "Architecture",
     "productsPage.siteWeb": "Site Web",
 
     // Experiences page (6 keys)
-    "experiencesPage.pageTitle": "References",
-    "experiencesPage.pageDesc": "15+ Annees d'experiences",
-    "experiencesPage.header": "References professionnelles",
+    "experiencesPage.pageTitle": "Références",
+    "experiencesPage.pageDesc": "15+ années d'expériences",
+    "experiencesPage.header": "Références professionnelles",
     "experiencesPage.subtitle":
-      "15+ annees d'experience dans des secteurs strategiques",
-    "experiencesPage.cv.download": "Telecharger le CV",
-    "experiencesPage.headerTitle": "Experiences",
+      "15+ années d'expérience dans des secteurs stratégiques",
+    "experiencesPage.cv.download": "Télécharger le CV",
+    "experiencesPage.headerTitle": "Expériences",
 
     // Project card (5 keys)
-    "projectCard.role": "Role :",
-    "projectCard.tasks": "Taches",
+    "projectCard.role": "Rôle :",
+    "projectCard.tasks": "Tâches",
     "projectCard.technologies": "Technologies",
-    "projectCard.results": "Resultats",
-    "projectCard.duration": "Duree",
+    "projectCard.results": "Résultats",
+    "projectCard.duration": "Durée",
 
     // Blog page (3 keys)
-    "blogPage.pageTitle": "Idees et Opinions",
+    "blogPage.pageTitle": "Idées et Opinions",
     "blogPage.pageDesc":
       "...et autres questions existentielles sur la technologie, la science et la vie de tous les jours",
     "blogPage.readMore": "Lire la suite",
 
     // Blog post layout (2 keys)
-    "blogPost.updatedOn": "Mis a jour le",
+    "blogPost.updatedOn": "Mis à jour le",
 
     // Legal page (5 keys)
-    "legal.title": "Mentions legales",
-    "legal.publisher": "Editeur du site",
-    "legal.hosting": "Hebergement",
-    "legal.privacy": "Donnees personnelles",
+    "legal.title": "Mentions légales",
+    "legal.publisher": "Éditeur du site",
+    "legal.hosting": "Hébergement",
+    "legal.privacy": "Données personnelles",
     "legal.frenchNotice": "",
 
     // Accessibility (4 keys)
