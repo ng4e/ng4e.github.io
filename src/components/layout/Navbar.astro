@@ -75,16 +75,22 @@ const enUrl = getRelativeLocaleUrl("en", pagePath);
 </style>
 
 <script is:inline>
-    (() => {
+    // Deferred to DOMContentLoaded so #hero exists when this runs
+    // (Navbar renders before HeroSection in the DOM)
+    document.addEventListener('DOMContentLoaded', () => {
         const nav = document.getElementById('navbar');
-        const sentinel = document.getElementById('nav-sentinel');
-        if (!nav || !sentinel) return;
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                nav.classList.toggle('scrolled', !entry.isIntersecting);
-            },
-            { threshold: 0 }
-        );
-        observer.observe(sentinel);
-    })();
+        const hero = document.getElementById('hero');
+        if (!nav) return;
+
+        // On sub-pages (no hero), navbar is always scrolled via server class
+        if (!hero) return;
+
+        // Simple scroll listener — toggle dark navbar once scrolled past hero
+        const update = () => {
+            const threshold = hero.offsetHeight - 64;
+            nav.classList.toggle('scrolled', window.scrollY > threshold);
+        };
+        window.addEventListener('scroll', update, { passive: true });
+        update();
+    });
 </script>
