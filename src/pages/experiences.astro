@@ -16,7 +16,7 @@ const pdfPath = "/assets/MOLU_N_Samuel_CV_FR_v042025.2-2.pdf";
 ---
 
 <Layout title={t("experiencesPage.pageTitle", locale)} description={t("experiencesPage.pageDesc", locale)} headerTitle={t("experiencesPage.headerTitle", locale)} locale={locale}>
-  <section class="bg-white py-12 animate-on-scroll" data-animate>
+  <section class="bg-white py-12 reveal">
     <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
       <div>
         <h2 class="text-3xl md:text-4xl font-semibold text-primary mb-2">{t("experiencesPage.header", locale)}</h2>
@@ -29,7 +29,7 @@ const pdfPath = "/assets/MOLU_N_Samuel_CV_FR_v042025.2-2.pdf";
     </div>
   </section>
 
-  <section class="bg-surface py-20 animate-on-scroll" data-animate>
+  <section class="bg-surface py-20 reveal">
     <div class="max-w-4xl mx-auto px-4 space-y-8">
       {projects.map((project, i) => (
         <div class="stagger-item" style={`--stagger-delay: ${i}`} id={project.data.id}>

@@ -12,7 +12,7 @@ const { locale = "fr" } = Astro.props;
 const sectorKeys = ["sectors.retail_banking", "sectors.insurance", "sectors.payment", "sectors.telecom", "sectors.energy"];
 ---
 
-<section id="secteurs" class="bg-surface py-20 scroll-mt-20 animate-on-scroll" data-animate>
+<section id="secteurs" class="bg-surface py-20 scroll-mt-20 reveal">
   <div class="max-w-7xl mx-auto px-4">
     <h2 class="text-3xl md:text-4xl font-semibold text-primary text-center mb-4">{t("sectors.title", locale)}</h2>
     <p class="text-base text-text-secondary text-center mb-12 max-w-2xl mx-auto">{t("sectors.subtitle", locale)}</p>

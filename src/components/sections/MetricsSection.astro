@@ -10,7 +10,7 @@ interface Props {
 const { locale = "fr" } = Astro.props;
 ---
 
-<section id="chiffres" class="relative bg-primary py-20 scroll-mt-20 animate-on-scroll" data-animate>
+<section id="chiffres" class="relative bg-primary py-20 scroll-mt-20 reveal">
   <TechPattern density="medium" />
   <div class="relative z-10 max-w-7xl mx-auto px-4">
     <h2 class="text-3xl md:text-4xl font-semibold text-white text-center mb-12 uppercase tracking-wide">{t("metrics.title", locale)}</h2>
