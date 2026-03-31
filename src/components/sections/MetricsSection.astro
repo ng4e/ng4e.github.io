@@ -1,5 +1,6 @@
 ---
 import Counter from "../ui/Counter.tsx";
+import TechPattern from "../TechPattern.astro";
 import { t, type Locale } from "../../i18n/translations";
 
 interface Props {
@@ -9,8 +10,9 @@ interface Props {
 const { locale = "fr" } = Astro.props;
 ---
 
-<section id="chiffres" class="bg-primary py-20 scroll-mt-20 animate-on-scroll" data-animate>
-  <div class="max-w-7xl mx-auto px-4">
+<section id="chiffres" class="relative bg-primary py-20 scroll-mt-20 reveal">
+  <TechPattern density="medium" />
+  <div class="relative z-10 max-w-7xl mx-auto px-4">
     <h2 class="text-3xl md:text-4xl font-semibold text-white text-center mb-12 uppercase tracking-wide">{t("metrics.title", locale)}</h2>
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
       <Counter client:visible value={15} suffix="+" label={t("metrics.years", locale)} />

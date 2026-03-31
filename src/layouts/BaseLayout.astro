@@ -52,7 +52,7 @@ const locale = Astro.props.locale ?? (Astro.currentLocale as Locale) ?? "fr";
         <Footer locale={locale} />
         <script is:inline>
         (() => {
-            const targets = document.querySelectorAll('[data-animate]');
+            const targets = document.querySelectorAll('.reveal');
             if (!targets.length) return;
             if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 

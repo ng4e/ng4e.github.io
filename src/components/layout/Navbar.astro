@@ -57,8 +57,8 @@ const enUrl = getRelativeLocaleUrl("en", pagePath);
     .nav-link { color: white; }
     .nav-link:hover { color: rgba(255, 255, 255, 0.8); }
 
-    /* Active link indicator: 2px accent underline per D-03 */
-    .nav-link.active::after {
+    /* Active link indicator: always render underline, hidden by default (D-03) */
+    .nav-link::after {
         content: "";
         position: absolute;
         bottom: -4px;
@@ -66,6 +66,20 @@ const enUrl = getRelativeLocaleUrl("en", pagePath);
         right: 0;
         height: 2px;
         background-color: var(--color-accent);
+        opacity: 0;
+        transition: opacity 250ms ease;
+    }
+
+    /* Show underline when active */
+    .nav-link.active::after {
+        opacity: 1;
+    }
+
+    /* Respect reduced motion preference */
+    @media (prefers-reduced-motion: reduce) {
+        .nav-link::after {
+            transition: none;
+        }
     }
 
     /* Scrolled state: solid background, different hover/logo colors */
@@ -92,5 +106,59 @@ const enUrl = getRelativeLocaleUrl("en", pagePath);
         };
         window.addEventListener('scroll', update, { passive: true });
         update();
+
+        // Scroll-spy: highlight nav link for visible section (ANIM-04)
+        // D-06: skip on mobile viewports (zero overhead)
+        if (window.matchMedia('(min-width: 769px)').matches) {
+            var sectionIds = ['competences', 'produits', 'chiffres', 'blog'];
+            var sections = sectionIds
+                .map(function(id) { return document.getElementById(id); })
+                .filter(Boolean);
+            var navLinkEls = document.querySelectorAll('#navbar .nav-link');
+
+            var currentActive = null;
+
+            var setActive = function(sectionId) {
+                if (currentActive === sectionId) return;
+                currentActive = sectionId;
+                navLinkEls.forEach(function(link) {
+                    var href = link.getAttribute('href');
+                    var isMatch = sectionId && href && href.includes('#' + sectionId);
+                    link.classList.toggle('active', !!isMatch);
+                    // Accessibility: aria-current for scroll-active link
+                    if (isMatch) {
+                        link.setAttribute('aria-current', 'true');
+                    } else {
+                        link.removeAttribute('aria-current');
+                    }
+                });
+            };
+
+            var sectionObserver = new IntersectionObserver(
+                function(entries) {
+                    // D-02: Bottom-of-page override -- Blog always active at page bottom
+                    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 2) {
+                        setActive('blog');
+                        return;
+                    }
+
+                    // Find the intersecting entry
+                    var intersecting = entries.find(function(e) { return e.isIntersecting; });
+                    if (intersecting) {
+                        setActive(intersecting.target.id);
+                    } else {
+                        // Check if any tracked section is still in the detection zone
+                        var anyVisible = sections.some(function(s) {
+                            var rect = s.getBoundingClientRect();
+                            return rect.top < window.innerHeight * 0.5 && rect.bottom > 0;
+                        });
+                        if (!anyVisible) setActive(null);
+                    }
+                },
+                { rootMargin: '0px 0px -50% 0px', threshold: 0 }
+            );
+
+            sections.forEach(function(s) { sectionObserver.observe(s); });
+        }
     });
 </script>

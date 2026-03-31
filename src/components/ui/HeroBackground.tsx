@@ -5,56 +5,110 @@ interface Node {
   y: number;
   pulseOffset: number;
   pulseSpeed: number;
-  isPulsing: boolean;
+  isActive: boolean;
 }
 
-function generateHexGrid(width: number, height: number, cellSize: number): Node[] {
-  const nodes: Node[] = [];
-  const rowHeight = (cellSize * Math.sqrt(3)) / 2;
+// mulberry32 - fast, high-quality 32-bit seeded PRNG
+function mulberry32(seed: number): () => number {
+  return function () {
+    seed |= 0;
+    seed = (seed + 0x6d2b79f5) | 0;
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
 
-  for (let row = 0; row * rowHeight < height + cellSize; row++) {
-    const offsetX = row % 2 === 0 ? 0 : cellSize / 2;
-    for (let col = 0; col * cellSize < width + cellSize; col++) {
+const SEED = 42;
+
+// Grid-jittered placement for even distribution
+function generateNodes(
+  width: number,
+  height: number,
+  count: number,
+  rng: () => number
+): Node[] {
+  const nodes: Node[] = [];
+  const cols = Math.ceil(Math.sqrt(count * (width / height)));
+  const rows = Math.ceil(count / cols);
+  const cellW = width / cols;
+  const cellH = height / rows;
+
+  for (let r = 0; r < rows; r++) {
+    for (let c = 0; c < cols; c++) {
+      if (nodes.length >= count) break;
       nodes.push({
-        x: col * cellSize + offsetX,
-        y: row * rowHeight,
-        pulseOffset: Math.random() * Math.PI * 2,
-        pulseSpeed: 3 + Math.random() * 2, // 3-5 second cycle
-        isPulsing: false,
+        x: (c + 0.1 + rng() * 0.8) * cellW,
+        y: (r + 0.1 + rng() * 0.8) * cellH,
+        pulseOffset: rng() * Math.PI * 2,
+        pulseSpeed: 3 + rng(), // 3-4s cycle
+        isActive: false,
       });
     }
   }
 
-  // Select 3-5 random nodes to pulse
-  const pulseCount = 3 + Math.floor(Math.random() * 3);
-  const shuffled = [...nodes].sort(() => Math.random() - 0.5);
-  for (let i = 0; i < Math.min(pulseCount, shuffled.length); i++) {
-    shuffled[i].isPulsing = true;
+  // Mark 8-12 nodes as active using Fisher-Yates shuffle
+  const activeCount = 8 + Math.floor(rng() * 5);
+  const indices = nodes.map((_, i) => i);
+  for (let i = indices.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [indices[i], indices[j]] = [indices[j], indices[i]];
+  }
+  for (let i = 0; i < Math.min(activeCount, nodes.length); i++) {
+    nodes[indices[i]].isActive = true;
   }
 
   return nodes;
 }
 
-function getNeighbors(
-  nodeIndex: number,
+// Pre-compute nearest-neighbor connections
+function computeConnections(
   nodes: Node[],
-  cellSize: number
-): number[] {
-  const node = nodes[nodeIndex];
-  const maxDist = cellSize * 1.2;
-  const neighbors: number[] = [];
+  maxConnections: number = 3
+): Map<number, number[]> {
+  const connections = new Map<number, number[]>();
 
   for (let i = 0; i < nodes.length; i++) {
-    if (i === nodeIndex) continue;
-    const dx = nodes[i].x - node.x;
-    const dy = nodes[i].y - node.y;
-    const dist = Math.sqrt(dx * dx + dy * dy);
-    if (dist < maxDist) {
-      neighbors.push(i);
+    const distances: { index: number; dist: number }[] = [];
+    for (let j = 0; j < nodes.length; j++) {
+      if (i === j) continue;
+      const dx = nodes[j].x - nodes[i].x;
+      const dy = nodes[j].y - nodes[i].y;
+      distances.push({ index: j, dist: Math.sqrt(dx * dx + dy * dy) });
     }
+    distances.sort((a, b) => a.dist - b.dist);
+    connections.set(
+      i,
+      distances.slice(0, maxConnections).map((d) => d.index)
+    );
   }
 
-  return neighbors;
+  return connections;
+}
+
+// Compute trace brightness boost from active node pulse
+function getTraceOpacity(
+  nodeA: Node,
+  nodeB: Node,
+  time: number,
+  baseOpacity: number
+): number {
+  let boost = 0;
+
+  if (nodeA.isActive) {
+    const phase = Math.sin(
+      (time / 1000) * ((Math.PI * 2) / nodeA.pulseSpeed) + nodeA.pulseOffset
+    );
+    boost = Math.max(boost, ((phase + 1) / 2) * 0.07);
+  }
+  if (nodeB.isActive) {
+    const phase = Math.sin(
+      (time / 1000) * ((Math.PI * 2) / nodeB.pulseSpeed) + nodeB.pulseOffset
+    );
+    boost = Math.max(boost, ((phase + 1) / 2) * 0.07);
+  }
+
+  return baseOpacity + boost;
 }
 
 export default function HeroBackground() {
@@ -85,12 +139,10 @@ export default function HeroBackground() {
       ctx.setTransform(1, 0, 0, 1, 0, 0);
       ctx.scale(dpr, dpr);
 
-      const cellSize = 50;
-      nodes = generateHexGrid(width, height, cellSize);
-      neighborMap = new Map();
-      for (let i = 0; i < nodes.length; i++) {
-        neighborMap.set(i, getNeighbors(i, nodes, cellSize));
-      }
+      // Seeded PRNG ensures same layout on every resize
+      const rng = mulberry32(SEED);
+      nodes = generateNodes(width, height, 60, rng);
+      neighborMap = computeConnections(nodes, 3);
     };
 
     const drawGrid = (time: number) => {
@@ -98,54 +150,71 @@ export default function HeroBackground() {
       const height = canvas.offsetHeight;
       ctx.clearRect(0, 0, width, height);
 
-      // Draw grid lines
-      ctx.lineWidth = 1;
+      // Layer 1: L-shaped traces
+      ctx.lineWidth = 0.75;
       for (let i = 0; i < nodes.length; i++) {
         const neighbors = neighborMap.get(i) || [];
         for (const ni of neighbors) {
-          if (ni > i) {
-            ctx.beginPath();
-            ctx.strokeStyle = "rgba(58, 124, 165, 0.1)";
-            ctx.moveTo(nodes[i].x, nodes[i].y);
-            ctx.lineTo(nodes[ni].x, nodes[ni].y);
-            ctx.stroke();
-          }
+          // Deduplicate: only draw when i < ni
+          if (ni <= i) continue;
+
+          const opacity = reducedMotion
+            ? 0.1
+            : getTraceOpacity(nodes[i], nodes[ni], time, 0.1);
+
+          ctx.beginPath();
+          ctx.strokeStyle = `rgba(51, 109, 147, ${opacity})`;
+          ctx.moveTo(nodes[i].x, nodes[i].y);
+          ctx.lineTo(nodes[ni].x, nodes[i].y); // horizontal segment
+          ctx.lineTo(nodes[ni].x, nodes[ni].y); // vertical segment
+          ctx.stroke();
         }
       }
 
-      // Draw nodes
+      // Layer 2: Nodes
       for (let i = 0; i < nodes.length; i++) {
         const node = nodes[i];
-        let opacity = 0.15;
-        let radius = 2;
+        let opacity: number;
+        let radius: number;
 
-        if (node.isPulsing && !reducedMotion) {
+        if (reducedMotion) {
+          // Static nodes at 25% opacity
+          opacity = 0.25;
+          radius = 2;
+        } else if (node.isActive) {
           const phase = Math.sin(
-            (time / 1000) * ((Math.PI * 2) / node.pulseSpeed) + node.pulseOffset
+            (time / 1000) * ((Math.PI * 2) / node.pulseSpeed) +
+              node.pulseOffset
           );
-          // Map sin [-1, 1] to opacity [0.15, 0.4]
+          // Map sin [-1, 1] to opacity [0.15, 0.40]
           opacity = 0.15 + ((phase + 1) / 2) * 0.25;
+          // Map sin [-1, 1] to radius [2, 3.5]
           radius = 2 + ((phase + 1) / 2) * 1.5;
+        } else {
+          opacity = 0.15;
+          radius = 2;
         }
 
         ctx.beginPath();
         ctx.arc(node.x, node.y, radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(58, 124, 165, ${opacity})`;
+        ctx.fillStyle = `rgba(51, 109, 147, ${opacity})`;
         ctx.fill();
       }
+
+      // Layer 3: Radial glow handled by CSS in HeroSection.astro
     };
 
     setupCanvas();
 
     if (reducedMotion) {
-      // Draw static grid once
+      // Draw static grid once, no animation loop
       drawGrid(0);
       return;
     }
 
     // Animation loop throttled to 30fps
     let lastFrameTime = 0;
-    const frameInterval = 1000 / 30; // ~33ms
+    const frameInterval = 1000 / 30;
 
     const loop = (time: number) => {
       if (time - lastFrameTime >= frameInterval) {

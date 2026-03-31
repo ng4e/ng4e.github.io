@@ -1,5 +1,4 @@
 ---
-import Card from "../ui/Card.astro";
 import { Network, Target, Code, Puzzle } from "@lucide/astro";
 import { t, type Locale } from "../../i18n/translations";
 
@@ -17,17 +16,19 @@ const competencies = [
 ];
 ---
 
-<section id="competences" class="bg-white py-20 scroll-mt-20 animate-on-scroll" data-animate>
+<section id="competences" class="bg-white py-20 scroll-mt-20 reveal">
   <div class="max-w-7xl mx-auto px-4">
     <h2 class="text-3xl md:text-4xl font-semibold text-primary text-center mb-12">{t("competencies.title", locale)}</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {competencies.map(({ icon: Icon, titleKey, bodyKey }, i) => (
-        <div class="stagger-item" style={`--stagger-delay: ${i}`}>
-          <Card>
-            <Icon class="w-12 h-12 text-accent mb-4" stroke-width={2} />
+        <div class={`stagger-item reveal-delay-${Math.min(i + 1, 3)}`} style={`--stagger-delay: ${i}`}>
+          <div class="bg-white rounded-xl border border-gray-200 p-6 transition-all duration-200 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-accent/30">
+            <div class="w-14 h-14 flex items-center justify-center rounded-xl border-[1.5px] border-accent/30 mb-4">
+              <Icon class="w-7 h-7 text-accent" stroke-width={1.5} />
+            </div>
             <h3 class="text-xl font-semibold text-primary mb-2">{t(titleKey, locale)}</h3>
             <p class="text-base text-text-secondary">{t(bodyKey, locale)}</p>
-          </Card>
+          </div>
         </div>
       ))}
     </div>
