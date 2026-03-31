@@ -2,11 +2,6 @@
 
 [gambetech.com](https://gambetech.com)]
 
-Features:
-- ✅ Products
-- ✅ Expertises
-- ✅ Blog
-
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
@@ -21,3 +16,4 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 build with astro
 
 [documentation](https://docs.astro.build)
+
