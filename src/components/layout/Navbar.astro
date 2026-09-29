@@ -1,7 +1,6 @@
 ---
 import MobileMenu from "../ui/MobileMenu.tsx";
-import { t, getPagePath, type Locale } from "../../i18n/translations";
-import { getRelativeLocaleUrl } from "astro:i18n";
+import { t, alternatePath, type Locale } from "../../i18n/translations";
 
 interface Props {
     locale?: Locale;
@@ -19,9 +18,8 @@ const navLinks = [
     { label: t("nav.blog", locale), href: isLanding ? `${prefix}/#blog` : `${prefix}/blog` },
 ];
 
-const pagePath = getPagePath(pathname);
-const frUrl = getRelativeLocaleUrl("fr", pagePath);
-const enUrl = getRelativeLocaleUrl("en", pagePath);
+const frUrl = alternatePath(pathname, "fr");
+const enUrl = alternatePath(pathname, "en");
 ---
 
 <nav id="navbar" class:list={["fixed top-0 w-full z-50 transition-all duration-300", !isLanding && "scrolled"]}>
