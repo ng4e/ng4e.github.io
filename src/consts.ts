@@ -4,6 +4,10 @@
 export const SITE_TITLE = "Gambetech";
 export const SITE_DESCRIPTION = "Transforme les idées en solutions innovantes";
 
+// Identity links (docs/architecture/case-studies.md §5): no URL literal elsewhere.
+export const LINKEDIN_URL = "https://www.linkedin.com/in/samuelmolu/";
+export const GITHUB_URL = "https://github.com/ng4e";
+
 export interface CompanyData {
   id: string;
   logo: string;

@@ -1,0 +1,37 @@
+# Draft fixture: never built (draft: true). Kept so the draft rule stays exercised.
+# docs/architecture/case-studies.md §1
+slug: exemple
+kind: product
+order: 99
+draft: true
+liveUrl: https://example.com/
+fr:
+  title: Exemple de réalisation
+  problem: |
+    Texte d'exemple : le problème, pour qui, et pourquoi les solutions existantes ne suffisaient pas.
+
+    Un second paragraphe, pour vérifier le découpage en paragraphes.
+  built: |
+    Texte d'exemple : ce qui a été livré, concrètement.
+  production: |
+    Texte d'exemple : ce qui tourne aujourd'hui, pour qui.
+  stack: [Astro, TypeScript, Tailwind CSS]
+  role: |
+    Texte d'exemple : le rôle tenu sur ce projet.
+  ai: |
+    Texte d'exemple : où l'IA a servi, et où elle n'a pas servi.
+en:
+  title: Example case study
+  problem: |
+    Placeholder text: the problem, for whom, and why existing solutions fell short.
+
+    A second paragraph, to check paragraph splitting.
+  built: |
+    Placeholder text: what was delivered, concretely.
+  production: |
+    Placeholder text: what runs today, and for whom.
+  stack: [Astro, TypeScript, Tailwind CSS]
+  role: |
+    Placeholder text: the role held on this project.
+  ai: |
+    Placeholder text: where AI was used, and where it was not.

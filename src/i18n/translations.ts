@@ -169,6 +169,18 @@ const translations: Record<Locale, Record<string, string>> = {
     "legal.privacy": "Données personnelles",
     "legal.frenchNotice": "",
 
+    // Case study page (10 keys)
+    "caseStudy.problem": "Le problème",
+    "caseStudy.built": "Ce qui a été construit",
+    "caseStudy.production": "Ce qui tourne en production",
+    "caseStudy.stack": "Stack",
+    "caseStudy.role": "Rôle",
+    "caseStudy.ai": "Usage de l'IA",
+    "caseStudy.client": "Client",
+    "caseStudy.results": "Résultats",
+    "caseStudy.liveLink": "Voir le produit en ligne",
+    "caseStudy.contact": "Parler d'un projet sur LinkedIn",
+
     // Accessibility (4 keys)
     "a11y.skipToContent": "Aller au contenu principal",
     "a11y.mobileMenu.open": "Ouvrir le menu",
@@ -344,6 +356,18 @@ const translations: Record<Locale, Record<string, string>> = {
     "legal.privacy": "Privacy",
     "legal.frenchNotice": "Detailed legal information for this website is available in French.",
 
+    // Case study page (10 keys)
+    "caseStudy.problem": "The problem",
+    "caseStudy.built": "What was built",
+    "caseStudy.production": "What runs in production",
+    "caseStudy.stack": "Stack",
+    "caseStudy.role": "Role",
+    "caseStudy.ai": "How AI was used",
+    "caseStudy.client": "Client",
+    "caseStudy.results": "Results",
+    "caseStudy.liveLink": "See the live product",
+    "caseStudy.contact": "Talk about a project on LinkedIn",
+
     // Accessibility (4 keys)
     "a11y.skipToContent": "Skip to main content",
     "a11y.mobileMenu.open": "Open menu",
@@ -365,4 +389,24 @@ export function t(key: string, locale: Locale = "fr"): string {
  */
 export function getPagePath(pathname: string): string {
   return pathname.replace(/^\/en(?:\/|$)/, "/").replace(/^\//, "");
+}
+
+// First path segments that differ between FR and EN (docs/architecture/case-studies.md §2).
+const FR_TO_EN_SEGMENT: Record<string, string> = {
+  realisations: "work",
+  "mentions-legales": "legal-notice",
+};
+const EN_TO_FR_SEGMENT: Record<string, string> = Object.fromEntries(
+  Object.entries(FR_TO_EN_SEGMENT).map(([fr, en]) => [en, fr]),
+);
+
+/**
+ * The same page in the target locale, e.g. /realisations/x/ <-> /en/work/x/.
+ * Used by the language switcher and the hreflang tags.
+ */
+export function alternatePath(pathname: string, targetLocale: Locale): string {
+  const [first = "", ...rest] = getPagePath(pathname).split("/");
+  const segments = targetLocale === "en" ? FR_TO_EN_SEGMENT : EN_TO_FR_SEGMENT;
+  const path = [segments[first] ?? first, ...rest].join("/");
+  return targetLocale === "en" ? `/en/${path}` : `/${path}`;
 }
