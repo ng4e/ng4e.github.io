@@ -17,10 +17,28 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Explicit steps rather than withastro/action@v3, whose single step builds *and* uploads:
+      # the checks must run before anything is uploaded.
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-      - name: Install, build, and upload your site
-        uses: withastro/action@v3
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install
+        run: npm ci
+      - name: Build
+        run: npm run build
+      # Lighthouse drives the Google Chrome preinstalled on the ubuntu-latest image.
+      - name: Chrome for Lighthouse
+        run: google-chrome --version
+      - name: Check dist/ and Lighthouse (a failure stops the deploy)
+        run: npm run check
+      - name: Upload the site for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
 
   deploy:
     needs: build

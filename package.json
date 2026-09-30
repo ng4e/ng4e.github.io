@@ -7,7 +7,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "node scripts/check-dist.mjs && node scripts/lighthouse.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -26,5 +27,8 @@
     "react-dom": "^19.2.4",
     "tailwindcss": "^4.2.2",
     "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "lighthouse": "^12.8.2"
   }
 }
