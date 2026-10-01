@@ -1,5 +1,6 @@
 ---
 import { Github, Linkedin } from "@lucide/astro";
+import { GITHUB_URL, LINKEDIN_URL } from "../../consts";
 import { t, type Locale } from "../../i18n/translations";
 
 interface Props {
@@ -38,10 +39,10 @@ const prefix = locale === "en" ? "/en" : "";
 
         <div class="border-t border-white/10 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-4">
-                <a href="https://github.com/nicogambe" aria-label="GitHub" class="text-white hover:text-accent transition-colors p-2 min-w-[44px] min-h-[44px] inline-flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded">
+                <a href={GITHUB_URL} aria-label="GitHub" class="text-white hover:text-accent transition-colors p-2 min-w-[44px] min-h-[44px] inline-flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded">
                     <Github size={20} />
                 </a>
-                <a href="https://linkedin.com/in/nicolasgamberini" aria-label="LinkedIn" class="text-white hover:text-accent transition-colors p-2 min-w-[44px] min-h-[44px] inline-flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded">
+                <a href={LINKEDIN_URL} aria-label="LinkedIn" data-umami-event="contact-linkedin" data-umami-event-placement="footer" class="text-white hover:text-accent transition-colors p-2 min-w-[44px] min-h-[44px] inline-flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded">
                     <Linkedin size={20} />
                 </a>
             </div>

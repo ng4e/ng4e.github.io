@@ -1,5 +1,6 @@
 ---
 import Button from "../ui/Button.astro";
+import { LINKEDIN_URL } from "../../consts";
 import { t, type Locale } from "../../i18n/translations";
 
 interface Props {
@@ -22,6 +23,8 @@ const prefix = locale === "en" ? "/en" : "";
       <Button variant="primary" href={`${prefix}/#produits`}>{t("hero.cta.products", locale)}</Button>
       <Button variant="ghost" href={`${prefix}/#competences`} class="border-white text-white hover:bg-white/10">{t("hero.cta.expertises", locale)}</Button>
     </div>
+    {/* WEB-IMPL-03 rebuilds the hero: keep this link (rule C2 needs a LinkedIn link inside <main> on both homes). */}
+    <Button variant="ghost" size="small" href={LINKEDIN_URL} data-umami-event="contact-linkedin" data-umami-event-placement="home" class="mt-6 border-white text-white hover:bg-white/10">{t("hero.contact", locale)}</Button>
   </div>
   <div id="nav-sentinel" class="absolute bottom-0 h-0" aria-hidden="true"></div>
 </section>

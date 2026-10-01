@@ -9,6 +9,18 @@ import SectorsSection from "../components/sections/SectorsSection.astro";
 import MetricsSection from "../components/sections/MetricsSection.astro";
 import ProductsSection from "../components/sections/ProductsSection.astro";
 import BlogPreviewSection from "../components/sections/BlogPreviewSection.astro";
+import { GITHUB_URL, LINKEDIN_URL } from "../consts";
+
+const organization = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "GambeTech",
+  url: "https://gambetech.com",
+  logo: "https://gambetech.com/gambetech-logo-192x192.png",
+  description: "Editeur de logiciels specialise dans les produits de niche",
+  foundingDate: "2020",
+  sameAs: [LINKEDIN_URL, GITHUB_URL],
+};
 
 const locale = (Astro.currentLocale ?? "fr") as Locale;
 ---
@@ -23,19 +35,5 @@ const locale = (Astro.currentLocale ?? "fr") as Locale;
   <MetricsSection locale={locale} />
   <ProductsSection locale={locale} />
   <BlogPreviewSection locale={locale} />
-  <script is:inline type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "GambeTech",
-    "url": "https://gambetech.com",
-    "logo": "https://gambetech.com/gambetech-logo-192x192.png",
-    "description": "Editeur de logiciels specialise dans les produits de niche",
-    "foundingDate": "2020",
-    "sameAs": [
-      "https://github.com/nicogambe",
-      "https://linkedin.com/in/nicolasgamberini"
-    ]
-  }
-  </script>
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(organization)} />
 </Layout>

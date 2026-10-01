@@ -19,6 +19,7 @@ const translations: Record<Locale, Record<string, string>> = {
       "L'harmonie est au cœur de notre démarche. Face aux défis complexes, nous analysons méthodiquement chaque variable pour créer des solutions fluides et optimales, éliminant toute friction inutile.",
     "hero.cta.products": "Découvrir nos produits",
     "hero.cta.expertises": "Voir nos expertises",
+    "hero.contact": "Échanger sur LinkedIn",
 
     // Philosophy (3 keys)
     "philosophy.paragraph1":
@@ -206,6 +207,7 @@ const translations: Record<Locale, Record<string, string>> = {
       "Harmony is at the heart of our approach. Facing complex challenges, we methodically analyze each variable to create fluid and optimal solutions, eliminating all unnecessary friction.",
     "hero.cta.products": "Discover our products",
     "hero.cta.expertises": "See our expertise",
+    "hero.contact": "Get in touch on LinkedIn",
 
     // Philosophy (3 keys)
     "philosophy.paragraph1":
