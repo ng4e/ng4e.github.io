@@ -100,7 +100,7 @@ const isLinkedIn = (href) => href?.includes("linkedin.com");
 const rules = [
   {
     id: "C1",
-    enabled: false, // WEB-IMPL-04 turns it on
+    enabled: true, // WEB-IMPL-04: on
     title: "every linkedin.com href is the company LinkedIn URL",
     run() {
       for (const p of pages)
@@ -112,7 +112,7 @@ const rules = [
   },
   {
     id: "C2",
-    enabled: false, // WEB-IMPL-04 turns it on
+    enabled: true, // WEB-IMPL-04: on
     title: 'LinkedIn links carry data-umami-event="contact-linkedin"; homes and case studies have one in <main>',
     run() {
       for (const p of pages)
@@ -128,7 +128,7 @@ const rules = [
   },
   {
     id: "C3",
-    enabled: false, // WEB-IMPL-04 turns it on
+    enabled: true, // WEB-IMPL-04: on
     title: "no nicolasgamberini, nicogambe or gamberini",
     run() {
       for (const p of pages) {
@@ -139,7 +139,7 @@ const rules = [
   },
   {
     id: "C4",
-    enabled: false, // WEB-IMPL-04 turns it on
+    enabled: true, // WEB-IMPL-04: on
     title: "JSON-LD sameAs on the homes is exactly the LinkedIn and GitHub URLs",
     run() {
       const expected = JSON.stringify([LINKEDIN_URL, GITHUB_URL]);
