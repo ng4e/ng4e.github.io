@@ -1,0 +1,39 @@
+---
+import Card from "../ui/Card.astro";
+import Badge from "../ui/Badge.astro";
+import { caseStudyUrl, firstParagraph, getPublishedCaseStudies } from "../../lib/case-studies";
+import { t, type Locale } from "../../i18n/translations";
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = "fr" } = Astro.props;
+// Products first, then missions, by `order` (sorted by getPublishedCaseStudies).
+const caseStudies = await getPublishedCaseStudies();
+---
+
+<section id="realisations" class="bg-white py-20 scroll-mt-20 reveal">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-semibold text-primary text-center mb-12">{t("home.caseStudies.title", locale)}</h2>
+    {caseStudies.length > 0 ? (
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {caseStudies.map(({ data }) => (
+          <li>
+            <Card class="h-full">
+              <h3 class="text-xl font-semibold text-primary mb-3">
+                <a href={caseStudyUrl(data.slug, locale)} class="hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded">{data[locale].title}</a>
+              </h3>
+              <p class="text-base text-text-secondary mb-4">{firstParagraph(data[locale].problem)}</p>
+              <ul class="flex flex-wrap gap-2">
+                {data[locale].stack.map((item) => <li><Badge variant="surface">{item}</Badge></li>)}
+              </ul>
+            </Card>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p class="text-center text-text-secondary">{t("home.caseStudies.empty", locale)}</p>
+    )}
+  </div>
+</section>

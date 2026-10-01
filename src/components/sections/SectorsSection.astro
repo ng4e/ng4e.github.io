@@ -1,6 +1,6 @@
 ---
 import Badge from "../ui/Badge.astro";
-import CompanyLogoSlider from "../CompanyLogoSlider.astro";
+import { SECTORS, companies } from "../../consts";
 import { t, type Locale } from "../../i18n/translations";
 
 interface Props {
@@ -8,19 +8,22 @@ interface Props {
 }
 
 const { locale = "fr" } = Astro.props;
-
-const sectorKeys = ["sectors.retail_banking", "sectors.insurance", "sectors.payment", "sectors.telecom", "sectors.energy"];
 ---
 
 <section id="secteurs" class="bg-surface py-20 scroll-mt-20 reveal">
   <div class="max-w-7xl mx-auto px-4">
     <h2 class="text-3xl md:text-4xl font-semibold text-primary text-center mb-4">{t("sectors.title", locale)}</h2>
     <p class="text-base text-text-secondary text-center mb-12 max-w-2xl mx-auto">{t("sectors.subtitle", locale)}</p>
-    <div class="flex flex-wrap justify-center gap-3 mb-16">
-      {sectorKeys.map((key) => (
-        <Badge>{t(key, locale)}</Badge>
+    <ul class="flex flex-wrap justify-center gap-3 mb-16">
+      {SECTORS.map((key) => (
+        <li><Badge>{t(`sectors.${key}`, locale)}</Badge></li>
       ))}
-    </div>
-    <CompanyLogoSlider />
+    </ul>
+    <h3 class="text-base font-semibold uppercase tracking-wider text-text-secondary text-center mb-8">{t("sectors.logos.title", locale)}</h3>
+    <ul class="flex flex-wrap justify-center items-center gap-x-10 gap-y-8">
+      {companies.map((c) => (
+        <li><img src={c.logo} alt={c.name} loading="lazy" class="h-10 w-32 object-contain grayscale opacity-60" /></li>
+      ))}
+    </ul>
   </div>
 </section>

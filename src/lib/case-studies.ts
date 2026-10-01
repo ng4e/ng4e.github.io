@@ -15,6 +15,11 @@ export async function getPublishedCaseStudies(): Promise<CaseStudy[]> {
   );
 }
 
+// Plain-text fields separate paragraphs with a blank line (§1).
+export function firstParagraph(text: string): string {
+  return text.split(/\n\s*\n/)[0]?.trim() ?? "";
+}
+
 export function caseStudyUrl(slug: string, locale: Locale): string {
   return locale === "en" ? `/en/work/${slug}/` : `/realisations/${slug}/`;
 }

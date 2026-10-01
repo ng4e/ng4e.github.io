@@ -12,9 +12,9 @@ const isLanding = pathname === "/" || pathname === "/en" || pathname === "/en/";
 const prefix = locale === "en" ? "/en" : "";
 
 const navLinks = [
-    { label: t("nav.expertises", locale), href: isLanding ? `${prefix}/#competences` : `${prefix}/expertises` },
-    { label: t("nav.products", locale), href: isLanding ? `${prefix}/#produits` : `${prefix}/products` },
-    { label: t("nav.experiences", locale), href: isLanding ? `${prefix}/#chiffres` : `${prefix}/experiences` },
+    { label: t("nav.work", locale), href: isLanding ? `${prefix}/#realisations` : `${prefix}/products` },
+    { label: t("nav.expertises", locale), href: `${prefix}/expertises` },
+    { label: t("nav.experiences", locale), href: `${prefix}/experiences` },
     { label: t("nav.blog", locale), href: isLanding ? `${prefix}/#blog` : `${prefix}/blog` },
 ];
 
@@ -108,7 +108,7 @@ const enUrl = alternatePath(pathname, "en");
         // Scroll-spy: highlight nav link for visible section (ANIM-04)
         // D-06: skip on mobile viewports (zero overhead)
         if (window.matchMedia('(min-width: 769px)').matches) {
-            var sectionIds = ['competences', 'produits', 'chiffres', 'blog'];
+            var sectionIds = ['realisations', 'blog'];
             var sections = sectionIds
                 .map(function(id) { return document.getElementById(id); })
                 .filter(Boolean);
