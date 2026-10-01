@@ -8,11 +8,13 @@ export const SITE_DESCRIPTION = "Transforme les idées en solutions innovantes";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/samuelmolu/";
 export const GITHUB_URL = "https://github.com/ng4e";
 
+// The four sectors of the home statement (docs/architecture/case-studies.md §4), as keys of
+// `sectors.<key>` in src/i18n/translations.ts. Energy was dropped; the founder may restore it.
+export const SECTORS = ["retail_banking", "insurance", "payment", "telecom"] as const;
+
 export interface CompanyData {
-  id: string;
   logo: string;
   name: string;
-  caseStudy: string;
 }
 
 export interface Project {
@@ -34,64 +36,44 @@ export interface Project {
 
 export const companies: CompanyData[] = [
   {
-    id: "slashup",
     logo: "/logo-slashup.png",
     name: "Slashup Studio",
-    caseStudy: "https://www.slashup.studio/use-cases/maif-international",
   },
   {
-    id: "slashup",
     logo: "/logo-mi.png",
     name: "MAIF International",
-    caseStudy: "https://www.slashup.studio/use-cases/maif-international",
   },
   {
-    id: "sii-mediterranee",
     logo: "/logo-sii-aix.png",
     name: "SII Méditerannée",
-    caseStudy: "#sii-mediterranee",
   },
   {
-    id: "sii-mediterranee",
     logo: "/logo-monext.png",
     name: "Monext",
-    caseStudy: "#monext",
   },
   {
-    id: "devoteam",
     logo: "/logo-devoteam.png",
     name: "Devoteam",
-    caseStudy: "#devoteam",
   },
   {
-    id: "devoteam",
     logo: "/logo-ditto.png",
     name: "Ditto Bank",
-    caseStudy: "#ditto-bank",
   },
   {
-    id: "accenture",
     logo: "/logo-accenture.png",
     name: "Accenture",
-    caseStudy: "#accenture",
   },
   {
-    id: "accenture-lbp",
     logo: "/logo-lbp.png",
     name: "La Banque Postale",
-    caseStudy: "#banque-postale",
   },
   {
-    id: "accenture-sg",
     logo: "/logo-sg.png",
     name: "Société Générale",
-    caseStudy: "#societe-generale",
   },
   {
-    id: "sopra-group",
     logo: "/logo-sopra.png",
     name: "Sopra Group",
-    caseStudy: "#sopra-group",
   },
   // Add more companies as needed
 ];

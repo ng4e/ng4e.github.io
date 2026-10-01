@@ -229,7 +229,7 @@ const rules = [
   },
   {
     id: "C8",
-    enabled: false, // WEB-IMPL-03 turns it on
+    enabled: true, // WEB-IMPL-03: on
     title: 'no link whose text is only "read more" or "lire la suite"',
     run() {
       for (const p of pages)
@@ -240,7 +240,7 @@ const rules = [
   },
   {
     id: "C9",
-    enabled: false, // WEB-IMPL-03 turns it on
+    enabled: true, // WEB-IMPL-03: on
     title: "data-product-count on the homes equals the product case studies in dist/",
     run() {
       const products = new Set(caseStudies.filter((p) => p.kind === "product").map((p) => p.slug)).size;

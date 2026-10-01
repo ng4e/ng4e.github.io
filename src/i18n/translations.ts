@@ -7,42 +7,19 @@ const translations: Record<Locale, Record<string, string>> = {
     "site.description": "Transforme les idées en solutions innovantes",
 
     // Nav (4 keys)
+    "nav.work": "Réalisations",
     "nav.expertises": "Expertises",
-    "nav.products": "Produits",
     "nav.experiences": "Expériences",
     "nav.blog": "Idées & Opinions",
 
-    // Hero (5 keys)
-    "hero.title": "GAMBETECH",
-    "hero.tagline": "Transforme les idées en solutions innovantes",
-    "hero.description":
-      "L'harmonie est au cœur de notre démarche. Face aux défis complexes, nous analysons méthodiquement chaque variable pour créer des solutions fluides et optimales, éliminant toute friction inutile.",
-    "hero.cta.products": "Découvrir nos produits",
-    "hero.cta.expertises": "Voir nos expertises",
+    // Hero (2 keys)
+    "hero.statement":
+      "Quinze ans de logiciel en banque, assurance, paiement et télécom. GambeTech construit et exploite ses produits, et tient le rôle de CTO pour des fondateurs.",
     "hero.contact": "Échanger sur LinkedIn",
 
-    // Philosophy (3 keys)
-    "philosophy.paragraph1":
-      "L'harmonie est au cœur de notre démarche.",
-    "philosophy.paragraph2":
-      "Face aux défis complexes, nous analysons méthodiquement chaque variable pour créer des solutions fluides et optimales, éliminant toute friction inutile.",
-    "philosophy.paragraph3":
-      "GambeTech est un éditeur de solutions, spécialisé dans des produits de niche.",
-
-    // Competencies (9 keys)
-    "competencies.title": "Nos compétences clés",
-    "competencies.modeling.title": "Modélisation",
-    "competencies.modeling.body":
-      "Structuration de domaines fonctionnels complexes",
-    "competencies.prioritization.title": "Priorisation",
-    "competencies.prioritization.body":
-      "Identification des éléments à forte valeur ajoutée",
-    "competencies.implementation.title": "Implémentation",
-    "competencies.implementation.body":
-      "Développement technique précis et performant",
-    "competencies.integration.title": "Intégration",
-    "competencies.integration.body":
-      "Solutions harmonieuses et adaptées aux systèmes existants",
+    // Home case studies (2 keys)
+    "home.caseStudies.title": "Réalisations",
+    "home.caseStudies.empty": "Les études de cas sont en cours de rédaction.",
 
     // Sectors (8 keys)
     "sectors.title": "Secteurs d'intervention",
@@ -62,28 +39,21 @@ const translations: Record<Locale, Record<string, string>> = {
     "metrics.founded": "Année de création",
     "metrics.products": "Produits",
 
-    // Products (12 keys)
-    "products.title": "Nos Produits",
-    "products.subtitle": "Créer de la valeur sur des problèmes de niche",
+    // Products (6 keys, read by /products)
     "products.nmt.tagline": "Réseau social familial",
     "products.nmt.body":
       "Un réseau social familial avec arbre généalogique et journal de gratitude partagé, à destination des familles éloignées par l'immigration.",
-    "products.nmt.cta": "Découvrir le projet",
     "products.sp.tagline": "Gestion de tournois tennis",
     "products.sp.body":
       "Solution de programmation de tournois ITF à partir des performances et du budget. Aide les familles de jeunes joueurs à optimiser leur parcours vers la carrière professionnelle.",
-    "products.sp.cta": "Découvrir le projet",
     "products.pirien.tagline": "Héritage culturel Bamoun",
     "products.pirien.body":
       "Plateforme de préservation, valorisation et transmission de l'héritage culturel Bamoun au Cameroun. Inclut une boutique associative en ligne.",
-    "products.pirien.cta": "Découvrir le projet",
-    "products.discover": "Découvrir le projet",
 
     // Blog preview (4 keys)
     "blog.title": "Idées et Opinions",
     "blog.subtitle":
       "...et autres questions existentielles sur la technologie, la science et la vie de tous les jours",
-    "blog.readMore": "Lire la suite",
     "blog.emptyState": "Aucun article pour le moment. Revenez bientôt !",
     "blog.viewAll": "Voir tous les articles",
 
@@ -154,11 +124,10 @@ const translations: Record<Locale, Record<string, string>> = {
     "projectCard.results": "Résultats",
     "projectCard.duration": "Durée",
 
-    // Blog page (3 keys)
+    // Blog page (2 keys)
     "blogPage.pageTitle": "Idées et Opinions",
     "blogPage.pageDesc":
       "...et autres questions existentielles sur la technologie, la science et la vie de tous les jours",
-    "blogPage.readMore": "Lire la suite",
 
     // Blog post layout (2 keys)
     "blogPost.updatedOn": "Mis à jour le",
@@ -195,42 +164,19 @@ const translations: Record<Locale, Record<string, string>> = {
     "site.description": "Turning ideas into innovative solutions",
 
     // Nav (4 keys)
+    "nav.work": "Work",
     "nav.expertises": "Expertise",
-    "nav.products": "Products",
     "nav.experiences": "Experience",
     "nav.blog": "Ideas & Opinions",
 
-    // Hero (5 keys)
-    "hero.title": "GAMBETECH",
-    "hero.tagline": "Turning ideas into innovative solutions",
-    "hero.description":
-      "Harmony is at the heart of our approach. Facing complex challenges, we methodically analyze each variable to create fluid and optimal solutions, eliminating all unnecessary friction.",
-    "hero.cta.products": "Discover our products",
-    "hero.cta.expertises": "See our expertise",
+    // Hero (2 keys)
+    "hero.statement":
+      "Fifteen years of software in banking, insurance, payments and telecom. GambeTech builds and runs its own products, and acts as CTO for founders.",
     "hero.contact": "Get in touch on LinkedIn",
 
-    // Philosophy (3 keys)
-    "philosophy.paragraph1":
-      "Harmony is at the heart of our approach.",
-    "philosophy.paragraph2":
-      "Facing complex challenges, we methodically analyze each variable to create fluid and optimal solutions, eliminating all unnecessary friction.",
-    "philosophy.paragraph3":
-      "GambeTech is a solutions publisher, specialized in niche products.",
-
-    // Competencies (9 keys)
-    "competencies.title": "Our core competencies",
-    "competencies.modeling.title": "Modeling",
-    "competencies.modeling.body":
-      "Structuring complex functional domains",
-    "competencies.prioritization.title": "Prioritization",
-    "competencies.prioritization.body":
-      "Identifying high-value elements",
-    "competencies.implementation.title": "Implementation",
-    "competencies.implementation.body":
-      "Precise and performant technical development",
-    "competencies.integration.title": "Integration",
-    "competencies.integration.body":
-      "Harmonious solutions adapted to existing systems",
+    // Home case studies (2 keys)
+    "home.caseStudies.title": "Work",
+    "home.caseStudies.empty": "Case studies are being written.",
 
     // Sectors (8 keys)
     "sectors.title": "Areas of expertise",
@@ -250,28 +196,21 @@ const translations: Record<Locale, Record<string, string>> = {
     "metrics.founded": "Year founded",
     "metrics.products": "Products",
 
-    // Products (12 keys)
-    "products.title": "Our Products",
-    "products.subtitle": "Creating value for niche problems",
+    // Products (6 keys, read by /products)
     "products.nmt.tagline": "Family social network",
     "products.nmt.body":
       "A family social network with family tree and shared gratitude journal, designed for families separated by immigration.",
-    "products.nmt.cta": "Discover the project",
     "products.sp.tagline": "Tennis tournament management",
     "products.sp.body":
       "ITF tournament scheduling solution based on performance and budget. Helps families of young players optimize their path to a professional career.",
-    "products.sp.cta": "Discover the project",
     "products.pirien.tagline": "Bamoun cultural heritage",
     "products.pirien.body":
       "Platform for the preservation, promotion, and transmission of Bamoun cultural heritage in Cameroon. Includes an online association shop.",
-    "products.pirien.cta": "Discover the project",
-    "products.discover": "Discover the project",
 
     // Blog preview (4 keys)
     "blog.title": "Ideas and Opinions",
     "blog.subtitle":
       "...and other existential questions about technology, science, and everyday life",
-    "blog.readMore": "Read more",
     "blog.emptyState": "No articles yet. Come back soon!",
     "blog.viewAll": "View all articles",
 
@@ -342,11 +281,10 @@ const translations: Record<Locale, Record<string, string>> = {
     "projectCard.results": "Results",
     "projectCard.duration": "Duration",
 
-    // Blog page (3 keys)
+    // Blog page (2 keys)
     "blogPage.pageTitle": "Ideas and Opinions",
     "blogPage.pageDesc":
       "...and other existential questions about technology, science, and everyday life",
-    "blogPage.readMore": "Read more",
 
     // Blog post layout (2 keys)
     "blogPost.updatedOn": "Updated on",

@@ -3,7 +3,6 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import Card from "../../components/ui/Card.astro";
 import Badge from "../../components/ui/Badge.astro";
-import Button from "../../components/ui/Button.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 import { t, type Locale } from "../../i18n/translations";
 
@@ -39,12 +38,9 @@ const posts = (await getCollection("blog")).sort(
                 {post.data.title}
               </a>
             </h3>
-            <p class="text-base text-text-secondary line-clamp-3 mb-4">
+            <p class="text-base text-text-secondary line-clamp-3">
               {post.data.description}
             </p>
-            <Button variant="ghost" size="small" href={`${prefix}/blog/${post.id}/`}>
-              {t("blog.readMore", locale)}
-            </Button>
           </Card>
         ))}
       </div>

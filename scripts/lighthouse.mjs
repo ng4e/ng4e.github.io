@@ -12,8 +12,8 @@ import { promisify } from "node:util";
 const THRESHOLD = 95;
 const CATEGORIES = ["performance", "accessibility", "best-practices", "seo"];
 // /en/ scored SEO 92 when WEB-IMPL-02 landed (link-text: the "Read more" links).
-// WEB-IMPL-03 fixes that audit and turns it on.
-const EN_HOME = false;
+// WEB-IMPL-03 removed those links and turned it on.
+const EN_HOME = true;
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const bin = (name) => fileURLToPath(new URL(`../node_modules/.bin/${name}`, import.meta.url));

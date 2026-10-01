@@ -1,6 +1,8 @@
 ---
 import Counter from "../ui/Counter.tsx";
 import TechPattern from "../TechPattern.astro";
+import { SECTORS } from "../../consts";
+import { countPublishedProducts } from "../../lib/case-studies";
 import { t, type Locale } from "../../i18n/translations";
 
 interface Props {
@@ -8,17 +10,19 @@ interface Props {
 }
 
 const { locale = "fr" } = Astro.props;
+// On the section root: Counter renders 0 server-side, so rule C9 reads the number here.
+const productCount = await countPublishedProducts();
 ---
 
-<section id="chiffres" class="relative bg-primary py-20 scroll-mt-20 reveal">
+<section id="chiffres" data-product-count={productCount} class="relative bg-primary py-12 scroll-mt-20 reveal">
   <TechPattern density="medium" />
   <div class="relative z-10 max-w-7xl mx-auto px-4">
-    <h2 class="text-3xl md:text-4xl font-semibold text-white text-center mb-12 uppercase tracking-wide">{t("metrics.title", locale)}</h2>
+    <h2 class="sr-only">{t("metrics.title", locale)}</h2>
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
       <Counter client:visible value={15} suffix="+" label={t("metrics.years", locale)} />
-      <Counter client:visible value={5} suffix="" label={t("metrics.sectors", locale)} />
+      <Counter client:visible value={SECTORS.length} suffix="" label={t("metrics.sectors", locale)} />
       <Counter client:visible value={2020} label={t("metrics.founded", locale)} isYear />
-      <Counter client:visible value={4} suffix="" label={t("metrics.products", locale)} />
+      <Counter client:visible value={productCount} suffix="" label={t("metrics.products", locale)} />
     </div>
   </div>
 </section>

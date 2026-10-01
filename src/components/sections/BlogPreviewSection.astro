@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import Button from "../ui/Button.astro";
 import Badge from "../ui/Badge.astro";
 import FormattedDate from "../FormattedDate.astro";
 import { t, type Locale } from "../../i18n/translations";
@@ -34,8 +33,7 @@ const latestPosts = allPosts
               <h3 class="text-xl font-semibold text-primary mb-2">
                 <a href={`${prefix}/blog/${post.id}`} class="hover:text-accent transition-colors">{post.data.title}</a>
               </h3>
-              <p class="text-base text-text-secondary line-clamp-3 mb-4">{post.data.description}</p>
-              <Button variant="ghost" size="small" href={`${prefix}/blog/${post.id}`}>{t("blog.readMore", locale)}</Button>
+              <p class="text-base text-text-secondary line-clamp-3">{post.data.description}</p>
             </div>
           </div>
         ))}
