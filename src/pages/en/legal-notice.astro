@@ -3,35 +3,43 @@ import Layout from "../../layouts/BaseLayout.astro";
 import { t, type Locale } from "../../i18n/translations";
 
 const locale = (Astro.currentLocale ?? "en") as Locale;
+// Values: docs/architecture/case-studies.md §6. Same sections as /mentions-legales.
 ---
 
-<Layout title={`${t("legal.title", locale)} - Gambetech`} description="Legal notice for Gambetech" headerTitle={t("legal.title", locale)} locale={locale}>
+<Layout title={`${t("legal.title", locale)} - Gambetech`} description={t("legal.pageDesc", locale)} headerTitle={t("legal.title", locale)} locale={locale}>
   <section class="py-12 md:py-20">
     <div class="max-w-3xl mx-auto px-4 space-y-8">
       <div class="bg-surface/50 border border-accent/20 rounded-lg p-6">
         <p class="text-text leading-relaxed">
           {t("legal.frenchNotice", locale)}
-          <a href="/mentions-legales" class="text-accent hover:underline ml-1">
-            Mentions legales
-          </a>
+          <a href="/mentions-legales/" lang="fr" class="text-accent hover:underline ml-1">Mentions légales</a>
         </p>
       </div>
 
       <div>
         <h2 class="text-2xl font-semibold text-primary mb-4">{t("legal.publisher", locale)}</h2>
         <p class="text-text leading-relaxed">
-          GambeTech EURL<br />
-          Niche software publisher<br />
-          Publication director: Samuel Ngambeket Molu
+          GambeTech, EURL<br />
+          Registered office: 200 rue de la Croix Nivert, 75015 Paris, France<br />
+          SIRET: 882 350 549 00029<br />
+          RCS Paris 882 350 549<br />
+          Publication director: Samuel Ngambeket Molu<br />
+          Contact: <a href="mailto:alareni@gambetech.com" class="text-accent hover:underline">alareni@gambetech.com</a>
         </p>
       </div>
 
       <div>
         <h2 class="text-2xl font-semibold text-primary mb-4">{t("legal.hosting", locale)}</h2>
         <p class="text-text leading-relaxed">
-          This website is hosted by GitHub Pages.<br />
-          GitHub, Inc.<br />
-          88 Colin P Kelly Jr St, San Francisco, CA 94107, USA
+          GitHub Pages, GitHub Inc.<br />
+          88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-semibold text-primary mb-4">{t("legal.ip", locale)}</h2>
+        <p class="text-text leading-relaxed">
+          All content on this website (text, images, logos) is the exclusive property of GambeTech EURL, unless stated otherwise. Any reproduction is prohibited without prior permission.
         </p>
       </div>
 
