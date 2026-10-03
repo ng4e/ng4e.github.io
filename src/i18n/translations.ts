@@ -39,17 +39,6 @@ const translations: Record<Locale, Record<string, string>> = {
     "metrics.founded": "Année de création",
     "metrics.products": "Produits",
 
-    // Products (6 keys, read by /products)
-    "products.nmt.tagline": "Réseau social familial",
-    "products.nmt.body":
-      "Un réseau social familial avec arbre généalogique et journal de gratitude partagé, à destination des familles éloignées par l'immigration.",
-    "products.sp.tagline": "Gestion de tournois tennis",
-    "products.sp.body":
-      "Solution de programmation de tournois ITF à partir des performances et du budget. Aide les familles de jeunes joueurs à optimiser leur parcours vers la carrière professionnelle.",
-    "products.pirien.tagline": "Héritage culturel Bamoun",
-    "products.pirien.body":
-      "Plateforme de préservation, valorisation et transmission de l'héritage culturel Bamoun au Cameroun. Inclut une boutique associative en ligne.",
-
     // Blog preview (4 keys)
     "blog.title": "Idées et Opinions",
     "blog.subtitle":
@@ -97,16 +86,14 @@ const translations: Record<Locale, Record<string, string>> = {
       "Atlassian (Confluence, Jira, Trello), Spring Boot, Spring framework, Quarkus, Maven, Github, Gitlab, Bitbucket, Vercel, Google Cloud, AWS, Oracle Cloud.",
     "expertises.clients.title": "Clients et partenaires",
 
-    // Products page (10 keys)
+    // Products page (5 keys)
     "productsPage.pageTitle": "Nos Produits",
     "productsPage.pageDesc":
-      "Créer de la valeur sur des problèmes de niche",
+      "Les produits que GambeTech construit et exploite, chacun présenté par son étude de cas.",
     "productsPage.header": "Nos Produits",
     "productsPage.subtitle":
-      "Créer de la valeur sur des problèmes de niche",
-    "productsPage.requirements": "Prérequis",
-    "productsPage.architecture": "Architecture",
-    "productsPage.siteWeb": "Site Web",
+      "Les produits que GambeTech construit et exploite, chacun présenté par son étude de cas.",
+    "productsPage.empty": "Aucun produit publié pour le moment : les études de cas sont en cours de rédaction.",
 
     // Experiences page (6 keys)
     "experiencesPage.pageTitle": "Références",
@@ -132,10 +119,12 @@ const translations: Record<Locale, Record<string, string>> = {
     // Blog post layout (2 keys)
     "blogPost.updatedOn": "Mis à jour le",
 
-    // Legal page (5 keys)
+    // Legal page (7 keys)
     "legal.title": "Mentions légales",
+    "legal.pageDesc": "Mentions légales de GambeTech",
     "legal.publisher": "Éditeur du site",
     "legal.hosting": "Hébergement",
+    "legal.ip": "Propriété intellectuelle",
     "legal.privacy": "Données personnelles",
     "legal.frenchNotice": "",
 
@@ -196,17 +185,6 @@ const translations: Record<Locale, Record<string, string>> = {
     "metrics.founded": "Year founded",
     "metrics.products": "Products",
 
-    // Products (6 keys, read by /products)
-    "products.nmt.tagline": "Family social network",
-    "products.nmt.body":
-      "A family social network with family tree and shared gratitude journal, designed for families separated by immigration.",
-    "products.sp.tagline": "Tennis tournament management",
-    "products.sp.body":
-      "ITF tournament scheduling solution based on performance and budget. Helps families of young players optimize their path to a professional career.",
-    "products.pirien.tagline": "Bamoun cultural heritage",
-    "products.pirien.body":
-      "Platform for the preservation, promotion, and transmission of Bamoun cultural heritage in Cameroon. Includes an online association shop.",
-
     // Blog preview (4 keys)
     "blog.title": "Ideas and Opinions",
     "blog.subtitle":
@@ -254,16 +232,14 @@ const translations: Record<Locale, Record<string, string>> = {
       "Atlassian (Confluence, Jira, Trello), Spring Boot, Spring framework, Quarkus, Maven, Github, Gitlab, Bitbucket, Vercel, Google Cloud, AWS, Oracle Cloud.",
     "expertises.clients.title": "Clients and partners",
 
-    // Products page (10 keys)
+    // Products page (5 keys)
     "productsPage.pageTitle": "Our Products",
     "productsPage.pageDesc":
-      "Creating value for niche problems",
+      "The products GambeTech builds and runs, each one presented through its case study.",
     "productsPage.header": "Our Products",
     "productsPage.subtitle":
-      "Creating value for niche problems",
-    "productsPage.requirements": "Requirements",
-    "productsPage.architecture": "Architecture",
-    "productsPage.siteWeb": "Website",
+      "The products GambeTech builds and runs, each one presented through its case study.",
+    "productsPage.empty": "No product published yet: the case studies are being written.",
 
     // Experiences page (6 keys)
     "experiencesPage.pageTitle": "References",
@@ -289,10 +265,12 @@ const translations: Record<Locale, Record<string, string>> = {
     // Blog post layout (2 keys)
     "blogPost.updatedOn": "Updated on",
 
-    // Legal page (5 keys)
+    // Legal page (7 keys)
     "legal.title": "Legal Notice",
+    "legal.pageDesc": "Legal notice for GambeTech",
     "legal.publisher": "Site Publisher",
     "legal.hosting": "Hosting",
+    "legal.ip": "Intellectual property",
     "legal.privacy": "Privacy",
     "legal.frenchNotice": "Detailed legal information for this website is available in French.",
 

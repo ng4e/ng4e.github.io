@@ -1,0 +1,27 @@
+---
+// The case-study card (docs/architecture/case-studies.md §3): used on the home and both product
+// indexes. The title is the link; no live link here (that lives on the case-study page).
+import Card from "../ui/Card.astro";
+import Badge from "../ui/Badge.astro";
+import { caseStudyUrl, firstParagraph, type CaseStudy } from "../../lib/case-studies";
+import type { Locale } from "../../i18n/translations";
+
+interface Props {
+  entry: CaseStudy;
+  locale: Locale;
+}
+
+const { entry, locale } = Astro.props;
+const { slug } = entry.data;
+const content = entry.data[locale];
+---
+
+<Card class="h-full">
+  <h3 class="text-xl font-semibold text-primary mb-3">
+    <a href={caseStudyUrl(slug, locale)} class="hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded">{content.title}</a>
+  </h3>
+  <p class="text-base text-text-secondary mb-4">{firstParagraph(content.problem)}</p>
+  <ul class="flex flex-wrap gap-2">
+    {content.stack.map((item) => <li><Badge variant="surface">{item}</Badge></li>)}
+  </ul>
+</Card>

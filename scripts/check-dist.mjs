@@ -256,7 +256,7 @@ const rules = [
   },
   {
     id: "C10",
-    enabled: false, // WEB-IMPL-05 turns it on
+    enabled: true, // WEB-IMPL-05: on
     title: "legal pages carry the company's legal details",
     run() {
       const required = ["EURL", "RCS Paris", "Croix Nivert", "Samuel Ngambeket Molu", "alareni@gambetech.com", "GitHub"];

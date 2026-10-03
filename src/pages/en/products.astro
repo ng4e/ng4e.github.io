@@ -1,37 +1,12 @@
 ---
 import Layout from "../../layouts/BaseLayout.astro";
-import Card from "../../components/ui/Card.astro";
-import Button from "../../components/ui/Button.astro";
+import CaseStudyCard from "../../components/case-study/CaseStudyCard.astro";
+import { getPublishedCaseStudies } from "../../lib/case-studies";
 import { t, type Locale } from "../../i18n/translations";
 
 const locale = (Astro.currentLocale ?? "en") as Locale;
-
-const products = [
-  {
-    name: "NMT — NG. Moving Together",
-    tagline: t("products.nmt.tagline", locale),
-    description: t("products.nmt.body", locale),
-    requirements: "Créer un Backend Sécurisé pour une application mobile en Frontend",
-    architecture: "Spring boot, Neo4j, Postgres, Appwrite, Bitbucket, Docker SonarQube, Oracle Cloud, HugginFace, Mistra AI",
-    website: "#",
-  },
-  {
-    name: "Sportifs Prometteurs",
-    tagline: t("products.sp.tagline", locale),
-    description: t("products.sp.body", locale),
-    requirements: "Développer une solution de programmation de tournois à partir des performances envisagées et du budget",
-    architecture: "node, express, ts, ejs, appwrite, bitbucket, SonarQube, Oracle cloud",
-    website: "https://getsp.sportifs-prometteurs.org/",
-  },
-  {
-    name: "Association Pirien",
-    tagline: t("products.pirien.tagline", locale),
-    description: t("products.pirien.body", locale),
-    requirements: "Boutique associative en ligne",
-    architecture: "strikingly, square",
-    website: "https://why.pirien.com",
-  },
-];
+// Published product case studies only (docs/architecture/case-studies.md §3), by `order`.
+const products = (await getPublishedCaseStudies()).filter((entry) => entry.data.kind === "product");
 ---
 
 <Layout
@@ -46,34 +21,15 @@ const products = [
       <p class="text-base text-text-secondary text-center mb-12 max-w-2xl mx-auto">
         {t("productsPage.subtitle", locale)}
       </p>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {products.map((product, i) => (
-          <div class="stagger-item" style={`--stagger-delay: ${i}`}>
-            <Card>
-              <h3 class="text-xl font-semibold text-primary mb-1">{product.name}</h3>
-              <p class="text-sm text-accent font-semibold mb-3">{product.tagline}</p>
-              <p class="text-base text-text-secondary mb-4">{product.description}</p>
-              <div class="border-t border-surface pt-4 mt-4 space-y-3">
-                <div>
-                  <h4 class="text-sm font-semibold text-primary">{t("productsPage.requirements", locale)}</h4>
-                  <p class="text-sm text-text-secondary">{product.requirements}</p>
-                </div>
-                <div>
-                  <h4 class="text-sm font-semibold text-primary">{t("productsPage.architecture", locale)}</h4>
-                  <p class="text-sm text-text-secondary">{product.architecture}</p>
-                </div>
-              </div>
-              {product.website !== "#" && (
-                <div class="mt-6">
-                  <Button variant="primary" size="small" href={product.website}>
-                    {t("productsPage.siteWeb", locale)}
-                  </Button>
-                </div>
-              )}
-            </Card>
-          </div>
-        ))}
-      </div>
+      {products.length > 0 ? (
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {products.map((entry) => (
+            <li><CaseStudyCard entry={entry} locale={locale} /></li>
+          ))}
+        </ul>
+      ) : (
+        <p class="text-center text-text-secondary">{t("productsPage.empty", locale)}</p>
+      )}
     </div>
   </section>
 </Layout>
