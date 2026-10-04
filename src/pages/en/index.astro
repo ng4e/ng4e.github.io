@@ -22,7 +22,7 @@ const organization = {
 const locale = (Astro.currentLocale ?? "en") as Locale;
 ---
 
-<Layout title={t("site.title", locale)} description={t("site.description", locale)} sentinelInHero={true} locale={locale}>
+<Layout title={t("site.title", locale)} description={t("hero.statement", locale)} sentinelInHero={true} locale={locale}>
   <HeroSection locale={locale} />
   <CaseStudiesSection locale={locale} />
   <SectorsSection locale={locale} />
