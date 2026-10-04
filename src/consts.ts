@@ -34,38 +34,20 @@ export interface Project {
   results: string[];
 }
 
+// The logo wall keeps only the logos legible at 375 px (WEB-FT-13, option b; docs/qa/WEB-IMPL-16).
+// Each file is the original cropped to its wordmark on a transparent background.
 export const companies: CompanyData[] = [
-  {
-    logo: "/logo-slashup.png",
-    name: "Slashup Studio",
-  },
   {
     logo: "/logo-mi.png",
     name: "MAIF International",
-  },
-  {
-    logo: "/logo-sii-aix.png",
-    name: "SII Méditerannée",
   },
   {
     logo: "/logo-monext.png",
     name: "Monext",
   },
   {
-    logo: "/logo-devoteam.png",
-    name: "Devoteam",
-  },
-  {
-    logo: "/logo-ditto.png",
-    name: "Ditto Bank",
-  },
-  {
     logo: "/logo-accenture.png",
     name: "Accenture",
-  },
-  {
-    logo: "/logo-lbp.png",
-    name: "La Banque Postale",
   },
   {
     logo: "/logo-sg.png",
@@ -73,7 +55,7 @@ export const companies: CompanyData[] = [
   },
   {
     logo: "/logo-sopra.png",
-    name: "Sopra Group",
+    name: "Sopra Steria",
   },
   // Add more companies as needed
 ];
