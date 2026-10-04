@@ -42,9 +42,9 @@ const enUrl = alternatePath(pathname, "en");
             ))}
         </div>
         <div class="hidden md:flex items-center gap-1 ml-4 text-sm font-semibold">
-            <a href={frUrl} aria-label={locale === "fr" ? "Francais (langue actuelle)" : "Francais"} class:list={["transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded", locale === "fr" ? "text-white" : "text-white/50 hover:text-white"]}>FR</a>
+            <a href={frUrl} aria-label={locale === "fr" ? "Francais (langue actuelle)" : "Francais"} class:list={["transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded", locale === "fr" ? "text-white" : "text-white/70 hover:text-white"]}>FR</a>
             <span class="text-white/30">|</span>
-            <a href={enUrl} aria-label={locale === "en" ? "English (current language)" : "English"} class:list={["transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded", locale === "en" ? "text-white" : "text-white/50 hover:text-white"]}>EN</a>
+            <a href={enUrl} aria-label={locale === "en" ? "English (current language)" : "English"} class:list={["transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded", locale === "en" ? "text-white" : "text-white/70 hover:text-white"]}>EN</a>
         </div>
         <MobileMenu client:media="(max-width: 768px)" links={navLinks} currentLocale={locale} frUrl={frUrl} enUrl={enUrl} />
     </div>
@@ -80,10 +80,8 @@ const enUrl = alternatePath(pathname, "en");
         }
     }
 
-    /* Scrolled state: solid background, different hover/logo colors */
+    /* Scrolled state: solid background. Logo and hover stay white: accent on primary is 2.5:1 */
     :global(#navbar.scrolled) { background-color: rgba(27, 42, 74, 0.95); backdrop-filter: blur(4px); }
-    :global(#navbar.scrolled) .nav-link:hover { color: var(--color-accent); }
-    :global(#navbar.scrolled) .nav-logo { color: var(--color-accent); }
 </style>
 
 <script is:inline>
