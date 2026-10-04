@@ -1,4 +1,4 @@
-// Checks on the built site (docs/architecture/case-studies.md §7, rules C1–C12).
+// Checks on the built site (docs/architecture/case-studies.md §7, rules C1–C13).
 // Node only, no dependency: walks <dir>/**/*.html and reads it with regexes and string search.
 //
 //   node scripts/check-dist.mjs [dir] [--all]
@@ -315,6 +315,27 @@ const rules = [
         });
         if (new Set(values.map((v) => v?.trim())).size > 1)
           fail("C12", p.file, `descriptions differ: ${keys.map((k, i) => `${k}="${values[i] ?? ""}"`).join(", ")}`);
+      }
+    },
+  },
+  {
+    id: "C13",
+    enabled: true, // WEB-IMPL-17: on
+    title: "visible product count on the homes equals data-product-count",
+    run() {
+      for (const home of HOMES) {
+        const p = byPath.get(home);
+        if (!p) { fail("C13", home, "page missing"); continue; }
+        const count = tags(p.html).find((t) => t.attrs.has("data-product-count"))?.attrs.get("data-product-count");
+        const metrics = [...p.html.matchAll(/<p\b((?:[^>"']|"[^"]*"|'[^']*')*)>([\s\S]*?)<\/p>/gi)]
+          .map(([, a, inner]) => ({ id: attrs(a).get("data-metric"), text: text(inner) }))
+          .filter((m) => m.id !== undefined);
+        const products = metrics.find((m) => m.id === "products");
+        if (!products) fail("C13", p.file, 'no <p data-metric="products">');
+        else if (products.text !== count)
+          fail("C13", p.file, `products reads "${products.text}", data-product-count="${count ?? "(none)"}"`);
+        for (const m of metrics)
+          if (m.text === "" || m.text === "0") fail("C13", p.file, `data-metric="${m.id}" reads "${m.text}"`);
       }
     },
   },

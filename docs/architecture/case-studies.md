@@ -157,12 +157,12 @@ Current components:
 | Component | Decision | What changes |
 |---|---|---|
 | `HeroSection.astro` | reworked | Keeps `id="hero"`, the dark `primary` band and `#nav-sentinel` (the navbar transparency relies on them). Loses `min-h-screen`, the tagline, the description and both CTAs. The `<h1>` is the statement; the LinkedIn link sits under it. |
-| `HeroBackground.tsx` | removed | The canvas animation is decoration and costs a `client:load` island above the fold. The file is deleted; `motion` stays for `Counter` and `MobileMenu`. |
+| `HeroBackground.tsx` | removed | The canvas animation is decoration and costs a `client:load` island above the fold. The file is deleted; `motion` stays for `MobileMenu` (`Counter` was removed in WEB-IMPL-17). |
 | `PhilosophySection.astro` | removed | Marketing copy. The file and its `philosophy.*` keys are deleted. |
 | `CompetenciesSection.astro` | removed | A generic four-card pitch; the `/expertises` page keeps that content. The file and its `competencies.*` keys are deleted. |
 | `ProductsSection.astro` | removed | Replaced by the new `CaseStudiesSection.astro` (`id="realisations"`), fed by `getPublishedCaseStudies()`, with `Card` and `Badge`. |
 | `SectorsSection.astro` | reworked | Sectors = the four in the statement (banking, insurance, payments, telecom), from one `SECTORS` array in `src/consts.ts`. Energy is dropped unless the founder restores it at review. The marquee `CompanyLogoSlider` becomes a static wrapped grid of client logos (lazy, grayscale, `alt` = client name, no links). The dead `#monext`-style `caseStudy` anchors and duplicate ids in `companies` go. A logo links only to a published mission case study, once one exists. |
-| `MetricsSection.astro` | reworked | Years (15+) and founding year (2020) stay. The sectors count becomes `SECTORS.length` (4). **The hard-coded `4` products becomes `countPublishedProducts()`**, which is 1 after WEB-IMPL-06. The section root carries `data-product-count={n}`: the `Counter` island renders `0` server-side, so the check needs the number in the HTML. |
+| `MetricsSection.astro` | reworked | Years (15+) and founding year (2020) stay. The sectors count becomes `SECTORS.length` (4). **The hard-coded `4` products becomes `countPublishedProducts()`**, which is 1 after WEB-IMPL-06. The section root carries `data-product-count={n}`. Since WEB-IMPL-17 the four numbers are plain server-rendered markup with their final values (no `Counter` island, no count-up), each with `data-metric="years\|sectors\|founded\|products"`. |
 | `BlogPreviewSection.astro` | kept, one fix | The ghost "Read more"/"Lire la suite" button goes; each post's title stays the link, which is descriptive. The same fix applies to `src/pages/blog/index.astro` and `src/pages/en/blog/index.astro`. |
 | `Navbar.astro` (layout) | reworked | The anchors `#competences`, `#produits` and `#chiffres` disappear. Links: Réalisations/Work (`#realisations` on home, `/products` elsewhere), Expertises (`/expertises`), Expériences/Experience (`/experiences`), Blog. The scroll-spy `sectionIds` list is updated to match. |
 | `Footer.astro` (layout) | reworked | The identity links of §5. The columns and legal link are unchanged. |
@@ -226,6 +226,7 @@ regexes and string search. Every rule names itself and the offending file on fai
 | C9 | `data-product-count` on `/` and `/en/` equals the number of product case-study pages in `dist/` | FR-10 | WEB-IMPL-03 |
 | C10 | Both legal pages contain `EURL`, the SIRET `88235054900029` (after removing whitespace), `RCS Paris`, `Croix Nivert`, `Samuel Ngambeket Molu`, `alareni@gambetech.com` and `GitHub`; neither contains `5333904X01` | FR-10 | WEB-IMPL-05 |
 | C11 | `/experiences` pages contain no "À compléter" and no two missions with identical dates | FR-04 | WEB-IMPL-11 |
+| C13 | On `/` and `/en/`, the text of `[data-metric="products"]` equals `data-product-count`; no `[data-metric]` element reads `0` or is empty | FR-10 | WEB-IMPL-17 |
 
 `/en/products` being fully in English is not machine-checked: WEB-QA-05 reads it.
 
