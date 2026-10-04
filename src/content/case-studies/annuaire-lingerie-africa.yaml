@@ -1,0 +1,76 @@
+# FR: the founder's text (WEB-FT-03). EN: agent draft, awaiting the v1 → develop review.
+slug: annuaire-lingerie-africa
+kind: product
+order: 1
+draft: false
+liveUrl: https://lingerieafrica.pro
+fr:
+  title: Annuaire Lingerie Africa
+  problem: |
+    LINGERIE AFRICA organise un salon panafricain de la lingerie. Sa prochaine édition, SILA 2026, se tient à Abidjan les 27 et 28 novembre 2026.
+
+    L'annuaire professionnel du salon tenait dans un Google Form et un tableur, avec des réponses en texte libre et les informations publiques et confidentielles des marques mélangées dans le même fichier. Sur 64 candidatures d'exposants, 17 réponses sur le métier ne correspondaient à aucune catégorie.
+
+    Les créatrices, ateliers, grossistes et boutiques du secteur n'avaient pas d'endroit commun pour se trouver. L'équipe du salon recevait sur WhatsApp des demandes de fournisseurs qu'elle n'avait pas le temps de traiter.
+  built: |
+    D'abord, une démo des informations du Google Form en lecture seule a servi à obtenir un partenariat de principe du salon. La plateforme complète et le remplacement du Google Form ont suivi.
+
+    Nous avons co-construit un annuaire bilingue, français par défaut et anglais, conçu d'abord pour le téléphone, et un backoffice pour la modération.
+
+    Le code, orienté domaine métier, sépare domaine, infrastructure et pages. Il est couvert par plus de 430 tests unitaires et 72 tests de bout en bout.
+  production: |
+    Le site est en service sur invitation depuis le 18 août 2026. L'objectif : le lancement lors du prochain salon.
+  stack:
+    - TypeScript
+    - React 19
+    - Next.js 16
+    - Tailwind CSS 4
+    - Vitest
+    - Playwright
+    - Supabase (PostgreSQL, Auth)
+    - Vercel
+    - Zod
+    - Resend
+  role: |
+    GambeTech co-construit avec LINGERIE AFRICA, dans un rôle d'assistant technique. Nous cadrons le produit, concevons l'architecture et assurons le suivi d'exploitation.
+  ai: |
+    Le code a été écrit en grande partie avec Claude Code : 109 des 179 commits ont pour co-auteur Claude Code. Chaque lot suivait le même chemin : spécification, plan, tests écrits d'abord, exécution par des sous-agents.
+
+    En septembre, sept tâches ont tourné en agents autonomes dans un bac à sable, lancées par l'orchestrateur maison de GambeTech.
+
+    Le produit n'utilise pas encore d'IA. Les revues, les décisions sont restées humaines.
+en:
+  title: Annuaire Lingerie Africa
+  problem: |
+    LINGERIE AFRICA runs a pan-African lingerie trade show. Its next edition, SILA 2026, takes place in Abidjan on 27 and 28 November 2026.
+
+    The show's professional directory lived in a Google Form and a spreadsheet, with free-text answers and the brands' public and confidential information mixed in the same file. Out of 64 exhibitor applications, 17 answers about the trade matched no category.
+
+    The designers, workshops, wholesalers and shops of the sector had no common place to find each other. The show's team received supplier requests on WhatsApp that it had no time to handle.
+  built: |
+    First, a read-only demo of the Google Form data was used to obtain an agreement in principle for a partnership with the show. The full platform and the replacement of the Google Form followed.
+
+    We co-built a bilingual directory, French by default and English, designed for the phone first, and a back office for moderation.
+
+    The code, domain-oriented, separates domain, infrastructure and pages. It is covered by more than 430 unit tests and 72 end-to-end tests.
+  production: |
+    The site has been in service, by invitation, since 18 August 2026. The goal: the launch at the next show.
+  stack:
+    - TypeScript
+    - React 19
+    - Next.js 16
+    - Tailwind CSS 4
+    - Vitest
+    - Playwright
+    - Supabase (PostgreSQL, Auth)
+    - Vercel
+    - Zod
+    - Resend
+  role: |
+    GambeTech co-builds with LINGERIE AFRICA, as a technical assistant. We frame the product, design the architecture and handle operations follow-up.
+  ai: |
+    The code was largely written with Claude Code: 109 of the 179 commits have Claude Code as co-author. Each batch followed the same path: specification, plan, tests written first, execution by sub-agents.
+
+    In September, seven tasks ran as autonomous agents in a sandbox, launched by GambeTech's in-house orchestrator.
+
+    The product does not use AI yet. Reviews and decisions stayed human.
