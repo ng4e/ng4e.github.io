@@ -54,12 +54,12 @@ Blog posts use `BlogPost.astro` which wraps `BaseLayout` with `prose` typography
 
 ### React Islands
 
-Three React islands with specific hydration strategies:
-- `HeroBackground.tsx` — Canvas hex grid animation (`client:load`, above-fold)
-- `Counter.tsx` — Count-up metrics animation (`client:visible`, animates on mount)
+One React island (`HeroBackground.tsx` and `Counter.tsx` were removed in v1):
 - `MobileMenu.tsx` — Hamburger menu overlay (`client:media="(max-width: 768px)"`, zero JS on desktop)
 
-All use `motion/react` with `LazyMotion + domAnimation` for bundle size. All respect `prefers-reduced-motion`.
+It uses `motion/react` with `LazyMotion + domAnimation` for bundle size and respects `prefers-reduced-motion`.
+
+The home metrics (`MetricsSection.astro`) are plain server-rendered markup: the final values are in the HTML, each number `<p>` carries `data-metric`, and the section fades in through `reveal`.
 
 ### UI Components (`src/components/ui/`)
 
