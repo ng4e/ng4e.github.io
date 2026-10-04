@@ -4,7 +4,6 @@ const translations: Record<Locale, Record<string, string>> = {
   fr: {
     // Site
     "site.title": "Gambetech",
-    "site.description": "Transforme les idées en solutions innovantes",
 
     // Nav (4 keys)
     "nav.work": "Réalisations",
@@ -150,7 +149,6 @@ const translations: Record<Locale, Record<string, string>> = {
   en: {
     // Site
     "site.title": "Gambetech",
-    "site.description": "Turning ideas into innovative solutions",
 
     // Nav (4 keys)
     "nav.work": "Work",

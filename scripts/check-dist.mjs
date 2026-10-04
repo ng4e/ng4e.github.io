@@ -1,4 +1,4 @@
-// Checks on the built site (docs/architecture/case-studies.md §7, rules C1–C11).
+// Checks on the built site (docs/architecture/case-studies.md §7, rules C1–C12).
 // Node only, no dependency: walks <dir>/**/*.html and reads it with regexes and string search.
 //
 //   node scripts/check-dist.mjs [dir] [--all]
@@ -293,6 +293,28 @@ const rules = [
           seen.set(key, (seen.get(key) ?? 0) + 1);
         }
         for (const [dates, n] of seen) if (n > 1) fail("C11", p.file, `${n} missions dated "${dates}"`);
+      }
+    },
+  },
+  {
+    id: "C12",
+    enabled: true, // WEB-IMPL-15: on
+    title: "home meta, og and twitter descriptions are equal, non-empty and not the old tagline",
+    run() {
+      const keys = ["description", "og:description", "twitter:description"];
+      const old = ["transforme les idées en solutions innovantes", "turning ideas into innovative solutions"];
+      for (const home of HOMES) {
+        const p = byPath.get(home);
+        if (!p) { fail("C12", home, "page missing"); continue; }
+        const metas = tags(p.html).filter((t) => t.name === "meta");
+        const values = keys.map((k) => metas.find((t) => (t.attrs.get("name") ?? t.attrs.get("property")) === k)?.attrs.get("content"));
+        keys.forEach((k, i) => {
+          if (!values[i]?.trim()) fail("C12", p.file, `${k} ${values[i] === undefined ? "missing" : "empty"}`);
+          else if (old.some((s) => values[i].normalize("NFC").toLowerCase().includes(s)))
+            fail("C12", p.file, `${k} is the old tagline: "${values[i]}"`);
+        });
+        if (new Set(values.map((v) => v?.trim())).size > 1)
+          fail("C12", p.file, `descriptions differ: ${keys.map((k, i) => `${k}="${values[i] ?? ""}"`).join(", ")}`);
       }
     },
   },
