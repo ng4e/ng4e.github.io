@@ -97,6 +97,7 @@ const failures = [];
 const fail = (rule, file, value) => failures.push(`${rule} ${file}: ${value}`);
 const isLinkedIn = (href) => href?.includes("linkedin.com");
 
+/** @type {{ id: string, enabled: boolean, title: string, run: () => void | Promise<void> }[]} */
 const rules = [
   {
     id: "C1",
