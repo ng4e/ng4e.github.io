@@ -1,0 +1,100 @@
+# FR: the founder's text (WEB-FT-06). EN: agent draft, awaiting the founder's review.
+slug: sportifs-prometteurs
+kind: product
+order: 2
+draft: false
+liveUrl: https://getsp.sportifs-prometteurs.org
+fr:
+  title: Sportifs Prometteurs
+  problem: |
+    Sportifs Prometteurs est une association loi 1901 créée en 2023 à Aix-en-Provence. Elle accompagne de jeunes sportifs, en tennis notamment, qui ont un projet sportif et familial fort et veulent devenir professionnels. Elle les conseille et finance une partie de leurs entraînements et de leurs déplacements.
+
+    Pour chaque joueur de tennis, il faut choisir les tournois ITF où l'inscrire : assez relevés pour progresser, pas trop pour ne pas perdre d'entrée.
+
+    Avant getsp, ce choix se faisait dans un tableur. Le staff relevait à la main le classement des joueurs inscrits, environ une journée par tournoi. Un mauvais choix a déjà coûté un déplacement et une élimination précoce.
+  built: |
+    getsp est une application web pour le staff de l'association.
+
+    Le staff crée la fiche d'un joueur avec ses indicateurs de niveau : classement ITF et WTN saisis à la main, UTR récupéré par l'API UTR. Pour un tournoi, il colle la page des inscrits copiée depuis le site de l'ITF. Un moteur d'extraction écrit en Python en tire le tournoi, les joueurs inscrits et leur niveau. Il tourne dans un pool de trois processus.
+
+    L'application compare ensuite le joueur au tableau : première tête de série, huitième tête de série, qualifiés, moyenne, médiane. Elle rend un verdict en couleur : recommandé, atteignable, trop fort ou trop faible.
+
+    Le code suit une architecture hexagonale : le domaine (joueurs, tournois, analyse) ne dépend ni de la base SQLite, ni de l'API UTR, ni des pages. 72 tests automatisés le couvrent, 31 en TypeScript et 41 en Python. Chaque pull request qui touche le code est construite, testée et analysée par SonarCloud.
+
+    Une modernisation est engagée depuis 2026 : types, tests, sécurité.
+  production: |
+    L'application est en ligne depuis 2024 et sert au staff de l'association.
+
+    Elle tourne dans un conteneur Docker sur un serveur Oracle Cloud, derrière Caddy, qui gère le HTTPS. Les données sont dans une base SQLite.
+
+    Sur la branche principale, le pipeline Bitbucket construit l'application, lance les tests, analyse le code avec SonarCloud, puis produit l'image Docker. La mise en ligne de cette image se fait encore à la main ; son automatisation est prévue.
+  stack:
+    - TypeScript
+    - Express.js
+    - Python
+    - SQLite
+    - EJS
+    - API UTR
+    - Jest
+    - Docker
+    - Bitbucket Pipelines
+    - Oracle Cloud Infrastructure
+  role: |
+    getsp est un projet mené en commun avec l'association. GambeTech a tenu toute la partie technique : cadrage du produit, architecture, développement et hébergement. Un développeur stagiaire a contribué au moteur d'extraction en Python.
+
+    L'association a apporté le besoin, la connaissance du tennis de compétition et les essais en conditions réelles.
+
+    Depuis septembre 2024, le travail représente 415 commits et 63 pull requests fusionnées.
+  ai: |
+    Le code de 2024 et 2025 a été écrit à la main.
+
+    En 2026, Claude Code a servi à la modernisation : deux correctifs, dont la suppression d'un joueur passée d'un simple lien à un formulaire, pour qu'un robot d'indexation ne puisse plus effacer une fiche. Il a aussi servi à rédiger le cadrage produit de getsp, à partir d'un entretien avec le fondateur.
+
+    Le produit n'utilise pas d'IA : l'analyse et le verdict sont des règles écrites dans le code. Les décisions sont restées humaines.
+en:
+  title: Sportifs Prometteurs
+  problem: |
+    Sportifs Prometteurs is an association under the French 1901 law, created in 2023 in Aix-en-Provence. It supports young athletes, in tennis in particular, who have a strong sporting and family project and want to turn professional. It advises them and funds part of their training and travel.
+
+    For each tennis player, the ITF tournaments to enter must be chosen: strong enough to progress, not so strong that the player loses straight away.
+
+    Before getsp, this choice was made in a spreadsheet. The staff looked up the ranking of the entered players by hand, about one day per tournament. A wrong choice has already cost a trip and an early elimination.
+  built: |
+    getsp is a web application for the association's staff.
+
+    The staff creates a player's profile with their level indicators: ITF ranking and WTN entered by hand, UTR fetched through the UTR API. For a tournament, they paste the entry list page copied from the ITF website. An extraction engine written in Python pulls out the tournament, the entered players and their level. It runs in a pool of three processes.
+
+    The application then compares the player with the draw: first seed, eighth seed, qualifiers, mean, median. It gives a colour-coded verdict: recommended, reachable, too strong or too weak.
+
+    The code follows a hexagonal architecture: the domain (players, tournaments, analysis) depends neither on the SQLite database, nor on the UTR API, nor on the pages. 72 automated tests cover it, 31 in TypeScript and 41 in Python. Every pull request that touches the code is built, tested and analysed by SonarCloud.
+
+    A modernisation has been under way since 2026: types, tests, security.
+  production: |
+    The application has been online since 2024 and is used by the association's staff.
+
+    It runs in a Docker container on an Oracle Cloud server, behind Caddy, which handles HTTPS. The data is in an SQLite database.
+
+    On the main branch, the Bitbucket pipeline builds the application, runs the tests, analyses the code with SonarCloud, then produces the Docker image. Putting this image live is still done by hand; automating it is planned.
+  stack:
+    - TypeScript
+    - Express.js
+    - Python
+    - SQLite
+    - EJS
+    - UTR API
+    - Jest
+    - Docker
+    - Bitbucket Pipelines
+    - Oracle Cloud Infrastructure
+  role: |
+    getsp is a project run jointly with the association. GambeTech handled the whole technical side: product framing, architecture, development and hosting. An intern developer contributed to the Python extraction engine.
+
+    The association brought the need, the knowledge of competitive tennis and the testing in real conditions.
+
+    Since September 2024, the work amounts to 415 commits and 63 merged pull requests.
+  ai: |
+    The code from 2024 and 2025 was written by hand.
+
+    In 2026, Claude Code was used for the modernisation: two fixes, including turning player deletion from a plain link into a form, so that an indexing bot can no longer erase a profile. It was also used to write the product framing of getsp, based on an interview with the founder.
+
+    The product does not use AI: the analysis and the verdict are rules written in the code. Decisions stayed human.
